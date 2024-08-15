@@ -1,0 +1,15 @@
+{
+    "app_title": "Featlink",
+    "common": {
+        "next": "Suivant"
+    },
+    "welcome_screen": {
+        "greeting": "Bienvenue \"{}\"",
+        "on_the_world_coolest_chat": "Sur le chat le plus cool au monde",
+        "note": "Votre Inscription à Featlink chat est privée et vos abonnés Bantubeat ne seront pas avertis. Votre activité dans Featlink n'est pas partagée sur le fil d'actualité Bantubeat."
+    },
+    "test_screen": {
+        "hello_world": "Bonjour le monde 😁 !",
+        "today_date": "La date d'aujourd'hui c'est {}"
+    }
+}
