@@ -1,4 +1,4 @@
-import 'dart:io';
+import 'dart:io' show Directory;
 
 import 'package:featlink_app/src/all_screens.dart';
 import 'package:flutter/material.dart';
@@ -6,7 +6,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:path/path.dart' as path;
 
 void main() {
-  final screenFiles = Directory('lib/src/screens')
+  final screenFiles = Directory(path.join('lib', 'src', 'screens'))
       .listSync(recursive: true, followLinks: false)
       .where((e) => e.path.endsWith('_screen.dart'));
 
@@ -18,7 +18,7 @@ void main() {
     for (final screenFile in screenFiles) {
       final fileName = path.basenameWithoutExtension(screenFile.path);
 
-      debugPrint('Testing $fileName...');
+      debugPrint('Testing $fileName... (${screenFile.path})');
 
       final screenWidget = _loadScreenWidget(screenFile.path);
 
@@ -28,13 +28,21 @@ void main() {
 
       try {
         await tester.pumpWidget(MaterialApp(home: screenWidget));
-
-        expect(find.byType(screenWidget.runtimeType), findsOneWidget);
-        expect(find.byType(Scaffold), findsOneWidget);
-        debugPrint('$fileName is OK');
       } catch (_) {
-        fail('$fileName screen throw error when rendering');
+        fail('${screenWidget.runtimeType} throw error when rendering');
       }
+
+      expect(
+        find.byType(screenWidget.runtimeType),
+        findsOneWidget,
+        reason: "Can't find ${screenWidget.runtimeType} widget",
+      );
+
+      expect(
+        find.byType(Scaffold),
+        findsOneWidget,
+        reason: 'Scaffold widget not found',
+      );
     }
   });
 }
