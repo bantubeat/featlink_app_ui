@@ -14,13 +14,15 @@ void main() async {
 
   await EasyLocalization.ensureInitialized();
 
-  runApp(EasyLocalization(
-    path: 'assets/i18n',
-    saveLocale: false,
-    useOnlyLangCode: true,
-    useFallbackTranslations: true,
-    supportedLocales: supportedLocales,
-    fallbackLocale: supportedLocales.first,
-    child: const FeatlinkApp(),
-  ));
+  runApp(
+    EasyLocalization(
+      path: 'assets/i18n',
+      saveLocale: false,
+      useOnlyLangCode: true,
+      useFallbackTranslations: true,
+      supportedLocales: supportedLocales,
+      fallbackLocale: supportedLocales.first,
+      child: const FeatlinkApp(),
+    ),
+  );
 }
