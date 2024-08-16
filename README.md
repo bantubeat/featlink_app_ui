@@ -12,7 +12,7 @@ Ces règles ne sont pas difficiles à respecter et correspond au standard, donc 
 
 - 1. Toujours mettre les screens dans `Scaffold` (voir exemple sur welcome_screen.dart) ET respecter strictement le design sur figma, si vous faite une suggestion c'est à votre risque (la PR peut être rejeté ai la suggestion n'est pas accepté et vous aurez perdu votre temps en plus du temps pour corriger la PR pour qu'elle soit enfin validé) <br /> <br />
 
-- 2. Toute les screens se doivent se nommer avec un `_screen.dart` à la fin, par exemple le fichier la page Welcome se nome "welcome_screen.dart", si votre page a plusieurs sous composant alors
+- 2. Toute les screens se doivent se nommer en anglais et avec un `_screen.dart` à la fin, par exemple le fichier la page de Bienvenue se nome `welcome_screen.dart`, et la class `WelcomePage` si votre page a plusieurs sous composant alors
 
   - a- Créer un dossier de même nom que la page (sans .dart) pour placer votre page, par ex: lib/src/screens/welcome2_screen/welcome2_screen.dart <br />
   - b- Créer un dossier `widgets` pour mettre tout les sous composant de votre page (exemple voir: `lib/src/screens/welcome2_screen/widgets`) <br />
