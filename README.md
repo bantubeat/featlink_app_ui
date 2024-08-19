@@ -40,13 +40,13 @@ Ces règles ne sont pas difficiles à respecter et correspond au standard, donc 
 - 11. Pour chaque PR, voici ce qu'il faut:
 
   - a. Le nom de la PR c'est le format suivant **ticket-[NUM_TICKET]/[NOM_DE_LA_PAGE_OU_DU_TICKET_SLUGIFIE]**, exemple pour le ticket 10 qui est "#10 - La page de bienvene" le nom de la PR peut-être **ticket-10/welcome-screen** (la partie après / est à votre choix mais la partie avant avec le numéro du ticket est obligatoire) le nom du ticket
-  - b. Mettez le lien du ticket dans la description de la PR
+  - b. Mettez le lien du ticket dans la description de la PR (OPTIONEL)
   - c. Mettez le lien de la PR en commentaire sur le ticket
   - d. Vous devez fournir des captures de la/les screens réalisés pour que le ticket soit validé rapidement, voici les conditions pour les 3 images pour chaque screen
     - **iPhone SE (375 x 667)** ou bien tout écran de téléphone **de MOINS de 700 px** en hauteur (height < 700px)
     - **Pixel 7 (412 x 915)** ou bien tout écran de téléphone **D'AU MOINS 700 px** en hauteur (height >= 700px)
     - **iPad Mini (768 x 1024)** ou bien tout écran de tablette **D'AU MOINS 700 px** en largeur (width >= 700px)
-      Si le ticket n'est pas une screen, alors une seule capture suffira
+    Si le ticket n'est pas une screen, alors une seule capture suffira
 
 - 12. Si votre PR respecte tout les points précédent alors je n'ai pas le droit de rejeter votre PR
 
