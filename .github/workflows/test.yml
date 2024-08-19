@@ -12,7 +12,39 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: flutter/setup-flutter@v2
+
+      - name: Cache Flutter dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.pub-cache
+          key: ${{ runner.os }}-flutter-${{ hashFiles('**/pubspec.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-flutter-
+
+      - name: Cache Java dependencies
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-java-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-java-
+
+      - uses: actions/setup-java@v2
+        with:
+          distribution: "zulu"
+          java-version: "11"
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.22.2"
+
+      - run: flutter --version
+
       - run: flutter pub get
+
       - run: flutter analyse
+
       - run: flutter test
