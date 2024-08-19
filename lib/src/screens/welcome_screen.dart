@@ -7,6 +7,9 @@ import 'package:featlink_app/src/components/primary_button.dart';
 import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 
+// THIS IS AN EXAMPLE SCREEN
+// HERE IS TICKET LINK: https://trello.com/c/fwqU336S/10-10-la-page-de-bienvene
+// HERE IS PR LINK: https://github.com/bantubeat/featlink_app_ui/pull/1
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen();
 
