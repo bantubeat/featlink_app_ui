@@ -9,9 +9,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Cache Flutter dependencies
         uses: actions/cache@v2
@@ -39,12 +40,20 @@ jobs:
 
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.22.2"
+          channel: stable
+          flutter-version: "3.22.x"
+          cache: true
+          # optional parameters follow
+          cache-key: "flutter-:os:-:channel:-:version:-:arch:-:hash:" # optional, change this to force refresh cache
+          cache-path: "${{ runner.tool_cache }}/flutter/:channel:-:version:-:arch:" # optional, change this to specify the cache path
+          pub-cache-key: "flutter-pub:os:-:channel:-:version:-:arch:-:hash:" # optional, change this to force refresh cache of dart pub get dependencies
+          pub-cache-path: "${{ runner.tool_cache }}/flutter/:channel:-:version:-:arch:" # optional, change this to specify the cache path
 
       - run: flutter --version
 
       - run: flutter pub get
-
-      - run: flutter analyse
-
+      - run: flutter analyze
       - run: flutter test
+      # - run: flutter build apk
+      # - run: flutter build appbundle
+      # - run: flutter build ios --release --no-codesign
