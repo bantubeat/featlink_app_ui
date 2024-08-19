@@ -12,7 +12,7 @@ Ces règles ne sont pas difficiles à respecter et correspond au standard, donc 
 
 - 1. Respecter strictement les consignes du ticket et le design sur figma, si vous faite une suggestion c'est à votre risque (la PR peut être rejeté ai la suggestion n'est pas accepté et vous aurez perdu votre temps en plus du temps pour corriger la PR pour qu'elle soit enfin validé) <br /> <br />
 
-- 2. Toute les screens se doivent se nommer en anglais et avec un `_screen.dart` à la fin, par exemple le fichier la page de Bienvenue se nome `welcome_screen.dart`, et la class `WelcomePage` si votre page a plusieurs sous composant alors
+- 2. Toute les screens se doivent se nommer en anglais et avec un `_screen.dart` à la fin, par exemple le fichier la page de Bienvenue se nome `welcome_screen.dart`, et la class `WelcomeScreen` si votre page a plusieurs sous composant alors
 
   - a- Créer un dossier de même nom que la page (sans .dart) pour placer votre page, par ex: lib/src/screens/welcome2_screen/welcome2_screen.dart <br />
   - b- Créer un dossier `widgets` pour mettre tout les sous composant de votre page (exemple voir: `lib/src/screens/welcome2_screen/widgets`) <br />
@@ -39,7 +39,7 @@ Ces règles ne sont pas difficiles à respecter et correspond au standard, donc 
 
 - 11. Pour chaque PR, voici ce qu'il faut:
 
-  - a. Le nom de la PR c'est le format suivant **ticket-[NUM_TICKET]/[NOM_DE_LA_PAGE_OU_DU_TICKET_SLUGIFIE]**, exemple pour le ticket 10 qui est "#10 - La page de bienvene" le nom de la PR peut-être **ticket-10/welcome-page** (la partie après / est à votre choix mais la partie avant avec le numéro du ticket est obligatoire) le nom du ticket
+  - a. Le nom de la PR c'est le format suivant **ticket-[NUM_TICKET]/[NOM_DE_LA_PAGE_OU_DU_TICKET_SLUGIFIE]**, exemple pour le ticket 10 qui est "#10 - La page de bienvene" le nom de la PR peut-être **ticket-10/welcome-screen** (la partie après / est à votre choix mais la partie avant avec le numéro du ticket est obligatoire) le nom du ticket
   - b. Mettez le lien du ticket dans la description de la PR
   - c. Mettez le lien de la PR en commentaire sur le ticket
   - d. Vous devez fournir des captures de la/les screens réalisés pour que le ticket soit validé rapidement, voici les conditions pour les 3 images pour chaque screen
