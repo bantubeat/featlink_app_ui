@@ -1,0 +1,1 @@
+flutter analyze && dart format . && flutter test 

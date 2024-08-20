@@ -1,5 +1,6 @@
 import 'package:featlink_app/src/screens/_auth/login_screen.dart';
 import 'package:featlink_app/src/screens/_auth/register_screen.dart';
+import 'package:featlink_app/src/screens/_create_profile/create_profile_step_1o3_screen.dart';
 import 'package:flutter/material.dart' show Widget;
 
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
