@@ -42,9 +42,6 @@ flutter:
     # Add assets from the images directory to the application.
     - assets/i18n/
     - assets/images/
-<<<<<<< HEAD
     - assets/svgs/
     - assets/svg/
-=======
-    - assets/icons/
->>>>>>> dddb87f (Fix all errors)
+
