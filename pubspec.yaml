@@ -41,3 +41,4 @@ flutter:
     # Add assets from the images directory to the application.
     - assets/i18n/
     - assets/images/
+    - assets/icons/

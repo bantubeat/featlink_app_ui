@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'dart:math' show min;
 import 'package:featlink_app/src/resources/app_assets.dart';
+import 'dart:math' show min;
 
 class Logo extends StatelessWidget {
   final double height;

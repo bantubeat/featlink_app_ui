@@ -3,11 +3,10 @@ import 'package:featlink_app/src/components/primary_button.dart';
 import 'package:featlink_app/src/components/button_with_icon.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:featlink_app/src/components/logo.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -69,9 +68,9 @@ class _RegisterScreenState extends State<LoginScreen> {
               ),
               ButtonWithIcon(
                 text: LocaleKeys.login_screen_login_with_google.tr(),
-                icon: SvgPicture.asset(
-                  AppAssets.googleIcon,
-                  height: 24, // Adjust the size as needed
+                icon: const Icon(
+                  MaterialCommunityIcons.google,
+                  color: Colors.red,
                 ),
                 onPressed: (context) {},
                 backgroundColor: Colors.white,
