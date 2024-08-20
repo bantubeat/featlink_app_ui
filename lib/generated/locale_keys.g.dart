@@ -15,5 +15,6 @@ abstract class  LocaleKeys {
   static const create_profile_step_1o1_screen_profile_name = 'create_profile_step_1o1_screen.profile_name';
   static const create_profile_step_1o1_screen_i_am = 'create_profile_step_1o1_screen.i_am';
   static const create_profile_step_1o1_screen_profile_note = 'create_profile_step_1o1_screen.profile_note';
+  static const create_profile_step_1o2_screen_birth_year = 'create_profile_step_1o2_screen.birth_year';
 
 }
