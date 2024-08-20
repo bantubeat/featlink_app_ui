@@ -9,14 +9,9 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
-class RegisterScreen extends StatefulWidget {
+class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
 
-  @override
-  State<RegisterScreen> createState() => _RegisterScreenState();
-}
-
-class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     final double screenHeight = MediaQuery.of(context).size.height;
@@ -30,10 +25,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
           gradient: LinearGradient(
             begin: Alignment.bottomCenter,
             end: Alignment.topCenter,
+            stops: [0, 1],
             colors: [
               AppColors.primaryLight,
               Colors.white, // Starting color
-              Colors.white, // Ending color
+              // Ending color
             ],
           ),
         ),
@@ -78,7 +74,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 borderWidth: 2,
               ),
               const SizedBox(
-                height: 16,
+                height: 32,
               ),
               Text(
                 LocaleKeys.register_screen_or.tr(),
@@ -87,7 +83,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               const SizedBox(
-                height: 16,
+                height: 32,
               ),
               InputTextField(
                 hintText: LocaleKeys.register_screen_email_hint.tr(),
@@ -122,7 +118,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 backgroundColor: AppColors.secondary,
               ),
               const SizedBox(
-                height: 16,
+                height: 32,
               ),
               Text(
                 LocaleKeys.register_screen_terms.tr(),

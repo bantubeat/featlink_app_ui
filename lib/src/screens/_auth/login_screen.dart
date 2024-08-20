@@ -8,14 +8,9 @@ import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/components/logo.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
-class LoginScreen extends StatefulWidget {
+class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
-  @override
-  State<LoginScreen> createState() => _RegisterScreenState();
-}
-
-class _RegisterScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     final double screenHeight = MediaQuery.of(context).size.height;
@@ -29,10 +24,10 @@ class _RegisterScreenState extends State<LoginScreen> {
           gradient: LinearGradient(
             begin: Alignment.bottomCenter,
             end: Alignment.topCenter,
+            stops: [0, 1],
             colors: [
               AppColors.primaryLight,
               Colors.white, // Starting color
-              Colors.white, // Ending color
             ],
           ),
         ),
@@ -77,7 +72,7 @@ class _RegisterScreenState extends State<LoginScreen> {
                 borderWidth: 2,
               ),
               const SizedBox(
-                height: 16,
+                height: 32,
               ),
               Text(
                 LocaleKeys.login_screen_or.tr(),
@@ -86,7 +81,7 @@ class _RegisterScreenState extends State<LoginScreen> {
                     const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               const SizedBox(
-                height: 16,
+                height: 32,
               ),
               InputTextField(
                 hintText: LocaleKeys.login_screen_email_hint.tr(),
@@ -104,7 +99,7 @@ class _RegisterScreenState extends State<LoginScreen> {
                 text: LocaleKeys.login_screen_login.tr(),
               ),
               const SizedBox(
-                height: 32,
+                height: 48,
               ),
               Text(
                 LocaleKeys.login_screen_not_register.tr(),
@@ -121,7 +116,7 @@ class _RegisterScreenState extends State<LoginScreen> {
                 backgroundColor: AppColors.secondary,
               ),
               const SizedBox(
-                height: 16,
+                height: 32,
               ),
               Text(
                 LocaleKeys.login_screen_terms.tr(),
