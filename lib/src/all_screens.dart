@@ -1,3 +1,5 @@
+import 'package:featlink_app/src/screens/_auth/login_screen.dart';
+import 'package:featlink_app/src/screens/_auth/register_screen.dart';
 import 'package:flutter/material.dart' show Widget;
 
 import 'screens/welcome2_screen/welcome2_screen.dart';
@@ -14,6 +16,8 @@ import 'screens/welcome_screen.dart';
 final Map<String, Widget Function()> allScreens = {
   'welcome_screen.dart': () => const WelcomeScreen(),
   'welcome2_screen.dart': () => const Welcome2Screen(),
+  'login_screen.dart': () => const LoginScreen(),
+  'register_screen.dart': () => const RegisterScreen()
 
   // Ajoutez d'autres chemins de fichiers ici
 };

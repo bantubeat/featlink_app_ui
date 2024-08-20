@@ -11,5 +11,29 @@
     "test_screen": {
         "hello_world": "Bonjour le monde 😁 !",
         "today_date": "La date d'aujourd'hui c'est {}"
+    },
+    "register_screen": {
+        "title": "Inscription à Featlink",
+        "description": "En vous inscrivant sur Featlink, vous reconnaissez avoir plus de 18 ans ou la majorite dans votre pays de residence. Vous acceptez les conditions de Bantubeat",
+        "sign_up_google": "S'inscrire avec google",
+        "or": "ou",
+        "email_hint": "Entre votre email",
+        "password_hint": "Entrer votre mot de passe",
+        "sign_up": "S'inscrire",
+        "new_to_featlink": "Nouveau sur Featlink ?",
+        "login": "Connexion",
+        "terms": "En continuant,tu acceptes la politique et conditions d'utilisation de Featlink et reconnais avoir lu et accepter 'Les conditions' de bantubeat, la politique de confidentialité pour savoir comment nous collections, utilisons et partageons tes données et notre politique relative aux cookies pour savoir comment nous utilisons les cookies"
+    },
+    "login_screen" : {
+        "title" : "Connexion",
+        "description" : "Connectez vous pour faire de belles rencontres",
+        "login_with_google": "Se connecter avec google",
+        "login": "Connexion",
+        "not_register": "Vous n'avez pas de compte ?",
+        "sign_up": "S'inscrire",
+        "email_hint": "Entre votre email",
+        "password_hint": "Entrer votre mot de passe",
+        "or":"ou",
+         "terms": "En continuant,tu acceptes la politique et conditions d'utilisation de Featlink et reconnais avoir lu et accepter 'Les conditions' de bantubeat, la politique de confidentialité pour savoir comment nous collections, utilisons et partageons tes données et notre politique relative aux cookies pour savoir comment nous utilisons les cookies"
     }
 }
