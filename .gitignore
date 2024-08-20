@@ -10,8 +10,10 @@
 .svn/
 migrate_working_dir/
 /divino
-/.windows
+/windows
+/android
 /.metadata
+
 commit.bat
 
 # IntelliJ related
