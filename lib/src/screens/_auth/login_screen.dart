@@ -7,8 +7,7 @@ import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-import 'dart:math' show min;
+import 'package:featlink_app/src/components/logo.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -47,15 +46,7 @@ class _RegisterScreenState extends State<LoginScreen> {
               const SizedBox(
                 height: 32,
               ),
-              SizedBox.square(
-                dimension: min(128, 128),
-                child: Center(
-                  child: Image.asset(
-                    AppAssets.imageLogo, // Pass assets using AppAssets
-                    fit: BoxFit.contain,
-                  ),
-                ),
-              ),
+              const Logo(),
               const SizedBox(
                 height: 16,
               ),
