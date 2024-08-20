@@ -2,6 +2,7 @@ final class AppAssets {
   const AppAssets._();
 
   static const imageLogo = 'assets/images/logo.png';
+<<<<<<< HEAD
   static const contractImage = 'assets/images/contract.png';
   static const profileImage = 'assets/images/profile_image.png';
 
@@ -17,4 +18,7 @@ final class AppAssets {
   static const svgStep1o2Icon = 'assets/svg/step1o2_icon.svg';
   static const createProfileStep1o2Image = 'assets/images/step1o2_icon.png';
   static const imageLogo2 = 'assets/images/logo2.png';
+=======
+  static const googleIcon = 'assets/images/google_icon.svg';
+>>>>>>> dddb87f (Fix all errors)
 }
