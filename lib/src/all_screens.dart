@@ -2,6 +2,7 @@ import 'package:flutter/material.dart' show Widget;
 
 import 'screens/welcome2_screen/welcome2_screen.dart';
 import 'screens/welcome_screen.dart';
+import 'screens/_create_profile/create_profile_step_1o1_screen.dart';
 
 /// Le test unitaire va chercher toute les pages du dossier screens pour se
 /// rassurer qu'il s'affiche sans erreur, seulement pour chaque fichier,
@@ -14,6 +15,7 @@ import 'screens/welcome_screen.dart';
 final Map<String, Widget Function()> allScreens = {
   'welcome_screen.dart': () => const WelcomeScreen(),
   'welcome2_screen.dart': () => const Welcome2Screen(),
+  'create_profile_step_1o1_screen.dart': () => CreateProfileStep1o1Screen(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };
