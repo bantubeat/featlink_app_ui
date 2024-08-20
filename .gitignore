@@ -12,8 +12,14 @@ migrate_working_dir/
 /divino
 /windows
 /android
+<<<<<<< HEAD
 .metadata
 commit.bat
+=======
+/.metadata
+
+pre-commit.bat
+>>>>>>> 9981fc1 (Remove the create step 1.3 to recreate it)
 
 
 # IntelliJ related
