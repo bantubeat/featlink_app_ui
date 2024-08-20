@@ -35,5 +35,13 @@
         "password_hint": "Entrer votre mot de passe",
         "or":"ou",
          "terms": "En continuant,tu acceptes la politique et conditions d'utilisation de Featlink et reconnais avoir lu et accepter 'Les conditions' de bantubeat, la politique de confidentialité pour savoir comment nous collections, utilisons et partageons tes données et notre politique relative aux cookies pour savoir comment nous utilisons les cookies"
-    }
+    },
+    "create_profile_step_1o3_screen" :{
+        "country_and_city": "Pays et ville",
+        "add_your_city": "Ajouter votre ville",
+        "info_nearby_people": "Cette information permettra de vous montrer les personnes proches de vous",
+        "country": "Pays",
+        "region": "Région",
+        "city": "Ville"
+      }
 }
