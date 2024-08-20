@@ -4,6 +4,7 @@ import 'package:featlink_app/src/components/button_with_icon.dart';
 import 'package:featlink_app/src/components/logo.dart';
 
 import 'package:featlink_app/src/config/app_colors.dart';
+import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
