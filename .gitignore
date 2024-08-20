@@ -10,6 +10,9 @@
 .svn/
 migrate_working_dir/
 /divino
+/.windows
+/.metadata
+commit.bat
 
 # IntelliJ related
 *.iml

@@ -34,7 +34,7 @@ class InputTextField extends StatelessWidget {
         borderRadius: borderRadius,
       ),
       child: TextFormField(
-        obscureText: true,
+        obscureText: obscureText,
         decoration: InputDecoration(
           hintText: hintText,
           hintStyle: TextStyle(
