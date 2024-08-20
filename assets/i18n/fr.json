@@ -43,5 +43,10 @@
         "country": "Pays",
         "region": "Région",
         "city": "Ville"
-      }
+    },
+    "create_profile_step_1o4_screen" :{
+        "avatar": "Your Avatar",
+        "add_avatar": "Ajouter votre photo de profil",
+        "description": "Les profils avec une photo attirent plus l'attenion, avec un sourire c'est encore mieux"
+    }
 }

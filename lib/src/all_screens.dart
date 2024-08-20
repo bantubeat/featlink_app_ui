@@ -1,10 +1,11 @@
-import 'package:featlink_app/src/screens/_auth/login_screen.dart';
-import 'package:featlink_app/src/screens/_auth/register_screen.dart';
-import 'package:featlink_app/src/screens/_create_profile/create_profile_step_1o3_screen.dart';
 import 'package:flutter/material.dart' show Widget;
 
 import 'screens/welcome2_screen/welcome2_screen.dart';
 import 'screens/welcome_screen.dart';
+import 'screens/_auth/login_screen.dart';
+import 'screens/_auth/register_screen.dart';
+import 'screens/_create_profile/create_profile_step_1o3_screen.dart';
+import 'screens/_create_profile/create_profile_step_1o4_screen.dart';
 
 /// Le test unitaire va chercher toute les pages du dossier screens pour se
 /// rassurer qu'il s'affiche sans erreur, seulement pour chaque fichier,
@@ -21,5 +22,7 @@ final Map<String, Widget Function()> allScreens = {
   'register_screen.dart': () => const RegisterScreen(),
   'create_profile_step_1o3_screen.dart': () =>
       const CreateProfileStep1o3Screen(),
+  'create_profile_step_1o4_screen.dart': () =>
+      const CreateProfileStep1o4Screen(),
   // Ajoutez d'autres chemins de fichiers ici
 };

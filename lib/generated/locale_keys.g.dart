@@ -44,4 +44,10 @@ abstract class LocaleKeys {
       'create_profile_step_1o3_screen.region';
   static const create_profile_step_1o3_screen_city =
       'create_profile_step_1o3_screen.city';
+  static const create_profile_step_1o4_screen_avatar =
+      'create_profile_step_1o4_screen.avatar';
+  static const create_profile_step_1o4_screen_add_avatar =
+      'create_profile_step_1o4_screen.add_avatar';
+  static const create_profile_step_1o4_screen_description =
+      'create_profile_step_1o4_screen.description';
 }
