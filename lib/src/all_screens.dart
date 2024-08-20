@@ -18,6 +18,5 @@ final Map<String, Widget Function()> allScreens = {
   'welcome2_screen.dart': () => const Welcome2Screen(),
   'login_screen.dart': () => const LoginScreen(),
   'register_screen.dart': () => const RegisterScreen(),
-
   // Ajoutez d'autres chemins de fichiers ici
 };
