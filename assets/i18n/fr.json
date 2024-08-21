@@ -40,5 +40,12 @@
         "avatar": "Your Avatar",
         "add_avatar": "Ajouter votre photo de profil",
         "description": "Les profils avec une photo attirent plus l'attenion, avec un sourire c'est encore mieux"
+    },
+    "create_profile_step_1o3_screen" :{
+        "country_and_city": "Pays et ville",
+        "add_your_city": "Ajouter votre ville",
+        "info_nearby_people": "Cette information permettra de vous montrer les personnes proches de vous",
+        "country": "Nom du pays",
+        "city": "Nom de la ville"
     }
 }

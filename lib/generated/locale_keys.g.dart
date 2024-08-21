@@ -38,4 +38,14 @@ abstract class LocaleKeys {
       'create_profile_step_1o4_screen.add_avatar';
   static const create_profile_step_1o4_screen_description =
       'create_profile_step_1o4_screen.description';
+  static const create_profile_step_1o3_screen_country_and_city =
+      'create_profile_step_1o3_screen.country_and_city';
+  static const create_profile_step_1o3_screen_add_your_city =
+      'create_profile_step_1o3_screen.add_your_city';
+  static const create_profile_step_1o3_screen_info_nearby_people =
+      'create_profile_step_1o3_screen.info_nearby_people';
+  static const create_profile_step_1o3_screen_country =
+      'create_profile_step_1o3_screen.country';
+  static const create_profile_step_1o3_screen_city =
+      'create_profile_step_1o3_screen.city';
 }
