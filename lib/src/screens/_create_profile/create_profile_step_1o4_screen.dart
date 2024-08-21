@@ -3,11 +3,13 @@ import 'dart:io';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
-import 'package:featlink_app/src/screens/_create_profile/widgets/create_profile_step_bottom.dart';
 import 'package:flutter/material.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:flutter/foundation.dart';
+import 'package:featlink_app/src/components/primary_button.dart';
+import 'package:featlink_app/src/components/gradiant_bottom_bar.dart';
+import 'package:featlink_app/src/utils/image_service.dart';
 
 class CreateProfileStep1o4Screen extends StatefulWidget {
   const CreateProfileStep1o4Screen({super.key});
@@ -21,49 +23,11 @@ class _CreateProfileStep1o4ScreenState
     extends State<CreateProfileStep1o4Screen> {
   XFile? _imagePicked;
 
-  Future<void> pickFromCamera(BuildContext context) async {
-    final XFile? file =
-        await ImagePicker().pickImage(source: ImageSource.camera);
-    if (file != null) {
-      setState(() => _imagePicked = file);
-    }
-    // ignore: use_build_context_synchronously
-    Navigator.pop(context);
-  }
-
-  Future<void> pickFromGallery(BuildContext context) async {
-    final XFile? file =
-        await ImagePicker().pickImage(source: ImageSource.gallery);
-    if (file != null) {
-      setState(() => _imagePicked = file);
-    }
-    // ignore: use_build_context_synchronously
-    Navigator.pop(context);
-  }
-
-  void _showImageSourceModal(BuildContext context) {
-    showModalBottomSheet(
-      context: context,
-      builder: (BuildContext context) {
-        return SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-            child: Wrap(
-              children: <Widget>[
-                ListTile(
-                  leading: const Icon(Icons.camera_alt),
-                  title: const Text('Camera'),
-                  onTap: () => pickFromCamera(context),
-                ),
-                ListTile(
-                  leading: const Icon(Icons.photo_library),
-                  title: const Text('Gallerie'),
-                  onTap: () => pickFromGallery(context),
-                ),
-              ],
-            ),
-          ),
-        );
+  void pickImage(BuildContext context) {
+    ImageService.pickImage(
+      context,
+      onImagePicked: (file) {
+        setState(() => _imagePicked = file);
       },
     );
   }
@@ -120,7 +84,7 @@ class _CreateProfileStep1o4ScreenState
                             color: AppColors.primary,
                             strokeWidth: 2,
                             child: GestureDetector(
-                              onTap: () => _showImageSourceModal(context),
+                              onTap: () => pickImage(context),
                               child: Padding(
                                 padding: const EdgeInsets.all(16),
                                 child: Container(
@@ -142,7 +106,7 @@ class _CreateProfileStep1o4ScreenState
                             ),
                           )
                         : GestureDetector(
-                            onTap: () => _showImageSourceModal(context),
+                            onTap: () => pickImage(context),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(104),
                               child: kIsWeb
@@ -165,7 +129,15 @@ class _CreateProfileStep1o4ScreenState
               ),
             ),
           ),
-          const CreateProfileStepBottom(),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: PrimaryButton(
+              text: LocaleKeys.common_next.tr(),
+              onPressed: (_) {},
+              fontSize: 16,
+            ),
+          ),
+          const GradiantBottomBar(),
         ],
       ),
     );

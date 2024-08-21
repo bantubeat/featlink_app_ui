@@ -40,5 +40,9 @@
         "avatar": "Your Avatar",
         "add_avatar": "Ajouter votre photo de profil",
         "description": "Les profils avec une photo attirent plus l'attenion, avec un sourire c'est encore mieux"
+    },
+    "image_service": {
+        "choose_camera": "Camera",
+        "choose_gallery": "Gallery"
     }
 }

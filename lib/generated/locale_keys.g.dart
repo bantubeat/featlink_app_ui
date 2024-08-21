@@ -38,4 +38,6 @@ abstract class LocaleKeys {
       'create_profile_step_1o4_screen.add_avatar';
   static const create_profile_step_1o4_screen_description =
       'create_profile_step_1o4_screen.description';
+  static const image_service_choose_camera = 'image_service.choose_camera';
+  static const image_service_choose_gallery = 'image_service.choose_gallery';
 }
