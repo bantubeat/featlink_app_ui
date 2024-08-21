@@ -40,6 +40,20 @@ class _CreateProfileStep1o4ScreenState
           onPressed: () {},
           icon: const Icon(Icons.chevron_left, size: 40),
         ),
+        actions: const [
+          Center(
+            child: Padding(
+              padding: EdgeInsets.only(right: 16.0),
+              child: Text(
+                '4/11',
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
       body: Column(
         children: [
