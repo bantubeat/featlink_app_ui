@@ -1,1 +1,0 @@
-flutter analyze && dart format . && flutter test && git add . && git commit -m %1
