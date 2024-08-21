@@ -12,9 +12,7 @@ migrate_working_dir/
 /divino
 /windows
 /android
-/.metadata
-
-commit.bat
+.metadata
 
 # IntelliJ related
 *.iml
