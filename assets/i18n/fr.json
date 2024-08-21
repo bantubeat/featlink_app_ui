@@ -20,5 +20,8 @@
         "profile_name": "Nom du profil",
         "i_am": "Je suis...",
         "profile_note": "Ces informations sont nécessaires pour déterminer correctement votre profil"
+    },
+    "create_profile_step_1o2_screen": {
+        "birth_year": "Année de naissance"
     }
 }
