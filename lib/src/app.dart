@@ -19,7 +19,6 @@ class FeatlinkApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: AppThemes.lightTheme,
       darkTheme: AppThemes.darkTheme,
-
       // Remplace `WelcomeScreen` par ta SCREEN pour la tester et à la fin remet
       // `WelcomeScreen` comme tu vois.
       home: const WelcomeScreen(),
