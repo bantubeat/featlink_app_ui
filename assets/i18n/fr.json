@@ -1,7 +1,10 @@
 {
     "app_title": "Featlink",
     "common": {
-        "next": "Suivant"
+        "next": "Suivant",
+        "gender_male": "Homme",
+        "gender_female": "Femme",
+        "gender_other": "Autres"
     },
     "welcome_screen": {
         "greeting": "Bienvenue \"{}\"",
@@ -35,5 +38,11 @@
         "password_hint": "Entrer votre mot de passe",
         "or":"ou",
          "terms": "En continuant,tu acceptes la politique et conditions d'utilisation de Featlink et reconnais avoir lu et accepter 'Les conditions' de bantubeat, la politique de confidentialité pour savoir comment nous collections, utilisons et partageons tes données et notre politique relative aux cookies pour savoir comment nous utilisons les cookies"
+    },
+    "create_profile_step_1o1_screen": {
+        "wording_text": "Maintenant créons votre profil Featlink",
+        "profile_name": "Nom du profil",
+        "i_am": "Je suis...",
+        "profile_note": "Ces informations sont nécessaires pour déterminer correctement votre profil"
     }
 }
