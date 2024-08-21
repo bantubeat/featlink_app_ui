@@ -19,8 +19,8 @@ class CreateProfileStep1o3Screen extends StatefulWidget {
 
 class _CreateProfileStep1o3ScreenState
     extends State<CreateProfileStep1o3Screen> {
-  String _country = 'CM';
-  String _city = 'Douala';
+  String _countryCode = 'cm';
+  String _cityName = '';
 
   final List<Map<String, String>> cities = [
     {'name': 'Douala'},
@@ -66,7 +66,7 @@ class _CreateProfileStep1o3ScreenState
       ),
       onSelect: (Country country) {
         setState(() {
-          _country = country.countryCode;
+          _countryCode = country.countryCode;
         });
       },
     );
@@ -118,7 +118,7 @@ class _CreateProfileStep1o3ScreenState
     ).then((selectedCity) {
       if (selectedCity != null) {
         setState(() {
-          _city = selectedCity;
+          _cityName = selectedCity;
         });
       }
     });
@@ -165,7 +165,7 @@ class _CreateProfileStep1o3ScreenState
           Expanded(
             child: SingleChildScrollView(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
+                padding: const EdgeInsets.symmetric(horizontal: 32),
                 child: Column(
                   children: [
                     Container(
@@ -190,33 +190,50 @@ class _CreateProfileStep1o3ScreenState
                       onTap: () => _startCountryPicker(context),
                       child: Container(
                         width: double.infinity,
+                        height: 45,
                         padding: const EdgeInsets.symmetric(
                           horizontal: 16,
-                          vertical: 12,
                         ),
                         decoration: BoxDecoration(
                           border:
                               Border.all(color: AppColors.primary, width: 2),
                           borderRadius: BorderRadius.circular(20),
+                          color: AppColors.mySecondDark,
                         ),
                         child: Row(
                           children: [
-                            Text(
-                              _country,
-                              style: const TextStyle(color: AppColors.primary),
+                            Image.network(
+                              'https://flagcdn.com/w40/${_countryCode.toLowerCase()}.png',
+                              width: 40,
+                              height: 40,
+                              errorBuilder: (
+                                BuildContext context,
+                                Object exception,
+                                StackTrace? stackTrace,
+                              ) {
+                                return Text(
+                                  _countryCode,
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                  ),
+                                );
+                              },
                             ),
                             const SizedBox(width: 16),
                             Expanded(
                               child: Text(
-                                Country.tryParse(_country)?.name ?? '',
+                                Country.tryParse(_countryCode)?.name ?? '',
                                 style: const TextStyle(
-                                  color: AppColors.primary,
+                                  color: Colors.white,
+                                  fontSize: 20,
                                 ),
                               ),
                             ),
                             const Icon(
-                              Icons.arrow_drop_down,
-                              color: AppColors.primary,
+                              Icons.keyboard_arrow_down_rounded,
+                              color: Colors.white,
+                              size: 32,
                             ),
                           ],
                         ),
@@ -229,28 +246,35 @@ class _CreateProfileStep1o3ScreenState
                       onTap: () => _startCityPicker(context),
                       child: Container(
                         width: double.infinity,
+                        height: 45,
                         padding: const EdgeInsets.symmetric(
                           horizontal: 16,
-                          vertical: 12,
                         ),
                         decoration: BoxDecoration(
                           border:
                               Border.all(color: AppColors.primary, width: 2),
                           borderRadius: BorderRadius.circular(20),
+                          color: AppColors.mySecondDark,
                         ),
                         child: Row(
                           children: [
                             Expanded(
                               child: Text(
-                                _city,
+                                _cityName == ''
+                                    ? LocaleKeys
+                                        .create_profile_step_1o3_screen_choose_your_city
+                                        .tr()
+                                    : _cityName,
                                 style: const TextStyle(
-                                  color: AppColors.primary,
+                                  color: Colors.white,
+                                  fontSize: 20,
                                 ),
                               ),
                             ),
                             const Icon(
-                              Icons.arrow_drop_down,
-                              color: AppColors.primary,
+                              Icons.keyboard_arrow_down_rounded,
+                              color: Colors.white,
+                              size: 32,
                             ),
                           ],
                         ),
@@ -266,7 +290,7 @@ class _CreateProfileStep1o3ScreenState
             child: PrimaryButton(
               text: LocaleKeys.common_next.tr(),
               onPressed: (_) {},
-              fontSize: 16,
+              fontSize: 20,
             ),
           ),
           const GradiantBottomBar(),

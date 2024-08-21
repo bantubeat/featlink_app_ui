@@ -61,4 +61,6 @@ abstract class LocaleKeys {
       'create_profile_step_1o3_screen.country';
   static const create_profile_step_1o3_screen_city =
       'create_profile_step_1o3_screen.city';
+  static const create_profile_step_1o3_screen_choose_your_city =
+      'create_profile_step_1o3_screen.choose_your_city';
 }

@@ -59,6 +59,7 @@
         "add_your_city": "Ajouter votre ville",
         "info_nearby_people": "Cette information permettra de vous montrer les personnes proches de vous",
         "country": "Nom du pays",
-        "city": "Nom de la ville"
+        "city": "Nom de la ville",
+        "choose_your_city": "Choisir votre ville"
     }
 }

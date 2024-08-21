@@ -24,7 +24,7 @@ class _CreateProfileStep1o4ScreenState
   XFile? _imagePicked;
 
   void pickImage(BuildContext context) {
-    ImageService.pickImage(
+    ImageService.showPickImage(
       context,
       onImagePicked: (file) {
         setState(() => _imagePicked = file);
