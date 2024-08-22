@@ -7,6 +7,9 @@ import 'screens/_auth/login_screen.dart';
 import 'screens/_auth/register_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o3_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o4_screen.dart';
+import 'screens/_create_profile/create_profile_step_1o6_screen.dart';
+import 'screens/_create_profile/create_profile_step_1o7_screen.dart';
+import 'screens/_create_profile/create_profile_step_1o8_screen.dart';
 
 /// Le test unitaire va chercher toute les pages du dossier screens pour se
 /// rassurer qu'il s'affiche sans erreur, seulement pour chaque fichier,
@@ -26,5 +29,11 @@ final Map<String, Widget Function()> allScreens = {
       const CreateProfileStep1o3Screen(),
   'create_profile_step_1o4_screen.dart': () =>
       const CreateProfileStep1o4Screen(),
+  'create_profile_step_1o6_screen.dart': () =>
+      const CreateProfileStep1o6Screen(),
+  'create_profile_step_1o7_screen.dart': () =>
+      const CreateProfileStep1o7Screen(),
+  'create_profile_step_1o8_screen.dart': () =>
+      const CreateProfileStep1o8Screen(),
   // Ajoutez d'autres chemins de fichiers ici
 };

@@ -63,4 +63,58 @@ abstract class LocaleKeys {
       'create_profile_step_1o3_screen.city';
   static const create_profile_step_1o3_screen_choose_your_city =
       'create_profile_step_1o3_screen.choose_your_city';
+  static const create_profile_step_1o6_screen_title =
+      'create_profile_step_1o6_screen.title';
+  static const create_profile_step_1o6_screen_size =
+      'create_profile_step_1o6_screen.size';
+  static const create_profile_step_1o6_screen_size_small =
+      'create_profile_step_1o6_screen.size_small';
+  static const create_profile_step_1o6_screen_size_medium =
+      'create_profile_step_1o6_screen.size_medium';
+  static const create_profile_step_1o6_screen_size_tall =
+      'create_profile_step_1o6_screen.size_tall';
+  static const create_profile_step_1o6_screen_weight =
+      'create_profile_step_1o6_screen.weight';
+  static const create_profile_step_1o6_screen_weight_light =
+      'create_profile_step_1o6_screen.weight_light';
+  static const create_profile_step_1o6_screen_weight_medium =
+      'create_profile_step_1o6_screen.weight_medium';
+  static const create_profile_step_1o6_screen_weight_heavy =
+      'create_profile_step_1o6_screen.weight_heavy';
+  static const create_profile_step_1o7_screen_title =
+      'create_profile_step_1o7_screen.title';
+  static const create_profile_step_1o7_screen_children =
+      'create_profile_step_1o7_screen.children';
+  static const create_profile_step_1o7_screen_children_yes =
+      'create_profile_step_1o7_screen.children_yes';
+  static const create_profile_step_1o7_screen_children_no =
+      'create_profile_step_1o7_screen.children_no';
+  static const create_profile_step_1o7_screen_degree =
+      'create_profile_step_1o7_screen.degree';
+  static const create_profile_step_1o7_screen_degree_none =
+      'create_profile_step_1o7_screen.degree_none';
+  static const create_profile_step_1o7_screen_degree_bac =
+      'create_profile_step_1o7_screen.degree_bac';
+  static const create_profile_step_1o7_screen_degree_master =
+      'create_profile_step_1o7_screen.degree_master';
+  static const create_profile_step_1o7_screen_degree_doctor =
+      'create_profile_step_1o7_screen.degree_doctor';
+  static const create_profile_step_1o8_screen_title =
+      'create_profile_step_1o8_screen.title';
+  static const create_profile_step_1o8_screen_smoke =
+      'create_profile_step_1o8_screen.smoke';
+  static const create_profile_step_1o8_screen_smoke_yes =
+      'create_profile_step_1o8_screen.smoke_yes';
+  static const create_profile_step_1o8_screen_smoke_no =
+      'create_profile_step_1o8_screen.smoke_no';
+  static const create_profile_step_1o8_screen_alcool =
+      'create_profile_step_1o8_screen.alcool';
+  static const create_profile_step_1o8_screen_alcool_never =
+      'create_profile_step_1o8_screen.alcool_never';
+  static const create_profile_step_1o8_screen_alcool_often =
+      'create_profile_step_1o8_screen.alcool_often';
+  static const create_profile_step_1o8_screen_alcool_party =
+      'create_profile_step_1o8_screen.alcool_party';
+  static const create_profile_step_1o8_screen_alcool_regulary =
+      'create_profile_step_1o8_screen.alcool_regulary';
 }

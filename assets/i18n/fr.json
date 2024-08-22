@@ -61,5 +61,38 @@
         "country": "Nom du pays",
         "city": "Nom de la ville",
         "choose_your_city": "Choisir votre ville"
+    },
+    "create_profile_step_1o6_screen" : {
+        "title": "Maintenant completons quelques informations pour affiner votre recherche",
+        "size": "Quelle est votre taille ?",
+        "size_small": "Petite(-150 cm)",
+        "size_medium": "Moyenne (entre 151 et 199 cm)",
+        "size_tall": "Grande (+200 cm)",
+        "weight": "Quel est votre poids ?",
+        "weight_light":"-60 Kg",
+        "weight_medium":"Entre 61 and 90 Kg",
+        "weight_heavy":"+90 Kg"
+    },
+    "create_profile_step_1o7_screen" : {
+        "title": "Maintenant completons quelques informations pour affiner votre recherche",
+        "children": "Avez vous des enfants ?",
+        "children_yes": "oui",
+        "children_no": "non",
+        "degree": "Diplôme",
+        "degree_none": "Aucun",
+        "degree_bac": "Baccaleauréat",
+        "degree_master": "Licence/Master",
+        "degree_doctor": "Doctorat"
+    },
+    "create_profile_step_1o8_screen" : {
+        "title": "Maintenant completons quelques informations pour affiner votre recherche",
+        "smoke": "Cigarette",
+        "smoke_yes": "oui",
+        "smoke_no": "non",
+        "alcool": "Alcool",
+        "alcool_never": "Jamais",
+        "alcool_often": "Parfois",
+        "alcool_party": "En soirée",
+        "alcool_regulary": "Regulierement"
     }
 }
