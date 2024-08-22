@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:featlink_app/src/components/primary_button.dart';
 import 'package:featlink_app/src/components/gradiant_bottom_bar.dart';
 import 'package:featlink_app/src/resources/app_assets.dart';
-import 'package:featlink_app/src/config/app_colors.dart';
+import 'package:featlink_app/src/components/question_with_icon.dart';
 
 class CreateProfileStep1o6Screen extends StatefulWidget {
   const CreateProfileStep1o6Screen({super.key});
@@ -78,165 +78,27 @@ class _CreateProfileStep1o6ScreenState
                   const SizedBox(
                     height: 32,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 32),
-                    child: Text(
-                      LocaleKeys.create_profile_step_1o6_screen_size.tr(),
-                      style: const TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Flexible(
-                          child: SizedBox.square(
-                            dimension: 180,
-                            child: Center(
-                              child: Image.asset(
-                                AppAssets
-                                    .sizeIcon, // Pass assets using AppAssets
-                                fit: BoxFit.contain,
-                              ),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: 8),
-                        Expanded(
-                          flex: 2,
-                          child: Column(
-                            children: List.generate(sizes.length, (index) {
-                              return GestureDetector(
-                                onTap: () => {
-                                  setState(() {
-                                    _size = sizes[index];
-                                  }),
-                                },
-                                child: Container(
-                                  width: double.infinity,
-                                  margin:
-                                      const EdgeInsets.symmetric(vertical: 8.0),
-                                  padding: const EdgeInsets.symmetric(
-                                    vertical: 8.0,
-                                    horizontal: 4,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color: _size == sizes[index]
-                                        ? AppColors.primary
-                                        : Colors.white,
-                                    border: Border.all(
-                                      width: 2.0,
-                                      color: AppColors.primary,
-                                    ),
-                                    borderRadius: BorderRadius.circular(50.0),
-                                  ),
-                                  child: Text(
-                                    sizes[index],
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      fontWeight: FontWeight.bold,
-                                      color: _size == sizes[index]
-                                          ? Colors.white
-                                          : Colors.black,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              );
-                            }),
-                          ),
-                        ),
-                      ],
-                    ),
+                  QuestionWithIcon(
+                    title: LocaleKeys.create_profile_step_1o6_screen_size.tr(),
+                    iconPath: AppAssets.sizeIcon,
+                    options: sizes,
+                    selectedOption: _size,
+                    onOptionSelected: (option) =>
+                        setState(() => _size = option),
+                    optionsFlex: 2,
                   ),
                   const SizedBox(
                     height: 32,
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 32),
-                    child: Text(
-                      LocaleKeys.create_profile_step_1o6_screen_weight.tr(),
-                      style: const TextStyle(
-                        fontSize: 32,
-                        fontWeight: FontWeight.bold,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
-                  const SizedBox(
-                    height: 16,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Flexible(
-                          child: SizedBox.square(
-                            dimension: 180,
-                            child: Center(
-                              child: Image.asset(
-                                AppAssets.weightIcon,
-                                fit: BoxFit.contain,
-                              ),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: 8),
-                        Expanded(
-                          flex: 2,
-                          child: Column(
-                            children: List.generate(weights.length, (index) {
-                              return GestureDetector(
-                                onTap: () => {
-                                  setState(() {
-                                    _weight = weights[index];
-                                  }),
-                                },
-                                child: Container(
-                                  width: double.infinity,
-                                  margin:
-                                      const EdgeInsets.symmetric(vertical: 8.0),
-                                  padding: const EdgeInsets.symmetric(
-                                    vertical: 8.0,
-                                    horizontal: 4,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color: _weight == weights[index]
-                                        ? AppColors.primary
-                                        : Colors.white,
-                                    border: Border.all(
-                                      width: 2.0,
-                                      color: AppColors.primary,
-                                    ),
-                                    borderRadius: BorderRadius.circular(50.0),
-                                  ),
-                                  child: Text(
-                                    weights[index],
-                                    style: TextStyle(
-                                      fontSize: 14.0,
-                                      fontWeight: FontWeight.bold,
-                                      color: _weight == weights[index]
-                                          ? Colors.white
-                                          : Colors.black,
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              );
-                            }),
-                          ),
-                        ),
-                      ],
-                    ),
+                  QuestionWithIcon(
+                    title:
+                        LocaleKeys.create_profile_step_1o6_screen_weight.tr(),
+                    iconPath: AppAssets.sizeIcon,
+                    options: weights,
+                    selectedOption: _weight,
+                    onOptionSelected: (option) =>
+                        setState(() => _weight = option),
+                    optionsFlex: 2,
                   ),
                   const SizedBox(
                     height: 32,
