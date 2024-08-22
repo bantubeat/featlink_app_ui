@@ -27,10 +27,7 @@ final Map<String, Widget Function()> allScreens = {
   'welcome2_screen.dart': () => const Welcome2Screen(),
   'login_screen.dart': () => const LoginScreen(),
   'register_screen.dart': () => const RegisterScreen(),
-<<<<<<< HEAD
   'create_profile_step_1o1_screen.dart': () => CreateProfileStep1o1Screen(),
-=======
->>>>>>> f3f14f9 (Create Profile Step 1.3 Screen added)
   'create_profile_step_1o3_screen.dart': () =>
       const CreateProfileStep1o3Screen(),
   'create_profile_step_1o4_screen.dart': () =>

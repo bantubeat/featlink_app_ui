@@ -63,7 +63,6 @@ abstract class LocaleKeys {
       'create_profile_step_1o3_screen.city';
   static const create_profile_step_1o3_screen_choose_your_city =
       'create_profile_step_1o3_screen.choose_your_city';
-<<<<<<< HEAD
   static const create_profile_step_1o6_screen_title =
       'create_profile_step_1o6_screen.title';
   static const create_profile_step_1o6_screen_size =
@@ -118,6 +117,7 @@ abstract class LocaleKeys {
       'create_profile_step_1o8_screen.alcool_party';
   static const create_profile_step_1o8_screen_alcool_regulary =
       'create_profile_step_1o8_screen.alcool_regulary';
+
   static const create_profile_step_1o2_screen_birth_year =
       'create_profile_step_1o2_screen.birth_year';
   static const create_profile_step_2o2_screen_title =
@@ -148,6 +148,4 @@ abstract class LocaleKeys {
       'create_profile_step_2o2_screen.title_nice_user_section';
   static const create_profile_step_2o2_screen_content_nice_user_section =
       'create_profile_step_2o2_screen.content_nice_user_section';
-=======
->>>>>>> b03f1e7 (Apply changes)
 }
