@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart' show Widget;
 
+import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
 import 'screens/welcome2_screen/welcome2_screen.dart';
 import 'screens/welcome_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o1_screen.dart';
@@ -35,5 +36,7 @@ final Map<String, Widget Function()> allScreens = {
       const CreateProfileStep1o7Screen(),
   'create_profile_step_1o8_screen.dart': () =>
       const CreateProfileStep1o8Screen(),
+  'create_profile_step_1o2_screen.dart': () => CreateProfileStep1o2Screen(),
+
   // Ajoutez d'autres chemins de fichiers ici
 };

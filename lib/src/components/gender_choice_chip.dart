@@ -52,7 +52,7 @@ class GenderChoiceChip extends StatelessWidget {
           color: borderColor,
           width: 2.0,
         ),
-        borderRadius: const BorderRadius.all(Radius.circular(20)),
+        borderRadius: const BorderRadius.all(Radius.circular(30)),
       ),
       showCheckmark: false,
     );

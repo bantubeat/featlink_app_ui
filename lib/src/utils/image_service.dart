@@ -6,9 +6,8 @@ import 'package:image_picker/image_picker.dart';
 class ImageService {
   static Future<XFile?> pick(BuildContext context, ImageSource source) async {
     final XFile? file = await ImagePicker().pickImage(source: source);
-    // ignore: use_build_context_synchronously
-    Navigator.pop(context);
-    return file!;
+    if (context.mounted) Navigator.pop(context);
+    return file;
   }
 
   static void showPickImage(
