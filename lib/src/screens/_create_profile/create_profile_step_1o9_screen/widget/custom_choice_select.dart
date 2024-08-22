@@ -4,7 +4,7 @@ import 'package:choice/choice.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
 
-class CustomChoiceSelect extends StatefulWidget {
+class CustomChoiceSelect extends StatelessWidget {
   final String title;
   final String value;
   final Function(String?) setSelectedValue;
@@ -21,11 +21,6 @@ class CustomChoiceSelect extends StatefulWidget {
   });
 
   @override
-  State<CustomChoiceSelect> createState() => _CustomChoiceSelectState();
-}
-
-class _CustomChoiceSelectState extends State<CustomChoiceSelect> {
-  @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,7 +28,7 @@ class _CustomChoiceSelectState extends State<CustomChoiceSelect> {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 32),
           child: Text(
-            widget.title,
+            title,
             style: const TextStyle(
               fontSize: 28,
               fontWeight: FontWeight.bold,
@@ -51,7 +46,7 @@ class _CustomChoiceSelectState extends State<CustomChoiceSelect> {
                 child: SizedBox.square(
                   child: Center(
                     child: Image.asset(
-                      widget.iconPath, // Access using widget.iconPath
+                      iconPath, // Access using widget.iconPath
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -72,20 +67,20 @@ class _CustomChoiceSelectState extends State<CustomChoiceSelect> {
                         borderRadius: BorderRadius.circular(50.0),
                       ),
                       child: PromptedChoice<String>.single(
-                        title: widget.title,
+                        title: title,
                         clearable: true,
-                        value: widget.value == ''
+                        value: value == ''
                             ? LocaleKeys
                                 .create_profile_custom_choice_select_empty
                                 .tr()
-                            : widget.value,
-                        onChanged: widget.setSelectedValue,
-                        itemCount: widget.options.length,
+                            : value,
+                        onChanged: setSelectedValue,
+                        itemCount: options.length,
                         itemBuilder: (state, i) {
                           return ChoiceChip(
-                            selected: state.selected(widget.options[i]),
-                            onSelected: state.onSelected(widget.options[i]),
-                            label: Text(widget.options[i]),
+                            selected: state.selected(options[i]),
+                            onSelected: state.onSelected(options[i]),
+                            label: Text(options[i]),
                           );
                         },
                         listBuilder: ChoiceList.createScrollable(
