@@ -1,5 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
-import 'package:featlink_app/src/screens/_create_profile/create_profile_step_1o9_screen/custom_choice_select.dart';
+import 'package:featlink_app/src/screens/_create_profile/create_profile_step_1o9_screen/widget/custom_choice_select.dart';
 import 'package:flutter/material.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/components/primary_button.dart';
