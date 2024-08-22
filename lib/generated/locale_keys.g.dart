@@ -74,5 +74,19 @@ abstract class  LocaleKeys {
   static const create_profile_step_1o8_screen_alcool_party = 'create_profile_step_1o8_screen.alcool_party';
   static const create_profile_step_1o8_screen_alcool_regulary = 'create_profile_step_1o8_screen.alcool_regulary';
   static const create_profile_step_1o2_screen_birth_year = 'create_profile_step_1o2_screen.birth_year';
+  static const create_profile_step_2o2_screen_title = 'create_profile_step_2o2_screen.title';
+  static const create_profile_step_2o2_screen_title_loyalty_section = 'create_profile_step_2o2_screen.title_loyalty_section';
+  static const create_profile_step_2o2_screen_content_loyalty_section = 'create_profile_step_2o2_screen.content_loyalty_section';
+  static const create_profile_step_2o2_screen_title_respect_section = 'create_profile_step_2o2_screen.title_respect_section';
+  static const create_profile_step_2o2_screen_content_respect_section = 'create_profile_step_2o2_screen.content_respect_section';
+  static const create_profile_step_2o2_screen_community_rules = 'create_profile_step_2o2_screen.community_rules';
+  static const create_profile_step_2o2_screen_title_security_section = 'create_profile_step_2o2_screen.title_security_section';
+  static const create_profile_step_2o2_screen_content_security_section = 'create_profile_step_2o2_screen.content_security_section';
+  static const create_profile_step_2o2_screen_title_advice_section = 'create_profile_step_2o2_screen.title_advice_section';
+  static const create_profile_step_2o2_screen_content_advice_section = 'create_profile_step_2o2_screen.content_advice_section';
+  static const create_profile_step_2o2_screen_title_promotion_section = 'create_profile_step_2o2_screen.title_promotion_section';
+  static const create_profile_step_2o2_screen_content_promotion_section = 'create_profile_step_2o2_screen.content_promotion_section';
+  static const create_profile_step_2o2_screen_title_nice_user_section = 'create_profile_step_2o2_screen.title_nice_user_section';
+  static const create_profile_step_2o2_screen_content_nice_user_section = 'create_profile_step_2o2_screen.content_nice_user_section';
 
 }

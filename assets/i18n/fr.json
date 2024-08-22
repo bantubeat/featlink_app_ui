@@ -97,6 +97,22 @@
         },
     "create_profile_step_1o2_screen": {
         "birth_year": "Année de naissance"
+    },
+    "create_profile_step_2o2_screen": {
+        "title": "Quelques règles pour faire de belles rencontres et avoir des gains sur Featlink chat",
+        "title_loyalty_section": "Restez fidèle à vous-même.",
+        "content_loyalty_section": "N'importe quelle information que vous ajoutez à votre profil devrait vous correspondre. parlez de vous et de votre réalité.",
+        "title_respect_section": "Faites preuve de respect.",
+        "content_respect_section": "N'oubliez jamais que derrière chaque profil, il y'a une vraie personne. soyez poli, si le courant ne passe pas, passez tout simplement à un autre profil. consultez nos règles communautaires",
+        "community_rules": "règles communautaires",
+        "title_security_section": "Votre sécurité avant tout.",
+        "content_security_section": "Faites attention quand vous partagez des informations sensibles. pensez à signaler tout comportement abusif, même s'il se produit en dehors Featlink.",
+        "title_advice_section": "Quelques conseils en matière de sécurité",
+        "content_advice_section": "Mettez un visage sur votre profil.\n assurez vous que votre visage se voir sur la plupart de vos photos. les photos avec un visage, un sourire sont plus consultez.",
+        "title_promotion_section": "Faites votre promotion.",
+        "content_promotion_section": "Featlink fait partie du réseau Bantubeat. vous cherchez l'amour mais vous pouvez également trouver de belles relations professionnelles et amicales. mettez de belles photos de vous car grâce a notre principe du swipespay vous pourriez gagnez des Beatzcoins pour vos belles photos.",
+        "title_nice_user_section": "Soyez sympa avec les autres utilisateurs.",
+        "content_nice_user_section": "derrière certains messages se cachent des beatzcoins, plus vous répondrez aux autres utilisateurs, plus vous avez des chances de gagner plus de beatzcoins."
     }
     
 }
