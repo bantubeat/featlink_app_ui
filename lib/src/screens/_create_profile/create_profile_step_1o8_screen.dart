@@ -59,6 +59,7 @@ class _CreateProfileStep1o8ScreenState
           Expanded(
             child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const SizedBox(
                     height: 32,
@@ -77,13 +78,16 @@ class _CreateProfileStep1o8ScreenState
                   const SizedBox(
                     height: 32,
                   ),
-                  Text(
-                    LocaleKeys.create_profile_step_1o8_screen_smoke.tr(),
-                    style: const TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 32),
+                    child: Text(
+                      LocaleKeys.create_profile_step_1o8_screen_smoke.tr(),
+                      style: const TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
-                    textAlign: TextAlign.center,
                   ),
                   const SizedBox(
                     height: 20,
@@ -156,13 +160,16 @@ class _CreateProfileStep1o8ScreenState
                   const SizedBox(
                     height: 32,
                   ),
-                  Text(
-                    LocaleKeys.create_profile_step_1o8_screen_alcool.tr(),
-                    style: const TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 32),
+                    child: Text(
+                      LocaleKeys.create_profile_step_1o8_screen_alcool.tr(),
+                      style: const TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      textAlign: TextAlign.left,
                     ),
-                    textAlign: TextAlign.center,
                   ),
                   const SizedBox(
                     height: 16,
@@ -228,11 +235,11 @@ class _CreateProfileStep1o8ScreenState
                             }),
                           ),
                         ),
-                        const SizedBox(
-                          height: 32,
-                        ),
                       ],
                     ),
+                  ),
+                  const SizedBox(
+                    height: 48,
                   ),
                 ],
               ),

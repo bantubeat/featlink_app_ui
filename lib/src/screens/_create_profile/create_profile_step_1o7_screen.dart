@@ -55,10 +55,12 @@ class _CreateProfileStep1o7ScreenState
         ],
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
             child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const SizedBox(
                     height: 32,
@@ -77,13 +79,16 @@ class _CreateProfileStep1o7ScreenState
                   const SizedBox(
                     height: 32,
                   ),
-                  Text(
-                    LocaleKeys.create_profile_step_1o7_screen_children.tr(),
-                    style: const TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 32.0),
+                    child: Text(
+                      LocaleKeys.create_profile_step_1o7_screen_children.tr(),
+                      style: const TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
-                    textAlign: TextAlign.center,
                   ),
                   const SizedBox(
                     height: 20,
@@ -158,13 +163,16 @@ class _CreateProfileStep1o7ScreenState
                   const SizedBox(
                     height: 32,
                   ),
-                  Text(
-                    LocaleKeys.create_profile_step_1o7_screen_degree.tr(),
-                    style: const TextStyle(
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 32.0),
+                    child: Text(
+                      LocaleKeys.create_profile_step_1o7_screen_degree.tr(),
+                      style: const TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
-                    textAlign: TextAlign.center,
                   ),
                   const SizedBox(
                     height: 16,

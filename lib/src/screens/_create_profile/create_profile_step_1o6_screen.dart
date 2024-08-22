@@ -59,6 +59,7 @@ class _CreateProfileStep1o6ScreenState
           Expanded(
             child: SingleChildScrollView(
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const SizedBox(
                     height: 32,
@@ -77,13 +78,16 @@ class _CreateProfileStep1o6ScreenState
                   const SizedBox(
                     height: 32,
                   ),
-                  Text(
-                    LocaleKeys.create_profile_step_1o6_screen_size.tr(),
-                    style: const TextStyle(
-                      fontSize: 28,
-                      fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 32),
+                    child: Text(
+                      LocaleKeys.create_profile_step_1o6_screen_size.tr(),
+                      style: const TextStyle(
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
-                    textAlign: TextAlign.center,
                   ),
                   const SizedBox(
                     height: 20,
@@ -156,13 +160,16 @@ class _CreateProfileStep1o6ScreenState
                   const SizedBox(
                     height: 32,
                   ),
-                  Text(
-                    LocaleKeys.create_profile_step_1o6_screen_weight.tr(),
-                    style: const TextStyle(
-                      fontSize: 32,
-                      fontWeight: FontWeight.bold,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 32),
+                    child: Text(
+                      LocaleKeys.create_profile_step_1o6_screen_weight.tr(),
+                      style: const TextStyle(
+                        fontSize: 32,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      textAlign: TextAlign.center,
                     ),
-                    textAlign: TextAlign.center,
                   ),
                   const SizedBox(
                     height: 16,
