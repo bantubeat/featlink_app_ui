@@ -12,6 +12,7 @@ abstract class LocaleKeys {
   static const welcome_screen_note = 'welcome_screen.note';
   static const test_screen_hello_world = 'test_screen.hello_world';
   static const test_screen_today_date = 'test_screen.today_date';
+<<<<<<< HEAD
   static const register_screen_title = 'register_screen.title';
   static const register_screen_description = 'register_screen.description';
   static const register_screen_sign_up_google =
@@ -63,4 +64,12 @@ abstract class LocaleKeys {
       'create_profile_step_1o3_screen.city';
   static const create_profile_step_1o3_screen_choose_your_city =
       'create_profile_step_1o3_screen.choose_your_city';
+=======
+  static const create_profile_step_1o1_screen_wording_text = 'create_profile_step_1o1_screen.wording_text';
+  static const create_profile_step_1o1_screen_profile_name = 'create_profile_step_1o1_screen.profile_name';
+  static const create_profile_step_1o1_screen_i_am = 'create_profile_step_1o1_screen.i_am';
+  static const create_profile_step_1o1_screen_profile_note = 'create_profile_step_1o1_screen.profile_note';
+  static const create_profile_step_1o2_screen_birth_year = 'create_profile_step_1o2_screen.birth_year';
+
+>>>>>>> d2fadc7126942ca23c6589d8f30036afc50c6562
 }
