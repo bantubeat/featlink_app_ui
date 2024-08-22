@@ -13,6 +13,7 @@ import 'screens/_create_profile/create_profile_step_1o4_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o6_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o7_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o8_screen.dart';
+import 'screens/_create_profile/create_profile_step_1o9_screen/create_profile_step_1o9_screen.dart';
 
 /// Le test unitaire va chercher toute les pages du dossier screens pour se
 /// rassurer qu'il s'affiche sans erreur, seulement pour chaque fichier,
