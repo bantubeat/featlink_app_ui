@@ -94,6 +94,22 @@
         "alcool_often": "Parfois",
         "alcool_party": "En soirée",
         "alcool_regulary": "Regulierement"
+    },
+    "create_profile_step_1o9_screen": {
+        "title": "Maintenant completons quelques informations pour affiner votre recherche",
+        "sexual_preference": "Préf. sexuelle",
+        "sexual_men": "Homme",
+        "sexual_women": "Femme",
+        "origine": "Origine",
+        "origin_option_1": "Origin Option 1",
+        "origin_option_2": "Origin Option 2",
+        "residence": "Résidence",
+        "residence_option_1": "Residence Option 1",
+        "residence_option_2": "Residence Option 2",
+        "choose":"Choisir"
+    },
+    "create_profile_custom_choice_select": {
+        "empty": "Choisir"
     }
     
 }
