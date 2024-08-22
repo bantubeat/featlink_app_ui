@@ -105,7 +105,7 @@ class _CreateProfileStep2o1ScreenState
                       ),
                     ),
                     const SizedBox(
-                      height: 24,
+                      height: 16,
                     ),
                     Text(
                       LocaleKeys.create_profile_step_2o1_screen_gender.tr(),
@@ -143,7 +143,7 @@ class _CreateProfileStep2o1ScreenState
                       }),
                     ),
                     const SizedBox(
-                      height: 32,
+                      height: 16,
                     ),
                     Text(
                       LocaleKeys.create_profile_step_2o1_screen_relations.tr(),
@@ -161,13 +161,13 @@ class _CreateProfileStep2o1ScreenState
                       ),
                     ),
                     const SizedBox(
-                      height: 16,
+                      height: 8,
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: List.generate(relationOptions.length, (index) {
                         return InputCheckboxField(
-                          label: relationOptions[index],
+                          label: Text(relationOptions[index]),
                           isChecked: relations.contains(relationOptions[index]),
                           onChanged: (value) {
                             setState(() {
@@ -182,7 +182,7 @@ class _CreateProfileStep2o1ScreenState
                       }),
                     ),
                     const SizedBox(
-                      height: 32,
+                      height: 16,
                     ),
                     Text(
                       LocaleKeys.create_profile_step_2o1_screen_desirs.tr(),
@@ -199,14 +199,17 @@ class _CreateProfileStep2o1ScreenState
                       ),
                     ),
                     const SizedBox(
-                      height: 16,
+                      height: 8,
                     ),
                     Wrap(
                       children: [
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: List.generate(6, (index) {
                             return InputCheckboxField(
-                              label: desirsOptions[index],
+                              label: Text(
+                                desirsOptions[index],
+                              ),
                               isChecked:
                                   relations.contains(desirsOptions[index]),
                               onChanged: (value) {
@@ -223,9 +226,12 @@ class _CreateProfileStep2o1ScreenState
                           }),
                         ),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: List.generate(3, (index) {
                             return InputCheckboxField(
-                              label: desirsOptions[6 + index],
+                              label: Text(
+                                desirsOptions[6 + index],
+                              ),
                               isChecked: desirs.contains(desirsOptions[index]),
                               onChanged: (value) {
                                 setState(() {
