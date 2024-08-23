@@ -15,13 +15,104 @@
         "hello_world": "Bonjour le monde 😁 !",
         "today_date": "La date d'aujourd'hui c'est {}"
     },
+    "register_screen": {
+        "title": "Inscription à Featlink",
+        "description": "En vous inscrivant sur Featlink, vous reconnaissez avoir plus de 18 ans ou la majorite dans votre pays de residence. Vous acceptez les conditions de Bantubeat",
+        "sign_up_google": "S'inscrire avec google",
+        "or": "ou",
+        "email_hint": "Entre votre email",
+        "password_hint": "Entrer votre mot de passe",
+        "sign_up": "S'inscrire",
+        "new_to_featlink": "Nouveau sur Featlink ?",
+        "login": "Connexion",
+        "terms": "En continuant,tu acceptes la politique et conditions d'utilisation de Featlink et reconnais avoir lu et accepter 'Les conditions' de bantubeat, la politique de confidentialité pour savoir comment nous collections, utilisons et partageons tes données et notre politique relative aux cookies pour savoir comment nous utilisons les cookies"
+    },
+    "login_screen" : {
+        "title" : "Connexion",
+        "description" : "Connectez vous pour faire de belles rencontres",
+        "login_with_google": "Se connecter avec google",
+        "login": "Connexion",
+        "not_register": "Vous n'avez pas de compte ?",
+        "sign_up": "S'inscrire",
+        "email_hint": "Entre votre email",
+        "password_hint": "Entrer votre mot de passe",
+        "or":"ou",
+         "terms": "En continuant,tu acceptes la politique et conditions d'utilisation de Featlink et reconnais avoir lu et accepter 'Les conditions' de bantubeat, la politique de confidentialité pour savoir comment nous collections, utilisons et partageons tes données et notre politique relative aux cookies pour savoir comment nous utilisons les cookies"
+    },
     "create_profile_step_1o1_screen": {
         "wording_text": "Maintenant créons votre profil Featlink",
         "profile_name": "Nom du profil",
         "i_am": "Je suis...",
         "profile_note": "Ces informations sont nécessaires pour déterminer correctement votre profil"
     },
+    "create_profile_step_1o4_screen" :{
+        "avatar": "Your Avatar",
+        "add_avatar": "Ajouter votre photo de profil",
+        "description": "Les profils avec une photo attirent plus l'attenion, avec un sourire c'est encore mieux"
+    },
+    "image_service": {
+        "choose_camera": "Camera",
+        "choose_gallery": "Gallery"
+    },
+    "create_profile_step_1o3_screen" :{
+        "country_and_city": "Pays et ville",
+        "add_your_city": "Ajouter votre ville",
+        "info_nearby_people": "Cette information permettra de vous montrer les personnes proches de vous",
+        "country": "Nom du pays",
+        "city": "Nom de la ville",
+        "choose_your_city": "Choisir votre ville"
+    },
+    "create_profile_step_1o6_screen" : {
+        "title": "Maintenant completons quelques informations pour affiner votre recherche",
+        "size": "Quelle est votre taille ?",
+        "size_small": "Petite(-150 cm)",
+        "size_medium": "Moyenne (entre 151 et 199 cm)",
+        "size_tall": "Grande (+200 cm)",
+        "weight": "Quel est votre poids ?",
+        "weight_light":"-60 Kg",
+        "weight_medium":"Entre 61 and 90 Kg",
+        "weight_heavy":"+90 Kg"
+    },
+    "create_profile_step_1o7_screen" : {
+        "title": "Maintenant completons quelques informations pour affiner votre recherche",
+        "children": "Avez vous des enfants ?",
+        "children_yes": "oui",
+        "children_no": "non",
+        "degree": "Diplôme",
+        "degree_none": "Aucun",
+        "degree_bac": "Baccaleauréat",
+        "degree_master": "Licence/Master",
+        "degree_doctor": "Doctorat"
+    },
+    "create_profile_step_1o8_screen" : {
+        "title": "Maintenant completons quelques informations pour affiner votre recherche",
+        "smoke": "Cigarette",
+        "smoke_yes": "oui",
+        "smoke_no": "non",
+        "alcool": "Alcool",
+        "alcool_never": "Jamais",
+        "alcool_often": "Parfois",
+        "alcool_party": "En soirée",
+        "alcool_regulary": "Regulierement"
+        },
     "create_profile_step_1o2_screen": {
         "birth_year": "Année de naissance"
+    },
+    "create_profile_step_2o2_screen": {
+        "title": "Quelques règles pour faire de belles rencontres et avoir des gains sur Featlink chat",
+        "title_loyalty_section": "Restez fidèle à vous-même.",
+        "content_loyalty_section": "N'importe quelle information que vous ajoutez à votre profil devrait vous correspondre. parlez de vous et de votre réalité.",
+        "title_respect_section": "Faites preuve de respect.",
+        "content_respect_section": "N'oubliez jamais que derrière chaque profil, il y'a une vraie personne. soyez poli, si le courant ne passe pas, passez tout simplement à un autre profil. consultez nos règles communautaires",
+        "community_rules": "règles communautaires",
+        "title_security_section": "Votre sécurité avant tout.",
+        "content_security_section": "Faites attention quand vous partagez des informations sensibles. pensez à signaler tout comportement abusif, même s'il se produit en dehors Featlink.",
+        "title_advice_section": "Quelques conseils en matière de sécurité",
+        "content_advice_section": "Mettez un visage sur votre profil.\n assurez vous que votre visage se voir sur la plupart de vos photos. les photos avec un visage, un sourire sont plus consultez.",
+        "title_promotion_section": "Faites votre promotion.",
+        "content_promotion_section": "Featlink fait partie du réseau Bantubeat. vous cherchez l'amour mais vous pouvez également trouver de belles relations professionnelles et amicales. mettez de belles photos de vous car grâce a notre principe du swipespay vous pourriez gagnez des Beatzcoins pour vos belles photos.",
+        "title_nice_user_section": "Soyez sympa avec les autres utilisateurs.",
+        "content_nice_user_section": "derrière certains messages se cachent des beatzcoins, plus vous répondrez aux autres utilisateurs, plus vous avez des chances de gagner plus de beatzcoins."
     }
+    
 }

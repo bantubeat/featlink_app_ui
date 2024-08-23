@@ -2,14 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
 import 'button.dart';
 
-class PrimaryButton extends Button {
+class ButtonWithIcon extends Button {
   final String text;
+  final Widget icon;
+  final double space;
   final Color color;
 
-  const PrimaryButton({
+  const ButtonWithIcon({
     required this.text,
+    required this.icon,
     required super.onPressed,
-    this.color = Colors.white,
+    this.space = 8,
+    this.color = AppColors.primary,
     super.fontSize,
     super.isLoading,
     super.disabled,
@@ -22,12 +26,18 @@ class PrimaryButton extends Button {
 
   @override
   Widget buildContent(BuildContext context) {
-    return Text(
-      text,
-      style: TextStyle(
-        fontSize: fontSize,
-        color: color,
-      ),
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        icon,
+        SizedBox(width: space),
+        Text(
+          text,
+          style: TextStyle(
+            color: color,
+          ),
+        ),
+      ],
     );
   }
 }
