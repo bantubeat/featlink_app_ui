@@ -193,4 +193,30 @@ abstract class LocaleKeys {
       'create_profile_step_2o1_screen.design_changing';
   static const create_profile_step_2o1_screen_design_between_couple =
       'create_profile_step_2o1_screen.design_between_couple';
+  static const create_profile_step_2o3_screen_title =
+      'create_profile_step_2o3_screen.title';
+  static const create_profile_step_2o3_screen_gender =
+      'create_profile_step_2o3_screen.gender';
+  static const create_profile_step_2o3_screen_city =
+      'create_profile_step_2o3_screen.city';
+  static const create_profile_step_2o3_screen_size =
+      'create_profile_step_2o3_screen.size';
+  static const create_profile_step_2o3_screen_weight =
+      'create_profile_step_2o3_screen.weight';
+  static const create_profile_step_2o3_screen_has_children =
+      'create_profile_step_2o3_screen.has_children';
+  static const create_profile_step_2o3_screen_smoke =
+      'create_profile_step_2o3_screen.smoke';
+  static const create_profile_step_2o3_screen_alcool =
+      'create_profile_step_2o3_screen.alcool';
+  static const create_profile_step_2o3_screen_search =
+      'create_profile_step_2o3_screen.search';
+  static const create_profile_step_2o3_screen_degree =
+      'create_profile_step_2o3_screen.degree';
+  static const create_profile_step_2o3_screen_live =
+      'create_profile_step_2o3_screen.live';
+  static const create_profile_step_2o3_screen_sexual =
+      'create_profile_step_2o3_screen.sexual';
+  static const create_profile_step_2o3_screen_ethnicity =
+      'create_profile_step_2o3_screen.ethnicity';
 }

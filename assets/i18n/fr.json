@@ -138,6 +138,21 @@
         "desirs_domina": "Domina/soumission",
         "design_changing": "Echangisme",
         "design_between_couple": "Entre couple (2+2)"
+    },
+    "create_profile_step_2o3_screen": {
+        "title": "Vérifier et valider votre profil",
+        "gender": "Genre",
+        "city": "Ville",
+        "size": "Taille",
+        "weight": "Poids",
+        "has_children": "J'ai des enfants",
+        "smoke": "Je fume",
+        "alcool": "Alcool",
+        "search": "Je recherche",
+        "degree": "Diplôme",
+        "live": "Je vis",
+        "sexual": "Préf. Sexuel",
+        "ethnicity": "Type ethnique"
     }
     
 }
