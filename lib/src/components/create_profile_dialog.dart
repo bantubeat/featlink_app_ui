@@ -6,7 +6,8 @@ class CreateProfileDialog extends StatelessWidget {
   final String title1;
   final String title2;
   final String? subTitle;
-  final String? description;
+  final String? description1;
+  final String? description2;
   final String buttonText;
   final void Function(BuildContext) buttonAction;
 
@@ -14,28 +15,68 @@ class CreateProfileDialog extends StatelessWidget {
     required this.title1,
     required this.title2,
     required this.buttonText, required this.buttonAction, this.subTitle,
-    this.description,
+    this.description1,
+    this.description2,
   });
 
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.all(Radius.circular(15)),
+      ),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(title1.toUpperCase(),style: const TextStyle(color: AppColors.myDark,fontSize: 20,fontWeight: FontWeight.bold),),
+          FittedBox(
+            child: Text(title1.toUpperCase(),style: const TextStyle(fontSize: 32,fontWeight: FontWeight.w900,fontFamily: 'inter'),),
+          ),
           const SizedBox(height: 20,),
-          Text(title2,style: const TextStyle(color: AppColors.myDark,fontSize: 19,fontWeight: FontWeight.bold),),
+          FittedBox(
+            child: Text(title2,style: const TextStyle(fontSize: 32,fontWeight: FontWeight.w900,fontFamily: 'inter'),),
+          ),
+          Visibility(
+            visible: description1 != null,
+            child: FittedBox(
+              child: Text('$description1',style: const TextStyle(fontSize: 14,fontWeight: FontWeight.w400,fontFamily: 'inter'),),
+            ),
+          ),
+
           const SizedBox(height: 10,),
-          Text('$description'),
+          FittedBox(
+            child: Text('$description2',style: const TextStyle(fontSize: 14,fontWeight: FontWeight.w400,fontFamily: 'inter'),),
+          ),
+          const SizedBox(height: 10,),
         ],
       ),
-
       actions: [
-        PrimaryButton(onPressed: buttonAction, text: buttonText),
+        ElevatedButton(
+          onPressed: () => buttonAction,
+          style: ElevatedButton.styleFrom(
+            backgroundColor: AppColors.primary,
+            fixedSize: const Size.fromHeight(45),
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+            ),
+            elevation: 20,
+            enableFeedback: true,
+            overlayColor: AppColors.primaryLight,
+            splashFactory: InkRipple.splashFactory,
+          ),
+          child: Center(
+            child: Text(
+              buttonText.toUpperCase(),
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w900,
+                color: Colors.white,
+              ),
+            ),
+          ),
+        ),
       ],
+      actionsPadding: const EdgeInsets.only(bottom: 5),
       actionsAlignment: MainAxisAlignment.center,
-      actionsPadding: const EdgeInsets.only(),
     );
   }
 }
