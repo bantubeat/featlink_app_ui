@@ -12,6 +12,7 @@ environment:
 dependencies:
   cached_network_image: ^3.4.1
   country_picker: ^2.0.26
+  dotted_border: ^2.1.0
   easy_localization: ^3.0.7
   flutter:
     sdk: flutter
@@ -41,4 +42,5 @@ flutter:
     # Add assets from the images directory to the application.
     - assets/i18n/
     - assets/images/
+    - assets/svgs/
     - assets/svg/
