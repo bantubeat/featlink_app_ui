@@ -153,6 +153,19 @@
         "live": "Je vis",
         "sexual": "Préf. Sexuel",
         "ethnicity": "Type ethnique"
+    },
+    "bottom_nav": {
+        "home": "Accueil",
+        "discovery": "Decouverte",
+        "crush": "Crush",
+        "messages": "Messages",
+        "dday": "D-Day",
+        "tips": "Astuces & Conseils",
+        "saloonprived": "Salon Prive",
+        "bantubeat": "Bantubeat",
+        "jetons": "Jetons",
+        "profile": "Profil",
+        "mode": "Mode"
     }
     
 }

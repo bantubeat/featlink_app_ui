@@ -14,4 +14,8 @@ final class AppAssets {
   static const genderIcon = 'assets/images/gender.png';
   static const handsUpIcon = 'assets/images/hands_up.png';
   static const moonSliceIcon = 'assets/images/moon_slice.png';
+
+  static const bantubeatIcon = 'assets/images/bantubeat_icon.png';
+  static const salonpriveIcon = 'assets/images/salon_prive_icon.png';
+  static const bzcIcon = 'assets/images/bzc_icon.png';
 }
