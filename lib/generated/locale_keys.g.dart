@@ -147,4 +147,16 @@ abstract class LocaleKeys {
       'create_profile_step_2o2_screen.title_nice_user_section';
   static const create_profile_step_2o2_screen_content_nice_user_section =
       'create_profile_step_2o2_screen.content_nice_user_section';
+  static const create_profile_step_1o5_screen_title =
+      'create_profile_step_1o5_screen.title';
+  static const create_profile_step_1o5_screen_description =
+      'create_profile_step_1o5_screen.description';
+  static const create_profile_step_1o5_screen_hook_message =
+      'create_profile_step_1o5_screen.hook_message';
+  static const create_profile_step_1o5_screen_max_number_characters =
+      'create_profile_step_1o5_screen.max_number_characters';
+  static const create_profile_step_1o5_screen_add_media_message =
+      'create_profile_step_1o5_screen.add_media_message';
+  static const create_profile_step_1o5_screen_media_caution =
+      'create_profile_step_1o5_screen.media_caution';
 }
