@@ -113,14 +113,14 @@
         "content_promotion_section": "Featlink fait partie du réseau Bantubeat. vous cherchez l'amour mais vous pouvez également trouver de belles relations professionnelles et amicales. mettez de belles photos de vous car grâce a notre principe du swipespay vous pourriez gagnez des Beatzcoins pour vos belles photos.",
         "title_nice_user_section": "Soyez sympa avec les autres utilisateurs.",
         "content_nice_user_section": "derrière certains messages se cachent des beatzcoins, plus vous répondrez aux autres utilisateurs, plus vous avez des chances de gagner plus de beatzcoins."
+    },
+    "create_profile_step_1o5_screen": {
+        "title": "Votre Accroche",
+        "description": "Les gens vous perçoivent tel que vous vous présentez et la première impression fait toute la différence.\n\n votre accroche, c’est cette présentation qui pourra rapidement vous distinguer des autres utilisateurs et vous attirer plus de partenaires.",
+        "hook_message": "écrire votre message accroche ...",
+        "max_number_characters": "Maximum {} caractères",
+        "add_media_message": "Ajouter vos plus belles photos/vidéo car les profils avec des photos/vidéo ont plus de chance d'attirer l'attention.",
+        "media_caution": "Attention Mettez des vidéos de bonne qualité et de maximum 5 secondes."
     }
-},
-"create_profile_step_1o5_screen": {
-    "title": "Votre Accroche",
-    "description": "Les gens vous perçoivent tel que vous vous présentez et la première impression fait toute la différence.\n\n votre accroche, c’est cette présentation qui pourra rapidement vous distinguer des autres utilisateurs et vous attirer plus de partenaires.",
-    "hook_message": "écrire votre message accroche ...",
-    "max_number_characters": "Maximum {} caractères",
-    "add_media_message": "Ajouter vos plus belles photos/vidéo car les profils avec des photos/vidéo ont plus de chance d'attirer l'attention.",
-    "media_caution": "Attention Mettez des vidéos de bonne qualité et de maximum 5 secondes."
-}
+
 }
