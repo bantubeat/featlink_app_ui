@@ -113,6 +113,21 @@
         "content_promotion_section": "Featlink fait partie du réseau Bantubeat. vous cherchez l'amour mais vous pouvez également trouver de belles relations professionnelles et amicales. mettez de belles photos de vous car grâce a notre principe du swipespay vous pourriez gagnez des Beatzcoins pour vos belles photos.",
         "title_nice_user_section": "Soyez sympa avec les autres utilisateurs.",
         "content_nice_user_section": "derrière certains messages se cachent des beatzcoins, plus vous répondrez aux autres utilisateurs, plus vous avez des chances de gagner plus de beatzcoins."
+    },
+    "create_profile_step_110_screen": {
+        "title1": "Félicitation votre profil est crée",
+        "title2": "Qui peut voir votre profil Featlink ?",
+        "title3": "Les conditions que vous acceptez",
+        "description1v1": "Votre profil Featlink peut être visible par tous les utilisateurs de Featlink. ",
+        "description1v2": "votre nom de profil Featlink reste le même que celui sur bantubeat. si vous voulez modifier votre nom de profil retournez dans votre compte sur bantubeat, dans paramètre gestion de compte. ",
+        "description2v1": "Votre activité sur Featlink pourrait être utilisée pour personnaliser votre expérience sur les produits Bantubeat et notamment les publicités que vous pourriez voir. En appuyant sur confirmer, vous accepter ",
+        "description2v2": "les conditions d'utilisation de Featlink, ",
+        "description2v3": "les ",
+        "description2v4": "conditions générales de Bantubeat, ",
+        "description2v5": "vous acceptez la ",
+        "description2v6": "politique de confidentialités de bantubeat ",
+        "description2v7": "et toutes les politiques et conditions de Bantubeat.",
+        "confirm": "Confirm",
+        "return": "retour."
     }
-    
 }
