@@ -13,6 +13,12 @@ migrate_working_dir/
 /windows
 /android
 .metadata
+commit.bat
+/.metadata
+
+pre-commit.bat
+
+.metadata
 
 # IntelliJ related
 *.iml

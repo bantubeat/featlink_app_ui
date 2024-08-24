@@ -147,6 +147,82 @@ abstract class LocaleKeys {
       'create_profile_step_2o2_screen.title_nice_user_section';
   static const create_profile_step_2o2_screen_content_nice_user_section =
       'create_profile_step_2o2_screen.content_nice_user_section';
+  static const create_profile_step_1o9_screen_title =
+      'create_profile_step_1o9_screen.title';
+  static const create_profile_step_1o9_screen_sexual_preference =
+      'create_profile_step_1o9_screen.sexual_preference';
+  static const create_profile_step_1o9_screen_sexual_men =
+      'create_profile_step_1o9_screen.sexual_men';
+  static const create_profile_step_1o9_screen_sexual_women =
+      'create_profile_step_1o9_screen.sexual_women';
+  static const create_profile_step_1o9_screen_origine =
+      'create_profile_step_1o9_screen.origine';
+  static const create_profile_step_1o9_screen_origin_option_1 =
+      'create_profile_step_1o9_screen.origin_option_1';
+  static const create_profile_step_1o9_screen_origin_option_2 =
+      'create_profile_step_1o9_screen.origin_option_2';
+  static const create_profile_step_1o9_screen_residence =
+      'create_profile_step_1o9_screen.residence';
+  static const create_profile_step_1o9_screen_residence_option_1 =
+      'create_profile_step_1o9_screen.residence_option_1';
+  static const create_profile_step_1o9_screen_residence_option_2 =
+      'create_profile_step_1o9_screen.residence_option_2';
+  static const create_profile_step_1o9_screen_choose =
+      'create_profile_step_1o9_screen.choose';
+  static const create_profile_custom_choice_select_empty =
+      'create_profile_custom_choice_select.empty';
+  static const create_profile_step_2o1_screen_title =
+      'create_profile_step_2o1_screen.title';
+  static const create_profile_step_2o1_screen_subtitle =
+      'create_profile_step_2o1_screen.subtitle';
+  static const create_profile_step_2o1_screen_gender =
+      'create_profile_step_2o1_screen.gender';
+  static const create_profile_step_2o1_screen_gender_male =
+      'create_profile_step_2o1_screen.gender_male';
+  static const create_profile_step_2o1_screen_gender_female =
+      'create_profile_step_2o1_screen.gender_female';
+  static const create_profile_step_2o1_screen_gender_other =
+      'create_profile_step_2o1_screen.gender_other';
+  static const create_profile_step_2o1_screen_gender_details =
+      'create_profile_step_2o1_screen.gender_details';
+  static const create_profile_step_2o1_screen_relations =
+      'create_profile_step_2o1_screen.relations';
+  static const create_profile_step_2o1_screen_relation_subtitle =
+      'create_profile_step_2o1_screen.relation_subtitle';
+  static const create_profile_step_2o1_screen_relation_love =
+      'create_profile_step_2o1_screen.relation_love';
+  static const create_profile_step_2o1_screen_relation_wedding =
+      'create_profile_step_2o1_screen.relation_wedding';
+  static const create_profile_step_2o1_screen_relation_friendship =
+      'create_profile_step_2o1_screen.relation_friendship';
+  static const create_profile_step_2o1_screen_relation_pro =
+      'create_profile_step_2o1_screen.relation_pro';
+  static const create_profile_step_2o1_screen_relation_free =
+      'create_profile_step_2o1_screen.relation_free';
+  static const create_profile_step_2o1_screen_relation_side =
+      'create_profile_step_2o1_screen.relation_side';
+  static const create_profile_step_2o1_screen_desirs =
+      'create_profile_step_2o1_screen.desirs';
+  static const create_profile_step_2o1_screen_desirs_subtitle =
+      'create_profile_step_2o1_screen.desirs_subtitle';
+  static const create_profile_step_2o1_screen_desirs_dialog =
+      'create_profile_step_2o1_screen.desirs_dialog';
+  static const create_profile_step_2o1_screen_desirs_me_and_you =
+      'create_profile_step_2o1_screen.desirs_me_and_you';
+  static const create_profile_step_2o1_screen_desirs_group =
+      'create_profile_step_2o1_screen.desirs_group';
+  static const create_profile_step_2o1_screen_desirs_trio =
+      'create_profile_step_2o1_screen.desirs_trio';
+  static const create_profile_step_2o1_screen_desirs_candaulism =
+      'create_profile_step_2o1_screen.desirs_candaulism';
+  static const create_profile_step_2o1_screen_desirs_exibitionnism =
+      'create_profile_step_2o1_screen.desirs_exibitionnism';
+  static const create_profile_step_2o1_screen_desirs_domina =
+      'create_profile_step_2o1_screen.desirs_domina';
+  static const create_profile_step_2o1_screen_design_changing =
+      'create_profile_step_2o1_screen.design_changing';
+  static const create_profile_step_2o1_screen_design_between_couple =
+      'create_profile_step_2o1_screen.design_between_couple';
   static const create_profile_step_1o5_screen_title =
       'create_profile_step_1o5_screen.title';
   static const create_profile_step_1o5_screen_description =
