@@ -125,7 +125,7 @@
         "residence": "Résidence",
         "residence_option_1": "Residence Option 1",
         "residence_option_2": "Residence Option 2",
-        "choose":"Choisir"
+        "choose": "Choisir"
     },
     "create_profile_custom_choice_select": {
         "empty": "Choisir"
@@ -133,14 +133,14 @@
     "create_profile_step_2o1_screen": {
         "title": "Vous s'y êtes presque",
         "subtitle": "Que rechercher vous ?",
-        "gender":"Genre",
+        "gender": "Genre",
         "gender_male": "Homme",
         "gender_female": "Femme",
         "gender_other": "Autre",
         "gender_details": "Votre partenaire ideal est",
         "relations": "Relations",
         "relation_subtitle": "Vous pouvez choisir jusqu'a 3 type de relations",
-        "relation_love":"Amour sincere",
+        "relation_love": "Amour sincere",
         "relation_wedding": "Mariage",
         "relation_friendship": "Amitié",
         "relation_pro": "Professionnel",
@@ -157,14 +157,13 @@
         "desirs_domina": "Domina/soumission",
         "design_changing": "Echangisme",
         "design_between_couple": "Entre couple (2+2)"
+    },
+    "create_profile_step_1o5_screen": {
+        "title": "Votre Accroche",
+        "description": "Les gens vous perçoivent tel que vous vous présentez et la première impression fait toute la différence.\n\n votre accroche, c’est cette présentation qui pourra rapidement vous distinguer des autres utilisateurs et vous attirer plus de partenaires.",
+        "hook_message": "écrire votre message accroche ...",
+        "max_number_characters": "Maximum {} caractères",
+        "add_media_message": "Ajouter vos plus belles photos/vidéo car les profils avec des photos/vidéo ont plus de chance d'attirer l'attention.",
+        "media_caution": "Attention Mettez des vidéos de bonne qualité et de maximum 5 secondes."
     }
-},
-"create_profile_step_1o5_screen": {
-    "title": "Votre Accroche",
-    "description": "Les gens vous perçoivent tel que vous vous présentez et la première impression fait toute la différence.\n\n votre accroche, c’est cette présentation qui pourra rapidement vous distinguer des autres utilisateurs et vous attirer plus de partenaires.",
-    "hook_message": "écrire votre message accroche ...",
-    "max_number_characters": "Maximum {} caractères",
-    "add_media_message": "Ajouter vos plus belles photos/vidéo car les profils avec des photos/vidéo ont plus de chance d'attirer l'attention.",
-    "media_caution": "Attention Mettez des vidéos de bonne qualité et de maximum 5 secondes."
-}
 }
