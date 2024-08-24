@@ -10,9 +10,12 @@
 .svn/
 migrate_working_dir/
 /divino
+<<<<<<< HEAD
 /windows
 /android
 .metadata
+=======
+>>>>>>> f8c4faa (ticket-1/connexion-inscription: J'ai ajoute un component button qui reprend le primary button pour avoir une bonne logic et permet d'avoir button with icon. J'ai ajoute le component logo. J'ai ajoute app icons pour differencier la gestion des icons assets avec celle des images)
 
 # IntelliJ related
 *.iml
