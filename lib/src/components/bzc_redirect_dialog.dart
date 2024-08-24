@@ -4,32 +4,6 @@ import 'package:flutter/material.dart';
 
 import '../../generated/locale_keys.g.dart';
 
-class Mytester extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('MyTest'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            showModalBottomSheet(
-              context: context,
-              builder: (BuildContext context) {
-                return const BzcRedirectDialog(
-                  redirectionType: BzcRedirectionType.receive,
-                );
-              },
-            );
-          },
-          child: const Text('Show Modal Screen'),
-        ),
-      ),
-    );
-  }
-}
-
 enum BzcRedirectionType { buy, receive }
 
 class BzcRedirectDialog extends StatefulWidget {
