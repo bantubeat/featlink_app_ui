@@ -113,6 +113,50 @@
         "content_promotion_section": "Featlink fait partie du réseau Bantubeat. vous cherchez l'amour mais vous pouvez également trouver de belles relations professionnelles et amicales. mettez de belles photos de vous car grâce a notre principe du swipespay vous pourriez gagnez des Beatzcoins pour vos belles photos.",
         "title_nice_user_section": "Soyez sympa avec les autres utilisateurs.",
         "content_nice_user_section": "derrière certains messages se cachent des beatzcoins, plus vous répondrez aux autres utilisateurs, plus vous avez des chances de gagner plus de beatzcoins."
+    },
+    "create_profile_step_1o9_screen": {
+        "title": "Maintenant completons quelques informations pour affiner votre recherche",
+        "sexual_preference": "Préf. sexuelle",
+        "sexual_men": "Homme",
+        "sexual_women": "Femme",
+        "origine": "Origine",
+        "origin_option_1": "Origin Option 1",
+        "origin_option_2": "Origin Option 2",
+        "residence": "Résidence",
+        "residence_option_1": "Residence Option 1",
+        "residence_option_2": "Residence Option 2",
+        "choose":"Choisir"
+    },
+    "create_profile_custom_choice_select": {
+        "empty": "Choisir"
+    },
+    "create_profile_step_2o1_screen": {
+        "title": "Vous s'y êtes presque",
+        "subtitle": "Que rechercher vous ?",
+        "gender":"Genre",
+        "gender_male": "Homme",
+        "gender_female": "Femme",
+        "gender_other": "Autre",
+        "gender_details": "Votre partenaire ideal est",
+        "relations": "Relations",
+        "relation_subtitle": "Vous pouvez choisir jusqu'a 3 type de relations",
+        "relation_love":"Amour sincere",
+        "relation_wedding": "Mariage",
+        "relation_friendship": "Amitié",
+        "relation_pro": "Professionnel",
+        "relation_free": "Relation libre",
+        "relation_side": "Relation sans lendemain",
+        "desirs": "Désirs",
+        "desirs_subtitle": "Vous devez choisir au moins un",
+        "desirs_dialog": "Dialogue uniquement",
+        "desirs_me_and_you": "Juste toi et moi",
+        "desirs_group": "Pluralité",
+        "desirs_trio": "Trio(2+1)",
+        "desirs_candaulism": "Candaulisme",
+        "desirs_exibitionnism": "Exhibitionnisme",
+        "desirs_domina": "Domina/soumission",
+        "design_changing": "Echangisme",
+        "design_between_couple": "Entre couple (2+2)"
     }
 },
 "create_profile_step_1o5_screen": {
