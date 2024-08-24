@@ -48,6 +48,7 @@ class CreateProfileDialog extends StatelessWidget {
           const SizedBox(height: 10,),
         ],
       ),
+
       actions: [
         ElevatedButton(
           onPressed: () => buttonAction,
