@@ -88,5 +88,19 @@ abstract class  LocaleKeys {
   static const create_profile_step_2o2_screen_content_promotion_section = 'create_profile_step_2o2_screen.content_promotion_section';
   static const create_profile_step_2o2_screen_title_nice_user_section = 'create_profile_step_2o2_screen.title_nice_user_section';
   static const create_profile_step_2o2_screen_content_nice_user_section = 'create_profile_step_2o2_screen.content_nice_user_section';
+  static const create_profile_step_110_screen_title1 = 'create_profile_step_110_screen.title1';
+  static const create_profile_step_110_screen_title2 = 'create_profile_step_110_screen.title2';
+  static const create_profile_step_110_screen_title3 = 'create_profile_step_110_screen.title3';
+  static const create_profile_step_110_screen_description1v1 = 'create_profile_step_110_screen.description1v1';
+  static const create_profile_step_110_screen_description1v2 = 'create_profile_step_110_screen.description1v2';
+  static const create_profile_step_110_screen_description2v1 = 'create_profile_step_110_screen.description2v1';
+  static const create_profile_step_110_screen_description2v2 = 'create_profile_step_110_screen.description2v2';
+  static const create_profile_step_110_screen_description2v3 = 'create_profile_step_110_screen.description2v3';
+  static const create_profile_step_110_screen_description2v4 = 'create_profile_step_110_screen.description2v4';
+  static const create_profile_step_110_screen_description2v5 = 'create_profile_step_110_screen.description2v5';
+  static const create_profile_step_110_screen_description2v6 = 'create_profile_step_110_screen.description2v6';
+  static const create_profile_step_110_screen_description2v7 = 'create_profile_step_110_screen.description2v7';
+  static const create_profile_step_110_screen_confirm = 'create_profile_step_110_screen.confirm';
+  static const create_profile_step_110_screen_return = 'create_profile_step_110_screen.return';
 
 }
