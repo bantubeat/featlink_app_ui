@@ -2,16 +2,19 @@ import 'package:flutter/material.dart' show Widget;
 
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
 import 'screens/_create_profile/create_profile_step_2o2_screen/create_profile_step_2o2_screen.dart';
+import 'screens/_create_profile/create_profile_step_1o5_screen.dart';
 import 'screens/welcome2_screen/welcome2_screen.dart';
 import 'screens/welcome_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o1_screen.dart';
+import 'screens/_create_profile/create_profile_step_1o3_screen.dart';
 import 'screens/_auth/login_screen.dart';
 import 'screens/_auth/register_screen.dart';
-import 'screens/_create_profile/create_profile_step_1o3_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o4_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o6_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o7_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o8_screen.dart';
+import 'screens/_create_profile/create_profile_step_1o9_screen/create_profile_step_1o9_screen.dart';
+import 'screens/_create_profile/create_profile_step_2o1_screen.dart';
 
 /// Le test unitaire va chercher toute les pages du dossier screens pour se
 /// rassurer qu'il s'affiche sans erreur, seulement pour chaque fichier,
@@ -37,9 +40,14 @@ final Map<String, Widget Function()> allScreens = {
       const CreateProfileStep1o7Screen(),
   'create_profile_step_1o8_screen.dart': () =>
       const CreateProfileStep1o8Screen(),
+  'create_profile_step_1o9_screen.dart': () =>
+      const CreateProfileStep1o9Screen(),
+  'create_profile_step_2o1_screen.dart': () =>
+      const CreateProfileStep2o1Screen(),
   'create_profile_step_1o2_screen.dart': () => CreateProfileStep1o2Screen(),
   'create_profile_step_2o2_screen.dart': () =>
       const CreateProfileStep2o2Screen(),
+  'create_profile_step_1o5_screen.dart': () => CreateProfileStep1o5Screen(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };
