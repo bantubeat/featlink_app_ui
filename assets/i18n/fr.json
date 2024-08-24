@@ -27,17 +27,17 @@
         "login": "Connexion",
         "terms": "En continuant,tu acceptes la politique et conditions d'utilisation de Featlink et reconnais avoir lu et accepter 'Les conditions' de bantubeat, la politique de confidentialité pour savoir comment nous collections, utilisons et partageons tes données et notre politique relative aux cookies pour savoir comment nous utilisons les cookies"
     },
-    "login_screen" : {
-        "title" : "Connexion",
-        "description" : "Connectez vous pour faire de belles rencontres",
+    "login_screen": {
+        "title": "Connexion",
+        "description": "Connectez vous pour faire de belles rencontres",
         "login_with_google": "Se connecter avec google",
         "login": "Connexion",
         "not_register": "Vous n'avez pas de compte ?",
         "sign_up": "S'inscrire",
         "email_hint": "Entre votre email",
         "password_hint": "Entrer votre mot de passe",
-        "or":"ou",
-         "terms": "En continuant,tu acceptes la politique et conditions d'utilisation de Featlink et reconnais avoir lu et accepter 'Les conditions' de bantubeat, la politique de confidentialité pour savoir comment nous collections, utilisons et partageons tes données et notre politique relative aux cookies pour savoir comment nous utilisons les cookies"
+        "or": "ou",
+        "terms": "En continuant,tu acceptes la politique et conditions d'utilisation de Featlink et reconnais avoir lu et accepter 'Les conditions' de bantubeat, la politique de confidentialité pour savoir comment nous collections, utilisons et partageons tes données et notre politique relative aux cookies pour savoir comment nous utilisons les cookies"
     },
     "create_profile_step_1o1_screen": {
         "wording_text": "Maintenant créons votre profil Featlink",
@@ -45,7 +45,7 @@
         "i_am": "Je suis...",
         "profile_note": "Ces informations sont nécessaires pour déterminer correctement votre profil"
     },
-    "create_profile_step_1o4_screen" :{
+    "create_profile_step_1o4_screen": {
         "avatar": "Your Avatar",
         "add_avatar": "Ajouter votre photo de profil",
         "description": "Les profils avec une photo attirent plus l'attenion, avec un sourire c'est encore mieux"
@@ -54,7 +54,7 @@
         "choose_camera": "Camera",
         "choose_gallery": "Gallery"
     },
-    "create_profile_step_1o3_screen" :{
+    "create_profile_step_1o3_screen": {
         "country_and_city": "Pays et ville",
         "add_your_city": "Ajouter votre ville",
         "info_nearby_people": "Cette information permettra de vous montrer les personnes proches de vous",
@@ -62,18 +62,18 @@
         "city": "Nom de la ville",
         "choose_your_city": "Choisir votre ville"
     },
-    "create_profile_step_1o6_screen" : {
+    "create_profile_step_1o6_screen": {
         "title": "Maintenant completons quelques informations pour affiner votre recherche",
         "size": "Quelle est votre taille ?",
         "size_small": "Petite(-150 cm)",
         "size_medium": "Moyenne (entre 151 et 199 cm)",
         "size_tall": "Grande (+200 cm)",
         "weight": "Quel est votre poids ?",
-        "weight_light":"-60 Kg",
-        "weight_medium":"Entre 61 and 90 Kg",
-        "weight_heavy":"+90 Kg"
+        "weight_light": "-60 Kg",
+        "weight_medium": "Entre 61 and 90 Kg",
+        "weight_heavy": "+90 Kg"
     },
-    "create_profile_step_1o7_screen" : {
+    "create_profile_step_1o7_screen": {
         "title": "Maintenant completons quelques informations pour affiner votre recherche",
         "children": "Avez vous des enfants ?",
         "children_yes": "oui",
@@ -84,7 +84,7 @@
         "degree_master": "Licence/Master",
         "degree_doctor": "Doctorat"
     },
-    "create_profile_step_1o8_screen" : {
+    "create_profile_step_1o8_screen": {
         "title": "Maintenant completons quelques informations pour affiner votre recherche",
         "smoke": "Cigarette",
         "smoke_yes": "oui",
@@ -94,7 +94,7 @@
         "alcool_often": "Parfois",
         "alcool_party": "En soirée",
         "alcool_regulary": "Regulierement"
-        },
+    },
     "create_profile_step_1o2_screen": {
         "birth_year": "Année de naissance"
     },
@@ -113,6 +113,57 @@
         "content_promotion_section": "Featlink fait partie du réseau Bantubeat. vous cherchez l'amour mais vous pouvez également trouver de belles relations professionnelles et amicales. mettez de belles photos de vous car grâce a notre principe du swipespay vous pourriez gagnez des Beatzcoins pour vos belles photos.",
         "title_nice_user_section": "Soyez sympa avec les autres utilisateurs.",
         "content_nice_user_section": "derrière certains messages se cachent des beatzcoins, plus vous répondrez aux autres utilisateurs, plus vous avez des chances de gagner plus de beatzcoins."
+    },
+    "create_profile_step_1o9_screen": {
+        "title": "Maintenant completons quelques informations pour affiner votre recherche",
+        "sexual_preference": "Préf. sexuelle",
+        "sexual_men": "Homme",
+        "sexual_women": "Femme",
+        "origine": "Origine",
+        "origin_option_1": "Origin Option 1",
+        "origin_option_2": "Origin Option 2",
+        "residence": "Résidence",
+        "residence_option_1": "Residence Option 1",
+        "residence_option_2": "Residence Option 2",
+        "choose": "Choisir"
+    },
+    "create_profile_custom_choice_select": {
+        "empty": "Choisir"
+    },
+    "create_profile_step_2o1_screen": {
+        "title": "Vous s'y êtes presque",
+        "subtitle": "Que rechercher vous ?",
+        "gender": "Genre",
+        "gender_male": "Homme",
+        "gender_female": "Femme",
+        "gender_other": "Autre",
+        "gender_details": "Votre partenaire ideal est",
+        "relations": "Relations",
+        "relation_subtitle": "Vous pouvez choisir jusqu'a 3 type de relations",
+        "relation_love": "Amour sincere",
+        "relation_wedding": "Mariage",
+        "relation_friendship": "Amitié",
+        "relation_pro": "Professionnel",
+        "relation_free": "Relation libre",
+        "relation_side": "Relation sans lendemain",
+        "desirs": "Désirs",
+        "desirs_subtitle": "Vous devez choisir au moins un",
+        "desirs_dialog": "Dialogue uniquement",
+        "desirs_me_and_you": "Juste toi et moi",
+        "desirs_group": "Pluralité",
+        "desirs_trio": "Trio(2+1)",
+        "desirs_candaulism": "Candaulisme",
+        "desirs_exibitionnism": "Exhibitionnisme",
+        "desirs_domina": "Domina/soumission",
+        "design_changing": "Echangisme",
+        "design_between_couple": "Entre couple (2+2)"
+    },
+    "create_profile_step_1o5_screen": {
+        "title": "Votre Accroche",
+        "description": "Les gens vous perçoivent tel que vous vous présentez et la première impression fait toute la différence.\n\n votre accroche, c’est cette présentation qui pourra rapidement vous distinguer des autres utilisateurs et vous attirer plus de partenaires.",
+        "hook_message": "écrire votre message accroche ...",
+        "max_number_characters": "Maximum {} caractères",
+        "add_media_message": "Ajouter vos plus belles photos/vidéo car les profils avec des photos/vidéo ont plus de chance d'attirer l'attention.",
+        "media_caution": "Attention Mettez des vidéos de bonne qualité et de maximum 5 secondes."
     }
-    
 }

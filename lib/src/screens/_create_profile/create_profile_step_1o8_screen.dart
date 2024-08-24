@@ -101,6 +101,9 @@ class _CreateProfileStep1o8ScreenState
                   const SizedBox(
                     height: 48,
                   ),
+                  const SizedBox(
+                    height: 48,
+                  ),
                 ],
               ),
             ),
