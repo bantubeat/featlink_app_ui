@@ -5,6 +5,8 @@ import 'package:featlink_app/src/components/gradiant_bottom_bar.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:flutter/material.dart';
 
+import '../../components/dotted_progress_create_profile_bar.dart';
+
 // THIS IS AN EXAMPLE SCREEN
 // HERE IS TICKET LINK: https://trello.com/c/fwqU336S/10-10-la-page-de-bienvene
 // HERE IS PR LINK: https://github.com/bantubeat/featlink_app_ui/pull/1
@@ -263,21 +265,7 @@ class CreateProfileStep110Screen extends StatelessWidget {
           ),
           const SizedBox(height: 5,),
           //const LinearProgressIndicator(color: AppColors.primary,backgroundColor: AppColors.myWhite,),
-          Padding(
-            padding: const EdgeInsets.only(left: 20,right: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: List.generate(11, (i)=>Container(
-                height: 2,
-                width: 30,
-                decoration: BoxDecoration(
-                  color: i < 9 ? AppColors.primary : null,
-                  borderRadius: BorderRadius.circular(15),
-                ),
-              ),).toList(),
-            ),
-          ),
-
+          const DottedProgressCreateProfileBar(progress: 9),
           const GradiantBottomBar(),
         ],
       ),
