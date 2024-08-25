@@ -272,7 +272,7 @@ class CreateProfileStep110Screen extends StatelessWidget {
                 width: 30,
                 decoration: BoxDecoration(
                   color: i < 9 ? AppColors.primary : null,
-                  borderRadius: BorderRadius.circular(15)
+                  borderRadius: BorderRadius.circular(15),
                 ),
               ),).toList(),
             ),
