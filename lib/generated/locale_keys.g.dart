@@ -88,6 +88,12 @@ abstract class  LocaleKeys {
   static const create_profile_step_2o2_screen_content_promotion_section = 'create_profile_step_2o2_screen.content_promotion_section';
   static const create_profile_step_2o2_screen_title_nice_user_section = 'create_profile_step_2o2_screen.title_nice_user_section';
   static const create_profile_step_2o2_screen_content_nice_user_section = 'create_profile_step_2o2_screen.content_nice_user_section';
+  static const create_profile_step_1o5_screen_title = 'create_profile_step_1o5_screen.title';
+  static const create_profile_step_1o5_screen_description = 'create_profile_step_1o5_screen.description';
+  static const create_profile_step_1o5_screen_hook_message = 'create_profile_step_1o5_screen.hook_message';
+  static const create_profile_step_1o5_screen_max_number_characters = 'create_profile_step_1o5_screen.max_number_characters';
+  static const create_profile_step_1o5_screen_add_media_message = 'create_profile_step_1o5_screen.add_media_message';
+  static const create_profile_step_1o5_screen_media_caution = 'create_profile_step_1o5_screen.media_caution';
   static const create_profile_step_110_screen_title1 = 'create_profile_step_110_screen.title1';
   static const create_profile_step_110_screen_title2 = 'create_profile_step_110_screen.title2';
   static const create_profile_step_110_screen_title3 = 'create_profile_step_110_screen.title3';
@@ -147,11 +153,5 @@ abstract class  LocaleKeys {
   static const create_profile_step_2o1_screen_desirs_domina = 'create_profile_step_2o1_screen.desirs_domina';
   static const create_profile_step_2o1_screen_design_changing = 'create_profile_step_2o1_screen.design_changing';
   static const create_profile_step_2o1_screen_design_between_couple = 'create_profile_step_2o1_screen.design_between_couple';
-  static const create_profile_step_1o5_screen_title = 'create_profile_step_1o5_screen.title';
-  static const create_profile_step_1o5_screen_description = 'create_profile_step_1o5_screen.description';
-  static const create_profile_step_1o5_screen_hook_message = 'create_profile_step_1o5_screen.hook_message';
-  static const create_profile_step_1o5_screen_max_number_characters = 'create_profile_step_1o5_screen.max_number_characters';
-  static const create_profile_step_1o5_screen_add_media_message = 'create_profile_step_1o5_screen.add_media_message';
-  static const create_profile_step_1o5_screen_media_caution = 'create_profile_step_1o5_screen.media_caution';
 
 }
