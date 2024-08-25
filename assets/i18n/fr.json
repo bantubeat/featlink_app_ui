@@ -214,5 +214,21 @@
         "max_number_characters": "Maximum {} caractères",
         "add_media_message": "Ajouter vos plus belles photos/vidéo car les profils avec des photos/vidéo ont plus de chance d'attirer l'attention.",
         "media_caution": "Attention Mettez des vidéos de bonne qualité et de maximum 5 secondes."
+    },
+    "create_profile_step_2o3_screen": {
+        "title": "Vérifier et valider votre profil",
+        "gender": "Genre",
+        "city": "Ville",
+        "size": "Taille",
+        "weight": "Poids",
+        "has_children": "J'ai des enfants",
+        "smoke": "Je fume",
+        "alcool": "Alcool",
+        "search": "Je recherche",
+        "degree": "Diplôme",
+        "live": "Je vis",
+        "sexual": "Préf. Sexuel",
+        "ethnicity": "Type ethnique",
+        "save": "Enregistrer"
     }
 }
