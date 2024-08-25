@@ -165,5 +165,18 @@
         "max_number_characters": "Maximum {} caractères",
         "add_media_message": "Ajouter vos plus belles photos/vidéo car les profils avec des photos/vidéo ont plus de chance d'attirer l'attention.",
         "media_caution": "Attention Mettez des vidéos de bonne qualité et de maximum 5 secondes."
+    },
+    "bottom_nav": {
+        "home": "Accueil",
+        "discovery": "Decouverte",
+        "crush": "Crush",
+        "messages": "Messages",
+        "dday": "D-Day",
+        "tips": "Astuces & Conseils",
+        "saloonprived": "Salon Prive",
+        "bantubeat": "Bantubeat",
+        "jetons": "Jetons",
+        "profile": "Profil",
+        "mode": "Mode"
     }
 }
