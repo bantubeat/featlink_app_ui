@@ -17,4 +17,8 @@ final class AppAssets {
   static const svgStep1o2Icon = 'assets/svg/step1o2_icon.svg';
   static const createProfileStep1o2Image = 'assets/images/step1o2_icon.png';
   static const imageLogo2 = 'assets/images/logo2.png';
+
+  static const bantubeatIcon = 'assets/images/bantubeat_icon.png';
+  static const salonpriveIcon = 'assets/images/salon_prive_icon.png';
+  static const bzcIcon = 'assets/images/bzc_icon.png';
 }
