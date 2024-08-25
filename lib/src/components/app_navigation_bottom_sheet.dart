@@ -30,7 +30,7 @@ class _AppNavigationBottomSheetState extends State<AppNavigationBottomSheet> {
     final List<NavIcon> icons = [
       NavIcon(
         label: LocaleKeys.bottom_nav_home.tr(),
-        icon: AppAssets.imageLogo,
+        icon: AppAssets.imageLogo2,
         type: 'image',
       ),
       NavIcon(
