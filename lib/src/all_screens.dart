@@ -1,8 +1,9 @@
+import 'package:featlink_app/src/screens/_create_profile/create_profile_step_110_screen.dart';
 import 'package:flutter/material.dart' show Widget;
 
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
-import 'screens/_create_profile/create_profile_step_2o2_screen/create_profile_step_2o2_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o5_screen.dart';
+import 'screens/_create_profile/create_profile_step_2o2_screen/create_profile_step_2o2_screen.dart';
 import 'screens/welcome2_screen/welcome2_screen.dart';
 import 'screens/welcome_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o1_screen.dart';
@@ -49,7 +50,12 @@ final Map<String, Widget Function()> allScreens = {
   'create_profile_step_2o2_screen.dart': () =>
       const CreateProfileStep2o2Screen(),
   'create_profile_step_1o5_screen.dart': () => CreateProfileStep1o5Screen(),
+
   'create_profile_step_2o3_screen.dart': () =>
       const CreateProfileStep2o3Screen(),
+
+  'create_profile_step_110_screen.dart': () => const CreateProfileStep110Screen(),
+
+
   // Ajoutez d'autres chemins de fichiers ici
 };
