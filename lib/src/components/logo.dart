@@ -11,7 +11,7 @@ class Logo extends StatelessWidget {
       dimension: size,
       child: Center(
         child: Image.asset(
-          AppAssets.imageLogo, // Pass assets using AppAssets
+          AppAssets.imageLogo2, // Pass assets using AppAssets
           fit: BoxFit.contain,
         ),
       ),
