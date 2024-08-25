@@ -262,7 +262,22 @@ class CreateProfileStep110Screen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 5,),
-          const LinearProgressIndicator(color: AppColors.primary,backgroundColor: AppColors.myWhite,),
+          //const LinearProgressIndicator(color: AppColors.primary,backgroundColor: AppColors.myWhite,),
+          Padding(
+            padding: const EdgeInsets.only(left: 20,right: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: List.generate(11, (i)=>Container(
+                height: 2,
+                width: 30,
+                decoration: BoxDecoration(
+                  color: i < 9 ? AppColors.primary : null,
+                  borderRadius: BorderRadius.circular(15)
+                ),
+              ),).toList(),
+            ),
+          ),
+
           const GradiantBottomBar(),
         ],
       ),
