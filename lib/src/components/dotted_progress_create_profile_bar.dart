@@ -15,7 +15,7 @@ class DottedProgressCreateProfileBar extends StatelessWidget {
           height: 2,
           width: 30,
           decoration: BoxDecoration(
-            color: i < 9 ? AppColors.primary : null,
+            color: i < progress ? AppColors.primary : null,
             borderRadius: BorderRadius.circular(15),
           ),
         ),).toList(),
