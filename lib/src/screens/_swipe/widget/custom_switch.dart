@@ -34,7 +34,7 @@ class CustomSwitch extends StatelessWidget {
             value: value,
             onChanged: (value) {},
           ),
-        )
+        ),
       ],
     );
   }
