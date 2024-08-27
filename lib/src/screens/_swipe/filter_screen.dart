@@ -111,33 +111,37 @@ class _FilterScreenState extends State<FilterScreen> {
                       ),
                     ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: genderList
-                        .map(
-                          (gender) => Column(
-                            children: [
-                              Text(gender['name']),
-                              Transform.scale(
-                                scale: 0.6,
-                                child: Switch(
-                                  activeTrackColor: AppColors.bantubeatPrimary,
-                                  activeColor: AppColors.myWhite,
-                                  value: gender['selected'],
-                                  onChanged: (value) {
-                                    setState(() {
-                                      for (var g in genderList) {
-                                        g['selected'] = false;
-                                      }
-                                      gender['selected'] = value;
-                                    });
-                                  },
-                                ),
-                              )
-                            ],
-                          ),
-                        )
-                        .toList(),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: genderList
+                          .map(
+                            (gender) => Column(
+                              children: [
+                                Text(gender['name']),
+                                Transform.scale(
+                                  scale: 0.6,
+                                  child: Switch(
+                                    activeTrackColor:
+                                        AppColors.bantubeatPrimary,
+                                    activeColor: AppColors.myWhite,
+                                    value: gender['selected'],
+                                    onChanged: (value) {
+                                      setState(() {
+                                        for (var g in genderList) {
+                                          g['selected'] = false;
+                                        }
+                                        gender['selected'] = value;
+                                      });
+                                    },
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
+                          .toList(),
+                    ),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8.0),
