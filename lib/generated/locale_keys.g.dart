@@ -88,10 +88,6 @@ abstract class  LocaleKeys {
   static const create_profile_step_2o2_screen_content_promotion_section = 'create_profile_step_2o2_screen.content_promotion_section';
   static const create_profile_step_2o2_screen_title_nice_user_section = 'create_profile_step_2o2_screen.title_nice_user_section';
   static const create_profile_step_2o2_screen_content_nice_user_section = 'create_profile_step_2o2_screen.content_nice_user_section';
-
-
-
-
   static const create_profile_step_1o5_screen_title = 'create_profile_step_1o5_screen.title';
   static const create_profile_step_1o5_screen_description = 'create_profile_step_1o5_screen.description';
   static const create_profile_step_1o5_screen_hook_message = 'create_profile_step_1o5_screen.hook_message';
@@ -119,8 +115,6 @@ abstract class  LocaleKeys {
   static const modal_redirection_text3 = 'modal_redirection.text3';
   static const modal_redirection_check = 'modal_redirection.check';
   static const modal_redirection_ok = 'modal_redirection.ok';
-
-
   static const create_profile_step_1o9_screen_title = 'create_profile_step_1o9_screen.title';
   static const create_profile_step_1o9_screen_sexual_preference = 'create_profile_step_1o9_screen.sexual_preference';
   static const create_profile_step_1o9_screen_sexual_men = 'create_profile_step_1o9_screen.sexual_men';
@@ -159,17 +153,6 @@ abstract class  LocaleKeys {
   static const create_profile_step_2o1_screen_desirs_domina = 'create_profile_step_2o1_screen.desirs_domina';
   static const create_profile_step_2o1_screen_design_changing = 'create_profile_step_2o1_screen.design_changing';
   static const create_profile_step_2o1_screen_design_between_couple = 'create_profile_step_2o1_screen.design_between_couple';
-
-
-
-
-  static const create_profile_step_1o5_screen_title = 'create_profile_step_1o5_screen.title';
-  static const create_profile_step_1o5_screen_description = 'create_profile_step_1o5_screen.description';
-  static const create_profile_step_1o5_screen_hook_message = 'create_profile_step_1o5_screen.hook_message';
-  static const create_profile_step_1o5_screen_max_number_characters = 'create_profile_step_1o5_screen.max_number_characters';
-  static const create_profile_step_1o5_screen_add_media_message = 'create_profile_step_1o5_screen.add_media_message';
-  static const create_profile_step_1o5_screen_media_caution = 'create_profile_step_1o5_screen.media_caution';
-
   static const bottom_nav_home = 'bottom_nav.home';
   static const bottom_nav_discovery = 'bottom_nav.discovery';
   static const bottom_nav_crush = 'bottom_nav.crush';
@@ -181,7 +164,6 @@ abstract class  LocaleKeys {
   static const bottom_nav_jetons = 'bottom_nav.jetons';
   static const bottom_nav_profile = 'bottom_nav.profile';
   static const bottom_nav_mode = 'bottom_nav.mode';
-
   static const create_profile_step_2o3_screen_title = 'create_profile_step_2o3_screen.title';
   static const create_profile_step_2o3_screen_gender = 'create_profile_step_2o3_screen.gender';
   static const create_profile_step_2o3_screen_city = 'create_profile_step_2o3_screen.city';
@@ -196,8 +178,26 @@ abstract class  LocaleKeys {
   static const create_profile_step_2o3_screen_sexual = 'create_profile_step_2o3_screen.sexual';
   static const create_profile_step_2o3_screen_ethnicity = 'create_profile_step_2o3_screen.ethnicity';
   static const create_profile_step_2o3_screen_save = 'create_profile_step_2o3_screen.save';
-
-
-
+  static const filter_screen_title = 'filter_screen.title';
+  static const filter_screen_button_title = 'filter_screen.button_title';
+  static const filter_screen_title_header_one = 'filter_screen.title_header_one';
+  static const filter_screen_title_header_two = 'filter_screen.title_header_two';
+  static const filter_screen_all_place = 'filter_screen.all_place';
+  static const filter_screen_year = 'filter_screen.year';
+  static const filter_screen_applye_to_all = 'filter_screen.applye_to_all';
+  static const filter_screen_my_i_partner = 'filter_screen.my_i_partner';
+  static const filter_screen_my_i_partner_search = 'filter_screen.my_i_partner_search';
+  static const filter_screen_most_thee_chose = 'filter_screen.most_thee_chose';
+  static const filter_screen_gender_male = 'filter_screen.gender_male';
+  static const filter_screen_gender_female = 'filter_screen.gender_female';
+  static const filter_screen_gender_c = 'filter_screen.gender_c';
+  static const filter_screen_gender_other = 'filter_screen.gender_other';
+  static const filter_screen_heterosexual_label = 'filter_screen.heterosexual_label';
+  static const filter_screen_gay_label = 'filter_screen.gay_label';
+  static const filter_screen_lesbienne_label = 'filter_screen.lesbienne_label';
+  static const filter_screen_sincere_love = 'filter_screen.sincere_love';
+  static const filter_screen_marriage = 'filter_screen.marriage';
+  static const filter_screen_friendship = 'filter_screen.friendship';
+  static const filter_screen_professional_relationship = 'filter_screen.professional_relationship';
 
 }
