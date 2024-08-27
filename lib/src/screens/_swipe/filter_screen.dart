@@ -52,7 +52,7 @@ class _FilterScreenState extends State<FilterScreen> {
     {'name': LocaleKeys.filter_screen_friendship.tr(), 'selected': false},
     {
       'name': LocaleKeys.filter_screen_professional_relationship.tr(),
-      'selected': false
+      'selected': false,
     },
   ];
 
@@ -135,7 +135,7 @@ class _FilterScreenState extends State<FilterScreen> {
                                       });
                                     },
                                   ),
-                                )
+                                ),
                               ],
                             ),
                           )
@@ -231,7 +231,7 @@ class _FilterScreenState extends State<FilterScreen> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(selectedCountry?.name ?? 'Cameroun'),
-                              const Icon(Icons.expand_more)
+                              const Icon(Icons.expand_more),
                             ],
                           ),
                         ),
@@ -239,7 +239,7 @@ class _FilterScreenState extends State<FilterScreen> {
                           value: false,
                           label: LocaleKeys.filter_screen_all_place.tr(),
                           onChanged: (e) {},
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -346,7 +346,7 @@ class _FilterScreenState extends State<FilterScreen> {
                     ),
                   ),
                 ),
-              )
+              ),
             ],
           ),
         ),
