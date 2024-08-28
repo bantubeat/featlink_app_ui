@@ -246,5 +246,28 @@
     },
     "notifications_screen": {
         "swipespay_message": "Vous a envoyé un Swipepay\nRegarder son profil"
+    },
+    "filter_screen": {
+        "title": "Modifier vos critères de recherche",
+        "button_title": "Appliquer",
+        "title_header_one": "Envie d'explorer encore plus l'univers Featlink chat? ",
+        "title_header_two": "En modifiant vos critères de recherches vous avez plus de chance de rencontrer le partenaire",
+        "all_place": "Partout",
+        "year": "ans",
+        "applye_to_all": "Appliquer egalement à ceux qui me contacte",
+        "my_i_partner": "Mon partenaire ideal est",
+        "my_i_partner_search": "Mon partenaire ideal est recherche",
+        "most_thee_chose": "Vous devez choisi maximum 3",
+        "gender_male": "Homme",
+        "gender_female": "Femme",
+        "gender_c": "Couple",
+        "gender_other": "Autres",
+        "heterosexual_label": "Hétéro",
+        "gay_label": "Gay",
+        "lesbienne_label": "Lesbienne",
+        "sincere_love": "Amour sincère",
+        "marriage": "Mariage",
+        "friendship": "Amitié",
+        "professional_relationship": "Relation professionnelle"
     }
 }
