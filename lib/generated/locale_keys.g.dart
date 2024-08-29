@@ -223,6 +223,7 @@ abstract class  LocaleKeys {
   static const filter_screen_marriage = 'filter_screen.marriage';
   static const filter_screen_friendship = 'filter_screen.friendship';
   static const filter_screen_professional_relationship = 'filter_screen.professional_relationship';
+
   static const filter_screen = 'filter_screen';
   static const d_day_screen_title = 'd_day_screen.title';
   static const d_day_screen_subtitle = 'd_day_screen.subtitle';

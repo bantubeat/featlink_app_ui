@@ -269,41 +269,5 @@
         "marriage": "Mariage",
         "friendship": "Amitié",
         "professional_relationship": "Relation professionnelle"
-    },
-    "d_day_screen": {
-        "title": "Plusieurs personnes ont les mêmes envies que toi!",
-        "subtitle": "",
-        "your_d_day": "Tes D-Day",
-        "the_d_day": "Les D-Day",
-        "intrested": "Intéressé(e)",
-        "the_d_day_subtitle": "Explore les envies de la communauté",
-        "the_d_day_text": "Tu trouveras peut-être une identique à la tienne",
-        "your_d_day_text_title" : "C'est quoi un D-Day?",
-        "your_d_day_text_text1": "Desire of the day, c'est cette envie momentanée que nous avons parfois, envie d'une ballade, envie d'un cinéma, envie de parler a à une personne etc.",
-        "your_d_day_text_text2": "Plusieurs personnes ont très souvent la même envie que toi",
-        "your_d_day_text_text3":"Publie un D-Day, il y'a forcément quelqu'un qui a le même D-Day",
-        "country": {
-            "cameroun": "Cameroun",
-            "france": "France",
-            "belgique": "Belgique",
-            "senegal": "Senegal", 
-            "mali": "Mali",
-            "cote_ivoire": "Côte d'Ivoire",
-            "maroc": "Maroc",
-            "tunisie": "Tunisie",
-            "algerie": "Algérie",
-            "mauritanie": "Mauritanie"
-        },
-        "your_d_day_button": {
-            "publish": "Publier une D-Day",
-            "see": "Voir Tes D-Dating"
-        }, 
-        "d_dialog" : {
-            "title" : "Un D-Dating avec @",
-            "subtitle" : "Dis lui pourquoi son D-Day t'intéresses",
-            "placeholder" : "écris un short message",
-            "cancelbutton" : "Annuler",
-            "sendbutton" : "Envoyer"
-        }
     }
 }
