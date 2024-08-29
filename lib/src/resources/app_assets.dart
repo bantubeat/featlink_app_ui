@@ -22,4 +22,11 @@ final class AppAssets {
   static const bantubeatIcon = 'assets/images/bantubeat_icon.png';
   static const salonpriveIcon = 'assets/images/salon_prive_icon.png';
   static const bzcIcon = 'assets/images/bzc_icon.png';
+
+
+  static const theddayimagefirst = 'assets/images/danse.jpg';
+  static const theddayimagesecond = 'assets/images/boire.jpg';
+  static const theddayimagethree = 'assets/images/fastfood.jpg';
+  static const theddayimagefour = 'assets/images/promenade.jpg';
+	static const theletterb = 'assets/images/letter.jpg';
 }
