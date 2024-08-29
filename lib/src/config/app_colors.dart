@@ -13,6 +13,7 @@ final class AppColors {
   static const myBlue = Color(0xFF1778F2);
   static const myPink = Color(0xFFffd7d7);
   static const myGray = Color(0xFFD4D8DE);
+  static const myGray600 = Color(0xFF868686);
   static const mySoft = Color(0xFFE2E9DF);
   static const myBlueGray = Color(0xFF21262E);
   static const pale = Color(0xFFbab9b9);
