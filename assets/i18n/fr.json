@@ -244,9 +244,6 @@
         "ethnicity": "Type ethnique",
         "save": "Enregistrer"
     },
-    "notifications_screen": {
-        "swipespay_message": "Vous a envoyé un Swipepay\nRegarder son profil"
-    },
     "filter_screen": {
         "title": "Modifier vos critères de recherche",
         "button_title": "Appliquer",
