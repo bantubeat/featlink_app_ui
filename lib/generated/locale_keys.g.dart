@@ -199,5 +199,21 @@ abstract class  LocaleKeys {
   static const filter_screen_marriage = 'filter_screen.marriage';
   static const filter_screen_friendship = 'filter_screen.friendship';
   static const filter_screen_professional_relationship = 'filter_screen.professional_relationship';
+  static const crush_screen_bzc_solde = 'crush_screen.bzc_solde';
+  static const crush_screen_bzc_echange = 'crush_screen.bzc_echange';
+  static const crush_screen_bay_bzc = 'crush_screen.bay_bzc';
+  static const crush_screen_likes = 'crush_screen.likes';
+  static const crush_screen_likes_header_text = 'crush_screen.likes_header_text';
+  static const crush_screen_dialpay_header_text = 'crush_screen.dialpay_header_text';
+  static const crush_screen_swipespay_header_text = 'crush_screen.swipespay_header_text';
+  static const crush_screen_match_header_text = 'crush_screen.match_header_text';
+  static const crush_screen_you_have = 'crush_screen.you_have';
+  static const crush_screen_likes_n = 'crush_screen.likes_n';
+  static const crush_screen_dialpay_n = 'crush_screen.dialpay_n';
+  static const crush_screen_match_n = 'crush_screen.match_n';
+  static const crush_screen_swipespay_n = 'crush_screen.swipespay_n';
+  static const crush_screen_dialpay = 'crush_screen.dialpay';
+  static const crush_screen_swipespay = 'crush_screen.swipespay';
+  static const crush_screen_match = 'crush_screen.match';
 
 }

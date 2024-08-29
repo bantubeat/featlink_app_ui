@@ -4,6 +4,7 @@ import 'package:flutter/material.dart' show Widget;
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o5_screen.dart';
 import 'screens/_create_profile/create_profile_step_2o2_screen/create_profile_step_2o2_screen.dart';
+import 'screens/_swipe/crush_screen/crush_screen.dart';
 import 'screens/_swipe/filter_screen/filter_screen.dart';
 import 'screens/welcome2_screen/welcome2_screen.dart';
 import 'screens/welcome_screen.dart';
@@ -58,6 +59,7 @@ final Map<String, Widget Function()> allScreens = {
   'create_profile_step_110_screen.dart': () =>
       const CreateProfileStep110Screen(),
   'filter_screen.dart': () => const FilterScreen(),
+  'crush_screen.dart': () => const CrushScreen(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };

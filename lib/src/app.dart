@@ -1,4 +1,5 @@
 import 'package:featlink_app/generated/locale_keys.g.dart';
+import 'package:featlink_app/src/screens/_swipe/crush_screen/crush_screen.dart';
 import 'package:featlink_app/src/screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -21,7 +22,7 @@ class FeatlinkApp extends StatelessWidget {
       darkTheme: AppThemes.darkTheme,
       // Remplace `WelcomeScreen` par ta SCREEN pour la tester et à la fin remet
       // `WelcomeScreen` comme tu vois.
-      home: const WelcomeScreen(),
+      home: const CrushScreen(),
     );
   }
 }
