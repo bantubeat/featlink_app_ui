@@ -64,7 +64,5 @@ final Map<String, Widget Function()> allScreens = {
   'filter_screen.dart': () => const FilterScreen(),
   'crush_screen.dart': () => const CrushScreen(),
 
-  'page_d_day_zone_screen.dart': () => const PageDdayZoneScreen(),
-
   // Ajoutez d'autres chemins de fichiers ici
 };
