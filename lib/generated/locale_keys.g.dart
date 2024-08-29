@@ -912,6 +912,49 @@ abstract class LocaleKeys {
   static const crush_screen_dialpay = 'crush_screen.dialpay';
   static const crush_screen_swipespay = 'crush_screen.swipespay';
   static const crush_screen_match = 'crush_screen.match';
+  static const filter_screen_professional_relationship =
+      'filter_screen.professional_relationship';
+  static const d_day_screen_title = 'd_day_screen.title';
+  static const d_day_screen_subtitle = 'd_day_screen.subtitle';
+  static const d_day_screen_your_d_day = 'd_day_screen.your_d_day';
+  static const d_day_screen_the_d_day = 'd_day_screen.the_d_day';
+  static const d_day_screen_intrested = 'd_day_screen.intrested';
+  static const d_day_screen_the_d_day_subtitle =
+      'd_day_screen.the_d_day_subtitle';
+  static const d_day_screen_the_d_day_text = 'd_day_screen.the_d_day_text';
+  static const d_day_screen_your_d_day_text_title =
+      'd_day_screen.your_d_day_text_title';
+  static const d_day_screen_your_d_day_text_text1 =
+      'd_day_screen.your_d_day_text_text1';
+  static const d_day_screen_your_d_day_text_text2 =
+      'd_day_screen.your_d_day_text_text2';
+  static const d_day_screen_your_d_day_text_text3 =
+      'd_day_screen.your_d_day_text_text3';
+  static const d_day_screen_country_cameroun = 'd_day_screen.country.cameroun';
+  static const d_day_screen_country_france = 'd_day_screen.country.france';
+  static const d_day_screen_country_belgique = 'd_day_screen.country.belgique';
+  static const d_day_screen_country_senegal = 'd_day_screen.country.senegal';
+  static const d_day_screen_country_mali = 'd_day_screen.country.mali';
+  static const d_day_screen_country_cote_ivoire =
+      'd_day_screen.country.cote_ivoire';
+  static const d_day_screen_country_maroc = 'd_day_screen.country.maroc';
+  static const d_day_screen_country_tunisie = 'd_day_screen.country.tunisie';
+  static const d_day_screen_country_algerie = 'd_day_screen.country.algerie';
+  static const d_day_screen_country_mauritanie =
+      'd_day_screen.country.mauritanie';
+  static const d_day_screen_your_d_day_button_publish =
+      'd_day_screen.your_d_day_button.publish';
+  static const d_day_screen_your_d_day_button_see =
+      'd_day_screen.your_d_day_button.see';
+  static const d_day_screen_d_dialog_title = 'd_day_screen.d_dialog.title';
+  static const d_day_screen_d_dialog_subtitle =
+      'd_day_screen.d_dialog.subtitle';
+  static const d_day_screen_d_dialog_placeholder =
+      'd_day_screen.d_dialog.placeholder';
+  static const d_day_screen_d_dialog_cancelbutton =
+      'd_day_screen.d_dialog.cancelbutton';
+  static const d_day_screen_d_dialog_sendbutton =
+      'd_day_screen.d_dialog.sendbutton';
 
   static const filter_screen = 'filter_screen';
   static const d_day_screen_title = 'd_day_screen.title';

@@ -39,4 +39,9 @@ final class AppAssets {
   static const imgTmp4 = 'assets/images/tmp4.png';
   static const imgTmp5 = 'assets/images/tmp5.png';
   static const imgTmp6 = 'assets/images/tmp6.png';
+  static const theddayimagefirst = 'assets/images/danse.jpg';
+  static const theddayimagesecond = 'assets/images/boire.jpg';
+  static const theddayimagethree = 'assets/images/fastfood.jpg';
+  static const theddayimagefour = 'assets/images/promenade.jpg';
+  static const letterb = 'assets/images/letterb.png';
 }
