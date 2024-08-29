@@ -34,8 +34,6 @@ class _FilterScreenState extends State<FilterScreen> {
   double minAge = 18;
   double maxAge = 30;
 
-  final ValueNotifier<double> _progressNotifier = ValueNotifier(0.5);
-  final ValueNotifier<bool> _switchNotifier = ValueNotifier(false);
   List<dynamic> genderList = [
     {'name': LocaleKeys.filter_screen_gender_male.tr(), 'selected': true},
     {'name': LocaleKeys.filter_screen_gender_female.tr(), 'selected': false},
@@ -111,10 +109,11 @@ class _FilterScreenState extends State<FilterScreen> {
                       ),
                     ),
                   ),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  Center(
+                    child: Wrap(
+                      spacing: 30,
+                      alignment: WrapAlignment.center,
+                      crossAxisAlignment: WrapCrossAlignment.center,
                       children: genderList
                           .map(
                             (gender) => Column(
