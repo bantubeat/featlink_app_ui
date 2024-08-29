@@ -1207,6 +1207,8 @@ abstract class LocaleKeys {
       'd_day_screen.d_dialog.cancelbutton';
   static const d_day_screen_d_dialog_sendbutton =
       'd_day_screen.d_dialog.sendbutton';
+  static const filter_screen_professional_relationship =
+      'filter_screen.professional_relationship';
 
   static const filter_screen = 'filter_screen';
   static const filter_screen_professional_relationship =
