@@ -1,4 +1,5 @@
 import 'package:featlink_app/src/screens/_create_profile/create_profile_step_110_screen.dart';
+import 'package:featlink_app/src/screens/_d-day/page_d-day_zone_screen/page_d_day_zone_screen.dart';
 import 'package:flutter/material.dart' show Widget;
 
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
@@ -61,6 +62,6 @@ final Map<String, Widget Function()> allScreens = {
 
   'notifications_screen.dart': () => const NotificationsScreen(),
   'filter_screen.dart': () => const FilterScreen(),
-
+  'page_d_day_zone_screen.dart': () => const PageDdayZoneScreen(),
   // Ajoutez d'autres chemins de fichiers ici
 };
