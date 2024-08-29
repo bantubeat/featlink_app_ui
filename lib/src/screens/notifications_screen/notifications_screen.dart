@@ -43,18 +43,21 @@ class NotificationsScreen extends StatelessWidget {
     );
   }
 
-  List fakeData() => List.generate(20, (i) {
-        if (i % 5 == 0) {
-          return {
-            'type': 'date_separator',
-            'title': '${-i + 20} Aug 2024',
-          };
-        } else {
-          return {
-            'type': 'notification',
-            'image': AppAssets.fakeAvatarImage,
-            'title': LocaleKeys.notifications_screen_swipespay_message.tr(),
-          };
-        }
-      });
+  List fakeData() => List.generate(
+        20,
+        (i) {
+          if (i % 5 == 0) {
+            return {
+              'type': 'date_separator',
+              'title': '${-i + 20} Aug 2024',
+            };
+          } else {
+            return {
+              'type': 'notification',
+              'image': AppAssets.fakeAvatarImage,
+              'title': LocaleKeys.notifications_screen_swipespay_message.tr(),
+            };
+          }
+        },
+      );
 }
