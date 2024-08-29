@@ -627,10 +627,20 @@ abstract class LocaleKeys {
   static const filter_screen_friendship = 'filter_screen.friendship';
   static const filter_screen_professional_relationship =
       'filter_screen.professional_relationship';
+  static const filter_screen_professional_relationship =
+      'filter_screen.professional_relationship';
   static const crush_screen_bzc_solde = 'crush_screen.bzc_solde';
   static const crush_screen_bzc_echange = 'crush_screen.bzc_echange';
   static const crush_screen_bay_bzc = 'crush_screen.bay_bzc';
   static const crush_screen_likes = 'crush_screen.likes';
+  static const crush_screen_likes_header_text =
+      'crush_screen.likes_header_text';
+  static const crush_screen_dialpay_header_text =
+      'crush_screen.dialpay_header_text';
+  static const crush_screen_swipespay_header_text =
+      'crush_screen.swipespay_header_text';
+  static const crush_screen_match_header_text =
+      'crush_screen.match_header_text';
   static const crush_screen_likes_header_text =
       'crush_screen.likes_header_text';
   static const crush_screen_dialpay_header_text =
