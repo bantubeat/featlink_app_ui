@@ -22,4 +22,5 @@ final class AppAssets {
   static const bantubeatIcon = 'assets/images/bantubeat_icon.png';
   static const salonpriveIcon = 'assets/images/salon_prive_icon.png';
   static const bzcIcon = 'assets/images/bzc_icon.png';
+	static const starIcon = 'assets/images/star.png';
 }

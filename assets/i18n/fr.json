@@ -269,5 +269,37 @@
         "marriage": "Mariage",
         "friendship": "Amitié",
         "professional_relationship": "Relation professionnelle"
-    }
+    },
+    "d_day_screen_button_intrested": "Intéressé",
+    "user_side_profile_screen": {
+        "interests": "Intérêts",
+        "accroche": "Accroche",
+         "about": "A Propos",
+         "location": "Douala",
+         "height": "(151cm-199cm)",
+         "weight": "(60kgà90kg)",
+         "yes": "Oui",
+         "party": "En soirée",
+         "friendship_free_relation": "Amitié, relation libre",
+         "none": "Aucun",
+         "alone": "Seul",
+         "hetero": "Hétéro",
+         "african": "Africaine",
+         "european": "Européenne",
+         "islam": "Islam",
+         "hook_message": "Bonjour, je suis une femme simple qui aime découvrir de nouvelles choses.",
+         "edit": "Modifier",
+         "subscription": "Abonnement",
+         "profile_certification": "Certification de profil",
+         "profile_certification_description": "Faites certifier votre profil pour avoir le badge Jaune, un profil certifié attire des partenaires d'affaires",
+         "balance_beatzcoin": "Solde Beatzcoin",
+         "balance_beatzcoin_value": "495 BZC",
+         "withdraw_beatzcoin": "Encaisser vos Jetons",
+         "buy_beatzcoin": "Acheter des Jetons",
+         "settings": "Paramètres",
+         "screen_name": "Pierre,35",
+         "football": "Football",
+         "live_music": "Live music",
+         "cooking": "Cooking"
+     }
 }
