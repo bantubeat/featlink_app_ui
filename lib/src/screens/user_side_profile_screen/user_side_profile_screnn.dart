@@ -46,12 +46,12 @@ class _UserSideProfileScreenState extends State<UserSideProfileScreen> {
     {
       'icon': Icons.groups_3_outlined,
       'label': LocaleKeys.user_side_profile_screen_yes.tr(),
-      'value': LocaleKeys.user_side_profile_screen_yes.tr()
+      'value': LocaleKeys.user_side_profile_screen_yes.tr(),
     },
     {
       'icon': Icons.smoking_rooms_outlined,
       'label': LocaleKeys.user_side_profile_screen_yes.tr(),
-      'value': LocaleKeys.user_side_profile_screen_yes.tr()
+      'value': LocaleKeys.user_side_profile_screen_yes.tr(),
     },
     {
       'icon': Icons.nightlife_outlined,
@@ -67,27 +67,27 @@ class _UserSideProfileScreenState extends State<UserSideProfileScreen> {
     {
       'icon': Icons.school_outlined,
       'label': LocaleKeys.user_side_profile_screen_none.tr(),
-      'value': LocaleKeys.user_side_profile_screen_none.tr()
+      'value': LocaleKeys.user_side_profile_screen_none.tr(),
     },
     {
       'icon': Icons.group_outlined,
       'label': LocaleKeys.user_side_profile_screen_alone.tr(),
-      'value': LocaleKeys.user_side_profile_screen_alone.tr()
+      'value': LocaleKeys.user_side_profile_screen_alone.tr(),
     },
     {
       'icon': Icons.transgender_outlined,
       'label': LocaleKeys.user_side_profile_screen_hetero.tr(),
-      'value': LocaleKeys.user_side_profile_screen_hetero.tr()
+      'value': LocaleKeys.user_side_profile_screen_hetero.tr(),
     },
     {
       'icon': Icons.public,
       'label': LocaleKeys.user_side_profile_screen_african.tr(),
-      'value': LocaleKeys.user_side_profile_screen_european.tr()
+      'value': LocaleKeys.user_side_profile_screen_european.tr(),
     },
     {
       'icon': Icons.church_outlined,
       'label': LocaleKeys.user_side_profile_screen_islam.tr(),
-      'value': LocaleKeys.user_side_profile_screen_islam.tr()
+      'value': LocaleKeys.user_side_profile_screen_islam.tr(),
     },
   ];
 
@@ -113,7 +113,7 @@ class _UserSideProfileScreenState extends State<UserSideProfileScreen> {
                   children: [
                     FirstBlock(height: height, width: width),
                     customDivider(width, height,
-                        LocaleKeys.user_side_profile_screen_about.tr()),
+                        LocaleKeys.user_side_profile_screen_about.tr(),),
                     SizedBox(
                       height: containerHeight,
                       child: ListView.builder(
@@ -157,7 +157,7 @@ class _UserSideProfileScreenState extends State<UserSideProfileScreen> {
                       ),
                     ),
                     customDivider(width, height,
-                        LocaleKeys.user_side_profile_screen_interests.tr()),
+                        LocaleKeys.user_side_profile_screen_interests.tr(),),
                     Container(
                       padding: EdgeInsets.symmetric(
                         horizontal: width * 0.04,
