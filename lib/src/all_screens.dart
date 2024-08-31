@@ -82,6 +82,7 @@ final Map<String, Widget Function()> allScreens = {
   'discovery_first_day_screen.dart': () => const DiscoveryFirstDayScreen(),
   'discovery_blur_screen.dart': () => const DiscoveryBlurScreen(),
   'chat_message_list_screen': () => const ChatMessageListScreen(),
+  'chat_message_list_screen.dart': () => const ChatMessageListScreen(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };
