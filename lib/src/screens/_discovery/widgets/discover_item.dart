@@ -23,6 +23,8 @@ class DiscoveryItem extends StatelessWidget {
     return Container(
       constraints: const BoxConstraints(
         maxWidth: 200,
+        minWidth: 150,
+        minHeight: 150,
         maxHeight: 200,
       ),
       width: (size.width / 2) - 30,
@@ -41,7 +43,7 @@ class DiscoveryItem extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Container(
-            width: double.infinity,
+            width: size.width / 2 - 30,
             padding: const EdgeInsets.symmetric(
               vertical: 5,
               horizontal: 10,
