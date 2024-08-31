@@ -43,7 +43,7 @@ class DDayZoneScreen extends StatelessWidget {
       'username': 'Pièrre',
       'userImageUrl': AppAssets.theddayimagefour,
     },
-		  {
+    {
       'title': "Envie d'aller danser",
       'location': 'Douala',
       'date': 'Samedi 14/01',
@@ -63,7 +63,6 @@ class DDayZoneScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
- 
     return DefaultTabController(
       length: 2,
       child: Scaffold(
@@ -87,13 +86,17 @@ class DDayZoneScreen extends StatelessWidget {
             ],
           ),
         ),
-        body: TabBarView(
+        body: Stack(
           children: [
-            TheDDayTab(datas: myData),
-            const YourDDayTab(),
+            TabBarView(
+              children: [
+                TheDDayTab(datas: myData),
+                const YourDDayTab(),
+              ],
+            ),
+            const Expanded(child: AppNavigationBottomSheet()),
           ],
         ),
-      bottomNavigationBar: const AppNavigationBottomSheet(),
       ),
     );
   }
