@@ -5,6 +5,11 @@ final class AppAssets {
   static const contractImage = 'assets/images/contract.png';
   static const profileImage = 'assets/images/profile_image.png';
   static const fakeAvatarImage = 'assets/images/fake_avatar.jpg';
+  static const discoveryScreenHeaderImage =
+      'assets/images/discovery_screen_header.png';
+  static const discoveryFirstDayHeaderImage =
+      'assets/images/discovery_first_day_header.png';
+  static const fakeDiscoveryImage = 'assets/images/fake_discovery.jpeg';
 
   static const sizeIcon = 'assets/images/size.png';
   static const weightIcon = 'assets/images/weight.png';

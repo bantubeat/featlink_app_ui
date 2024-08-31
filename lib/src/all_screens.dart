@@ -10,6 +10,8 @@ import 'screens/_discovery/discovery_search_2_screen/discovery_search_2_screen.d
 import 'screens/_settings/unsubscribe_screen.dart';
 import 'screens/_settings/private_mode_settings_screen.dart';
 import 'screens/_settings/main_settings_screen.dart';
+import 'screens/_discovery/discovery_first_day_screen.dart';
+import 'screens/_discovery/discovery_in_my_city_screen.dart';
 import 'screens/_swipe/filter_screen/filter_screen.dart';
 import 'screens/welcome2_screen/welcome2_screen.dart';
 import 'screens/welcome_screen.dart';
@@ -75,6 +77,8 @@ final Map<String, Widget Function()> allScreens = {
   'd_day_zone_screen.dart': () => const DDayZoneScreen(),
   'private_mode_settings_screen.dart': () => const PrivateModeSettingsScreen(),
   'main_settings_screen.dart': () => const MainSettingsScreen(),
+  'discovery_in_my_city_screen.dart': () => const DiscoveryInMyCityScreen(),
+  'discovery_first_day_screen.dart': () => const DiscoveryFirstDayScreen(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };
