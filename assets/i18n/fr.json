@@ -384,5 +384,11 @@
         "man": "Homme",
         "woman": "Femme",
         "others": "Autres"
+    },
+    "discovery_blur_screen": {
+        "title": "SUGAR DADDY",
+        "sub_title": "Bienvenue dans Sugar Daddy",
+        "description": "Nous avons recensé et regroupé les profils Homme de votre région ayant plus de 50 ans.\nPourquoi c’est flou? vous devez avoir un accès valide pour consulter les profils de nos sugar daddy.",
+        "buy_access": "Payer un accès"
     }
 }

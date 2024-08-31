@@ -7,6 +7,8 @@ final class AppAssets {
   static const fakeAvatarImage = 'assets/images/fake_avatar.jpg';
   static const discoveryScreenHeaderImage =
       'assets/images/discovery_screen_header.png';
+  static const discoveryBlurScreenHeaderImage =
+      'assets/images/discovery_blur_screen_header.jpeg';
   static const discoveryFirstDayHeaderImage =
       'assets/images/discovery_first_day_header.png';
   static const fakeDiscoveryImage = 'assets/images/fake_discovery.jpeg';
@@ -21,6 +23,7 @@ final class AppAssets {
   static const handsUpIcon = 'assets/images/hands_up.png';
   static const moonSliceIcon = 'assets/images/moon_slice.png';
   static const svgStep1o2Icon = 'assets/svg/step1o2_icon.svg';
+  static const lockIcon = 'assets/svgs/lock.svg';
   static const createProfileStep1o2Image = 'assets/images/step1o2_icon.png';
   static const imageLogo2 = 'assets/images/logo2.png';
   static const clubVipImage = 'assets/images/club_vip.jpeg';
