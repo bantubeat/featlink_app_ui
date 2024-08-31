@@ -95,191 +95,183 @@ class _UserSideProfileScreenState extends State<UserSideProfileScreen> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
-    double containerHeight = profileData.length * (height * 0.1) -
-        30; // Adjust height based on data length
-
     double containerImageHeight = girlImage.length * (height * 0.62);
 
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: const Color.fromARGB(94, 198, 208, 209),
-        body: Stack(
-          children: [
-            SizedBox(
-              height: height * 0.95,
-              child: SingleChildScrollView(
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    FirstBlock(height: height, width: width),
-                    customDivider(width, height,
-                        LocaleKeys.user_side_profile_screen_about.tr(),),
-                    SizedBox(
-                      height: containerHeight,
-                      child: ListView.builder(
-                        itemCount: profileData.length,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            height: height * 0.08,
-                            decoration: BoxDecoration(
-                              color: AppColors.myWhite,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.black.withOpacity(0.1),
-                                  offset: const Offset(0, 2),
-                                  blurRadius: 3,
-                                ),
-                              ],
-                            ),
-                            margin: const EdgeInsets.only(top: 13),
-                            child: ListTile(
-                              leading: Icon(
-                                profileData[index]['icon'],
-                                color: AppColors.myTextDarkSoft,
-                              ),
-                              title: Text(
-                                profileData[index]['label']!,
-                                style: TextStyle(
-                                  fontSize: width * 0.04,
-                                  color: AppColors.myTextDarkSoft,
-                                ),
-                              ),
-                              trailing: Text(
-                                profileData[index]['value']!,
-                                style: TextStyle(
-                                  fontSize: width * 0.04,
-                                  color: AppColors.myTextDarkSoft,
-                                ),
-                              ),
-                            ),
-                          );
-                        },
-                      ),
-                    ),
-                    customDivider(width, height,
-                        LocaleKeys.user_side_profile_screen_interests.tr(),),
-                    Container(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: width * 0.04,
-                      ),
-                      color: AppColors.myWhite,
-                      child: Column(
-                        children: [
-                          Container(
-                            margin: EdgeInsets.symmetric(
-                              vertical: height * 0.02,
-                              horizontal: width * 0.04,
-                            ),
-                            padding: EdgeInsets.symmetric(
-                              horizontal: width * 0.04,
-                              vertical: height * 0.02,
-                            ),
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: AppColors.myGray,
-                                width: 2,
-                              ),
-                              color: AppColors.myWhite,
-                              borderRadius: BorderRadius.circular(15),
-                              boxShadow: const [
-                                BoxShadow(
-                                  color: AppColors.myGray,
-                                  offset: Offset(0, 5),
-                                  blurRadius: 3,
-                                ),
-                              ],
-                            ),
-                            height: height * 0.2,
-                            width: width,
-                            child: Text(
-                              LocaleKeys.user_side_profile_screen_hook_message
-                                  .tr(),
-                              style: TextStyle(
-                                fontSize: width * 0.03,
-                                color: AppColors.myTextDarkSoft,
-                              ),
-                            ),
-                          ),
-                          SizedBox(
-                            height: containerImageHeight,
-                            child: ListView.builder(
-                              itemCount: girlImage.length,
-                              itemBuilder: (context, index) {
-                                return Container(
-                                  height: height * 0.6,
-                                  decoration: BoxDecoration(
-                                    color: AppColors.myWhite,
-                                    boxShadow: [
-                                      BoxShadow(
-                                        color: Colors.black.withOpacity(0.1),
-                                        offset: const Offset(0, 2),
-                                        blurRadius: 3,
-                                      ),
-                                    ],
-                                  ),
-                                  margin: const EdgeInsets.only(top: 7),
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.circular(15),
-                                    child: Image.network(
-                                      girlImage[index],
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                );
-                              },
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 20,
-                          ),
-                          customDivider(
-                            width,
-                            height,
-                            LocaleKeys.user_side_profile_screen_interests.tr(),
-                          ),
-                          Padding(
-                            padding: EdgeInsets.only(
-                              left: width * 0.02,
-                              right: width * 0.02,
-                              bottom: height * 0.1,
-                            ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: List.generate(3, (index) {
-                                return Container(
-                                  padding: EdgeInsets.symmetric(
-                                    horizontal: width * 0.04,
-                                    vertical: height * 0.01,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: AppColors.myGray,
-                                    ),
-                                    borderRadius: BorderRadius.circular(50),
-                                  ),
-                                  child: Text(
-                                    interets[index],
-                                    style: TextStyle(
-                                      color: AppColors.myTextDarkSoft,
-                                      fontSize: width * 0.04,
-                                    ),
-                                  ),
-                                );
-                              }),
-                            ),
+    return Scaffold(
+      backgroundColor: const Color.fromARGB(94, 198, 208, 209),
+      body: Column(
+        children: [
+          SizedBox(
+            height: height * 0.85,
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  FirstBlock(height: height, width: width),
+                  customDivider(
+                    width,
+                    height,
+                    LocaleKeys.user_side_profile_screen_about.tr(),
+                  ),
+                  ...profileData.map(
+                    (data) => Container(
+                      height: height * 0.08,
+                      decoration: BoxDecoration(
+                        color: AppColors.myWhite,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withOpacity(0.1),
+                            offset: const Offset(0, 2),
+                            blurRadius: 3,
                           ),
                         ],
                       ),
+                      margin: const EdgeInsets.only(top: 13),
+                      child: ListTile(
+                        leading: Icon(
+                          data['icon'],
+                          color: AppColors.myTextDarkSoft,
+                        ),
+                        title: Text(
+                          data['label'],
+                          style: TextStyle(
+                            fontSize: width * 0.04,
+                            color: AppColors.myTextDarkSoft,
+                          ),
+                        ),
+                        trailing: Text(
+                          data['value'],
+                          style: TextStyle(
+                            fontSize: width * 0.04,
+                            color: AppColors.myTextDarkSoft,
+                          ),
+                        ),
+                      ),
                     ),
-                  ],
-                ),
+                  ),
+                  customDivider(
+                    width,
+                    height,
+                    LocaleKeys.user_side_profile_screen_interests.tr(),
+                  ),
+                  Container(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: width * 0.04,
+                    ),
+                    color: AppColors.myWhite,
+                    child: Column(
+                      children: [
+                        Container(
+                          margin: EdgeInsets.symmetric(
+                            vertical: height * 0.02,
+                            horizontal: width * 0.04,
+                          ),
+                          padding: EdgeInsets.symmetric(
+                            horizontal: width * 0.04,
+                            vertical: height * 0.02,
+                          ),
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: AppColors.myGray,
+                              width: 2,
+                            ),
+                            color: AppColors.myWhite,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: AppColors.myGray,
+                                offset: Offset(0, 5),
+                                blurRadius: 3,
+                              ),
+                            ],
+                          ),
+                          height: height * 0.2,
+                          width: width,
+                          child: Text(
+                            LocaleKeys.user_side_profile_screen_hook_message
+                                .tr(),
+                            style: TextStyle(
+                              fontSize: width * 0.03,
+                              color: AppColors.myTextDarkSoft,
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: containerImageHeight,
+                          child: ListView.builder(
+                            itemCount: girlImage.length,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                height: height * 0.6,
+                                decoration: BoxDecoration(
+                                  color: AppColors.myWhite,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black.withOpacity(0.1),
+                                      offset: const Offset(0, 2),
+                                      blurRadius: 3,
+                                    ),
+                                  ],
+                                ),
+                                margin: const EdgeInsets.only(top: 7),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(15),
+                                  child: Image.network(
+                                    girlImage[index],
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 20,
+                        ),
+                        customDivider(
+                          width,
+                          height,
+                          LocaleKeys.user_side_profile_screen_interests.tr(),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(
+                            left: width * 0.02,
+                            right: width * 0.02,
+                            bottom: height * 0.1,
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: List.generate(3, (index) {
+                              return Container(
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: width * 0.04,
+                                  vertical: height * 0.01,
+                                ),
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: AppColors.myGray,
+                                  ),
+                                  borderRadius: BorderRadius.circular(50),
+                                ),
+                                child: Text(
+                                  interets[index],
+                                  style: TextStyle(
+                                    color: AppColors.myTextDarkSoft,
+                                    fontSize: width * 0.04,
+                                  ),
+                                ),
+                              );
+                            }),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
             ),
-            const Positioned(
-              child: AppNavigationBottomSheet(),
-            ),
-          ],
-        ),
+          ),
+          const Expanded(child: AppNavigationBottomSheet()),
+        ],
       ),
     );
   }
@@ -360,16 +352,10 @@ class FirstBlock extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: height,
-      padding:
-          EdgeInsets.only(bottom: 16, top: MediaQuery.of(context).padding.top),
-      color: AppColors.myPink.withOpacity(0.5),
+    return SingleChildScrollView(
       child: Column(
         children: [
           Container(
-            width: width,
-            height: height * 0.5,
             padding: EdgeInsets.only(
               left: width * 0.05,
               right: width * 0.05,

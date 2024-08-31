@@ -135,7 +135,7 @@ class _AppNavigationBottomSheetState extends State<AppNavigationBottomSheet> {
                 width: 32, // Adjust size as needed
                 height: 32, // Adjust size as needed
                 decoration: const BoxDecoration(
-                  color: AppColors.myWhite,  
+                  color: AppColors.myWhite,
                   shape: BoxShape.circle,
                 ),
                 child: Icon(

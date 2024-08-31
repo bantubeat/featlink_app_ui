@@ -1,5 +1,5 @@
 import 'package:featlink_app/src/screens/_create_profile/create_profile_step_110_screen.dart';
-import 'package:featlink_app/src/screens/user_side_profile_screen/user_side_profile_screnn.dart';
+import 'package:featlink_app/src/screens/user_side_profile_screen/user_side_profile_screen.dart';
 import 'package:flutter/material.dart' show Widget;
 
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
