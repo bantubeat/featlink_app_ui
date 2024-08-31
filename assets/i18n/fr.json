@@ -269,5 +269,12 @@
         "marriage": "Mariage",
         "friendship": "Amitié",
         "professional_relationship": "Relation professionnelle"
+    },
+    "chat_message_list_screen": {
+        "bantubeat_artist_title": "Artiste à la une sur Bantubeat",
+        "listen_on_bantubeat": "Ecouter sur Bantubeat",
+        "contact_support": "Contacter le support",
+        "buy_an_access": "Acheter un accès",
+        "messages": "Messages"
     }
 }

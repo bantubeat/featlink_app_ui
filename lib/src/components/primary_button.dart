@@ -14,6 +14,7 @@ class PrimaryButton extends Button {
     super.isLoading,
     super.disabled,
     super.fixedSize,
+    super.elevation,
     super.backgroundColor = AppColors.primary,
     super.borderWidth = 0,
     super.borderColor = AppColors.primary,

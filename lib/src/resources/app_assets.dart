@@ -16,6 +16,8 @@ final class AppAssets {
   static const handsUpIcon = 'assets/images/hands_up.png';
   static const moonSliceIcon = 'assets/images/moon_slice.png';
   static const svgStep1o2Icon = 'assets/svg/step1o2_icon.svg';
+  static const circledPlayIcon = 'assets/images/circled_play.png';
+  static const fakeArtist = 'assets/images/fake_artist.jpeg';
   static const createProfileStep1o2Image = 'assets/images/step1o2_icon.png';
   static const imageLogo2 = 'assets/images/logo2.png';
 
