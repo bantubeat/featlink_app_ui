@@ -269,5 +269,43 @@
         "marriage": "Mariage",
         "friendship": "Amitié",
         "professional_relationship": "Relation professionnelle"
+    },
+    "discovery_in_my_city_screen": {
+        "title": "Dans ta ville",
+        "on_ligne": "En ligne",
+        "who_are_in_your_city": "Découvre qui est dans ta ville",
+        "all_continent": "Tous les continents",
+        "african": "Africain(e)",
+        "american": "Américain(e)",
+        "asian": "Asiatique",
+        "europeen": "Européen",
+        "oceanian": "Oceanique",
+        "gender_other": "Autres",
+        "heterosexual_label": "Hétéro",
+        "gay_label": "Gay",
+        "lesbienne_label": "Lesbienne",
+        "age_year": "ans",
+        "man": "Homme",
+        "woman": "Femme",
+        "others": "Autres"
+    },
+    "discovery_first_day_screen": {
+        "title": "Premier Jour",
+        "on_ligne": "En ligne",
+        "first_day_of_inscription": "Ils se sont inscrit aujourd’hui, soit le premier à dire bonjour",
+        "all_continent": "Tous les continents",
+        "african": "Africain(e)",
+        "american": "Américain(e)",
+        "asian": "Asiatique",
+        "europeen": "Européen",
+        "oceanian": "Oceanique",
+        "gender_other": "Autres",
+        "heterosexual_label": "Hétéro",
+        "gay_label": "Gay",
+        "lesbienne_label": "Lesbienne",
+        "age_year": "ans",
+        "man": "Homme",
+        "woman": "Femme",
+        "others": "Autres"
     }
 }
