@@ -1,7 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
-import 'package:featlink_app/src/screens/page_d_day_zone_screen/widgets/dialog.dart';
+import 'package:featlink_app/src/screens/d_day_zone_screen/widgets/d_day_dialog.dart';
 import 'package:flutter/material.dart';
 
 class DDayCard extends StatelessWidget {
