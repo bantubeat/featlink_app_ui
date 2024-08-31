@@ -33,9 +33,10 @@ class CreateProfileDialog extends StatelessWidget {
             child: Text(
               title1.toUpperCase(),
               style: const TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.w900,
-                  fontFamily: 'inter'),
+                fontSize: 32,
+                fontWeight: FontWeight.w900,
+                fontFamily: 'inter',
+              ),
             ),
           ),
           const SizedBox(
@@ -45,9 +46,10 @@ class CreateProfileDialog extends StatelessWidget {
             child: Text(
               title2,
               style: const TextStyle(
-                  fontSize: 32,
-                  fontWeight: FontWeight.w900,
-                  fontFamily: 'inter'),
+                fontSize: 32,
+                fontWeight: FontWeight.w900,
+                fontFamily: 'inter',
+              ),
             ),
           ),
           Visibility(
@@ -56,9 +58,10 @@ class CreateProfileDialog extends StatelessWidget {
               child: Text(
                 '$description1',
                 style: const TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400,
-                    fontFamily: 'inter'),
+                  fontSize: 14,
+                  fontWeight: FontWeight.w400,
+                  fontFamily: 'inter',
+                ),
               ),
             ),
           ),
@@ -69,9 +72,10 @@ class CreateProfileDialog extends StatelessWidget {
             child: Text(
               '$description2',
               style: const TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                  fontFamily: 'inter'),
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+                fontFamily: 'inter',
+              ),
             ),
           ),
           const SizedBox(

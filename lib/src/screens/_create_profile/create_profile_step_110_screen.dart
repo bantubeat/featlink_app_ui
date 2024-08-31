@@ -43,7 +43,8 @@ class CreateProfileStep110Screen extends StatelessWidget {
                         children: [
                           ClipRRect(
                             borderRadius: BorderRadius.circular(
-                                10), // Adjust the border radius for more or less rounded corners
+                              10,
+                            ), // Adjust the border radius for more or less rounded corners
                             child: SizedBox(
                               width:
                                   60, // Adjust the width and height as needed
@@ -51,13 +52,18 @@ class CreateProfileStep110Screen extends StatelessWidget {
                               child: Image.network(
                                 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80', // Unsplash image URL
                                 fit: BoxFit.cover,
-                                errorBuilder: (BuildContext context,
-                                    Object exception, StackTrace? stackTrace) {
+                                errorBuilder: (
+                                  BuildContext context,
+                                  Object exception,
+                                  StackTrace? stackTrace,
+                                ) {
                                   return const Icon(Icons.error);
                                 },
-                                loadingBuilder: (BuildContext context,
-                                    Widget child,
-                                    ImageChunkEvent? loadingProgress) {
+                                loadingBuilder: (
+                                  BuildContext context,
+                                  Widget child,
+                                  ImageChunkEvent? loadingProgress,
+                                ) {
                                   if (loadingProgress == null) {
                                     return child;
                                   }
