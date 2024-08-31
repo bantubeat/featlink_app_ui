@@ -85,7 +85,12 @@ class ProfileVisitorViewScreen extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(width: 10),
-                  const Text('Cameroun', style: TextStyle(fontSize: 16)),
+                  const Flexible(
+                    child: Text(
+                      'Cameroun',
+                      style: TextStyle(fontSize: 16),
+                    ),
+                  ),
                 ],
               ),
             ),
