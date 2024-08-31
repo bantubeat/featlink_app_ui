@@ -160,12 +160,14 @@ class _DiscoveryFirstDayScreenState extends State<DiscoveryFirstDayScreen> {
                     child: Row(
                       children: [
                         const SizedBox(width: 50),
-                        Text(
-                          LocaleKeys.discovery_first_day_screen_title.tr(),
-                          textAlign: TextAlign.start,
-                          style: const TextStyle(
-                            fontSize: 25,
-                            fontWeight: FontWeight.w900,
+                        Expanded(
+                          child: Text(
+                            LocaleKeys.discovery_first_day_screen_title.tr(),
+                            textAlign: TextAlign.start,
+                            style: const TextStyle(
+                              fontSize: 25,
+                              fontWeight: FontWeight.w900,
+                            ),
                           ),
                         ),
                       ],
