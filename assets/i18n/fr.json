@@ -269,5 +269,15 @@
         "marriage": "Mariage",
         "friendship": "Amitié",
         "professional_relationship": "Relation professionnelle"
+    },
+    "unsubscribe_screen": {
+        "title": "Se désinscrire",
+        "confirmation_question": "Êtes-vous sûr de vouloir vous désinscrire de Featlink-chat?",
+        "description": "Vous êtes connecté à Featlink avec votre compte bantubeat. vous désinscrire de Featlink ne supprimera pas votre compte bantubeat, mais votre profil, vos photos, vos vidéos, vos commentaires, vos messages directs sur Featlink seront définitivement supprimés.",
+        "consequence_list_title": "Si vous décidez de continuer, il va se passer ce qui suit :",
+        "consequence_1": "Votre profil Featlink sera désactivé pendant 60 jours. votre profil ne sera plus visible par d'autres utilisateurs.",
+        "consequence_2": "Après 60 jours, votre profil et toute votre activité seront définitivement perdus.",
+        "consequence_3": "Si vous vous connectez sur Featlink avant les 60 jours vous pourriez récupérer votre profil Featlink et tout son contenu.",
+        "unsubscribe": "Me désinscrire"
     }
 }
