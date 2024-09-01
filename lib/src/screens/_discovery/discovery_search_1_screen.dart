@@ -1,12 +1,13 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/components/app_navigation_bottom_sheet.dart';
-import 'package:featlink_app/src/components/primary_button.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:featlink_app/src/screens/_discovery/widgets/pub_slider.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+
+import 'widgets/search_categary_item.dart';
 
 class DiscoverySearch1Screen extends StatelessWidget {
   const DiscoverySearch1Screen({super.key});
@@ -137,45 +138,6 @@ class DiscoverySearch1Screen extends StatelessWidget {
       ),
       floatingActionButton: const AppNavigationBottomSheet(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-    );
-  }
-}
-
-class SearchCategoryItem extends StatelessWidget {
-  const SearchCategoryItem({
-    required this.buttonText,
-    required this.image,
-    required this.onPressed,
-    super.key,
-  });
-
-  final String buttonText;
-  final String image;
-  final Function(BuildContext) onPressed;
-
-  @override
-  Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Container(
-          width: MediaQuery.of(context).size.width,
-          height: 150,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            image: DecorationImage(
-              image: AssetImage(image),
-              fit: BoxFit.cover,
-            ),
-          ),
-        ),
-        Positioned(
-          top: 10,
-          left: 10,
-          child: IntrinsicWidth(
-            child: PrimaryButton(text: buttonText, onPressed: onPressed),
-          ),
-        ),
-      ],
     );
   }
 }
