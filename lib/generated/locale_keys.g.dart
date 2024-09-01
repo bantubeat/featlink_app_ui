@@ -396,4 +396,14 @@ abstract class LocaleKeys {
   static const discovery_search_1_screen_vip_clup =
       'discovery_search_1_screen.vip_clup';
   static const discovery_search_1_screen = 'discovery_search_1_screen';
+  static const discovery_search_2_screen_title =
+      'discovery_search_2_screen.title';
+  static const discovery_search_2_screen_publicity =
+      'discovery_search_2_screen.publicity';
+  static const discovery_search_2_screen_pub = 'discovery_search_2_screen.pub';
+  static const discovery_search_2_screen_know_more =
+      'discovery_search_2_screen.know_more';
+  static const discovery_search_2_screen_find_profile =
+      'discovery_search_2_screen.find_profile';
+  static const discovery_search_2_screen = 'discovery_search_2_screen';
 }

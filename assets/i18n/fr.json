@@ -271,7 +271,7 @@
         "professional_relationship": "Relation professionnelle"
     },
     "discovery_search_1_screen": {
-        "title": "Bienvenu dans l’espace de toutes les surprises",
+        "title": "Bienvenue dans l’espace de toutes les surprises",
         "publicity": "Publicité",
         "pub": "Pub",
         "know_more": "En savoir plus",
@@ -280,5 +280,12 @@
         "first_day": "Premier jour",
         "communities": "Communautés",
         "vip_clup": "Club VIP"
+    },
+    "discovery_search_2_screen": {
+        "title": "Bienvenue dans l’espace de toutes les surprises",
+        "publicity": "Publicité",
+        "pub": "Pub",
+        "know_more": "En savoir plus",
+        "find_profile": "Trouve des profils selon ton mood"
     }
 }
