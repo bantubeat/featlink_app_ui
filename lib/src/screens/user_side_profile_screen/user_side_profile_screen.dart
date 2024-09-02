@@ -32,62 +32,74 @@ class _UserSideProfileScreenState extends State<UserSideProfileScreen> {
       'icon': Icons.location_city_outlined,
       'label': LocaleKeys.user_side_profile_screen_location.tr(),
       'value': LocaleKeys.user_side_profile_screen_location.tr(),
+      'showOnProfile': false,
     },
     {
       'icon': Icons.balance_outlined,
       'label': LocaleKeys.user_side_profile_screen_height.tr(),
       'value': LocaleKeys.user_side_profile_screen_height.tr(),
+      'showOnProfile': false,
     },
     {
       'icon': Icons.fitness_center_outlined,
       'label': LocaleKeys.user_side_profile_screen_weight.tr(),
       'value': LocaleKeys.user_side_profile_screen_weight.tr(),
+      'showOnProfile': false,
     },
     {
       'icon': Icons.groups_3_outlined,
       'label': LocaleKeys.user_side_profile_screen_yes.tr(),
       'value': LocaleKeys.user_side_profile_screen_yes.tr(),
+      'showOnProfile': false,
     },
     {
       'icon': Icons.smoking_rooms_outlined,
       'label': LocaleKeys.user_side_profile_screen_yes.tr(),
       'value': LocaleKeys.user_side_profile_screen_yes.tr(),
+      'showOnProfile': false,
     },
     {
       'icon': Icons.nightlife_outlined,
       'label': LocaleKeys.user_side_profile_screen_party.tr(),
       'value': LocaleKeys.user_side_profile_screen_party.tr(),
+      'showOnProfile': false,
     },
     {
       'icon': Icons.favorite_border_outlined,
       'label':
           LocaleKeys.user_side_profile_screen_friendship_free_relation.tr(),
       'value': '',
+      'showOnProfile': false,
     },
     {
       'icon': Icons.school_outlined,
       'label': LocaleKeys.user_side_profile_screen_none.tr(),
       'value': LocaleKeys.user_side_profile_screen_none.tr(),
+      'showOnProfile': false,
     },
     {
       'icon': Icons.group_outlined,
       'label': LocaleKeys.user_side_profile_screen_alone.tr(),
       'value': LocaleKeys.user_side_profile_screen_alone.tr(),
+      'showOnProfile': false,
     },
     {
       'icon': Icons.transgender_outlined,
       'label': LocaleKeys.user_side_profile_screen_hetero.tr(),
       'value': LocaleKeys.user_side_profile_screen_hetero.tr(),
+      'showOnProfile': false,
     },
     {
       'icon': Icons.public,
       'label': LocaleKeys.user_side_profile_screen_african.tr(),
       'value': LocaleKeys.user_side_profile_screen_european.tr(),
+      'showOnProfile': false,
     },
     {
       'icon': Icons.church_outlined,
       'label': LocaleKeys.user_side_profile_screen_islam.tr(),
       'value': LocaleKeys.user_side_profile_screen_islam.tr(),
+      'showOnProfile': false,
     },
   ];
 
@@ -112,7 +124,7 @@ class _UserSideProfileScreenState extends State<UserSideProfileScreen> {
                 ),
                 ...profileData.map(
                   (data) => Container(
-                    height: height * 0.08,
+                    height: data['label'] == 'Hétéro' ? height * 0.14 : height * 0.08,
                     decoration: BoxDecoration(
                       color: AppColors.myWhite,
                       boxShadow: [
@@ -124,25 +136,49 @@ class _UserSideProfileScreenState extends State<UserSideProfileScreen> {
                       ],
                     ),
                     margin: const EdgeInsets.only(top: 13),
-                    child: ListTile(
-                      leading: Icon(
-                        data['icon'],
-                        color: AppColors.myTextDarkSoft,
-                      ),
-                      title: Text(
-                        data['label'],
-                        style: TextStyle(
-                          fontSize: width * 0.04,
-                          color: AppColors.myTextDarkSoft,
+                    child: Column(
+                      children: [
+                        ListTile(
+                          leading: Icon(
+                            data['icon'],
+                            color: AppColors.myTextDarkSoft,
+                          ),
+                          title: Text(
+                            data['label'],
+                            style: TextStyle(
+                              fontSize: width * 0.04,
+                              color: AppColors.myTextDarkSoft,
+                            ),
+                          ),
+                          trailing: Text(
+                            data['value'],
+                            style: TextStyle(
+                              fontSize: width * 0.04,
+                              color: AppColors.myTextDarkSoft,
+                            ),
+                          ),
                         ),
-                      ),
-                      trailing: Text(
-                        data['value'],
-                        style: TextStyle(
-                          fontSize: width * 0.04,
-                          color: AppColors.myTextDarkSoft,
-                        ),
-                      ),
+                        if (data['label'] == 'Hétéro')
+                          Row(
+														mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Text(
+                                'Ne pas afficher sur mon profil',
+                              ),
+                              Transform.scale(
+                                scale: 0.4,
+                                child: Switch(
+                                  value: data['showOnProfile'],
+                                  onChanged: (bool value) {
+                                    setState(() {
+                                      data['showOnProfile'] = value;
+                                    });
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                      ],
                     ),
                   ),
                 ),
@@ -185,8 +221,7 @@ class _UserSideProfileScreenState extends State<UserSideProfileScreen> {
                         height: height * 0.2,
                         width: width,
                         child: Text(
-                          LocaleKeys.user_side_profile_screen_hook_message
-                              .tr(),
+                          LocaleKeys.user_side_profile_screen_hook_message.tr(),
                           style: TextStyle(
                             fontSize: width * 0.03,
                             color: AppColors.myTextDarkSoft,
