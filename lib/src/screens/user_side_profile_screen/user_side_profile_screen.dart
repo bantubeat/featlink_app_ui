@@ -3,7 +3,9 @@ import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/components/app_navigation_bottom_sheet.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:featlink_app/src/resources/app_assets.dart';
-import 'package:featlink_app/src/screens/user_side_profile_screen/widget/circlepainter.dart';
+import 'package:featlink_app/src/screens/user_side_profile_screen/widget/circle_demi_trait_paint.dart';
+import 'package:featlink_app/src/screens/user_side_profile_screen/widget/profile_data_item.dart';
+import 'package:featlink_app/src/screens/user_side_profile_screen/widget/profile_image.dart';
 import 'package:flutter/material.dart';
 
 class UserSideProfileScreen extends StatefulWidget {
@@ -107,204 +109,246 @@ class _UserSideProfileScreenState extends State<UserSideProfileScreen> {
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
-    double containerImageHeight = girlImage.length * (height * 0.62);
-
     return Scaffold(
       backgroundColor: const Color.fromARGB(94, 198, 208, 209),
-      body: Stack(
+      body: ListView(
         children: [
-          SingleChildScrollView(
+          FirstBlock(height: height, width: width),
+          customDivider(
+            width,
+            height,
+            LocaleKeys.user_side_profile_screen_about.tr(),
+          ),
+          ProfileDataItem(
+            icon: Icons.location_city_outlined,
+            label: LocaleKeys.user_side_profile_screen_location.tr(),
+            value: LocaleKeys.user_side_profile_screen_location.tr(),
+            showOnProfile: profileData[0]['showOnProfile'],
+            onSwitchChanged: (bool value) {
+              setState(() {
+                profileData[0]['showOnProfile'] = value;
+              });
+            },
+          ),
+          ProfileDataItem(
+            icon: Icons.balance_outlined,
+            label: LocaleKeys.user_side_profile_screen_height.tr(),
+            value: LocaleKeys.user_side_profile_screen_height.tr(),
+            showOnProfile: profileData[1]['showOnProfile'],
+            onSwitchChanged: (bool value) {
+              setState(() {
+                profileData[1]['showOnProfile'] = value;
+              });
+            },
+          ),
+          ProfileDataItem(
+            icon: Icons.fitness_center_outlined,
+            label: LocaleKeys.user_side_profile_screen_weight.tr(),
+            value: LocaleKeys.user_side_profile_screen_weight.tr(),
+            showOnProfile: profileData[2]['showOnProfile'],
+            onSwitchChanged: (bool value) {
+              setState(() {
+                profileData[2]['showOnProfile'] = value;
+              });
+            },
+          ),
+          ProfileDataItem(
+            icon: Icons.groups_3_outlined,
+            label: LocaleKeys.user_side_profile_screen_yes.tr(),
+            value: LocaleKeys.user_side_profile_screen_yes.tr(),
+            showOnProfile: profileData[3]['showOnProfile'],
+            onSwitchChanged: (bool value) {
+              setState(() {
+                profileData[3]['showOnProfile'] = value;
+              });
+            },
+          ),
+          ProfileDataItem(
+            icon: Icons.smoking_rooms_outlined,
+            label: LocaleKeys.user_side_profile_screen_yes.tr(),
+            value: LocaleKeys.user_side_profile_screen_yes.tr(),
+            showOnProfile: profileData[4]['showOnProfile'],
+            onSwitchChanged: (bool value) {
+              setState(() {
+                profileData[4]['showOnProfile'] = value;
+              });
+            },
+          ),
+          ProfileDataItem(
+            icon: Icons.nightlife_outlined,
+            label: LocaleKeys.user_side_profile_screen_party.tr(),
+            value: LocaleKeys.user_side_profile_screen_party.tr(),
+            showOnProfile: profileData[5]['showOnProfile'],
+            onSwitchChanged: (bool value) {
+              setState(() {
+                profileData[5]['showOnProfile'] = value;
+              });
+            },
+          ),
+          ProfileDataItem(
+            icon: Icons.favorite_border_outlined,
+            label: LocaleKeys.user_side_profile_screen_friendship_free_relation
+                .tr(),
+            value: '',
+            showOnProfile: profileData[6]['showOnProfile'],
+            onSwitchChanged: (bool value) {
+              setState(() {
+                profileData[6]['showOnProfile'] = value;
+              });
+            },
+          ),
+          ProfileDataItem(
+            icon: Icons.school_outlined,
+            label: LocaleKeys.user_side_profile_screen_none.tr(),
+            value: LocaleKeys.user_side_profile_screen_none.tr(),
+            showOnProfile: profileData[7]['showOnProfile'],
+            onSwitchChanged: (bool value) {
+              setState(() {
+                profileData[7]['showOnProfile'] = value;
+              });
+            },
+          ),
+          ProfileDataItem(
+            icon: Icons.group_outlined,
+            label: LocaleKeys.user_side_profile_screen_alone.tr(),
+            value: LocaleKeys.user_side_profile_screen_alone.tr(),
+            showOnProfile: profileData[8]['showOnProfile'],
+            onSwitchChanged: (bool value) {
+              setState(() {
+                profileData[8]['showOnProfile'] = value;
+              });
+            },
+          ),
+          ProfileDataItem(
+            icon: Icons.transgender_outlined,
+            label: LocaleKeys.user_side_profile_screen_hetero.tr(),
+            value: LocaleKeys.user_side_profile_screen_hetero.tr(),
+            showOnProfile: profileData[9]['showOnProfile'],
+            onSwitchChanged: (bool value) {
+              setState(() {
+                profileData[9]['showOnProfile'] = value;
+              });
+            },
+          ),
+          ProfileDataItem(
+            icon: Icons.public,
+            label: LocaleKeys.user_side_profile_screen_african.tr(),
+            value: LocaleKeys.user_side_profile_screen_european.tr(),
+            showOnProfile: profileData[10]['showOnProfile'],
+            onSwitchChanged: (bool value) {
+              setState(() {
+                profileData[10]['showOnProfile'] = value;
+              });
+            },
+          ),
+          ProfileDataItem(
+            icon: Icons.church_outlined,
+            label: LocaleKeys.user_side_profile_screen_islam.tr(),
+            value: LocaleKeys.user_side_profile_screen_islam.tr(),
+            showOnProfile: profileData[11]['showOnProfile'],
+            onSwitchChanged: (bool value) {
+              setState(() {
+                profileData[11]['showOnProfile'] = value;
+              });
+            },
+          ),
+          customDivider(
+            width,
+            height,
+            LocaleKeys.user_side_profile_screen_interests.tr(),
+          ),
+          Container(
+            padding: EdgeInsets.symmetric(
+              horizontal: width * 0.04,
+            ),
+            color: AppColors.myWhite,
             child: Column(
               children: [
-                FirstBlock(height: height, width: width),
-                customDivider(
-                  width,
-                  height,
-                  LocaleKeys.user_side_profile_screen_about.tr(),
-                ),
-                ...profileData.map(
-                  (data) => Container(
-                    height: data['label'] == 'Hétéro' ? height * 0.14 : height * 0.08,
-                    decoration: BoxDecoration(
-                      color: AppColors.myWhite,
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(0.1),
-                          offset: const Offset(0, 2),
-                          blurRadius: 3,
-                        ),
-                      ],
+                Container(
+                  margin: EdgeInsets.symmetric(
+                    vertical: height * 0.02,
+                    horizontal: width * 0.04,
+                  ),
+                  padding: EdgeInsets.symmetric(
+                    horizontal: width * 0.04,
+                    vertical: height * 0.02,
+                  ),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: AppColors.myGray,
+                      width: 2,
                     ),
-                    margin: const EdgeInsets.only(top: 13),
-                    child: Column(
-                      children: [
-                        ListTile(
-                          leading: Icon(
-                            data['icon'],
-                            color: AppColors.myTextDarkSoft,
-                          ),
-                          title: Text(
-                            data['label'],
-                            style: TextStyle(
-                              fontSize: width * 0.04,
-                              color: AppColors.myTextDarkSoft,
-                            ),
-                          ),
-                          trailing: Text(
-                            data['value'],
-                            style: TextStyle(
-                              fontSize: width * 0.04,
-                              color: AppColors.myTextDarkSoft,
-                            ),
-                          ),
-                        ),
-                        if (data['label'] == 'Hétéro')
-                          Row(
-														mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              const Text(
-                                'Ne pas afficher sur mon profil',
-                              ),
-                              Transform.scale(
-                                scale: 0.4,
-                                child: Switch(
-                                  value: data['showOnProfile'],
-                                  onChanged: (bool value) {
-                                    setState(() {
-                                      data['showOnProfile'] = value;
-                                    });
-                                  },
-                                ),
-                              ),
-                            ],
-                          ),
-                      ],
+                    color: AppColors.myWhite,
+                    borderRadius: BorderRadius.circular(15),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: AppColors.myGray,
+                        offset: Offset(0, 5),
+                        blurRadius: 3,
+                      ),
+                    ],
+                  ),
+                  height: height * 0.2,
+                  width: width,
+                  child: Text(
+                    LocaleKeys.user_side_profile_screen_hook_message.tr(),
+                    style: TextStyle(
+                      fontSize: width * 0.03,
+                      color: AppColors.myTextDarkSoft,
                     ),
                   ),
+                ),
+                ProfileImage(
+                  image: girlImage[0],
+                ),
+                ProfileImage(
+                  image: girlImage[1],
+                ),
+                ProfileImage(
+                  image: girlImage[2],
+                ),
+                const SizedBox(
+                  height: 20,
                 ),
                 customDivider(
                   width,
                   height,
                   LocaleKeys.user_side_profile_screen_interests.tr(),
                 ),
-                Container(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: width * 0.04,
-                  ),
-                  color: AppColors.myWhite,
-                  child: Column(
-                    children: [
-                      Container(
-                        margin: EdgeInsets.symmetric(
-                          vertical: height * 0.02,
-                          horizontal: width * 0.04,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: List.generate(3, (index) {
+                    return Container(
+                      padding: EdgeInsets.symmetric(
+                        horizontal: width * 0.04,
+                        vertical: height * 0.01,
+                      ),
+                      decoration: BoxDecoration(
+                        border: Border.all(
+                          color: AppColors.myGray,
                         ),
-                        padding: EdgeInsets.symmetric(
-                          horizontal: width * 0.04,
-                          vertical: height * 0.02,
-                        ),
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: AppColors.myGray,
-                            width: 2,
-                          ),
-                          color: AppColors.myWhite,
-                          borderRadius: BorderRadius.circular(15),
-                          boxShadow: const [
-                            BoxShadow(
-                              color: AppColors.myGray,
-                              offset: Offset(0, 5),
-                              blurRadius: 3,
-                            ),
-                          ],
-                        ),
-                        height: height * 0.2,
-                        width: width,
-                        child: Text(
-                          LocaleKeys.user_side_profile_screen_hook_message.tr(),
-                          style: TextStyle(
-                            fontSize: width * 0.03,
-                            color: AppColors.myTextDarkSoft,
-                          ),
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                      child: Text(
+                        interets[index],
+                        style: TextStyle(
+                          color: AppColors.myTextDarkSoft,
+                          fontSize: width * 0.04,
                         ),
                       ),
-                      SizedBox(
-                        height: containerImageHeight,
-                        child: ListView.builder(
-                          itemCount: girlImage.length,
-                          itemBuilder: (context, index) {
-                            return Container(
-                              height: height * 0.6,
-                              decoration: BoxDecoration(
-                                color: AppColors.myWhite,
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: Colors.black.withOpacity(0.1),
-                                    offset: const Offset(0, 2),
-                                    blurRadius: 3,
-                                  ),
-                                ],
-                              ),
-                              margin: const EdgeInsets.only(top: 7),
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.network(
-                                  girlImage[index],
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            );
-                          },
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      customDivider(
-                        width,
-                        height,
-                        LocaleKeys.user_side_profile_screen_interests.tr(),
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(
-                          left: width * 0.02,
-                          right: width * 0.02,
-                          bottom: height * 0.1,
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: List.generate(3, (index) {
-                            return Container(
-                              padding: EdgeInsets.symmetric(
-                                horizontal: width * 0.04,
-                                vertical: height * 0.01,
-                              ),
-                              decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: AppColors.myGray,
-                                ),
-                                borderRadius: BorderRadius.circular(50),
-                              ),
-                              child: Text(
-                                interets[index],
-                                style: TextStyle(
-                                  color: AppColors.myTextDarkSoft,
-                                  fontSize: width * 0.04,
-                                ),
-                              ),
-                            );
-                          }),
-                        ),
-                      ),
-                    ],
-                  ),
+                    );
+                  }),
+                ),
+                SizedBox(
+                  height: height * 0.2,
                 ),
               ],
             ),
           ),
-          const Expanded(child: AppNavigationBottomSheet()),
         ],
       ),
+      floatingActionButton: const AppNavigationBottomSheet(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 
@@ -314,7 +358,6 @@ class _UserSideProfileScreenState extends State<UserSideProfileScreen> {
     String title,
   ) {
     return Column(
-      mainAxisSize: MainAxisSize.min,
       children: [
         Container(
           color: AppColors.myGray600,
@@ -324,45 +367,53 @@ class _UserSideProfileScreenState extends State<UserSideProfileScreen> {
         ),
         Container(
           padding: EdgeInsets.symmetric(horizontal: width * 0.04),
-          height: height * 0.09,
+          height: 60,
           color: AppColors.myWhite,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                title,
-                style: TextStyle(
-                  fontSize: width * 0.04,
-                  fontWeight: FontWeight.bold,
+              Flexible(
+                flex: 2,
+                child: Text(
+                  title,
+                  style: TextStyle(
+                    fontSize: width * 0.04,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: Container(
-                      width: width * 0.06,
-                      height: width * 0.06,
-                      padding: const EdgeInsets.all(2),
-                      decoration: BoxDecoration(
-                        border: Border.all(),
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                      child: Icon(
-                        Icons.edit,
-                        size: width * 0.04,
+              Flexible(
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    IconButton(
+                      onPressed: () {},
+                      icon: Container(
+                        width: 25,
+                        height: 25,
+                        padding: const EdgeInsets.all(2),
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                        child: const Icon(
+                          Icons.edit,
+                          size: 17,
+                        ),
                       ),
                     ),
-                  ),
-                  Text(
-                    LocaleKeys.user_side_profile_screen_edit.tr(),
-                    style: TextStyle(
-                      fontSize: width * 0.03,
+                    Flexible(
+                      child: Text(
+                        LocaleKeys.user_side_profile_screen_edit.tr(),
+                        style: const TextStyle(
+                          fontSize: 13,
+                        ),
+                        textAlign: TextAlign.end,
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ],
           ),
@@ -388,9 +439,9 @@ class FirstBlock extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            padding: EdgeInsets.only(
-              left: width * 0.05,
-              right: width * 0.05,
+            width: width,
+            padding: const EdgeInsets.only(
+              top: 30,
             ),
             decoration: BoxDecoration(
               color: AppColors.myWhite,
@@ -429,109 +480,121 @@ class FirstBlock extends StatelessWidget {
                       backgroundImage: const NetworkImage(
                         'data:image/jpeg;base64,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',
                       ),
+                      onBackgroundImageError: (exception, stackTrace) {
+                        // Gérer l'erreur ici
+                        //print("Erreur de chargement de l'image: $exception");
+                      },
                     ),
                   ],
                 ),
-                SizedBox(height: height * 0.015),
-                Text(
-                  LocaleKeys.user_side_profile_screen_screen_name.tr(),
-                  style: TextStyle(
-                    fontSize: width * 0.04,
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 20),
+                  child: Text(
+                    LocaleKeys.user_side_profile_screen_screen_name.tr(),
+                    style: TextStyle(
+                      fontSize: width * 0.04,
+                    ),
                   ),
                 ),
-                Padding(
+                Container(
+                  width: width,
                   padding: EdgeInsets.symmetric(
-                    horizontal: width * 0.05,
+                    horizontal: width * 0.02,
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Column(
-                        children: [
-                          IconButton(
-                            onPressed: () {},
-                            icon: Container(
-                              width: width * 0.08,
-                              height: width * 0.08,
-                              decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: AppColors.myDark.withOpacity(0.5),
-                                ),
-                                borderRadius: BorderRadius.circular(100),
-                              ),
-                              child: Icon(
-                                Icons.settings,
-                                color: AppColors.myDark.withOpacity(0.5),
-                                size: width * 0.04,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            LocaleKeys.user_side_profile_screen_settings.tr(),
-                            style: TextStyle(
-                              fontSize: width * 0.03,
-                              fontWeight: FontWeight.bold,
-                              color: const Color.fromARGB(
-                                255,
-                                110,
-                                110,
-                                110,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          Stack(
-                            alignment: Alignment.topLeft,
-                            children: [
-                              IconButton(
-                                icon: Container(
-                                  width: width * 0.08,
-                                  height: width * 0.08,
-                                  decoration: BoxDecoration(
-                                    border: Border.all(
-                                      color: AppColors.myDark.withOpacity(0.5),
-                                    ),
-                                    borderRadius: BorderRadius.circular(100),
-                                  ),
-                                  child: Icon(
-                                    Icons.edit,
+                      Expanded(
+                        child: Column(
+                          children: [
+                            IconButton(
+                              onPressed: () {},
+                              icon: Container(
+                                width: width * 0.08,
+                                height: width * 0.08,
+                                decoration: BoxDecoration(
+                                  border: Border.all(
                                     color: AppColors.myDark.withOpacity(0.5),
-                                    size: width * 0.04,
                                   ),
+                                  borderRadius: BorderRadius.circular(100),
                                 ),
-                                onPressed: () {},
-                              ),
-                              Positioned(
-                                top: 4,
-                                right: 16,
-                                child: Container(
-                                  width: width * 0.015,
-                                  height: width * 0.015,
-                                  decoration: const BoxDecoration(
-                                    color: Colors.orange,
-                                    shape: BoxShape.circle,
-                                  ),
+                                child: Icon(
+                                  Icons.settings,
+                                  color: AppColors.myDark.withOpacity(0.5),
+                                  size: width * 0.04,
                                 ),
-                              ),
-                            ],
-                          ),
-                          Text(
-                            LocaleKeys.user_side_profile_screen_edit.tr(),
-                            style: TextStyle(
-                              fontSize: width * 0.03,
-                              fontWeight: FontWeight.bold,
-                              color: const Color.fromARGB(
-                                255,
-                                110,
-                                110,
-                                110,
                               ),
                             ),
-                          ),
-                        ],
+                            Text(
+                              LocaleKeys.user_side_profile_screen_settings.tr(),
+                              style: TextStyle(
+                                fontSize: width * 0.03,
+                                fontWeight: FontWeight.bold,
+                                color: const Color.fromARGB(
+                                  255,
+                                  110,
+                                  110,
+                                  110,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: Column(
+                          children: [
+                            Stack(
+                              alignment: Alignment.topLeft,
+                              children: [
+                                IconButton(
+                                  icon: Container(
+                                    width: width * 0.08,
+                                    height: width * 0.08,
+                                    decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color:
+                                            AppColors.myDark.withOpacity(0.5),
+                                      ),
+                                      borderRadius: BorderRadius.circular(100),
+                                    ),
+                                    child: Icon(
+                                      Icons.edit,
+                                      color: AppColors.myDark.withOpacity(0.5),
+                                      size: width * 0.04,
+                                    ),
+                                  ),
+                                  onPressed: () {},
+                                ),
+                                Positioned(
+                                  top: 4,
+                                  right: 16,
+                                  child: Container(
+                                    width: width * 0.015,
+                                    height: width * 0.015,
+                                    decoration: const BoxDecoration(
+                                      color: Colors.orange,
+                                      shape: BoxShape.circle,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Text(
+                              LocaleKeys.user_side_profile_screen_edit.tr(),
+                              style: TextStyle(
+                                fontSize: width * 0.03,
+                                fontWeight: FontWeight.bold,
+                                color: const Color.fromARGB(
+                                  255,
+                                  110,
+                                  110,
+                                  110,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
@@ -687,3 +750,4 @@ class FirstBlock extends StatelessWidget {
     );
   }
 }
+
