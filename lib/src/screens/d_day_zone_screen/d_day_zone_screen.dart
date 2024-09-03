@@ -78,23 +78,26 @@ class DDayZoneScreen extends StatelessWidget {
             },
           ),
           bottom: TabBar(
+            labelColor: AppColors.myDark,
+            unselectedLabelColor: AppColors.myDark,
             tabs: [
-              Tab(
-                text: LocaleKeys.d_day_screen_the_d_day.tr(),
-              ),
+              Tab(text: LocaleKeys.d_day_screen_the_d_day.tr()),
               Tab(text: LocaleKeys.d_day_screen_your_d_day.tr()),
             ],
           ),
         ),
         body: Stack(
           children: [
-            TabBarView(
-              children: [
-                TheDDayTab(datas: myData),
-                const YourDDayTab(),
-              ],
+            Padding(
+              padding: const EdgeInsets.only(bottom: 85),
+              child: TabBarView(
+                children: [
+                  TheDDayTab(datas: myData),
+                  const YourDDayTab(),
+                ],
+              ),
             ),
-            const Expanded(child: AppNavigationBottomSheet()),
+            const AppNavigationBottomSheet(),
           ],
         ),
       ),

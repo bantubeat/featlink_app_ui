@@ -23,16 +23,17 @@ class TheDDayTab extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 5, right: 5),
                 height: MediaQuery.of(context).size.height * 0.04,
                 decoration: BoxDecoration(
-                  border: Border.all(
-                    color: AppColors.myGray,
-                  ),
+                  border: Border.all(color: AppColors.myGray),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: DropdownButtonHideUnderline(
                   child: DropdownButton<String>(
                     value: LocaleKeys.d_day_screen_country_cameroun.tr(),
-                    items: <String>[LocaleKeys.d_day_screen_country_cameroun.tr(), LocaleKeys.d_day_screen_country_france.tr(), LocaleKeys.d_day_screen_country_maroc.tr()]
-                        .map((String value) {
+                    items: <String>[
+                      LocaleKeys.d_day_screen_country_cameroun.tr(),
+                      LocaleKeys.d_day_screen_country_france.tr(),
+                      LocaleKeys.d_day_screen_country_maroc.tr(),
+                    ].map((String value) {
                       return DropdownMenuItem<String>(
                         value: value,
                         child: Text(
@@ -53,7 +54,9 @@ class TheDDayTab extends StatelessWidget {
                 LocaleKeys.d_day_screen_the_d_day_subtitle.tr(),
                 textAlign: TextAlign.start,
                 style: const TextStyle(
-                    fontWeight: FontWeight.bold, fontSize: 17,),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 17,
+                ),
               ),
             ],
           ),

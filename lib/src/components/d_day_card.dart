@@ -57,7 +57,6 @@ class DDayCard extends StatelessWidget {
                 children: [
                   Container(
                     height: MediaQuery.of(context).size.height * 0.05,
-										
                     padding: const EdgeInsets.symmetric(horizontal: 10),
                     width: MediaQuery.of(context).size.width / 2 - 20,
                     child: Row(
@@ -66,30 +65,34 @@ class DDayCard extends StatelessWidget {
                         CircleAvatar(
                           backgroundImage: AssetImage(userImageUrl),
                         ),
-                        Column(
-                          children: [
-                            Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 10),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                children: [
-                                   Icon(
-                                    Icons.timer,
-                                    color: AppColors.myWhite,
-                                    size: MediaQuery.of(context).size.width * 0.015,
-                                  ),
-                                  Text(
+                        Expanded(
+                          child: Align(
+                            alignment: Alignment.topRight,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                const Icon(
+                                  Icons.timer,
+                                  color: AppColors.myGray,
+                                  size: 16,
+                                ),
+                                const SizedBox(width: 2.5),
+                                Flexible(
+                                  child: Text(
                                     date,
-                                    style:  TextStyle(
-                                      color: Colors.white,
-                                      fontSize: MediaQuery.of(context).size.width * 0.015,
+                                    textAlign: TextAlign.right,
+                                    overflow: TextOverflow.fade,
+                                    softWrap: false,
+                                    style: const TextStyle(
+                                      color: AppColors.myGray,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 10,
                                     ),
                                   ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
-                          ],
+                          ),
                         ),
                       ],
                     ),
@@ -140,8 +143,27 @@ class DDayCard extends StatelessWidget {
               ),
             ),
             Positioned(
+              bottom: 0,
+              child: Container(
+                height: 50,
+                width: MediaQuery.of(context).size.width / 2 - 20,
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    stops: [0, 1],
+                    colors: [
+                      Colors.transparent,
+                      AppColors.myDark,
+                    ],
+                    tileMode: TileMode.decal,
+                  ),
+                ),
+              ),
+            ),
+            Positioned(
               bottom: 8,
-              child: GestureDetector(
+              child: InkWell(
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 5),
                   decoration: BoxDecoration(
