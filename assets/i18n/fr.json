@@ -136,22 +136,6 @@
         "description2v6": "politique de confidentialités de bantubeat ",
         "description2v7": "et toutes les politiques et conditions de Bantubeat.",
         "confirm": "Confirm",
-        "return": "Retour"
-    },
-    "create_profile_step_110_screen": {
-        "title1": "Félicitation votre profil est crée",
-        "title2": "Qui peut voir votre profil Featlink ?",
-        "title3": "Les conditions que vous acceptez",
-        "description1v1": "Votre profil Featlink peut être visible par tous les utilisateurs de Featlink. ",
-        "description1v2": "votre nom de profil Featlink reste le même que celui sur bantubeat. si vous voulez modifier votre nom de profil retournez dans votre compte sur bantubeat, dans paramètre gestion de compte. ",
-        "description2v1": "Votre activité sur Featlink pourrait être utilisée pour personnaliser votre expérience sur les produits Bantubeat et notamment les publicités que vous pourriez voir. En appuyant sur confirmer, vous accepter ",
-        "description2v2": "les conditions d'utilisation de Featlink, ",
-        "description2v3": "les ",
-        "description2v4": "conditions générales de Bantubeat, ",
-        "description2v5": "vous acceptez la ",
-        "description2v6": "politique de confidentialités de bantubeat ",
-        "description2v7": "et toutes les politiques et conditions de Bantubeat.",
-        "confirm": "Confirm",
         "return": "retour."
     },
     "modal_redirection": {
@@ -206,14 +190,6 @@
         "desirs_domina": "Domina/soumission",
         "design_changing": "Echangisme",
         "design_between_couple": "Entre couple (2+2)"
-    },
-    "create_profile_step_1o5_screen": {
-        "title": "Votre Accroche",
-        "description": "Les gens vous perçoivent tel que vous vous présentez et la première impression fait toute la différence.\n\n votre accroche, c’est cette présentation qui pourra rapidement vous distinguer des autres utilisateurs et vous attirer plus de partenaires.",
-        "hook_message": "écrire votre message accroche ...",
-        "max_number_characters": "Maximum {} caractères",
-        "add_media_message": "Ajouter vos plus belles photos/vidéo car les profils avec des photos/vidéo ont plus de chance d'attirer l'attention.",
-        "media_caution": "Attention Mettez des vidéos de bonne qualité et de maximum 5 secondes."
     },
     "bottom_nav": {
         "home": "Accueil",
@@ -280,5 +256,46 @@
         "first_day": "Premier jour",
         "communities": "Communautés",
         "vip_clup": "Club VIP"
+    },
+    "edit_profile_interet_screen": {
+        "interets": "Interêts",
+        "passionate_about": "Let everyone know what you’re passionate about, by adding it to your profile.",
+        "apply": "Apply {}"
+    },
+    "d_day_screen": {
+        "title": "Plusieurs personnes ont les mêmes envies que toi!",
+        "subtitle": "",
+        "your_d_day": "Tes D-Day",
+        "the_d_day": "Les D-Day",
+        "intrested": "Intéressé(e)",
+        "the_d_day_subtitle": "Explore les envies de la communauté",
+        "the_d_day_text": "Tu trouveras peut-être une identique à la tienne",
+        "your_d_day_text_title" : "C'est quoi un D-Day?",
+        "your_d_day_text_text1": "Desire of the day, c'est cette envie momentanée que nous avons parfois, envie d'une ballade, envie d'un cinéma, envie de parler a à une personne etc.",
+        "your_d_day_text_text2": "Plusieurs personnes ont très souvent la même envie que toi",
+        "your_d_day_text_text3":"Publie un D-Day, il y'a forcément quelqu'un qui a le même D-Day",
+        "country": {
+            "cameroun": "Cameroun",
+            "france": "France",
+            "belgique": "Belgique",
+            "senegal": "Senegal", 
+            "mali": "Mali",
+            "cote_ivoire": "Côte d'Ivoire",
+            "maroc": "Maroc",
+            "tunisie": "Tunisie",
+            "algerie": "Algérie",
+            "mauritanie": "Mauritanie"
+        },
+        "your_d_day_button": {
+            "publish": "Publier une D-Day",
+            "see": "Voir Tes D-Dating"
+        }, 
+        "d_dialog" : {
+            "title" : "Un D-Dating avec @",
+            "subtitle" : "Dis lui pourquoi son D-Day t'intéresses",
+            "placeholder" : "écris un short message",
+            "cancelbutton" : "Annuler",
+            "sendbutton" : "Envoyer"
+        }
     }
 }
