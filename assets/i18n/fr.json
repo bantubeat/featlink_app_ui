@@ -246,11 +246,22 @@
         "friendship": "Amitié",
         "professional_relationship": "Relation professionnelle"
     },
+    "discovery_search_1_screen": {
+        "title": "Bienvenu dans l’espace de toutes les surprises",
+        "publicity": "Publicité",
+        "pub": "Pub",
+        "know_more": "En savoir plus",
+        "special_search": "Recherches spéciales",
+        "in_your_city": "Dans ta ville",
+        "first_day": "Premier jour",
+        "communities": "Communautés",
+        "vip_clup": "Club VIP"
+    },
     "edit_profile_interet_screen": {
         "interets": "Interêts",
         "passionate_about": "Let everyone know what you’re passionate about, by adding it to your profile.",
         "apply": "Apply {}"
-    }
+    },
     "d_day_screen": {
         "title": "Plusieurs personnes ont les mêmes envies que toi!",
         "subtitle": "",

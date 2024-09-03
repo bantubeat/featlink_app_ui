@@ -36,6 +36,30 @@ abstract class LocaleKeys {
   static const login_screen_or = 'login_screen.or';
   static const login_screen_terms = 'login_screen.terms';
 
+  static const login_screen = 'login_screen';
+  static const create_profile_step_1o1_screen_wording_text =
+      'create_profile_step_1o1_screen.wording_text';
+  static const create_profile_step_1o1_screen_profile_name =
+      'create_profile_step_1o1_screen.profile_name';
+  static const create_profile_step_1o1_screen_i_am =
+      'create_profile_step_1o1_screen.i_am';
+  static const create_profile_step_1o1_screen_profile_note =
+      'create_profile_step_1o1_screen.profile_note';
+  static const create_profile_step_1o1_screen =
+      'create_profile_step_1o1_screen';
+  static const create_profile_step_1o4_screen_avatar =
+      'create_profile_step_1o4_screen.avatar';
+  static const create_profile_step_1o4_screen_add_avatar =
+      'create_profile_step_1o4_screen.add_avatar';
+  static const create_profile_step_1o4_screen_description =
+      'create_profile_step_1o4_screen.description';
+  static const create_profile_step_1o4_screen =
+      'create_profile_step_1o4_screen';
+  static const image_service_choose_camera = 'image_service.choose_camera';
+  static const image_service_choose_gallery = 'image_service.choose_gallery';
+  static const image_service = 'image_service';
+
+
   static const create_profile_step_1o1_screen_wording_text = 'create_profile_step_1o1_screen.wording_text';
   static const create_profile_step_1o1_screen_profile_name = 'create_profile_step_1o1_screen.profile_name';
   static const create_profile_step_1o1_screen_i_am = 'create_profile_step_1o1_screen.i_am';
@@ -130,6 +154,7 @@ abstract class LocaleKeys {
       'create_profile_step_1o4_screen.description';
   static const image_service_choose_camera = 'image_service.choose_camera';
   static const image_service_choose_gallery = 'image_service.choose_gallery';
+
   static const create_profile_step_1o3_screen_country_and_city =
       'create_profile_step_1o3_screen.country_and_city';
   static const create_profile_step_1o3_screen_add_your_city =
@@ -142,6 +167,10 @@ abstract class LocaleKeys {
       'create_profile_step_1o3_screen.city';
   static const create_profile_step_1o3_screen_choose_your_city =
       'create_profile_step_1o3_screen.choose_your_city';
+
+  static const create_profile_step_1o3_screen =
+      'create_profile_step_1o3_screen';
+
   static const create_profile_step_1o6_screen_title =
       'create_profile_step_1o6_screen.title';
   static const create_profile_step_1o6_screen_size =
@@ -160,6 +189,10 @@ abstract class LocaleKeys {
       'create_profile_step_1o6_screen.weight_medium';
   static const create_profile_step_1o6_screen_weight_heavy =
       'create_profile_step_1o6_screen.weight_heavy';
+
+  static const create_profile_step_1o6_screen =
+      'create_profile_step_1o6_screen';
+
   static const create_profile_step_1o7_screen_title =
       'create_profile_step_1o7_screen.title';
   static const create_profile_step_1o7_screen_children =
@@ -178,6 +211,10 @@ abstract class LocaleKeys {
       'create_profile_step_1o7_screen.degree_master';
   static const create_profile_step_1o7_screen_degree_doctor =
       'create_profile_step_1o7_screen.degree_doctor';
+
+  static const create_profile_step_1o7_screen =
+      'create_profile_step_1o7_screen';
+
   static const create_profile_step_1o8_screen_title =
       'create_profile_step_1o8_screen.title';
   static const create_profile_step_1o8_screen_smoke =
@@ -196,8 +233,17 @@ abstract class LocaleKeys {
       'create_profile_step_1o8_screen.alcool_party';
   static const create_profile_step_1o8_screen_alcool_regulary =
       'create_profile_step_1o8_screen.alcool_regulary';
+
+  static const create_profile_step_1o8_screen =
+      'create_profile_step_1o8_screen';
   static const create_profile_step_1o2_screen_birth_year =
       'create_profile_step_1o2_screen.birth_year';
+  static const create_profile_step_1o2_screen =
+      'create_profile_step_1o2_screen';
+
+  static const create_profile_step_1o2_screen_birth_year =
+      'create_profile_step_1o2_screen.birth_year';
+
   static const create_profile_step_2o2_screen_title =
       'create_profile_step_2o2_screen.title';
   static const create_profile_step_2o2_screen_title_loyalty_section =
@@ -226,6 +272,10 @@ abstract class LocaleKeys {
       'create_profile_step_2o2_screen.title_nice_user_section';
   static const create_profile_step_2o2_screen_content_nice_user_section =
       'create_profile_step_2o2_screen.content_nice_user_section';
+
+  static const create_profile_step_2o2_screen =
+      'create_profile_step_2o2_screen';
+
   static const create_profile_step_1o5_screen_title =
       'create_profile_step_1o5_screen.title';
   static const create_profile_step_1o5_screen_description =
@@ -238,6 +288,10 @@ abstract class LocaleKeys {
       'create_profile_step_1o5_screen.add_media_message';
   static const create_profile_step_1o5_screen_media_caution =
       'create_profile_step_1o5_screen.media_caution';
+
+  static const create_profile_step_1o5_screen =
+      'create_profile_step_1o5_screen';
+
   static const create_profile_step_110_screen_title1 =
       'create_profile_step_110_screen.title1';
   static const create_profile_step_110_screen_title2 =
@@ -267,6 +321,9 @@ abstract class LocaleKeys {
   static const create_profile_step_110_screen_return =
       'create_profile_step_110_screen.return';
 
+  static const create_profile_step_110_screen =
+      'create_profile_step_110_screen';
+
   static const modal_redirection_title = 'modal_redirection.title';
   static const modal_redirection_payment_message =
       'modal_redirection.payment_message';
@@ -277,6 +334,9 @@ abstract class LocaleKeys {
   static const modal_redirection_text3 = 'modal_redirection.text3';
   static const modal_redirection_check = 'modal_redirection.check';
   static const modal_redirection_ok = 'modal_redirection.ok';
+
+  static const modal_redirection = 'modal_redirection';
+
 
   static const create_profile_step_1o9_screen_title = 'create_profile_step_1o9_screen.title';
   static const create_profile_step_1o9_screen_sexual_preference = 'create_profile_step_1o9_screen.sexual_preference';
@@ -317,6 +377,7 @@ abstract class LocaleKeys {
   static const create_profile_step_2o1_screen_design_changing = 'create_profile_step_2o1_screen.design_changing';
   static const create_profile_step_2o1_screen_design_between_couple = 'create_profile_step_2o1_screen.design_between_couple';
 
+
   static const create_profile_step_1o9_screen_title =
       'create_profile_step_1o9_screen.title';
   static const create_profile_step_1o9_screen_sexual_preference =
@@ -339,8 +400,17 @@ abstract class LocaleKeys {
       'create_profile_step_1o9_screen.residence_option_2';
   static const create_profile_step_1o9_screen_choose =
       'create_profile_step_1o9_screen.choose';
+
+  static const create_profile_step_1o9_screen =
+      'create_profile_step_1o9_screen';
   static const create_profile_custom_choice_select_empty =
       'create_profile_custom_choice_select.empty';
+  static const create_profile_custom_choice_select =
+      'create_profile_custom_choice_select';
+
+  static const create_profile_custom_choice_select_empty =
+      'create_profile_custom_choice_select.empty';
+
   static const create_profile_step_2o1_screen_title =
       'create_profile_step_2o1_screen.title';
   static const create_profile_step_2o1_screen_subtitle =
@@ -394,6 +464,8 @@ abstract class LocaleKeys {
   static const create_profile_step_2o1_screen_design_between_couple =
       'create_profile_step_2o1_screen.design_between_couple';
 
+  static const create_profile_step_2o1_screen =
+      'create_profile_step_2o1_screen';
   static const bottom_nav_home = 'bottom_nav.home';
   static const bottom_nav_discovery = 'bottom_nav.discovery';
   static const bottom_nav_crush = 'bottom_nav.crush';
@@ -405,6 +477,7 @@ abstract class LocaleKeys {
   static const bottom_nav_jetons = 'bottom_nav.jetons';
   static const bottom_nav_profile = 'bottom_nav.profile';
   static const bottom_nav_mode = 'bottom_nav.mode';
+  static const bottom_nav = 'bottom_nav';
 
   static const create_profile_step_2o3_screen_title = 'create_profile_step_2o3_screen.title';
   static const create_profile_step_2o3_screen_gender = 'create_profile_step_2o3_screen.gender';
@@ -450,6 +523,11 @@ abstract class LocaleKeys {
       'create_profile_step_2o3_screen.ethnicity';
   static const create_profile_step_2o3_screen_save =
       'create_profile_step_2o3_screen.save';
+  static const create_profile_step_2o3_screen =
+      'create_profile_step_2o3_screen';
+  static const notifications_screen_swipespay_message =
+      'notifications_screen.swipespay_message';
+  static const notifications_screen = 'notifications_screen';
   static const notifications_screen_swipespay_message =
       'notifications_screen.swipespay_message';
 
@@ -477,7 +555,27 @@ abstract class LocaleKeys {
   static const filter_screen_sincere_love = 'filter_screen.sincere_love';
   static const filter_screen_marriage = 'filter_screen.marriage';
   static const filter_screen_friendship = 'filter_screen.friendship';
-
+  static const filter_screen_professional_relationship =
+      'filter_screen.professional_relationship';
+  static const filter_screen = 'filter_screen';
+  static const discovery_search_1_screen_title =
+      'discovery_search_1_screen.title';
+  static const discovery_search_1_screen_publicity =
+      'discovery_search_1_screen.publicity';
+  static const discovery_search_1_screen_pub = 'discovery_search_1_screen.pub';
+  static const discovery_search_1_screen_know_more =
+      'discovery_search_1_screen.know_more';
+  static const discovery_search_1_screen_special_search =
+      'discovery_search_1_screen.special_search';
+  static const discovery_search_1_screen_in_your_city =
+      'discovery_search_1_screen.in_your_city';
+  static const discovery_search_1_screen_first_day =
+      'discovery_search_1_screen.first_day';
+  static const discovery_search_1_screen_communities =
+      'discovery_search_1_screen.communities';
+  static const discovery_search_1_screen_vip_clup =
+      'discovery_search_1_screen.vip_clup';
+  static const discovery_search_1_screen = 'discovery_search_1_screen';
   static const filter_screen_professional_relationship = 'filter_screen.professional_relationship';
   static const edit_profile_interet_screen_interets = 'edit_profile_interet_screen.interets';
   static const edit_profile_interet_screen_passionate_about = 'edit_profile_interet_screen.passionate_about';
@@ -526,5 +624,4 @@ abstract class LocaleKeys {
       'd_day_screen.d_dialog.cancelbutton';
   static const d_day_screen_d_dialog_sendbutton =
       'd_day_screen.d_dialog.sendbutton';
-
 }

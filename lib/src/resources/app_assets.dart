@@ -18,6 +18,12 @@ final class AppAssets {
   static const svgStep1o2Icon = 'assets/svg/step1o2_icon.svg';
   static const createProfileStep1o2Image = 'assets/images/step1o2_icon.png';
   static const imageLogo2 = 'assets/images/logo2.png';
+  static const clubVipImage = 'assets/images/club_vip.jpeg';
+  static const communityImage = 'assets/images/community.jpeg';
+  static const firstTimeImage = 'assets/images/first_time.png';
+  static const inCityImage = 'assets/images/in_city.png';
+  static const pubImage = 'assets/images/pub_image.jpeg';
+  static const specialSearchImage = 'assets/images/special_search.jpeg';
 
   static const bantubeatIcon = 'assets/images/bantubeat_icon.png';
   static const salonpriveIcon = 'assets/images/salon_prive_icon.png';

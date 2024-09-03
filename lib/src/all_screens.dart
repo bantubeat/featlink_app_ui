@@ -5,6 +5,7 @@ import 'package:flutter/material.dart' show Widget;
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o5_screen.dart';
 import 'screens/_create_profile/create_profile_step_2o2_screen/create_profile_step_2o2_screen.dart';
+import 'screens/_discovery/discovery_search_1_screen.dart';
 import 'screens/_swipe/filter_screen/filter_screen.dart';
 import 'screens/welcome2_screen/welcome2_screen.dart';
 import 'screens/welcome_screen.dart';
@@ -62,6 +63,7 @@ final Map<String, Widget Function()> allScreens = {
 
   'notifications_screen.dart': () => const NotificationsScreen(),
   'filter_screen.dart': () => const FilterScreen(),
+  'discovery_search_1_screen.dart': () => const DiscoverySearch1Screen(),
 
   'edit_profile_interet_screen.dart': () => EditProfileInteretScreen(),
 
