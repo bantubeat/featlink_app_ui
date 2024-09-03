@@ -480,4 +480,79 @@ abstract class LocaleKeys {
       'main_settings_screen.cookies_policy';
   static const main_settings_screen_visual_article_policy =
       'main_settings_screen.visual_article_policy';
+  static const discovery_in_my_city_screen_title =
+      'discovery_in_my_city_screen.title';
+  static const discovery_in_my_city_screen_on_ligne =
+      'discovery_in_my_city_screen.on_ligne';
+  static const discovery_in_my_city_screen_who_are_in_your_city =
+      'discovery_in_my_city_screen.who_are_in_your_city';
+  static const discovery_in_my_city_screen_all_continent =
+      'discovery_in_my_city_screen.all_continent';
+  static const discovery_in_my_city_screen_african =
+      'discovery_in_my_city_screen.african';
+  static const discovery_in_my_city_screen_american =
+      'discovery_in_my_city_screen.american';
+  static const discovery_in_my_city_screen_asian =
+      'discovery_in_my_city_screen.asian';
+  static const discovery_in_my_city_screen_europeen =
+      'discovery_in_my_city_screen.europeen';
+  static const discovery_in_my_city_screen_oceanian =
+      'discovery_in_my_city_screen.oceanian';
+  static const discovery_in_my_city_screen_gender_other =
+      'discovery_in_my_city_screen.gender_other';
+  static const discovery_in_my_city_screen_heterosexual_label =
+      'discovery_in_my_city_screen.heterosexual_label';
+  static const discovery_in_my_city_screen_gay_label =
+      'discovery_in_my_city_screen.gay_label';
+  static const discovery_in_my_city_screen_lesbienne_label =
+      'discovery_in_my_city_screen.lesbienne_label';
+  static const discovery_in_my_city_screen_age_year =
+      'discovery_in_my_city_screen.age_year';
+  static const discovery_in_my_city_screen_man =
+      'discovery_in_my_city_screen.man';
+  static const discovery_in_my_city_screen_woman =
+      'discovery_in_my_city_screen.woman';
+  static const discovery_in_my_city_screen_others =
+      'discovery_in_my_city_screen.others';
+  static const discovery_first_day_screen_title =
+      'discovery_first_day_screen.title';
+  static const discovery_first_day_screen_on_ligne =
+      'discovery_first_day_screen.on_ligne';
+  static const discovery_first_day_screen_first_day_of_inscription =
+      'discovery_first_day_screen.first_day_of_inscription';
+  static const discovery_first_day_screen_all_continent =
+      'discovery_first_day_screen.all_continent';
+  static const discovery_first_day_screen_african =
+      'discovery_first_day_screen.african';
+  static const discovery_first_day_screen_american =
+      'discovery_first_day_screen.american';
+  static const discovery_first_day_screen_asian =
+      'discovery_first_day_screen.asian';
+  static const discovery_first_day_screen_europeen =
+      'discovery_first_day_screen.europeen';
+  static const discovery_first_day_screen_oceanian =
+      'discovery_first_day_screen.oceanian';
+  static const discovery_first_day_screen_gender_other =
+      'discovery_first_day_screen.gender_other';
+  static const discovery_first_day_screen_heterosexual_label =
+      'discovery_first_day_screen.heterosexual_label';
+  static const discovery_first_day_screen_gay_label =
+      'discovery_first_day_screen.gay_label';
+  static const discovery_first_day_screen_lesbienne_label =
+      'discovery_first_day_screen.lesbienne_label';
+  static const discovery_first_day_screen_age_year =
+      'discovery_first_day_screen.age_year';
+  static const discovery_first_day_screen_man =
+      'discovery_first_day_screen.man';
+  static const discovery_first_day_screen_woman =
+      'discovery_first_day_screen.woman';
+  static const discovery_first_day_screen_others =
+      'discovery_first_day_screen.others';
+  static const discovery_blur_screen_title = 'discovery_blur_screen.title';
+  static const discovery_blur_screen_sub_title =
+      'discovery_blur_screen.sub_title';
+  static const discovery_blur_screen_description =
+      'discovery_blur_screen.description';
+  static const discovery_blur_screen_buy_access =
+      'discovery_blur_screen.buy_access';
 }
