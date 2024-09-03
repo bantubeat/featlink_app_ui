@@ -327,5 +327,24 @@
         "couple": "Couple",
         "others": "Autres",
         "save": "Enregistrer"
+    },
+    "main_settings_screen": {
+        "title": "Paramètres",
+        "preferences": "Préferences",
+        "dark_mode": "Mode sombre",
+        "account": "Compte",
+        "unsubscribe": "Se désinscrire de Featlink",
+        "private_mode": "Mode Privé",
+        "logout": "Déconnexion",
+        "support": "Support",
+        "help_page": "Page d'aide",
+        "copyright": "Droit d'auteur",
+        "beatzcoins_usage": "Utilisation du Beatzcoins",
+        "featlink_pub": "Publicités sur Featlink",
+        "legals_notices": "Mentions légales",
+        "general_conditions": "Conditions génrales",
+        "confidentiality_policy": "Politique de confidentialité",
+        "cookies_policy": "Politique des cookies",
+        "visual_article_policy": "Politique des articles visuels"
     }
 }

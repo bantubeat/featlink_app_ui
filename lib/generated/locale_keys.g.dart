@@ -264,5 +264,22 @@ abstract class  LocaleKeys {
   static const private_mode_settings_screen_couple = 'private_mode_settings_screen.couple';
   static const private_mode_settings_screen_others = 'private_mode_settings_screen.others';
   static const private_mode_settings_screen_save = 'private_mode_settings_screen.save';
+  static const main_settings_screen_title = 'main_settings_screen.title';
+  static const main_settings_screen_preferences = 'main_settings_screen.preferences';
+  static const main_settings_screen_dark_mode = 'main_settings_screen.dark_mode';
+  static const main_settings_screen_account = 'main_settings_screen.account';
+  static const main_settings_screen_unsubscribe = 'main_settings_screen.unsubscribe';
+  static const main_settings_screen_private_mode = 'main_settings_screen.private_mode';
+  static const main_settings_screen_logout = 'main_settings_screen.logout';
+  static const main_settings_screen_support = 'main_settings_screen.support';
+  static const main_settings_screen_help_page = 'main_settings_screen.help_page';
+  static const main_settings_screen_copyright = 'main_settings_screen.copyright';
+  static const main_settings_screen_beatzcoins_usage = 'main_settings_screen.beatzcoins_usage';
+  static const main_settings_screen_featlink_pub = 'main_settings_screen.featlink_pub';
+  static const main_settings_screen_legals_notices = 'main_settings_screen.legals_notices';
+  static const main_settings_screen_general_conditions = 'main_settings_screen.general_conditions';
+  static const main_settings_screen_confidentiality_policy = 'main_settings_screen.confidentiality_policy';
+  static const main_settings_screen_cookies_policy = 'main_settings_screen.cookies_policy';
+  static const main_settings_screen_visual_article_policy = 'main_settings_screen.visual_article_policy';
 
 }
