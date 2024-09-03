@@ -12,7 +12,6 @@ class YourDDayTab extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(15),
       child: Column(
-       
         children: [
           Row(
             children: [
@@ -41,7 +40,7 @@ class YourDDayTab extends StatelessWidget {
               style: const TextStyle(fontSize: 18),
             ),
           ),
-           SizedBox(height: MediaQuery.of(context).size.height*0.2),
+          SizedBox(height: MediaQuery.of(context).size.height * 0.2),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

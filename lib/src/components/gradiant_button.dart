@@ -34,7 +34,10 @@ class GradiantButton extends StatelessWidget {
 
   @protected
   Widget buildContent(BuildContext context) {
-    return Text(label, style: const TextStyle(fontWeight: FontWeight.bold),);
+    return Text(
+      label,
+      style: const TextStyle(fontWeight: FontWeight.bold),
+    );
   }
 
   @override
@@ -59,7 +62,8 @@ class GradiantButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: backgroundColor,
           gradient: const LinearGradient(
-              colors: [AppColors.myPrimarySoft, AppColors.myWhite],),
+            colors: [AppColors.myPrimarySoft, AppColors.myWhite],
+          ),
           borderRadius: borderRadius,
           border: borderWidth != 0
               ? Border.all(width: borderWidth, color: borderColor)

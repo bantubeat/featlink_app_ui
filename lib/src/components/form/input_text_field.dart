@@ -27,7 +27,7 @@ class InputTextField extends StatelessWidget {
     this.borderRadius = const BorderRadius.all(Radius.circular(50.0)),
     this.padding = const EdgeInsets.symmetric(horizontal: 24),
     this.focusBorderColor,
-    this.height =  45,
+    this.height = 45,
     this.maxLine = 1,
     this.minLine = 1,
   });

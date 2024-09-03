@@ -16,19 +16,25 @@ class DDayDialog extends StatelessWidget {
         padding: const EdgeInsets.all(15),
         //height: MediaQuery.of(context).size.height * 0.50,
         child: Column(
-					mainAxisSize: MainAxisSize.min,
-					mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             Padding(
-							padding: const EdgeInsets.all(8.0),
-							child: Text(
-								'${LocaleKeys.d_day_screen_d_dialog_title.tr()}$name?',
-								style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
-							),
-						),
-            Text(LocaleKeys.d_day_screen_d_dialog_subtitle.tr(), textAlign: 
-						TextAlign.center,
-							style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12,),),
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                '${LocaleKeys.d_day_screen_d_dialog_title.tr()}$name?',
+                style:
+                    const TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+              ),
+            ),
+            Text(
+              LocaleKeys.d_day_screen_d_dialog_subtitle.tr(),
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 12,
+              ),
+            ),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.01,
             ),
@@ -37,9 +43,9 @@ class DDayDialog extends StatelessWidget {
               borderColor: AppColors.pale,
               hintText: LocaleKeys.d_day_screen_d_dialog_placeholder.tr(),
               height: MediaQuery.of(context).size.height * 0.2,
-							padding: const EdgeInsets.all(15),
+              padding: const EdgeInsets.all(15),
               maxLine: 5,
-							minLine: 5,
+              minLine: 5,
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.01,
@@ -49,7 +55,10 @@ class DDayDialog extends StatelessWidget {
               children: [
                 PrimaryButton(
                   borderRadius: BorderRadius.circular(10),
-                  fixedSize: Size(MediaQuery.of(context).size.width * 0.3, MediaQuery.of(context).size.height * 0.04),
+                  fixedSize: Size(
+                    MediaQuery.of(context).size.width * 0.3,
+                    MediaQuery.of(context).size.height * 0.04,
+                  ),
                   backgroundColor: AppColors.myDark,
                   text: LocaleKeys.d_day_screen_d_dialog_sendbutton.tr(),
                   onPressed: (context) {
@@ -58,7 +67,10 @@ class DDayDialog extends StatelessWidget {
                 ),
                 PrimaryButton(
                   borderRadius: BorderRadius.circular(10),
-                  fixedSize: Size(MediaQuery.of(context).size.width * 0.3, MediaQuery.of(context).size.height * 0.04),
+                  fixedSize: Size(
+                    MediaQuery.of(context).size.width * 0.3,
+                    MediaQuery.of(context).size.height * 0.04,
+                  ),
                   text: LocaleKeys.d_day_screen_d_dialog_cancelbutton.tr(),
                   onPressed: (context) {
                     // Action pour le deuxième bouton
