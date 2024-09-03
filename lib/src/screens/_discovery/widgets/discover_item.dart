@@ -88,6 +88,7 @@ class DiscoveryItem extends StatelessWidget {
                     ),
                     Text(
                       gender,
+                      style: const TextStyle(fontWeight: FontWeight.w200),
                     ),
                   ],
                 ),

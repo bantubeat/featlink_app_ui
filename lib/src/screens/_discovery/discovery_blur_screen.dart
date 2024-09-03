@@ -82,7 +82,7 @@ class _DiscoveryBlurScreenState extends State<DiscoveryBlurScreen> {
                 LocaleKeys.discovery_blur_screen_description.tr(),
                 style: const TextStyle(
                   fontSize: 12,
-                  fontWeight: FontWeight.w400,
+                  fontWeight: FontWeight.w100,
                 ),
               ),
             ),
