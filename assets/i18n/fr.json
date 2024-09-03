@@ -287,15 +287,15 @@
         "intrested": "Intéressé(e)",
         "the_d_day_subtitle": "Explore les envies de la communauté",
         "the_d_day_text": "Tu trouveras peut-être une identique à la tienne",
-        "your_d_day_text_title" : "C'est quoi un D-Day?",
+        "your_d_day_text_title": "C'est quoi un D-Day?",
         "your_d_day_text_text1": "Desire of the day, c'est cette envie momentanée que nous avons parfois, envie d'une ballade, envie d'un cinéma, envie de parler a à une personne etc.",
         "your_d_day_text_text2": "Plusieurs personnes ont très souvent la même envie que toi",
-        "your_d_day_text_text3":"Publie un D-Day, il y'a forcément quelqu'un qui a le même D-Day",
+        "your_d_day_text_text3": "Publie un D-Day, il y'a forcément quelqu'un qui a le même D-Day",
         "country": {
             "cameroun": "Cameroun",
             "france": "France",
             "belgique": "Belgique",
-            "senegal": "Senegal", 
+            "senegal": "Senegal",
             "mali": "Mali",
             "cote_ivoire": "Côte d'Ivoire",
             "maroc": "Maroc",
@@ -306,13 +306,26 @@
         "your_d_day_button": {
             "publish": "Publier une D-Day",
             "see": "Voir Tes D-Dating"
-        }, 
-        "d_dialog" : {
-            "title" : "Un D-Dating avec @",
-            "subtitle" : "Dis lui pourquoi son D-Day t'intéresses",
-            "placeholder" : "écris un short message",
-            "cancelbutton" : "Annuler",
-            "sendbutton" : "Envoyer"
+        },
+        "d_dialog": {
+            "title": "Un D-Dating avec @",
+            "subtitle": "Dis lui pourquoi son D-Day t'intéresses",
+            "placeholder": "écris un short message",
+            "cancelbutton": "Annuler",
+            "sendbutton": "Envoyer"
         }
+    },
+    "private_mode_settings_screen": {
+        "title": "Mode Prive",
+        "description": "Vous avez la possibilité de rendre votre profil invisible dans la swipes zone et pour certains utilisateurs. votre profil ne sera visible que dans les groupes , clubs, recherches spéciales et espaces privés.",
+        "swipes_zone": "Swipes zone",
+        "change_account_type": "Changer le type de compte",
+        "change_account_type_description": "Vous avez trouver le partenaire idéal mais vous voulez continuez à explorer les possibilité de Featlink?\n\nSi vous continuez avec un compte Featlink Page, découvrez un monde de mise en rélation exceptionnel, un réseau d’affaires et de bonnes annonces.\n\nQuittez featlink chat mais rester sur Featlink.",
+        "who_can_see_my_profile": "Qui peut voir mon profil",
+        "man": "Homme",
+        "women": "Femme",
+        "couple": "Couple",
+        "others": "Autres",
+        "save": "Enregistrer"
     }
 }
