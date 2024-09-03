@@ -11,7 +11,7 @@ class PrimaryButton extends Button {
     required this.text,
     required super.onPressed,
     this.color = Colors.white,
-    this.fontWeight,
+    this.fontWeight = FontWeight.normal,
     super.fontSize,
     super.isLoading,
     super.disabled,

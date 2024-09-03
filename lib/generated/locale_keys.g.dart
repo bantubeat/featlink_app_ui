@@ -6,15 +6,12 @@ abstract class LocaleKeys {
   static const common_gender_male = 'common.gender_male';
   static const common_gender_female = 'common.gender_female';
   static const common_gender_other = 'common.gender_other';
-  static const common = 'common';
   static const welcome_screen_greeting = 'welcome_screen.greeting';
   static const welcome_screen_on_the_world_coolest_chat =
       'welcome_screen.on_the_world_coolest_chat';
   static const welcome_screen_note = 'welcome_screen.note';
-  static const welcome_screen = 'welcome_screen';
   static const test_screen_hello_world = 'test_screen.hello_world';
   static const test_screen_today_date = 'test_screen.today_date';
-  static const test_screen = 'test_screen';
   static const register_screen_title = 'register_screen.title';
   static const register_screen_description = 'register_screen.description';
   static const register_screen_sign_up_google =
@@ -27,7 +24,6 @@ abstract class LocaleKeys {
       'register_screen.new_to_featlink';
   static const register_screen_login = 'register_screen.login';
   static const register_screen_terms = 'register_screen.terms';
-  static const register_screen = 'register_screen';
   static const login_screen_title = 'login_screen.title';
   static const login_screen_description = 'login_screen.description';
   static const login_screen_login_with_google =
@@ -61,6 +57,8 @@ abstract class LocaleKeys {
   static const image_service_choose_camera = 'image_service.choose_camera';
   static const image_service_choose_gallery = 'image_service.choose_gallery';
   static const image_service = 'image_service';
+  static const image_service_choose_camera = 'image_service.choose_camera';
+  static const image_service_choose_gallery = 'image_service.choose_gallery';
   static const create_profile_step_1o3_screen_country_and_city =
       'create_profile_step_1o3_screen.country_and_city';
   static const create_profile_step_1o3_screen_add_your_city =
@@ -139,6 +137,8 @@ abstract class LocaleKeys {
       'create_profile_step_1o2_screen.birth_year';
   static const create_profile_step_1o2_screen =
       'create_profile_step_1o2_screen';
+  static const create_profile_step_1o2_screen_birth_year =
+      'create_profile_step_1o2_screen.birth_year';
   static const create_profile_step_2o2_screen_title =
       'create_profile_step_2o2_screen.title';
   static const create_profile_step_2o2_screen_title_loyalty_section =
@@ -252,6 +252,8 @@ abstract class LocaleKeys {
       'create_profile_custom_choice_select.empty';
   static const create_profile_custom_choice_select =
       'create_profile_custom_choice_select';
+  static const create_profile_custom_choice_select_empty =
+      'create_profile_custom_choice_select.empty';
   static const create_profile_step_2o1_screen_title =
       'create_profile_step_2o1_screen.title';
   static const create_profile_step_2o1_screen_subtitle =
@@ -351,6 +353,8 @@ abstract class LocaleKeys {
   static const notifications_screen_swipespay_message =
       'notifications_screen.swipespay_message';
   static const notifications_screen = 'notifications_screen';
+  static const notifications_screen_swipespay_message =
+      'notifications_screen.swipespay_message';
   static const filter_screen_title = 'filter_screen.title';
   static const filter_screen_button_title = 'filter_screen.button_title';
   static const filter_screen_title_header_one =
@@ -394,4 +398,77 @@ abstract class LocaleKeys {
   static const unsubscribe_screen_unsubscribe =
       'unsubscribe_screen.unsubscribe';
   static const unsubscribe_screen = 'unsubscribe_screen';
+  static const discovery_search_1_screen_title =
+      'discovery_search_1_screen.title';
+  static const discovery_search_1_screen_publicity =
+      'discovery_search_1_screen.publicity';
+  static const discovery_search_1_screen_pub = 'discovery_search_1_screen.pub';
+  static const discovery_search_1_screen_know_more =
+      'discovery_search_1_screen.know_more';
+  static const discovery_search_1_screen_special_search =
+      'discovery_search_1_screen.special_search';
+  static const discovery_search_1_screen_in_your_city =
+      'discovery_search_1_screen.in_your_city';
+  static const discovery_search_1_screen_first_day =
+      'discovery_search_1_screen.first_day';
+  static const discovery_search_1_screen_communities =
+      'discovery_search_1_screen.communities';
+  static const discovery_search_1_screen_vip_clup =
+      'discovery_search_1_screen.vip_clup';
+  static const discovery_search_2_screen_title =
+      'discovery_search_2_screen.title';
+  static const discovery_search_2_screen_publicity =
+      'discovery_search_2_screen.publicity';
+  static const discovery_search_2_screen_pub = 'discovery_search_2_screen.pub';
+  static const discovery_search_2_screen_know_more =
+      'discovery_search_2_screen.know_more';
+  static const discovery_search_2_screen_find_profile =
+      'discovery_search_2_screen.find_profile';
+  static const edit_profile_interet_screen_interets =
+      'edit_profile_interet_screen.interets';
+  static const edit_profile_interet_screen_passionate_about =
+      'edit_profile_interet_screen.passionate_about';
+  static const edit_profile_interet_screen_apply =
+      'edit_profile_interet_screen.apply';
+  static const d_day_screen_title = 'd_day_screen.title';
+  static const d_day_screen_subtitle = 'd_day_screen.subtitle';
+  static const d_day_screen_your_d_day = 'd_day_screen.your_d_day';
+  static const d_day_screen_the_d_day = 'd_day_screen.the_d_day';
+  static const d_day_screen_intrested = 'd_day_screen.intrested';
+  static const d_day_screen_the_d_day_subtitle =
+      'd_day_screen.the_d_day_subtitle';
+  static const d_day_screen_the_d_day_text = 'd_day_screen.the_d_day_text';
+  static const d_day_screen_your_d_day_text_title =
+      'd_day_screen.your_d_day_text_title';
+  static const d_day_screen_your_d_day_text_text1 =
+      'd_day_screen.your_d_day_text_text1';
+  static const d_day_screen_your_d_day_text_text2 =
+      'd_day_screen.your_d_day_text_text2';
+  static const d_day_screen_your_d_day_text_text3 =
+      'd_day_screen.your_d_day_text_text3';
+  static const d_day_screen_country_cameroun = 'd_day_screen.country.cameroun';
+  static const d_day_screen_country_france = 'd_day_screen.country.france';
+  static const d_day_screen_country_belgique = 'd_day_screen.country.belgique';
+  static const d_day_screen_country_senegal = 'd_day_screen.country.senegal';
+  static const d_day_screen_country_mali = 'd_day_screen.country.mali';
+  static const d_day_screen_country_cote_ivoire =
+      'd_day_screen.country.cote_ivoire';
+  static const d_day_screen_country_maroc = 'd_day_screen.country.maroc';
+  static const d_day_screen_country_tunisie = 'd_day_screen.country.tunisie';
+  static const d_day_screen_country_algerie = 'd_day_screen.country.algerie';
+  static const d_day_screen_country_mauritanie =
+      'd_day_screen.country.mauritanie';
+  static const d_day_screen_your_d_day_button_publish =
+      'd_day_screen.your_d_day_button.publish';
+  static const d_day_screen_your_d_day_button_see =
+      'd_day_screen.your_d_day_button.see';
+  static const d_day_screen_d_dialog_title = 'd_day_screen.d_dialog.title';
+  static const d_day_screen_d_dialog_subtitle =
+      'd_day_screen.d_dialog.subtitle';
+  static const d_day_screen_d_dialog_placeholder =
+      'd_day_screen.d_dialog.placeholder';
+  static const d_day_screen_d_dialog_cancelbutton =
+      'd_day_screen.d_dialog.cancelbutton';
+  static const d_day_screen_d_dialog_sendbutton =
+      'd_day_screen.d_dialog.sendbutton';
 }
