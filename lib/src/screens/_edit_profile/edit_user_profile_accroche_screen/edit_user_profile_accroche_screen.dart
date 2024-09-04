@@ -54,6 +54,7 @@ class _EditUserProfileAccrocheScreenState
           child: Column(
             children: [
               Wrap(
+                spacing: 40,
                 alignment: WrapAlignment.spaceAround,
                 children: [
                   InkWell(
@@ -149,6 +150,7 @@ class _EditUserProfileAccrocheScreenState
               InkWell(
                 onTap: () => pickImage(context),
                 child: Container(
+                  width: MediaQuery.of(context).size.width * 0.8,
                   margin:
                       const EdgeInsets.symmetric(horizontal: 5, vertical: 10),
                   decoration: BoxDecoration(
@@ -161,7 +163,7 @@ class _EditUserProfileAccrocheScreenState
                       horizontal: 20,
                       vertical: 20,
                     ),
-                    margin: const EdgeInsets.all(20),
+                    margin: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       color: AppColors.myGray,
                       borderRadius: BorderRadius.circular(15),
