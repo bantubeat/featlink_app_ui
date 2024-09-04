@@ -179,7 +179,7 @@ class ProfileVisitorViewScreen extends StatelessWidget {
             ProfileImageStylizerWidget(image: images[1]),
             ProfileImageStylizerWidget(image: images[2]),
             ProfileImageStylizerWidget(image: images[3]),
-            const SizedBox(height: 150),
+            const SizedBox(height: 80),
           ],
         ),
       ),
