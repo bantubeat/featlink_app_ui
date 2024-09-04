@@ -2,6 +2,7 @@ import 'package:featlink_app/src/screens/_create_profile/create_profile_step_110
 import 'package:featlink_app/src/screens/_edit_profile/edit_profile_interet_screen.dart';
 import 'package:featlink_app/src/screens/d_day_zone_screen/d_day_zone_screen.dart';
 import 'package:flutter/material.dart' show Widget;
+import 'screens/_access_featlink/access_featlink_outsite_africa_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o5_screen.dart';
 import 'screens/_create_profile/create_profile_step_2o2_screen/create_profile_step_2o2_screen.dart';
@@ -83,6 +84,7 @@ final Map<String, Widget Function()> allScreens = {
   'discovery_first_day_screen.dart': () => const DiscoveryFirstDayScreen(),
   'discovery_blur_screen.dart': () => const DiscoveryBlurScreen(),
   'profile_visitor_view_screen.dart': () => const ProfileVisitorViewScreen(),
-
+  'access_featlink_outsite_africa_screen.dart': () =>
+      const AccessFeatlinkOutsiteAfricaScreen(),
   // Ajoutez d'autres chemins de fichiers ici
 };

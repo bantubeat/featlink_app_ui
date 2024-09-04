@@ -396,5 +396,20 @@
         "read_less": "Lire moins",
         "about": "A propos",
         "interests": "Intérêts"
+    },
+    "access_featlink_outsite_africa_screen": {
+        "access_expiration": "Votre accès featlink expire dans",
+        "buy_access": "Payer un accès",
+        "featlink_access": "Accès Featlink",
+        "total": "Total",
+        "discount": "Remise",
+        "pay": "Payer",
+        "purchase_coins": "Acheter des jetons",
+        "amount_to_pay": "Montant à payer",
+        "pay_with_balance": "Payer avec la balance",
+        "beatzcoins_balance": "Solde Beatzcoin",
+        "balance_is_sufficient": "Le solde de ce compte est suffisant pour cet achat",
+        "balance_is_insufficient": "Le solde de ce compte est insuffisant pour cet achat",
+        "payment": "Paiement"
     }
 }
