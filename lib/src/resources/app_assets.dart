@@ -5,6 +5,13 @@ final class AppAssets {
   static const contractImage = 'assets/images/contract.png';
   static const profileImage = 'assets/images/profile_image.png';
   static const fakeAvatarImage = 'assets/images/fake_avatar.jpg';
+  static const discoveryScreenHeaderImage =
+      'assets/images/discovery_screen_header.png';
+  static const discoveryBlurScreenHeaderImage =
+      'assets/images/discovery_blur_screen_header.jpeg';
+  static const discoveryFirstDayHeaderImage =
+      'assets/images/discovery_first_day_header.png';
+  static const fakeDiscoveryImage = 'assets/images/fake_discovery.jpeg';
 
   static const sizeIcon = 'assets/images/size.png';
   static const weightIcon = 'assets/images/weight.png';
@@ -16,12 +23,25 @@ final class AppAssets {
   static const handsUpIcon = 'assets/images/hands_up.png';
   static const moonSliceIcon = 'assets/images/moon_slice.png';
   static const svgStep1o2Icon = 'assets/svg/step1o2_icon.svg';
+  static const lockIcon = 'assets/svgs/lock.svg';
   static const circledPlayIcon = 'assets/images/circled_play.png';
   static const fakeArtist = 'assets/images/fake_artist.jpeg';
   static const createProfileStep1o2Image = 'assets/images/step1o2_icon.png';
   static const imageLogo2 = 'assets/images/logo2.png';
+  static const clubVipImage = 'assets/images/club_vip.jpeg';
+  static const communityImage = 'assets/images/community.jpeg';
+  static const firstTimeImage = 'assets/images/first_time.png';
+  static const inCityImage = 'assets/images/in_city.png';
+  static const pubImage = 'assets/images/pub_image.jpeg';
+  static const specialSearchImage = 'assets/images/special_search.jpeg';
 
   static const bantubeatIcon = 'assets/images/bantubeat_icon.png';
   static const salonpriveIcon = 'assets/images/salon_prive_icon.png';
   static const bzcIcon = 'assets/images/bzc_icon.png';
+
+  static const theddayimagefirst = 'assets/images/danse.jpg';
+  static const theddayimagesecond = 'assets/images/boire.jpg';
+  static const theddayimagethree = 'assets/images/fastfood.jpg';
+  static const theddayimagefour = 'assets/images/promenade.jpg';
+  static const theletterb = 'assets/images/letter.jpg';
 }

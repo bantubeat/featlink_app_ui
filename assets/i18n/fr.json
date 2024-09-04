@@ -138,22 +138,6 @@
         "confirm": "Confirm",
         "return": "Retour"
     },
-    "create_profile_step_110_screen": {
-        "title1": "Félicitation votre profil est crée",
-        "title2": "Qui peut voir votre profil Featlink ?",
-        "title3": "Les conditions que vous acceptez",
-        "description1v1": "Votre profil Featlink peut être visible par tous les utilisateurs de Featlink. ",
-        "description1v2": "votre nom de profil Featlink reste le même que celui sur bantubeat. si vous voulez modifier votre nom de profil retournez dans votre compte sur bantubeat, dans paramètre gestion de compte. ",
-        "description2v1": "Votre activité sur Featlink pourrait être utilisée pour personnaliser votre expérience sur les produits Bantubeat et notamment les publicités que vous pourriez voir. En appuyant sur confirmer, vous accepter ",
-        "description2v2": "les conditions d'utilisation de Featlink, ",
-        "description2v3": "les ",
-        "description2v4": "conditions générales de Bantubeat, ",
-        "description2v5": "vous acceptez la ",
-        "description2v6": "politique de confidentialités de bantubeat ",
-        "description2v7": "et toutes les politiques et conditions de Bantubeat.",
-        "confirm": "Confirm",
-        "return": "retour."
-    },
     "modal_redirection": {
         "title": "Redirection",
         "payment_message": "Pour acheter des Jetons (Beatzcoin) vous devez vous connecter sur votre compte Bantubeat.",
@@ -206,14 +190,6 @@
         "desirs_domina": "Domina/soumission",
         "design_changing": "Echangisme",
         "design_between_couple": "Entre couple (2+2)"
-    },
-    "create_profile_step_1o5_screen": {
-        "title": "Votre Accroche",
-        "description": "Les gens vous perçoivent tel que vous vous présentez et la première impression fait toute la différence.\n\n votre accroche, c’est cette présentation qui pourra rapidement vous distinguer des autres utilisateurs et vous attirer plus de partenaires.",
-        "hook_message": "écrire votre message accroche ...",
-        "max_number_characters": "Maximum {} caractères",
-        "add_media_message": "Ajouter vos plus belles photos/vidéo car les profils avec des photos/vidéo ont plus de chance d'attirer l'attention.",
-        "media_caution": "Attention Mettez des vidéos de bonne qualité et de maximum 5 secondes."
     },
     "bottom_nav": {
         "home": "Accueil",
@@ -269,6 +245,151 @@
         "marriage": "Mariage",
         "friendship": "Amitié",
         "professional_relationship": "Relation professionnelle"
+    },
+    "unsubscribe_screen": {
+        "title": "Se désinscrire",
+        "confirmation_question": "Êtes-vous sûr de vouloir vous désinscrire de Featlink-chat?",
+        "description": "Vous êtes connecté à Featlink avec votre compte bantubeat. vous désinscrire de Featlink ne supprimera pas votre compte bantubeat, mais votre profil, vos photos, vos vidéos, vos commentaires, vos messages directs sur Featlink seront définitivement supprimés.",
+        "consequence_list_title": "Si vous décidez de continuer, il va se passer ce qui suit :",
+        "consequence_1": "Votre profil Featlink sera désactivé pendant 60 jours. votre profil ne sera plus visible par d'autres utilisateurs.",
+        "consequence_2": "Après 60 jours, votre profil et toute votre activité seront définitivement perdus.",
+        "consequence_3": "Si vous vous connectez sur Featlink avant les 60 jours vous pourriez récupérer votre profil Featlink et tout son contenu.",
+        "unsubscribe": "Me désinscrire"
+    },
+    "discovery_search_1_screen": {
+        "title": "Bienvenue dans l’espace de toutes les surprises",
+        "publicity": "Publicité",
+        "pub": "Pub",
+        "know_more": "En savoir plus",
+        "special_search": "Recherches spéciales",
+        "in_your_city": "Dans ta ville",
+        "first_day": "Premier jour",
+        "communities": "Communautés",
+        "vip_clup": "Club VIP"
+    },
+    "discovery_search_2_screen": {
+        "title": "Bienvenue dans l’espace de toutes les surprises",
+        "publicity": "Publicité",
+        "pub": "Pub",
+        "know_more": "En savoir plus",
+        "find_profile": "Trouve des profils selon ton mood"
+    },
+    "edit_profile_interet_screen": {
+        "interets": "Interêts",
+        "passionate_about": "Let everyone know what you’re passionate about, by adding it to your profile.",
+        "apply": "Apply {}"
+    },
+    "d_day_screen": {
+        "title": "Plusieurs personnes ont les mêmes envies que toi!",
+        "subtitle": "",
+        "your_d_day": "Tes D-Day",
+        "the_d_day": "Les D-Day",
+        "intrested": "Intéressé(e)",
+        "the_d_day_subtitle": "Explore les envies de la communauté",
+        "the_d_day_text": "Tu trouveras peut-être une identique à la tienne",
+        "your_d_day_text_title": "C'est quoi un D-Day?",
+        "your_d_day_text_text1": "Desire of the day, c'est cette envie momentanée que nous avons parfois, envie d'une ballade, envie d'un cinéma, envie de parler a à une personne etc.",
+        "your_d_day_text_text2": "Plusieurs personnes ont très souvent la même envie que toi",
+        "your_d_day_text_text3": "Publie un D-Day, il y'a forcément quelqu'un qui a le même D-Day",
+        "country": {
+            "cameroun": "Cameroun",
+            "france": "France",
+            "belgique": "Belgique",
+            "senegal": "Senegal",
+            "mali": "Mali",
+            "cote_ivoire": "Côte d'Ivoire",
+            "maroc": "Maroc",
+            "tunisie": "Tunisie",
+            "algerie": "Algérie",
+            "mauritanie": "Mauritanie"
+        },
+        "your_d_day_button": {
+            "publish": "Publier une D-Day",
+            "see": "Voir Tes D-Dating"
+        },
+        "d_dialog": {
+            "title": "Un D-Dating avec @",
+            "subtitle": "Dis lui pourquoi son D-Day t'intéresses",
+            "placeholder": "écris un short message",
+            "cancelbutton": "Annuler",
+            "sendbutton": "Envoyer"
+        }
+    },
+    "private_mode_settings_screen": {
+        "title": "Mode Prive",
+        "description": "Vous avez la possibilité de rendre votre profil invisible dans la swipes zone et pour certains utilisateurs. votre profil ne sera visible que dans les groupes , clubs, recherches spéciales et espaces privés.",
+        "swipes_zone": "Swipes zone",
+        "change_account_type": "Changer le type de compte",
+        "change_account_type_description": "Vous avez trouver le partenaire idéal mais vous voulez continuez à explorer les possibilité de Featlink?\n\nSi vous continuez avec un compte Featlink Page, découvrez un monde de mise en rélation exceptionnel, un réseau d’affaires et de bonnes annonces.\n\nQuittez featlink chat mais rester sur Featlink.",
+        "who_can_see_my_profile": "Qui peut voir mon profil",
+        "man": "Homme",
+        "women": "Femme",
+        "couple": "Couple",
+        "others": "Autres",
+        "save": "Enregistrer"
+    },
+    "main_settings_screen": {
+        "title": "Paramètres",
+        "preferences": "Préferences",
+        "dark_mode": "Mode sombre",
+        "account": "Compte",
+        "unsubscribe": "Se désinscrire de Featlink",
+        "private_mode": "Mode Privé",
+        "logout": "Déconnexion",
+        "support": "Support",
+        "help_page": "Page d'aide",
+        "copyright": "Droit d'auteur",
+        "beatzcoins_usage": "Utilisation du Beatzcoins",
+        "featlink_pub": "Publicités sur Featlink",
+        "legals_notices": "Mentions légales",
+        "general_conditions": "Conditions génrales",
+        "confidentiality_policy": "Politique de confidentialité",
+        "cookies_policy": "Politique des cookies",
+        "visual_article_policy": "Politique des articles visuels"
+    },
+    "discovery_in_my_city_screen": {
+        "title": "Dans ta ville",
+        "on_ligne": "En ligne",
+        "who_are_in_your_city": "Découvre qui est dans ta ville",
+        "all_continent": "Tous les continents",
+        "african": "Africain(e)",
+        "american": "Américain(e)",
+        "asian": "Asiatique",
+        "europeen": "Européen",
+        "oceanian": "Oceanique",
+        "gender_other": "Autres",
+        "heterosexual_label": "Hétéro",
+        "gay_label": "Gay",
+        "lesbienne_label": "Lesbienne",
+        "age_year": "ans",
+        "man": "Homme",
+        "woman": "Femme",
+        "others": "Autres"
+    },
+    "discovery_first_day_screen": {
+        "title": "Premier Jour",
+        "on_ligne": "En ligne",
+        "first_day_of_inscription": "Ils se sont inscrit aujourd’hui, soit le premier à dire bonjour",
+        "all_continent": "Tous les continents",
+        "african": "Africain(e)",
+        "american": "Américain(e)",
+        "asian": "Asiatique",
+        "europeen": "Européen",
+        "oceanian": "Oceanique",
+        "gender_other": "Autres",
+        "heterosexual_label": "Hétéro",
+        "gay_label": "Gay",
+        "lesbienne_label": "Lesbienne",
+        "age_year": "ans",
+        "man": "Homme",
+        "woman": "Femme",
+        "others": "Autres"
+    },
+    "discovery_blur_screen": {
+        "title": "SUGAR DADDY",
+        "sub_title": "Bienvenue dans Sugar Daddy",
+        "description": "Nous avons recensé et regroupé les profils Homme de votre région ayant plus de 50 ans.\n\nPourquoi c’est flou? vous devez avoir un accès valide pour consulter les profils de nos sugar daddy.",
+        "buy_access": "Payer un accès"
     },
     "chat_message_list_screen": {
         "bantubeat_artist_title": "Artiste à la une sur Bantubeat",
