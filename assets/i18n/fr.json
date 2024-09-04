@@ -396,5 +396,19 @@
         "read_less": "Lire moins",
         "about": "A propos",
         "interests": "Intérêts"
+    },
+    "modal_acivation_offre_afriques": {
+        "unlimited_featlink": "Featlink sans limite.",
+        "no_auto_change": "pas de renouvellement automatique après ta période d’essaie",
+        "try_free_24h": "Essaie gratuitement pendant 24h",
+        "benefits_access": "Avantages de l’accès featlink",
+        "discover_power": "Découvrez la puissance de l’accès Featlink, choisissez un type d’accès pour continuer à bénéficier des fonctionnalités illimitées",
+        "cancel": "ANNULER",
+        "activate": "Activer",
+        "swipes_unlimited": "Swipes illimités",
+        "unlimited_conversations": "Conversation illimitées",
+        "dial_without_match": "Dial sans Match",
+        "d_day_unlimited": "D-Day illimités",
+        "discoveries_unlimited": "Découvertes illimitées"
     }
 }
