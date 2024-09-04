@@ -7,14 +7,14 @@ import 'package:flutter/material.dart';
 import 'crush_tab_3_swipespay.dart';
 import 'user_card.dart';
 
-class CrushTabMatch extends StatefulWidget {
-  const CrushTabMatch({super.key});
+class CrushTab4Match extends StatefulWidget {
+  const CrushTab4Match({super.key});
 
   @override
-  State<CrushTabMatch> createState() => _CrushTabMatchState();
+  State<CrushTab4Match> createState() => _CrushTab4MatchState();
 }
 
-class _CrushTabMatchState extends State<CrushTabMatch> {
+class _CrushTab4MatchState extends State<CrushTab4Match> {
   final List<UserTmp> _list = [
     const UserTmp(
       age: 24,

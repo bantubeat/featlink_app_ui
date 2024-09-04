@@ -329,6 +329,9 @@
         "write_accroche_essage": "Ecrire votre message accroche",
         "max_number_characters": "Maximum 250 caractères",
         "save": "Enregistrer",
-        "add_media_message": "Ajouter vos plus belles photos/vidéo car les profils avec des photos/vidéo ont plus de chance d'attirer l'attention."
+        "add_media_message": "Ajouter vos plus belles photos/vidéo car les profils avec des photos/vidéo ont plus de chance d'attirer l'attention.",
+        "data": "Données",
+        "hooks": "Accroches",
+        "interests": "Intérêts"
     }
 }

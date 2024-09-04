@@ -106,18 +106,20 @@ class _CrushScreenState extends State<CrushScreen>
               child: TabBarView(
                 controller: _tabController,
                 children: const <Widget>[
-                  CrushTabLike(),
-                  CrushTabDialpay(),
-                  CrushTabSwipespay(),
-                  CrushTabMatch(),
+                  CrushTab1Like(),
+                  CrushTab2Dialpay(),
+                  CrushTab3Swipespay(),
+                  CrushTab4Match(),
                 ],
               ),
             ),
-            const AppNavigationBottomSheet(),
+            // const AppNavigationBottomSheet(),
           ],
         ),
       ),
       // bottomNavigationBar: const AppNavigationBottomSheet(),
+      floatingActionButton: const AppNavigationBottomSheet(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }

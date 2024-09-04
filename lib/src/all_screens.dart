@@ -65,7 +65,7 @@ final Map<String, Widget Function()> allScreens = {
   'filter_screen.dart': () => const FilterScreen(),
   'crush_screen.dart': () => const CrushScreen(),
   'edit_user_profile_accroche_screen.dart': () =>
-      const EditUserProfileAccroche(),
+      const EditUserProfileAccrocheScreen(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };

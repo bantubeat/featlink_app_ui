@@ -23,14 +23,14 @@ class UserTmp {
   });
 }
 
-class CrushTabSwipespay extends StatefulWidget {
-  const CrushTabSwipespay({super.key});
+class CrushTab3Swipespay extends StatefulWidget {
+  const CrushTab3Swipespay({super.key});
 
   @override
-  State<CrushTabSwipespay> createState() => _CrushTabSwipespayState();
+  State<CrushTab3Swipespay> createState() => _CrushTab3SwipespayState();
 }
 
-class _CrushTabSwipespayState extends State<CrushTabSwipespay> {
+class _CrushTab3SwipespayState extends State<CrushTab3Swipespay> {
   final List<UserTmp> _list = [
     const UserTmp(
       age: 24,

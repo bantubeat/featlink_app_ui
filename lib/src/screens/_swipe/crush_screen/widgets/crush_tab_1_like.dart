@@ -7,14 +7,14 @@ import 'package:flutter/material.dart';
 import 'crush_tab_3_swipespay.dart';
 import 'user_card.dart';
 
-class CrushTabLike extends StatefulWidget {
-  const CrushTabLike({super.key});
+class CrushTab1Like extends StatefulWidget {
+  const CrushTab1Like({super.key});
 
   @override
-  State<CrushTabLike> createState() => _CrushTabLikeState();
+  State<CrushTab1Like> createState() => _CrushTab1LikeState();
 }
 
-class _CrushTabLikeState extends State<CrushTabLike> {
+class _CrushTab1LikeState extends State<CrushTab1Like> {
   final List<UserTmp> _list = [
     const UserTmp(
       age: 24,
