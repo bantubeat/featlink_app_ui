@@ -1,4 +1,3 @@
-
 import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
@@ -10,7 +9,6 @@ class MessageInput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      
       color: AppColors.myWhite,
       child: Row(
         children: [
@@ -19,30 +17,32 @@ class MessageInput extends StatelessWidget {
             onPressed: () {},
           ),
           Expanded(
-						child: Container(
-											
-												height: MediaQuery.of(context).size.height * 0.057,
-							margin:const EdgeInsets.all(5),
-							decoration: BoxDecoration(
-								color: AppColors.myWhite,
-								borderRadius: BorderRadius.circular(12.0),
-								border: Border.all(color: AppColors.myGray),
-							),
-							child: Center(
-								child: TextFormField(
-									decoration: InputDecoration(
-										hintText: LocaleKeys.conversation_your_message.tr(),
-										border: InputBorder.none,
-										contentPadding: const EdgeInsets.symmetric(horizontal: 20.0),
-										suffixIcon: const IconButton(
-											icon: Icon(Icons.emoji_emotions_outlined, color: AppColors.myDark),
-											onPressed: null,
-										),
-									),
-								),
-							),
-						),
-					),
+            child: Container(
+              height: MediaQuery.of(context).size.height * 0.070,
+              margin: const EdgeInsets.all(5),
+              decoration: BoxDecoration(
+                color: AppColors.myWhite,
+                borderRadius: BorderRadius.circular(12.0),
+                border: Border.all(color: AppColors.myGray),
+              ),
+              child: Center(
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    hintText: LocaleKeys.conversation_your_message.tr(),
+                    border: InputBorder.none,
+                    contentPadding: const EdgeInsets.symmetric(
+                        vertical: 15.0,
+                        horizontal: 20.0,), // Centrer le texte verticalement
+                    suffixIcon: const IconButton(
+                      icon: Icon(Icons.emoji_emotions_outlined,
+                          color: AppColors.myDark,),
+                      onPressed: null,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
           IconButton(
             icon: const Icon(Icons.send, color: AppColors.primary),
             onPressed: () {},
