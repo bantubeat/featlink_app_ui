@@ -12,6 +12,10 @@ final class AppAssets {
   static const discoveryFirstDayHeaderImage =
       'assets/images/discovery_first_day_header.png';
   static const fakeDiscoveryImage = 'assets/images/fake_discovery.jpeg';
+  static const fakeProfile1Image = 'assets/images/fake_profile_1.jpeg';
+  static const fakeProfile2Image = 'assets/images/fake_profile_2.jpeg';
+  static const fakeProfile3Image = 'assets/images/fake_profile_3.jpeg';
+  static const fakeProfile4Image = 'assets/images/fake_profile_4.jpeg';
 
   static const sizeIcon = 'assets/images/size.png';
   static const weightIcon = 'assets/images/weight.png';
@@ -22,10 +26,25 @@ final class AppAssets {
   static const genderIcon = 'assets/images/gender.png';
   static const handsUpIcon = 'assets/images/hands_up.png';
   static const moonSliceIcon = 'assets/images/moon_slice.png';
+  static const smokerIcon = 'assets/images/smoker.png';
   static const svgStep1o2Icon = 'assets/svg/step1o2_icon.svg';
   static const lockIcon = 'assets/svgs/lock.svg';
   static const circledPlayIcon = 'assets/images/circled_play.png';
   static const fakeArtist = 'assets/images/fake_artist.jpeg';
+  static const likeIcon = 'assets/svgs/like.svg';
+  static const starIcon = 'assets/svgs/star.svg';
+  static const dislikeIcon = 'assets/svgs/dislike.svg';
+  static const calendarNumberIcon = 'assets/svgs/calendar_number.svg';
+  static const cityIcon = 'assets/svgs/city.svg';
+  static const drinkIcon = 'assets/svgs/drink.svg';
+  static const hatGraduationIcon = 'assets/svgs/hat_graduation.svg';
+  static const heartLineIcon = 'assets/svgs/heart_line.svg';
+  static const peopleCommunityIcon = 'assets/svgs/people_community.svg';
+  static const peopleTeamIcon = 'assets/svgs/people_team.svg';
+  static const rulerIcon = 'assets/svgs/ruler.svg';
+  static const scalesIcon = 'assets/svgs/scales.svg';
+  static const transgenderIcon = 'assets/svgs/transgender.svg';
+
   static const createProfileStep1o2Image = 'assets/images/step1o2_icon.png';
   static const imageLogo2 = 'assets/images/logo2.png';
   static const clubVipImage = 'assets/images/club_vip.jpeg';

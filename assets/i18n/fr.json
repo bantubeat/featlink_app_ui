@@ -397,5 +397,11 @@
         "contact_support": "Contacter le support",
         "buy_an_access": "Acheter un accès",
         "messages": "Messages"
+    },
+    "profile_visitor_view_screen": {
+        "read_more": "Lire plus",
+        "read_less": "Lire moins",
+        "about": "A propos",
+        "interests": "Intérêts"
     }
 }
