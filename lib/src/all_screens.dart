@@ -1,4 +1,5 @@
 import 'package:featlink_app/src/screens/_create_profile/create_profile_step_110_screen.dart';
+import 'package:featlink_app/src/screens/user_side_profile_screen/user_side_profile_screen.dart';
 import 'package:featlink_app/src/screens/_edit_profile/edit_profile_interet_screen.dart';
 import 'package:featlink_app/src/screens/d_day_zone_screen/d_day_zone_screen.dart';
 import 'package:flutter/material.dart' show Widget;
@@ -72,6 +73,9 @@ final Map<String, Widget Function()> allScreens = {
 
   'notifications_screen.dart': () => const NotificationsScreen(),
   'filter_screen.dart': () => const FilterScreen(),
+
+  'user_side_profile_screen.dart': () => const UserSideProfileScreen(),
+
   'unsubscribe_screen.dart': () => const UnsubscribeScreen(),
   'discovery_search_1_screen.dart': () => const DiscoverySearch1Screen(),
   'discovery_search_2_screen.dart': () => const DiscoverySearch2Screen(),
