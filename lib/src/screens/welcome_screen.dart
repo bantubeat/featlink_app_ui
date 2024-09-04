@@ -40,7 +40,7 @@ class WelcomeScreen extends StatelessWidget {
                       style: const TextStyle(fontSize: 14),
                     ),
                   ),
-                  Padding( 
+                  Padding(
                     padding: const EdgeInsets.symmetric(vertical: 25),
                     child: Text(
                       LocaleKeys.welcome_screen_on_the_world_coolest_chat.tr(),

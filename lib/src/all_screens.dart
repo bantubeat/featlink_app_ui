@@ -1,10 +1,19 @@
 import 'package:featlink_app/src/screens/_create_profile/create_profile_step_110_screen.dart';
 import 'package:featlink_app/src/screens/user_side_profile_screen/user_side_profile_screen.dart';
+import 'package:featlink_app/src/screens/_edit_profile/edit_profile_interet_screen.dart';
+import 'package:featlink_app/src/screens/d_day_zone_screen/d_day_zone_screen.dart';
 import 'package:flutter/material.dart' show Widget;
-
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o5_screen.dart';
 import 'screens/_create_profile/create_profile_step_2o2_screen/create_profile_step_2o2_screen.dart';
+import 'screens/_discovery/discovery_search_1_screen/discovery_search_1_screen.dart';
+import 'screens/_discovery/discovery_search_2_screen/discovery_search_2_screen.dart';
+import 'screens/_settings/unsubscribe_screen.dart';
+import 'screens/_settings/private_mode_settings_screen.dart';
+import 'screens/_settings/main_settings_screen.dart';
+import 'screens/_discovery/discovery_blur_screen.dart';
+import 'screens/_discovery/discovery_first_day_screen.dart';
+import 'screens/_discovery/discovery_in_my_city_screen.dart';
 import 'screens/_swipe/filter_screen/filter_screen.dart';
 import 'screens/welcome2_screen/welcome2_screen.dart';
 import 'screens/welcome_screen.dart';
@@ -20,6 +29,7 @@ import 'screens/_create_profile/create_profile_step_1o9_screen/create_profile_st
 import 'screens/_create_profile/create_profile_step_2o1_screen.dart';
 import 'screens/_create_profile/create_profile_step_2o3_screen.dart';
 import 'screens/notifications_screen/notifications_screen.dart';
+import 'screens/_profile_visitor_view/profile_visitor_view_screen.dart';
 
 /// Le test unitaire va chercher toute les pages du dossier screens pour se
 /// rassurer qu'il s'affiche sans erreur, seulement pour chaque fichier,
@@ -62,7 +72,21 @@ final Map<String, Widget Function()> allScreens = {
 
   'notifications_screen.dart': () => const NotificationsScreen(),
   'filter_screen.dart': () => const FilterScreen(),
-	'user_side_profile_screen.dart': () => const UserSideProfileScreen(),
+
+  'user_side_profile_screen.dart': () => const UserSideProfileScreen(),
+
+  'unsubscribe_screen.dart': () => const UnsubscribeScreen(),
+  'discovery_search_1_screen.dart': () => const DiscoverySearch1Screen(),
+  'discovery_search_2_screen.dart': () => const DiscoverySearch2Screen(),
+  'edit_profile_interet_screen.dart': () => EditProfileInteretScreen(),
+
+  'd_day_zone_screen.dart': () => const DDayZoneScreen(),
+  'private_mode_settings_screen.dart': () => const PrivateModeSettingsScreen(),
+  'main_settings_screen.dart': () => const MainSettingsScreen(),
+  'discovery_in_my_city_screen.dart': () => const DiscoveryInMyCityScreen(),
+  'discovery_first_day_screen.dart': () => const DiscoveryFirstDayScreen(),
+  'discovery_blur_screen.dart': () => const DiscoveryBlurScreen(),
+  'profile_visitor_view_screen.dart': () => const ProfileVisitorViewScreen(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };

@@ -613,7 +613,7 @@ class FirstBlock extends StatelessWidget {
                           borderRadius: BorderRadius.circular(100),
                         ),
                         child: Image.asset(
-                          AppAssets.starIcon,
+                          AppAssets.imagesStar,
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -750,4 +750,3 @@ class FirstBlock extends StatelessWidget {
     );
   }
 }
-

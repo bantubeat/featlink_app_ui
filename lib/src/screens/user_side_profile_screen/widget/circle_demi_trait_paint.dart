@@ -15,7 +15,9 @@ class CircleDemiTraitPainter extends CustomPainter {
     for (int i = 0; i < 4; i++) {
       canvas.drawArc(
         Rect.fromCircle(
-            center: Offset(size.width / 2, size.height / 2), radius: radius,),
+          center: Offset(size.width / 2, size.height / 2),
+          radius: radius,
+        ),
         startAngle, // Angle de départ
         sweepAngle, // Réduit la longueur de l'arc (90 degrés)
         false,
