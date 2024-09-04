@@ -29,63 +29,66 @@ class MessageItem extends StatelessWidget {
         border: Border(
           top: const BorderSide(color: AppColors.myGray),
           left: isSelected
-              ? const BorderSide(color: AppColors.primary, width: 10)
+              ? const BorderSide(color: AppColors.primary, width: 15)
               : BorderSide.none,
         ),
       ),
-      child: Row(
-        children: [
-          const SizedBox(width: 30),
-          Stack(
-            children: [
-              ClipOval(
-                child: Image.asset(
-                  senderImage,
-                  fit: BoxFit.cover,
-                  height: 60,
-                  width: 60,
-                ),
-              ),
-              isOnline ? const OnlineDot() : const OfflineDot(),
-            ],
-          ),
-          const SizedBox(width: 30),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+      child: Opacity(
+        opacity: isSelected ? 0.6 : 1,
+        child: Row(
+          children: [
+            const SizedBox(width: 30),
+            Stack(
               children: [
-                Text(
-                  senderName,
-                  style: const TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
+                ClipOval(
+                  child: Image.asset(
+                    senderImage,
+                    fit: BoxFit.cover,
+                    height: 60,
+                    width: 60,
                   ),
                 ),
-                Row(
-                  children: [
-                    if (subSenderImage != null)
-                      ClipOval(
-                        child: Image.asset(
-                          subSenderImage!,
-                          fit: BoxFit.cover,
-                          height: 15,
-                          width: 15,
-                        ),
-                      ),
-                    if (subSenderImage != null) const SizedBox(width: 5),
-                    Expanded(
-                      child: Text(
-                        message,
-                        style: const TextStyle(fontSize: 12),
-                      ),
-                    ),
-                  ],
-                ),
+                isOnline ? const OnlineDot() : const OfflineDot(),
               ],
             ),
-          ),
-          const SizedBox(width: 30),
-        ],
+            const SizedBox(width: 30),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    senderName,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      if (subSenderImage != null)
+                        ClipOval(
+                          child: Image.asset(
+                            subSenderImage!,
+                            fit: BoxFit.cover,
+                            height: 15,
+                            width: 15,
+                          ),
+                        ),
+                      if (subSenderImage != null) const SizedBox(width: 5),
+                      Expanded(
+                        child: Text(
+                          message,
+                          style: const TextStyle(fontSize: 12),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: 30),
+          ],
+        ),
       ),
     );
   }
