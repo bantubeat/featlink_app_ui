@@ -35,6 +35,7 @@ class ChatMessageListScreen extends StatelessWidget {
             child: MessageItem(
               isOnline: (index % 3 == 0) ? false : true,
               senderName: 'John Doe',
+              isSelected: (index == 3) ? true : false,
               senderImage: AppAssets.fakeArtist,
               subSenderImage: (index % 2 == 0) ? null : AppAssets.fakeArtist,
               message: 'Hey, how are you ?',

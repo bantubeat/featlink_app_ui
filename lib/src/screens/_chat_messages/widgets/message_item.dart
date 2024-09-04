@@ -9,11 +9,13 @@ class MessageItem extends StatelessWidget {
     required this.senderName,
     required this.senderImage,
     required this.message,
+    this.isSelected = false,
     this.subSenderImage,
     super.key,
   });
 
   final bool isOnline;
+  final bool isSelected;
   final String senderName;
   final String senderImage;
   final String? subSenderImage;
@@ -23,9 +25,12 @@ class MessageItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         border: Border(
-          top: BorderSide(color: AppColors.myGray),
+          top: const BorderSide(color: AppColors.myGray),
+          left: isSelected
+              ? const BorderSide(color: AppColors.primary, width: 10)
+              : BorderSide.none,
         ),
       ),
       child: Row(
