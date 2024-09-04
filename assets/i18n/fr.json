@@ -396,5 +396,11 @@
         "read_less": "Lire moins",
         "about": "A propos",
         "interests": "Intérêts"
+    },
+    "edit_profile_user_side_screen": {
+        "data": "Données",
+        "hooks": "Accroches",
+        "interests": "Intérêts",
+        "save": "Enregistrer"
     }
 }

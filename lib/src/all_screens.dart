@@ -7,6 +7,7 @@ import 'screens/_create_profile/create_profile_step_1o5_screen.dart';
 import 'screens/_create_profile/create_profile_step_2o2_screen/create_profile_step_2o2_screen.dart';
 import 'screens/_discovery/discovery_search_1_screen/discovery_search_1_screen.dart';
 import 'screens/_discovery/discovery_search_2_screen/discovery_search_2_screen.dart';
+import 'screens/_edit_profile/edit_profile_user_side_screen/edit_profile_user_side_screen.dart';
 import 'screens/_settings/unsubscribe_screen.dart';
 import 'screens/_settings/private_mode_settings_screen.dart';
 import 'screens/_settings/main_settings_screen.dart';
@@ -83,6 +84,7 @@ final Map<String, Widget Function()> allScreens = {
   'discovery_first_day_screen.dart': () => const DiscoveryFirstDayScreen(),
   'discovery_blur_screen.dart': () => const DiscoveryBlurScreen(),
   'profile_visitor_view_screen.dart': () => const ProfileVisitorViewScreen(),
+  'edit_profile_user_side_screen.dart': () => EditProfileUserSideScreen(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };

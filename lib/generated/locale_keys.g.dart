@@ -323,5 +323,9 @@ abstract class  LocaleKeys {
   static const profile_visitor_view_screen_read_less = 'profile_visitor_view_screen.read_less';
   static const profile_visitor_view_screen_about = 'profile_visitor_view_screen.about';
   static const profile_visitor_view_screen_interests = 'profile_visitor_view_screen.interests';
+  static const edit_profile_user_side_screen_data = 'edit_profile_user_side_screen.data';
+  static const edit_profile_user_side_screen_hooks = 'edit_profile_user_side_screen.hooks';
+  static const edit_profile_user_side_screen_interests = 'edit_profile_user_side_screen.interests';
+  static const edit_profile_user_side_screen_save = 'edit_profile_user_side_screen.save';
 
 }
