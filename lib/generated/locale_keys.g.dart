@@ -340,6 +340,7 @@ abstract class LocaleKeys {
   static const filter_screen_friendship = 'filter_screen.friendship';
   static const filter_screen_professional_relationship =
       'filter_screen.professional_relationship';
+
   static const d_day_screen_button_intrested = 'd_day_screen_button_intrested';
   static const user_side_profile_screen_interests =
       'user_side_profile_screen.interests';
@@ -396,6 +397,7 @@ abstract class LocaleKeys {
       'user_side_profile_screen.live_music';
   static const user_side_profile_screen_cooking =
       'user_side_profile_screen.cooking';
+
   static const unsubscribe_screen_title = 'unsubscribe_screen.title';
   static const unsubscribe_screen_confirmation_question =
       'unsubscribe_screen.confirmation_question';
@@ -611,6 +613,17 @@ abstract class LocaleKeys {
       'discovery_blur_screen.description';
   static const discovery_blur_screen_buy_access =
       'discovery_blur_screen.buy_access';
+  static const chat_message_list_screen_bantubeat_artist_title =
+      'chat_message_list_screen.bantubeat_artist_title';
+  static const chat_message_list_screen_listen_on_bantubeat =
+      'chat_message_list_screen.listen_on_bantubeat';
+  static const chat_message_list_screen_contact_support =
+      'chat_message_list_screen.contact_support';
+  static const chat_message_list_screen_buy_an_access =
+      'chat_message_list_screen.buy_an_access';
+  static const chat_message_list_screen_messages =
+      'chat_message_list_screen.messages';
+
   static const profile_visitor_view_screen_read_more =
       'profile_visitor_view_screen.read_more';
   static const profile_visitor_view_screen_read_less =
