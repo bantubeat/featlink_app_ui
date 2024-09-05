@@ -8,6 +8,8 @@ class MessageInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final minHeight = MediaQuery.of(context).size.height * 0.070;
+    final maxHeight = 4 * minHeight;
     return Container(
       color: AppColors.myWhite,
       child: Row(
@@ -18,26 +20,33 @@ class MessageInput extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-              height: MediaQuery.of(context).size.height * 0.070,
+              constraints: BoxConstraints(
+                minHeight: minHeight,
+                maxHeight: maxHeight,
+              ),
               margin: const EdgeInsets.all(5),
               decoration: BoxDecoration(
                 color: AppColors.myWhite,
                 borderRadius: BorderRadius.circular(12.0),
                 border: Border.all(color: AppColors.myGray),
               ),
-              child: Center(
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    hintText: LocaleKeys.conversation_your_message.tr(),
-                    border: InputBorder.none,
-                    contentPadding: const EdgeInsets.symmetric(
-                        vertical: 15.0,
-                        horizontal: 20.0,), // Centrer le texte verticalement
-                    suffixIcon: const IconButton(
-                      icon: Icon(Icons.emoji_emotions_outlined,
-                          color: AppColors.myDark,),
-                      onPressed: null,
+              child: TextFormField(
+                minLines: 1,
+                maxLines: 6,
+                autofocus: true,
+                decoration: InputDecoration(
+                  hintText: LocaleKeys.conversation_your_message.tr(),
+                  border: InputBorder.none,
+                  contentPadding: const EdgeInsets.symmetric(
+                    vertical: 15.0,
+                    horizontal: 20.0,
+                  ), // Centrer le texte verticalement
+                  suffixIcon: const IconButton(
+                    icon: Icon(
+                      Icons.emoji_emotions_outlined,
+                      color: AppColors.myDark,
                     ),
+                    onPressed: null,
                   ),
                 ),
               ),
