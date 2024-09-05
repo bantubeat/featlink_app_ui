@@ -111,7 +111,7 @@ class _HeadingProfileState extends State<HeadingProfile> {
                     const SizedBox(width: 10),
                     GestureDetector(
                       child: SvgPicture.asset(
-                        AppAssets.starIcon,
+                        AppAssets.svgsStar,
                         width: 35,
                         height: 35,
                       ),

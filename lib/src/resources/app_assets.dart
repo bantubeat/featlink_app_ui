@@ -32,7 +32,7 @@ final class AppAssets {
   static const circledPlayIcon = 'assets/images/circled_play.png';
   static const fakeArtist = 'assets/images/fake_artist.jpeg';
   static const likeIcon = 'assets/svgs/like.svg';
-  static const starIcon = 'assets/svgs/star.svg';
+  static const svgsStar = 'assets/svgs/star.svg';
   static const dislikeIcon = 'assets/svgs/dislike.svg';
   static const calendarNumberIcon = 'assets/svgs/calendar_number.svg';
   static const cityIcon = 'assets/svgs/city.svg';
@@ -57,6 +57,7 @@ final class AppAssets {
   static const bantubeatIcon = 'assets/images/bantubeat_icon.png';
   static const salonpriveIcon = 'assets/images/salon_prive_icon.png';
   static const bzcIcon = 'assets/images/bzc_icon.png';
+  static const imagesStar = 'assets/images/star.png';
 
   static const theddayimagefirst = 'assets/images/danse.jpg';
   static const theddayimagesecond = 'assets/images/boire.jpg';

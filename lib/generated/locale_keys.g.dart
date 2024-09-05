@@ -340,6 +340,64 @@ abstract class LocaleKeys {
   static const filter_screen_friendship = 'filter_screen.friendship';
   static const filter_screen_professional_relationship =
       'filter_screen.professional_relationship';
+
+  static const d_day_screen_button_intrested = 'd_day_screen_button_intrested';
+  static const user_side_profile_screen_interests =
+      'user_side_profile_screen.interests';
+  static const user_side_profile_screen_accroche =
+      'user_side_profile_screen.accroche';
+  static const user_side_profile_screen_about =
+      'user_side_profile_screen.about';
+  static const user_side_profile_screen_location =
+      'user_side_profile_screen.location';
+  static const user_side_profile_screen_height =
+      'user_side_profile_screen.height';
+  static const user_side_profile_screen_weight =
+      'user_side_profile_screen.weight';
+  static const user_side_profile_screen_yes = 'user_side_profile_screen.yes';
+  static const user_side_profile_screen_party =
+      'user_side_profile_screen.party';
+  static const user_side_profile_screen_friendship_free_relation =
+      'user_side_profile_screen.friendship_free_relation';
+  static const user_side_profile_screen_none = 'user_side_profile_screen.none';
+  static const user_side_profile_screen_alone =
+      'user_side_profile_screen.alone';
+  static const user_side_profile_screen_hetero =
+      'user_side_profile_screen.hetero';
+  static const user_side_profile_screen_african =
+      'user_side_profile_screen.african';
+  static const user_side_profile_screen_european =
+      'user_side_profile_screen.european';
+  static const user_side_profile_screen_islam =
+      'user_side_profile_screen.islam';
+  static const user_side_profile_screen_hook_message =
+      'user_side_profile_screen.hook_message';
+  static const user_side_profile_screen_edit = 'user_side_profile_screen.edit';
+  static const user_side_profile_screen_subscription =
+      'user_side_profile_screen.subscription';
+  static const user_side_profile_screen_profile_certification =
+      'user_side_profile_screen.profile_certification';
+  static const user_side_profile_screen_profile_certification_description =
+      'user_side_profile_screen.profile_certification_description';
+  static const user_side_profile_screen_balance_beatzcoin =
+      'user_side_profile_screen.balance_beatzcoin';
+  static const user_side_profile_screen_balance_beatzcoin_value =
+      'user_side_profile_screen.balance_beatzcoin_value';
+  static const user_side_profile_screen_withdraw_beatzcoin =
+      'user_side_profile_screen.withdraw_beatzcoin';
+  static const user_side_profile_screen_buy_beatzcoin =
+      'user_side_profile_screen.buy_beatzcoin';
+  static const user_side_profile_screen_settings =
+      'user_side_profile_screen.settings';
+  static const user_side_profile_screen_screen_name =
+      'user_side_profile_screen.screen_name';
+  static const user_side_profile_screen_football =
+      'user_side_profile_screen.football';
+  static const user_side_profile_screen_live_music =
+      'user_side_profile_screen.live_music';
+  static const user_side_profile_screen_cooking =
+      'user_side_profile_screen.cooking';
+
   static const unsubscribe_screen_title = 'unsubscribe_screen.title';
   static const unsubscribe_screen_confirmation_question =
       'unsubscribe_screen.confirmation_question';
@@ -565,6 +623,7 @@ abstract class LocaleKeys {
       'chat_message_list_screen.buy_an_access';
   static const chat_message_list_screen_messages =
       'chat_message_list_screen.messages';
+
   static const profile_visitor_view_screen_read_more =
       'profile_visitor_view_screen.read_more';
   static const profile_visitor_view_screen_read_less =
