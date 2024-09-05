@@ -54,7 +54,7 @@ class HeaderWidget extends StatelessWidget {
                                   .featlink_without_limits_screen_unlimited_featlink
                                   .tr(),
                               style: const TextStyle(
-                                fontSize: 16,
+                                fontSize: 24,
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
                               ),
