@@ -10,6 +10,7 @@ class Button extends StatelessWidget {
   final Color backgroundColor;
   final Color borderColor;
   final double borderWidth;
+  final double elevation;
   final BorderRadius borderRadius;
 
   const Button({
@@ -21,6 +22,7 @@ class Button extends StatelessWidget {
     this.backgroundColor = AppColors.primary,
     this.borderColor = AppColors.primary,
     this.borderWidth = 0,
+    this.elevation = 0,
     this.borderRadius = const BorderRadius.all(Radius.circular(20)),
   });
 
@@ -60,7 +62,7 @@ class Button extends StatelessWidget {
               ? BorderSide(width: borderWidth, color: borderColor)
               : BorderSide.none,
         ),
-        elevation: 0,
+        elevation: elevation,
         enableFeedback: true,
         overlayColor: AppColors.primaryLight,
         splashFactory: InkRipple.splashFactory,
