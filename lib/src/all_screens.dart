@@ -14,6 +14,9 @@ import 'screens/_settings/main_settings_screen.dart';
 import 'screens/_discovery/discovery_blur_screen.dart';
 import 'screens/_discovery/discovery_first_day_screen.dart';
 import 'screens/_discovery/discovery_in_my_city_screen.dart';
+import 'screens/_swipe/featlink_without_limits_screen/featlink_without_limits_offre_91_screen.dart';
+import 'screens/_swipe/featlink_without_limits_screen/featlink_without_limits_offre_92_screen.dart';
+import 'screens/_swipe/featlink_without_limits_screen/featlink_without_limits_offre_93_screen.dart';
 import 'screens/_swipe/filter_screen/filter_screen.dart';
 import 'screens/welcome2_screen/welcome2_screen.dart';
 import 'screens/welcome_screen.dart';
@@ -87,6 +90,12 @@ final Map<String, Widget Function()> allScreens = {
   'discovery_first_day_screen.dart': () => const DiscoveryFirstDayScreen(),
   'discovery_blur_screen.dart': () => const DiscoveryBlurScreen(),
   'profile_visitor_view_screen.dart': () => const ProfileVisitorViewScreen(),
+  'featlink_without_limits_offre_91_screen.dart': () =>
+      const FeatlinkWithoutLimitsOffre91Screen(),
+  'featlink_without_limits_offre_92_screen.dart': () =>
+      const FeatlinkWithoutLimitsOffre92Screen(),
+  'featlink_without_limits_offre_93_screen.dart': () =>
+      const FeatlinkWithoutLimitsOffre93Screen(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };

@@ -62,4 +62,5 @@ final class AppAssets {
   static const theddayimagethree = 'assets/images/fastfood.jpg';
   static const theddayimagefour = 'assets/images/promenade.jpg';
   static const theletterb = 'assets/images/letter.jpg';
+  static const flatImage = 'assets/images/flat_image.png';
 }

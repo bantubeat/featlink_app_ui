@@ -619,4 +619,40 @@ abstract class LocaleKeys {
       'profile_visitor_view_screen.about';
   static const profile_visitor_view_screen_interests =
       'profile_visitor_view_screen.interests';
+  static const featlink_without_limits_screen_unlimited_featlink =
+      'featlink_without_limits_screen.unlimited_featlink';
+  static const featlink_without_limits_screen_no_auto_change =
+      'featlink_without_limits_screen.no_auto_change';
+  static const featlink_without_limits_screen_try_free_24h =
+      'featlink_without_limits_screen.try_free_24h';
+  static const featlink_without_limits_screen_benefits_access =
+      'featlink_without_limits_screen.benefits_access';
+  static const featlink_without_limits_screen_discover_power =
+      'featlink_without_limits_screen.discover_power';
+  static const featlink_without_limits_screen_obtaint =
+      'featlink_without_limits_screen.obtaint';
+  static const featlink_without_limits_screen_swipes_unlimited =
+      'featlink_without_limits_screen.swipes_unlimited';
+  static const featlink_without_limits_screen_unlimited_conversations =
+      'featlink_without_limits_screen.unlimited_conversations';
+  static const featlink_without_limits_screen_dial_without_match =
+      'featlink_without_limits_screen.dial_without_match';
+  static const featlink_without_limits_screen_d_day_unlimited =
+      'featlink_without_limits_screen.d_day_unlimited';
+  static const featlink_without_limits_screen_discoveries_unlimited =
+      'featlink_without_limits_screen.discoveries_unlimited';
+  static const featlink_without_limits_screen_offer_text =
+      'featlink_without_limits_screen.offer_text';
+  static const featlink_without_limits_screen_acknowledgement_text =
+      'featlink_without_limits_screen.acknowledgement_text';
+  static const featlink_without_limits_screen_terms_text =
+      'featlink_without_limits_screen.terms_text';
+  static const featlink_without_limits_screen_free_text =
+      'featlink_without_limits_screen.free_text';
+  static const featlink_without_limits_screen_flat_text =
+      'featlink_without_limits_screen.flat_text';
+  static const featlink_without_limits_screen_percentage_text =
+      'featlink_without_limits_screen.percentage_text';
+  static const featlink_without_limits_screen_discount_text =
+      'featlink_without_limits_screen.discount_text';
 }
