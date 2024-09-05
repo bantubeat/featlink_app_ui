@@ -18,7 +18,7 @@ class ModalAccesAfriqueScreen extends StatefulWidget {
 }
 
 class _ModalAccesAfriqueScreenState extends State<ModalAccesAfriqueScreen> {
-  List<String> item = [
+  List<String> advantages = [
     LocaleKeys.fullscreen_modal_acces_afrique_swipes_unlimited.tr(),
     LocaleKeys.fullscreen_modal_acces_afrique_unlimited_conversations.tr(),
     LocaleKeys.fullscreen_modal_acces_afrique_dial_without_match.tr(),
@@ -45,32 +45,28 @@ class _ModalAccesAfriqueScreenState extends State<ModalAccesAfriqueScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const HeaderWidget(),
-            const SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15.0),
               child: Text(
                 LocaleKeys.fullscreen_modal_acces_afrique_limitless_experience
                     .tr(),
                 style: const TextStyle(
+                  color: AppColors.myTextGraySoft,
                   fontWeight: FontWeight.bold,
-                  fontSize: 16,
+                  fontSize: 20,
                 ),
               ),
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15.0),
               child: Text(
                 LocaleKeys.fullscreen_modal_acces_afrique_choose_access.tr(),
+                style: const TextStyle(color: Color.fromRGBO(0, 0, 0, 0.7)),
               ),
             ),
-            const SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 10),
             Transform.translate(
               offset: const Offset(-25, 0),
               child: CarouselSlider(
@@ -98,15 +94,13 @@ class _ModalAccesAfriqueScreenState extends State<ModalAccesAfriqueScreen> {
                 }).toList(),
               ),
             ),
-            const SizedBox(
-              height: 5,
-            ),
+            const SizedBox(height: 5),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: map<Widget>(items, (index, elt) {
                 return Container(
-                  width: 10.0,
-                  height: 10.0,
+                  width: 5,
+                  height: 5,
                   margin: const EdgeInsets.symmetric(
                     vertical: 10.0,
                     horizontal: 2.0,
@@ -121,112 +115,107 @@ class _ModalAccesAfriqueScreenState extends State<ModalAccesAfriqueScreen> {
             ),
             Container(
               margin: const EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10.0),
               decoration: BoxDecoration(
-                color: AppColors.myBlue,
+                color: const Color(0xFF0275B1),
                 borderRadius: BorderRadius.circular(20),
+                boxShadow: kElevationToShadow[4],
               ),
-              child: Material(
-                color: AppColors.myBlue,
-                borderRadius: BorderRadius.circular(20),
-                elevation: 2,
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Text(
-                            LocaleKeys
-                                .fullscreen_modal_acces_afrique_special_offer_24
-                                .tr(),
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          GifView.asset(
-                            AppAssets.smilingFaceWithHeartEyes,
-                            height: 30,
-                            width: 30,
-                            frameRate: 30, // default is 15 FPS
-                          ),
-                        ],
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      Text(
-                        LocaleKeys.fullscreen_modal_acces_afrique_try_free_24h
-                            .tr(),
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 14,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              margin:
-                  const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10),
-              // padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(
-                  color: AppColors.myGray,
-                ),
-              ),
-              child: Material(
-                elevation: 2.0,
-                borderRadius: BorderRadius.circular(20),
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Column(
+              child: Column(
+                children: [
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         LocaleKeys
-                            .fullscreen_modal_acces_afrique_benefits_access
+                            .fullscreen_modal_acces_afrique_special_offer_24
                             .tr(),
-                      ),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      for (int i = 0; i < item.length; i++)
-                        Padding(
-                          padding: const EdgeInsets.only(left: 20, bottom: 10),
-                          child: Row(
-                            children: [
-                              const Icon(Icons.check),
-                              const SizedBox(
-                                width: 20,
-                              ),
-                              Text(
-                                item[i],
-                              ),
-                            ],
-                          ),
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
                         ),
-                      const SizedBox(
-                        height: 20,
                       ),
-                      Text(
-                        LocaleKeys.fullscreen_modal_acces_afrique_discover_power
-                            .tr(),
+                      const SizedBox(width: 30),
+                      GifView.asset(
+                        AppAssets.smilingFaceWithHeartEyes,
+                        height: 30,
+                        width: 30,
+                        frameRate: 30, // default is 15 FPS
                       ),
                     ],
                   ),
-                ),
+                  const SizedBox(height: 20),
+                  Text(
+                    LocaleKeys.fullscreen_modal_acces_afrique_try_free_24h.tr(),
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                ],
               ),
             ),
+            Container(
+              margin: const EdgeInsets.symmetric(
+                horizontal: 30.0,
+                vertical: 10,
+              ),
+              padding: const EdgeInsets.all(10.0),
+              decoration: BoxDecoration(
+                color: AppColors.myWhite,
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(color: AppColors.myGray),
+                boxShadow: kElevationToShadow[4],
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 20, bottom: 10),
+                    child: Text(
+                      LocaleKeys.fullscreen_modal_acces_afrique_benefits_access
+                          .tr(),
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.myTextGraySoft,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  for (int i = 0; i < advantages.length; i++)
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20, bottom: 10),
+                      child: Row(
+                        children: [
+                          const Icon(Icons.check),
+                          const SizedBox(width: 20),
+                          Flexible(
+                            child: Text(
+                              advantages[i],
+                              softWrap: true,
+                              overflow: TextOverflow.ellipsis,
+                              style: const TextStyle(
+                                color: AppColors.myTextGraySoft,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  const SizedBox(height: 20),
+                  Text(
+                    LocaleKeys.fullscreen_modal_acces_afrique_discover_power
+                        .tr(),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -257,9 +246,7 @@ class _ModalAccesAfriqueScreenState extends State<ModalAccesAfriqueScreen> {
                 ),
               ],
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -308,9 +295,7 @@ class _ModalAccesAfriqueScreenState extends State<ModalAccesAfriqueScreen> {
                 ),
               ],
             ),
-            const SizedBox(
-              height: 110,
-            ),
+            const SizedBox(height: 110),
           ],
         ),
       ),
