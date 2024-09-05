@@ -705,6 +705,30 @@ abstract class LocaleKeys {
       'profile_visitor_view_screen.about';
   static const profile_visitor_view_screen_interests =
       'profile_visitor_view_screen.interests';
+  static const modal_acivation_offre_afriques_unlimited_featlink =
+      'modal_acivation_offre_afriques.unlimited_featlink';
+  static const modal_acivation_offre_afriques_no_auto_change =
+      'modal_acivation_offre_afriques.no_auto_change';
+  static const modal_acivation_offre_afriques_try_free_24h =
+      'modal_acivation_offre_afriques.try_free_24h';
+  static const modal_acivation_offre_afriques_benefits_access =
+      'modal_acivation_offre_afriques.benefits_access';
+  static const modal_acivation_offre_afriques_discover_power =
+      'modal_acivation_offre_afriques.discover_power';
+  static const modal_acivation_offre_afriques_cancel =
+      'modal_acivation_offre_afriques.cancel';
+  static const modal_acivation_offre_afriques_activate =
+      'modal_acivation_offre_afriques.activate';
+  static const modal_acivation_offre_afriques_swipes_unlimited =
+      'modal_acivation_offre_afriques.swipes_unlimited';
+  static const modal_acivation_offre_afriques_unlimited_conversations =
+      'modal_acivation_offre_afriques.unlimited_conversations';
+  static const modal_acivation_offre_afriques_dial_without_match =
+      'modal_acivation_offre_afriques.dial_without_match';
+  static const modal_acivation_offre_afriques_d_day_unlimited =
+      'modal_acivation_offre_afriques.d_day_unlimited';
+  static const modal_acivation_offre_afriques_discoveries_unlimited =
+      'modal_acivation_offre_afriques.discoveries_unlimited';
   static const access_featlink_outsite_africa_screen_access_expiration =
       'access_featlink_outsite_africa_screen.access_expiration';
   static const access_featlink_outsite_africa_screen_buy_access =
