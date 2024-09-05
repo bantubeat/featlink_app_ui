@@ -380,4 +380,293 @@ abstract class LocaleKeys {
   static const conversation_time_12 = 'conversation.time_12';
   static const conversation_time_13 = 'conversation.time_13';
   static const conversation_time_14 = 'conversation.time_14';
+  static const d_day_screen_button_intrested = 'd_day_screen_button_intrested';
+  static const user_side_profile_screen_interests =
+      'user_side_profile_screen.interests';
+  static const user_side_profile_screen_accroche =
+      'user_side_profile_screen.accroche';
+  static const user_side_profile_screen_about =
+      'user_side_profile_screen.about';
+  static const user_side_profile_screen_location =
+      'user_side_profile_screen.location';
+  static const user_side_profile_screen_height =
+      'user_side_profile_screen.height';
+  static const user_side_profile_screen_weight =
+      'user_side_profile_screen.weight';
+  static const user_side_profile_screen_yes = 'user_side_profile_screen.yes';
+  static const user_side_profile_screen_party =
+      'user_side_profile_screen.party';
+  static const user_side_profile_screen_friendship_free_relation =
+      'user_side_profile_screen.friendship_free_relation';
+  static const user_side_profile_screen_none = 'user_side_profile_screen.none';
+  static const user_side_profile_screen_alone =
+      'user_side_profile_screen.alone';
+  static const user_side_profile_screen_hetero =
+      'user_side_profile_screen.hetero';
+  static const user_side_profile_screen_african =
+      'user_side_profile_screen.african';
+  static const user_side_profile_screen_european =
+      'user_side_profile_screen.european';
+  static const user_side_profile_screen_islam =
+      'user_side_profile_screen.islam';
+  static const user_side_profile_screen_hook_message =
+      'user_side_profile_screen.hook_message';
+  static const user_side_profile_screen_edit = 'user_side_profile_screen.edit';
+  static const user_side_profile_screen_subscription =
+      'user_side_profile_screen.subscription';
+  static const user_side_profile_screen_profile_certification =
+      'user_side_profile_screen.profile_certification';
+  static const user_side_profile_screen_profile_certification_description =
+      'user_side_profile_screen.profile_certification_description';
+  static const user_side_profile_screen_balance_beatzcoin =
+      'user_side_profile_screen.balance_beatzcoin';
+  static const user_side_profile_screen_balance_beatzcoin_value =
+      'user_side_profile_screen.balance_beatzcoin_value';
+  static const user_side_profile_screen_withdraw_beatzcoin =
+      'user_side_profile_screen.withdraw_beatzcoin';
+  static const user_side_profile_screen_buy_beatzcoin =
+      'user_side_profile_screen.buy_beatzcoin';
+  static const user_side_profile_screen_settings =
+      'user_side_profile_screen.settings';
+  static const user_side_profile_screen_screen_name =
+      'user_side_profile_screen.screen_name';
+  static const user_side_profile_screen_football =
+      'user_side_profile_screen.football';
+  static const user_side_profile_screen_live_music =
+      'user_side_profile_screen.live_music';
+  static const user_side_profile_screen_cooking =
+      'user_side_profile_screen.cooking';
+  static const unsubscribe_screen_title = 'unsubscribe_screen.title';
+  static const unsubscribe_screen_confirmation_question =
+      'unsubscribe_screen.confirmation_question';
+  static const unsubscribe_screen_description =
+      'unsubscribe_screen.description';
+  static const unsubscribe_screen_consequence_list_title =
+      'unsubscribe_screen.consequence_list_title';
+  static const unsubscribe_screen_consequence_1 =
+      'unsubscribe_screen.consequence_1';
+  static const unsubscribe_screen_consequence_2 =
+      'unsubscribe_screen.consequence_2';
+  static const unsubscribe_screen_consequence_3 =
+      'unsubscribe_screen.consequence_3';
+  static const unsubscribe_screen_unsubscribe =
+      'unsubscribe_screen.unsubscribe';
+  static const discovery_search_1_screen_title =
+      'discovery_search_1_screen.title';
+  static const discovery_search_1_screen_publicity =
+      'discovery_search_1_screen.publicity';
+  static const discovery_search_1_screen_pub = 'discovery_search_1_screen.pub';
+  static const discovery_search_1_screen_know_more =
+      'discovery_search_1_screen.know_more';
+  static const discovery_search_1_screen_special_search =
+      'discovery_search_1_screen.special_search';
+  static const discovery_search_1_screen_in_your_city =
+      'discovery_search_1_screen.in_your_city';
+  static const discovery_search_1_screen_first_day =
+      'discovery_search_1_screen.first_day';
+  static const discovery_search_1_screen_communities =
+      'discovery_search_1_screen.communities';
+  static const discovery_search_1_screen_vip_clup =
+      'discovery_search_1_screen.vip_clup';
+  static const discovery_search_2_screen_title =
+      'discovery_search_2_screen.title';
+  static const discovery_search_2_screen_publicity =
+      'discovery_search_2_screen.publicity';
+  static const discovery_search_2_screen_pub = 'discovery_search_2_screen.pub';
+  static const discovery_search_2_screen_know_more =
+      'discovery_search_2_screen.know_more';
+  static const discovery_search_2_screen_find_profile =
+      'discovery_search_2_screen.find_profile';
+  static const edit_profile_interet_screen_interets =
+      'edit_profile_interet_screen.interets';
+  static const edit_profile_interet_screen_passionate_about =
+      'edit_profile_interet_screen.passionate_about';
+  static const edit_profile_interet_screen_apply =
+      'edit_profile_interet_screen.apply';
+  static const d_day_screen_title = 'd_day_screen.title';
+  static const d_day_screen_subtitle = 'd_day_screen.subtitle';
+  static const d_day_screen_your_d_day = 'd_day_screen.your_d_day';
+  static const d_day_screen_the_d_day = 'd_day_screen.the_d_day';
+  static const d_day_screen_intrested = 'd_day_screen.intrested';
+  static const d_day_screen_the_d_day_subtitle =
+      'd_day_screen.the_d_day_subtitle';
+  static const d_day_screen_the_d_day_text = 'd_day_screen.the_d_day_text';
+  static const d_day_screen_your_d_day_text_title =
+      'd_day_screen.your_d_day_text_title';
+  static const d_day_screen_your_d_day_text_text1 =
+      'd_day_screen.your_d_day_text_text1';
+  static const d_day_screen_your_d_day_text_text2 =
+      'd_day_screen.your_d_day_text_text2';
+  static const d_day_screen_your_d_day_text_text3 =
+      'd_day_screen.your_d_day_text_text3';
+  static const d_day_screen_country_cameroun = 'd_day_screen.country.cameroun';
+  static const d_day_screen_country_france = 'd_day_screen.country.france';
+  static const d_day_screen_country_belgique = 'd_day_screen.country.belgique';
+  static const d_day_screen_country_senegal = 'd_day_screen.country.senegal';
+  static const d_day_screen_country_mali = 'd_day_screen.country.mali';
+  static const d_day_screen_country_cote_ivoire =
+      'd_day_screen.country.cote_ivoire';
+  static const d_day_screen_country_maroc = 'd_day_screen.country.maroc';
+  static const d_day_screen_country_tunisie = 'd_day_screen.country.tunisie';
+  static const d_day_screen_country_algerie = 'd_day_screen.country.algerie';
+  static const d_day_screen_country_mauritanie =
+      'd_day_screen.country.mauritanie';
+  static const d_day_screen_your_d_day_button_publish =
+      'd_day_screen.your_d_day_button.publish';
+  static const d_day_screen_your_d_day_button_see =
+      'd_day_screen.your_d_day_button.see';
+  static const d_day_screen_d_dialog_title = 'd_day_screen.d_dialog.title';
+  static const d_day_screen_d_dialog_subtitle =
+      'd_day_screen.d_dialog.subtitle';
+  static const d_day_screen_d_dialog_placeholder =
+      'd_day_screen.d_dialog.placeholder';
+  static const d_day_screen_d_dialog_cancelbutton =
+      'd_day_screen.d_dialog.cancelbutton';
+  static const d_day_screen_d_dialog_sendbutton =
+      'd_day_screen.d_dialog.sendbutton';
+  static const private_mode_settings_screen_title =
+      'private_mode_settings_screen.title';
+  static const private_mode_settings_screen_description =
+      'private_mode_settings_screen.description';
+  static const private_mode_settings_screen_swipes_zone =
+      'private_mode_settings_screen.swipes_zone';
+  static const private_mode_settings_screen_change_account_type =
+      'private_mode_settings_screen.change_account_type';
+  static const private_mode_settings_screen_change_account_type_description =
+      'private_mode_settings_screen.change_account_type_description';
+  static const private_mode_settings_screen_who_can_see_my_profile =
+      'private_mode_settings_screen.who_can_see_my_profile';
+  static const private_mode_settings_screen_man =
+      'private_mode_settings_screen.man';
+  static const private_mode_settings_screen_women =
+      'private_mode_settings_screen.women';
+  static const private_mode_settings_screen_couple =
+      'private_mode_settings_screen.couple';
+  static const private_mode_settings_screen_others =
+      'private_mode_settings_screen.others';
+  static const private_mode_settings_screen_save =
+      'private_mode_settings_screen.save';
+  static const main_settings_screen_title = 'main_settings_screen.title';
+  static const main_settings_screen_preferences =
+      'main_settings_screen.preferences';
+  static const main_settings_screen_dark_mode =
+      'main_settings_screen.dark_mode';
+  static const main_settings_screen_account = 'main_settings_screen.account';
+  static const main_settings_screen_unsubscribe =
+      'main_settings_screen.unsubscribe';
+  static const main_settings_screen_private_mode =
+      'main_settings_screen.private_mode';
+  static const main_settings_screen_logout = 'main_settings_screen.logout';
+  static const main_settings_screen_support = 'main_settings_screen.support';
+  static const main_settings_screen_help_page =
+      'main_settings_screen.help_page';
+  static const main_settings_screen_copyright =
+      'main_settings_screen.copyright';
+  static const main_settings_screen_beatzcoins_usage =
+      'main_settings_screen.beatzcoins_usage';
+  static const main_settings_screen_featlink_pub =
+      'main_settings_screen.featlink_pub';
+  static const main_settings_screen_legals_notices =
+      'main_settings_screen.legals_notices';
+  static const main_settings_screen_general_conditions =
+      'main_settings_screen.general_conditions';
+  static const main_settings_screen_confidentiality_policy =
+      'main_settings_screen.confidentiality_policy';
+  static const main_settings_screen_cookies_policy =
+      'main_settings_screen.cookies_policy';
+  static const main_settings_screen_visual_article_policy =
+      'main_settings_screen.visual_article_policy';
+  static const discovery_in_my_city_screen_title =
+      'discovery_in_my_city_screen.title';
+  static const discovery_in_my_city_screen_on_ligne =
+      'discovery_in_my_city_screen.on_ligne';
+  static const discovery_in_my_city_screen_who_are_in_your_city =
+      'discovery_in_my_city_screen.who_are_in_your_city';
+  static const discovery_in_my_city_screen_all_continent =
+      'discovery_in_my_city_screen.all_continent';
+  static const discovery_in_my_city_screen_african =
+      'discovery_in_my_city_screen.african';
+  static const discovery_in_my_city_screen_american =
+      'discovery_in_my_city_screen.american';
+  static const discovery_in_my_city_screen_asian =
+      'discovery_in_my_city_screen.asian';
+  static const discovery_in_my_city_screen_europeen =
+      'discovery_in_my_city_screen.europeen';
+  static const discovery_in_my_city_screen_oceanian =
+      'discovery_in_my_city_screen.oceanian';
+  static const discovery_in_my_city_screen_gender_other =
+      'discovery_in_my_city_screen.gender_other';
+  static const discovery_in_my_city_screen_heterosexual_label =
+      'discovery_in_my_city_screen.heterosexual_label';
+  static const discovery_in_my_city_screen_gay_label =
+      'discovery_in_my_city_screen.gay_label';
+  static const discovery_in_my_city_screen_lesbienne_label =
+      'discovery_in_my_city_screen.lesbienne_label';
+  static const discovery_in_my_city_screen_age_year =
+      'discovery_in_my_city_screen.age_year';
+  static const discovery_in_my_city_screen_man =
+      'discovery_in_my_city_screen.man';
+  static const discovery_in_my_city_screen_woman =
+      'discovery_in_my_city_screen.woman';
+  static const discovery_in_my_city_screen_others =
+      'discovery_in_my_city_screen.others';
+  static const discovery_first_day_screen_title =
+      'discovery_first_day_screen.title';
+  static const discovery_first_day_screen_on_ligne =
+      'discovery_first_day_screen.on_ligne';
+  static const discovery_first_day_screen_first_day_of_inscription =
+      'discovery_first_day_screen.first_day_of_inscription';
+  static const discovery_first_day_screen_all_continent =
+      'discovery_first_day_screen.all_continent';
+  static const discovery_first_day_screen_african =
+      'discovery_first_day_screen.african';
+  static const discovery_first_day_screen_american =
+      'discovery_first_day_screen.american';
+  static const discovery_first_day_screen_asian =
+      'discovery_first_day_screen.asian';
+  static const discovery_first_day_screen_europeen =
+      'discovery_first_day_screen.europeen';
+  static const discovery_first_day_screen_oceanian =
+      'discovery_first_day_screen.oceanian';
+  static const discovery_first_day_screen_gender_other =
+      'discovery_first_day_screen.gender_other';
+  static const discovery_first_day_screen_heterosexual_label =
+      'discovery_first_day_screen.heterosexual_label';
+  static const discovery_first_day_screen_gay_label =
+      'discovery_first_day_screen.gay_label';
+  static const discovery_first_day_screen_lesbienne_label =
+      'discovery_first_day_screen.lesbienne_label';
+  static const discovery_first_day_screen_age_year =
+      'discovery_first_day_screen.age_year';
+  static const discovery_first_day_screen_man =
+      'discovery_first_day_screen.man';
+  static const discovery_first_day_screen_woman =
+      'discovery_first_day_screen.woman';
+  static const discovery_first_day_screen_others =
+      'discovery_first_day_screen.others';
+  static const discovery_blur_screen_title = 'discovery_blur_screen.title';
+  static const discovery_blur_screen_sub_title =
+      'discovery_blur_screen.sub_title';
+  static const discovery_blur_screen_description =
+      'discovery_blur_screen.description';
+  static const discovery_blur_screen_buy_access =
+      'discovery_blur_screen.buy_access';
+  static const chat_message_list_screen_bantubeat_artist_title =
+      'chat_message_list_screen.bantubeat_artist_title';
+  static const chat_message_list_screen_listen_on_bantubeat =
+      'chat_message_list_screen.listen_on_bantubeat';
+  static const chat_message_list_screen_contact_support =
+      'chat_message_list_screen.contact_support';
+  static const chat_message_list_screen_buy_an_access =
+      'chat_message_list_screen.buy_an_access';
+  static const chat_message_list_screen_messages =
+      'chat_message_list_screen.messages';
+  static const profile_visitor_view_screen_read_more =
+      'profile_visitor_view_screen.read_more';
+  static const profile_visitor_view_screen_read_less =
+      'profile_visitor_view_screen.read_less';
+  static const profile_visitor_view_screen_about =
+      'profile_visitor_view_screen.about';
+  static const profile_visitor_view_screen_interests =
+      'profile_visitor_view_screen.interests';
 }
