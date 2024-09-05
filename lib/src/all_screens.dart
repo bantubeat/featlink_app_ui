@@ -3,7 +3,7 @@ import 'package:featlink_app/src/screens/user_side_profile_screen/user_side_prof
 import 'package:featlink_app/src/screens/_edit_profile/edit_profile_interet_screen.dart';
 import 'package:featlink_app/src/screens/d_day_zone_screen/d_day_zone_screen.dart';
 import 'package:flutter/material.dart' show Widget;
-import 'screens/_access_featlink/access_featlink_outsite_africa_screen.dart';
+import 'screens/_access/access_featlink_outsite_africa_screen/access_featlink_outsite_africa_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o5_screen.dart';
 import 'screens/_create_profile/create_profile_step_2o2_screen/create_profile_step_2o2_screen.dart';

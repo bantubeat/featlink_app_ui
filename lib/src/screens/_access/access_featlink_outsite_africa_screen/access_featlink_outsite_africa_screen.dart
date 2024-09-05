@@ -5,12 +5,16 @@ import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 
+import 'widgets/access_item.dart';
+import 'widgets/payment_session_item.dart';
+
 class AccessFeatlinkOutsiteAfricaScreen extends StatelessWidget {
   const AccessFeatlinkOutsiteAfricaScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
+    final size = MediaQuery.of(context).size;
+    final innerWidth = size.width - 40; // margin/padding removed
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
@@ -26,33 +30,28 @@ class AccessFeatlinkOutsiteAfricaScreen extends StatelessWidget {
                     image: AssetImage(AppAssets.fakeAvatarImage),
                     fit: BoxFit.cover,
                   ),
-                  border: Border.all(
-                    color: AppColors.primary,
-                    width: 4,
-                  ),
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(200),
-                  ),
+                  border: Border.all(color: AppColors.primary, width: 4),
+                  borderRadius: const BorderRadius.all(Radius.circular(200)),
                 ),
               ),
-              const SizedBox(
-                height: 10,
-              ),
+              const SizedBox(height: 10),
               const Text(
                 'Clarinette',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
               ),
-              const SizedBox(
-                height: 20,
-              ),
-              Wrap(
+              const SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    '${LocaleKeys.access_featlink_outsite_africa_screen_access_expiration.tr()} : ',
+                  Flexible(
+                    child: Text(
+                      LocaleKeys
+                          .access_featlink_outsite_africa_screen_access_expiration
+                          .tr(),
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
+                  const Text(' : '),
                   const Text(
                     '00 J - 00:00:00',
                     style: TextStyle(
@@ -63,9 +62,7 @@ class AccessFeatlinkOutsiteAfricaScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 20),
               Text(
                 LocaleKeys.access_featlink_outsite_africa_screen_buy_access
                     .tr(),
@@ -74,9 +71,7 @@ class AccessFeatlinkOutsiteAfricaScreen extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 20),
               const AccessItem(
                 time: '24 heures',
                 amount: '2.00 EUR',
@@ -110,7 +105,7 @@ class AccessFeatlinkOutsiteAfricaScreen extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(bottom: 20),
                     child: Container(
-                      width: size.width,
+                      width: innerWidth,
                       padding: const EdgeInsets.all(20),
                       decoration: BoxDecoration(
                         color: AppColors.myGray,
@@ -128,29 +123,28 @@ class AccessFeatlinkOutsiteAfricaScreen extends StatelessWidget {
                               fontSize: 16,
                             ),
                           ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          PaymentSessionIten(
+                          const SizedBox(height: 10),
+                          PaymentSessionItem(
                             label: LocaleKeys
                                 .access_featlink_outsite_africa_screen_featlink_access
                                 .tr(),
                             value1: '1 Mois',
                             value2: '1400 BZC',
+                            value2Color: AppColors.myOtherDark.withOpacity(0.7),
                           ),
-                          PaymentSessionIten(
+                          PaymentSessionItem(
                             label: LocaleKeys
                                 .access_featlink_outsite_africa_screen_total
                                 .tr(),
                             value2: '1400 BZC',
                           ),
-                          PaymentSessionIten(
+                          PaymentSessionItem(
                             label: LocaleKeys
                                 .access_featlink_outsite_africa_screen_discount
                                 .tr(),
                             value2: '0%',
                           ),
-                          PaymentSessionIten(
+                          PaymentSessionItem(
                             labelColor: AppColors.primary,
                             value2Color: AppColors.primary,
                             label: LocaleKeys
@@ -162,16 +156,12 @@ class AccessFeatlinkOutsiteAfricaScreen extends StatelessWidget {
                             LocaleKeys
                                 .access_featlink_outsite_africa_screen_pay_with_balance
                                 .tr(),
-                            style: const TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
+                            style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
-                          const SizedBox(
-                            height: 10,
-                          ),
+                          const SizedBox(height: 10),
                           Container(
                             padding: const EdgeInsets.all(10),
-                            width: size.width,
+                            width: innerWidth,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: AppColors.primaryLight.withOpacity(0.4),
@@ -224,9 +214,7 @@ class AccessFeatlinkOutsiteAfricaScreen extends StatelessWidget {
                               ],
                             ),
                           ),
-                          const SizedBox(
-                            height: 10,
-                          ),
+                          const SizedBox(height: 10),
                           Text(
                             LocaleKeys
                                 .access_featlink_outsite_africa_screen_balance_is_sufficient
@@ -245,9 +233,7 @@ class AccessFeatlinkOutsiteAfricaScreen extends StatelessWidget {
                               color: Colors.red,
                             ),
                           ),
-                          const SizedBox(
-                            height: 20,
-                          ),
+                          const SizedBox(height: 20),
                         ],
                       ),
                     ),
@@ -255,11 +241,11 @@ class AccessFeatlinkOutsiteAfricaScreen extends StatelessWidget {
                   Positioned(
                     bottom: 0,
                     child: SizedBox(
-                      width: size.width,
-                      child: Wrap(
-                        alignment: WrapAlignment.center,
+                      width: innerWidth,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          IntrinsicWidth(
+                          Flexible(
                             child: PrimaryButton(
                               text: LocaleKeys
                                   .access_featlink_outsite_africa_screen_pay
@@ -267,10 +253,8 @@ class AccessFeatlinkOutsiteAfricaScreen extends StatelessWidget {
                               onPressed: (_) {},
                             ),
                           ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          IntrinsicWidth(
+                          const SizedBox(width: 10),
+                          Flexible(
                             child: PrimaryButton(
                               text: LocaleKeys
                                   .access_featlink_outsite_africa_screen_purchase_coins
@@ -287,152 +271,6 @@ class AccessFeatlinkOutsiteAfricaScreen extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-class AccessItem extends StatelessWidget {
-  const AccessItem({
-    required this.time,
-    required this.amount,
-    required this.amoutBzc,
-    this.borderColor = AppColors.myGray600,
-    this.text1Color = AppColors.myOtherDark,
-    this.text2Color = AppColors.myOtherDark,
-    this.text3Color = AppColors.myOtherDark,
-    super.key,
-  });
-
-  final String time;
-  final String amount;
-  final String amoutBzc;
-  final Color borderColor;
-  final Color text1Color;
-  final Color text2Color;
-  final Color text3Color;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 20),
-      padding: const EdgeInsets.symmetric(
-        horizontal: 20,
-        vertical: 10,
-      ),
-      decoration: BoxDecoration(
-        border: Border.all(
-          color: borderColor,
-          width: 2,
-        ),
-        borderRadius: BorderRadius.circular(15),
-      ),
-      child: Row(
-        children: [
-          Expanded(
-            child: Text(
-              time,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-                color: text1Color,
-              ),
-            ),
-          ),
-          Expanded(
-            child: Text(
-              amount,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-                color: text2Color,
-              ),
-            ),
-          ),
-          Expanded(
-            child: Text(
-              amoutBzc,
-              textAlign: TextAlign.end,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-                color: text3Color,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class PaymentSessionIten extends StatelessWidget {
-  const PaymentSessionIten({
-    required this.label,
-    this.value1 = '',
-    this.value2 = '',
-    this.borderColor = Colors.transparent,
-    this.labelColor = AppColors.myOtherDark,
-    this.value1Color = AppColors.myOtherDark,
-    this.value2Color = AppColors.myOtherDark,
-    super.key,
-  });
-
-  final String label;
-  final String value1;
-  final String value2;
-  final Color borderColor;
-  final Color labelColor;
-  final Color value1Color;
-  final Color value2Color;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 10),
-      decoration: BoxDecoration(
-        border: Border.all(
-          color: borderColor,
-          width: 2,
-        ),
-        borderRadius: BorderRadius.circular(15),
-      ),
-      child: Row(
-        children: [
-          Expanded(
-            child: Text(
-              label,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-                color: labelColor,
-              ),
-            ),
-          ),
-          Expanded(
-            child: Text(
-              value1,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-                color: value1Color,
-              ),
-            ),
-          ),
-          Expanded(
-            child: Text(
-              value2,
-              textAlign: TextAlign.end,
-              style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-                color: value2Color,
-              ),
-            ),
-          ),
-        ],
       ),
     );
   }

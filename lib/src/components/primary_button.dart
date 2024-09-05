@@ -26,7 +26,6 @@ class PrimaryButton extends Button {
   Widget buildContent(BuildContext context) {
     return Text(
       text,
-      softWrap: false,
       style: TextStyle(
         fontSize: fontSize,
         color: color,
