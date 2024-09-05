@@ -340,6 +340,122 @@ abstract class LocaleKeys {
   static const filter_screen_friendship = 'filter_screen.friendship';
   static const filter_screen_professional_relationship =
       'filter_screen.professional_relationship';
+  static const crush_screen_bzc_solde = 'crush_screen.bzc_solde';
+  static const crush_screen_bzc_echange = 'crush_screen.bzc_echange';
+  static const crush_screen_bay_bzc = 'crush_screen.bay_bzc';
+  static const crush_screen_likes = 'crush_screen.likes';
+  static const crush_screen_likes_header_text =
+      'crush_screen.likes_header_text';
+  static const crush_screen_dialpay_header_text =
+      'crush_screen.dialpay_header_text';
+  static const crush_screen_swipespay_header_text =
+      'crush_screen.swipespay_header_text';
+  static const crush_screen_match_header_text =
+      'crush_screen.match_header_text';
+  static const crush_screen_you_have = 'crush_screen.you_have';
+  static const crush_screen_likes_n = 'crush_screen.likes_n';
+  static const crush_screen_dialpay_n = 'crush_screen.dialpay_n';
+  static const crush_screen_match_n = 'crush_screen.match_n';
+  static const crush_screen_swipespay_n = 'crush_screen.swipespay_n';
+  static const crush_screen_dialpay = 'crush_screen.dialpay';
+  static const crush_screen_swipespay = 'crush_screen.swipespay';
+  static const crush_screen_match = 'crush_screen.match';
+  static const conversation_copy_message = 'conversation.copy_message';
+  static const conversation_reply_message = 'conversation.reply_message';
+  static const conversation_delete_message = 'conversation.delete_message';
+  static const conversation_yesterday = 'conversation.yesterday';
+  static const conversation_your_message = 'conversation.your_message';
+  static const conversation_send = 'conversation.send';
+  static const conversation_profile = 'conversation.profile';
+  static const conversation_delete_conversation =
+      'conversation.delete_conversation';
+  static const conversation_block_user = 'conversation.block_user';
+  static const conversation_online = 'conversation.online';
+  static const conversation_username = 'conversation.username';
+  static const conversation_message_1 = 'conversation.message_1';
+  static const conversation_message_2 = 'conversation.message_2';
+  static const conversation_message_3 = 'conversation.message_3';
+  static const conversation_message_4 = 'conversation.message_4';
+  static const conversation_message_5 = 'conversation.message_5';
+  static const conversation_message_6 = 'conversation.message_6';
+  static const conversation_message_7 = 'conversation.message_7';
+  static const conversation_message_8 = 'conversation.message_8';
+  static const conversation_message_9 = 'conversation.message_9';
+  static const conversation_message_10 = 'conversation.message_10';
+  static const conversation_message_11 = 'conversation.message_11';
+  static const conversation_message_12 = 'conversation.message_12';
+  static const conversation_message_13 = 'conversation.message_13';
+  static const conversation_message_14 = 'conversation.message_14';
+  static const conversation_time_1 = 'conversation.time_1';
+  static const conversation_time_2 = 'conversation.time_2';
+  static const conversation_time_3 = 'conversation.time_3';
+  static const conversation_time_4 = 'conversation.time_4';
+  static const conversation_time_5 = 'conversation.time_5';
+  static const conversation_time_6 = 'conversation.time_6';
+  static const conversation_time_7 = 'conversation.time_7';
+  static const conversation_time_8 = 'conversation.time_8';
+  static const conversation_time_9 = 'conversation.time_9';
+  static const conversation_time_10 = 'conversation.time_10';
+  static const conversation_time_11 = 'conversation.time_11';
+  static const conversation_time_12 = 'conversation.time_12';
+  static const conversation_time_13 = 'conversation.time_13';
+  static const conversation_time_14 = 'conversation.time_14';
+  static const d_day_screen_button_intrested = 'd_day_screen_button_intrested';
+  static const user_side_profile_screen_interests =
+      'user_side_profile_screen.interests';
+  static const user_side_profile_screen_accroche =
+      'user_side_profile_screen.accroche';
+  static const user_side_profile_screen_about =
+      'user_side_profile_screen.about';
+  static const user_side_profile_screen_location =
+      'user_side_profile_screen.location';
+  static const user_side_profile_screen_height =
+      'user_side_profile_screen.height';
+  static const user_side_profile_screen_weight =
+      'user_side_profile_screen.weight';
+  static const user_side_profile_screen_yes = 'user_side_profile_screen.yes';
+  static const user_side_profile_screen_party =
+      'user_side_profile_screen.party';
+  static const user_side_profile_screen_friendship_free_relation =
+      'user_side_profile_screen.friendship_free_relation';
+  static const user_side_profile_screen_none = 'user_side_profile_screen.none';
+  static const user_side_profile_screen_alone =
+      'user_side_profile_screen.alone';
+  static const user_side_profile_screen_hetero =
+      'user_side_profile_screen.hetero';
+  static const user_side_profile_screen_african =
+      'user_side_profile_screen.african';
+  static const user_side_profile_screen_european =
+      'user_side_profile_screen.european';
+  static const user_side_profile_screen_islam =
+      'user_side_profile_screen.islam';
+  static const user_side_profile_screen_hook_message =
+      'user_side_profile_screen.hook_message';
+  static const user_side_profile_screen_edit = 'user_side_profile_screen.edit';
+  static const user_side_profile_screen_subscription =
+      'user_side_profile_screen.subscription';
+  static const user_side_profile_screen_profile_certification =
+      'user_side_profile_screen.profile_certification';
+  static const user_side_profile_screen_profile_certification_description =
+      'user_side_profile_screen.profile_certification_description';
+  static const user_side_profile_screen_balance_beatzcoin =
+      'user_side_profile_screen.balance_beatzcoin';
+  static const user_side_profile_screen_balance_beatzcoin_value =
+      'user_side_profile_screen.balance_beatzcoin_value';
+  static const user_side_profile_screen_withdraw_beatzcoin =
+      'user_side_profile_screen.withdraw_beatzcoin';
+  static const user_side_profile_screen_buy_beatzcoin =
+      'user_side_profile_screen.buy_beatzcoin';
+  static const user_side_profile_screen_settings =
+      'user_side_profile_screen.settings';
+  static const user_side_profile_screen_screen_name =
+      'user_side_profile_screen.screen_name';
+  static const user_side_profile_screen_football =
+      'user_side_profile_screen.football';
+  static const user_side_profile_screen_live_music =
+      'user_side_profile_screen.live_music';
+  static const user_side_profile_screen_cooking =
+      'user_side_profile_screen.cooking';
   static const unsubscribe_screen_title = 'unsubscribe_screen.title';
   static const unsubscribe_screen_confirmation_question =
       'unsubscribe_screen.confirmation_question';
@@ -428,6 +544,22 @@ abstract class LocaleKeys {
       'd_day_screen.d_dialog.cancelbutton';
   static const d_day_screen_d_dialog_sendbutton =
       'd_day_screen.d_dialog.sendbutton';
+  static const edit_user_profile_accroche_screen_addText =
+      'edit_user_profile_accroche_screen.addText';
+  static const edit_user_profile_accroche_screen_write_accroche_essage =
+      'edit_user_profile_accroche_screen.write_accroche_essage';
+  static const edit_user_profile_accroche_screen_max_number_characters =
+      'edit_user_profile_accroche_screen.max_number_characters';
+  static const edit_user_profile_accroche_screen_save =
+      'edit_user_profile_accroche_screen.save';
+  static const edit_user_profile_accroche_screen_add_media_message =
+      'edit_user_profile_accroche_screen.add_media_message';
+  static const edit_user_profile_accroche_screen_data =
+      'edit_user_profile_accroche_screen.data';
+  static const edit_user_profile_accroche_screen_hooks =
+      'edit_user_profile_accroche_screen.hooks';
+  static const edit_user_profile_accroche_screen_interests =
+      'edit_user_profile_accroche_screen.interests';
   static const private_mode_settings_screen_title =
       'private_mode_settings_screen.title';
   static const private_mode_settings_screen_description =
@@ -555,6 +687,16 @@ abstract class LocaleKeys {
       'discovery_blur_screen.description';
   static const discovery_blur_screen_buy_access =
       'discovery_blur_screen.buy_access';
+  static const chat_message_list_screen_bantubeat_artist_title =
+      'chat_message_list_screen.bantubeat_artist_title';
+  static const chat_message_list_screen_listen_on_bantubeat =
+      'chat_message_list_screen.listen_on_bantubeat';
+  static const chat_message_list_screen_contact_support =
+      'chat_message_list_screen.contact_support';
+  static const chat_message_list_screen_buy_an_access =
+      'chat_message_list_screen.buy_an_access';
+  static const chat_message_list_screen_messages =
+      'chat_message_list_screen.messages';
   static const profile_visitor_view_screen_read_more =
       'profile_visitor_view_screen.read_more';
   static const profile_visitor_view_screen_read_less =
@@ -593,6 +735,30 @@ abstract class LocaleKeys {
       'fullscreen_modal_acces_afrique.d_day_unlimited';
   static const fullscreen_modal_acces_afrique_discoveries_unlimited =
       'fullscreen_modal_acces_afrique.discoveries_unlimited';
+  static const modal_acivation_offre_afriques_unlimited_featlink =
+      'modal_acivation_offre_afriques.unlimited_featlink';
+  static const modal_acivation_offre_afriques_no_auto_change =
+      'modal_acivation_offre_afriques.no_auto_change';
+  static const modal_acivation_offre_afriques_try_free_24h =
+      'modal_acivation_offre_afriques.try_free_24h';
+  static const modal_acivation_offre_afriques_benefits_access =
+      'modal_acivation_offre_afriques.benefits_access';
+  static const modal_acivation_offre_afriques_discover_power =
+      'modal_acivation_offre_afriques.discover_power';
+  static const modal_acivation_offre_afriques_cancel =
+      'modal_acivation_offre_afriques.cancel';
+  static const modal_acivation_offre_afriques_activate =
+      'modal_acivation_offre_afriques.activate';
+  static const modal_acivation_offre_afriques_swipes_unlimited =
+      'modal_acivation_offre_afriques.swipes_unlimited';
+  static const modal_acivation_offre_afriques_unlimited_conversations =
+      'modal_acivation_offre_afriques.unlimited_conversations';
+  static const modal_acivation_offre_afriques_dial_without_match =
+      'modal_acivation_offre_afriques.dial_without_match';
+  static const modal_acivation_offre_afriques_d_day_unlimited =
+      'modal_acivation_offre_afriques.d_day_unlimited';
+  static const modal_acivation_offre_afriques_discoveries_unlimited =
+      'modal_acivation_offre_afriques.discoveries_unlimited';
   static const swipezone_full_screen_modal_screen_oups =
       'swipezone_full_screen_modal_screen.oups';
   static const swipezone_full_screen_modal_screen_tag_name =
@@ -613,4 +779,66 @@ abstract class LocaleKeys {
       'swipezone_full_screen_modal_screen.access';
   static const swipezone_full_screen_modal_screen_active =
       'swipezone_full_screen_modal_screen.active';
+  static const access_featlink_outsite_africa_screen_access_expiration =
+      'access_featlink_outsite_africa_screen.access_expiration';
+  static const access_featlink_outsite_africa_screen_buy_access =
+      'access_featlink_outsite_africa_screen.buy_access';
+  static const access_featlink_outsite_africa_screen_featlink_access =
+      'access_featlink_outsite_africa_screen.featlink_access';
+  static const access_featlink_outsite_africa_screen_total =
+      'access_featlink_outsite_africa_screen.total';
+  static const access_featlink_outsite_africa_screen_discount =
+      'access_featlink_outsite_africa_screen.discount';
+  static const access_featlink_outsite_africa_screen_pay =
+      'access_featlink_outsite_africa_screen.pay';
+  static const access_featlink_outsite_africa_screen_purchase_coins =
+      'access_featlink_outsite_africa_screen.purchase_coins';
+  static const access_featlink_outsite_africa_screen_amount_to_pay =
+      'access_featlink_outsite_africa_screen.amount_to_pay';
+  static const access_featlink_outsite_africa_screen_pay_with_balance =
+      'access_featlink_outsite_africa_screen.pay_with_balance';
+  static const access_featlink_outsite_africa_screen_beatzcoins_balance =
+      'access_featlink_outsite_africa_screen.beatzcoins_balance';
+  static const access_featlink_outsite_africa_screen_balance_is_sufficient =
+      'access_featlink_outsite_africa_screen.balance_is_sufficient';
+  static const access_featlink_outsite_africa_screen_balance_is_insufficient =
+      'access_featlink_outsite_africa_screen.balance_is_insufficient';
+  static const access_featlink_outsite_africa_screen_payment =
+      'access_featlink_outsite_africa_screen.payment';
+  static const featlink_without_limits_screen_unlimited_featlink =
+      'featlink_without_limits_screen.unlimited_featlink';
+  static const featlink_without_limits_screen_no_auto_change =
+      'featlink_without_limits_screen.no_auto_change';
+  static const featlink_without_limits_screen_try_free_24h =
+      'featlink_without_limits_screen.try_free_24h';
+  static const featlink_without_limits_screen_benefits_access =
+      'featlink_without_limits_screen.benefits_access';
+  static const featlink_without_limits_screen_discover_power =
+      'featlink_without_limits_screen.discover_power';
+  static const featlink_without_limits_screen_obtaint =
+      'featlink_without_limits_screen.obtaint';
+  static const featlink_without_limits_screen_swipes_unlimited =
+      'featlink_without_limits_screen.swipes_unlimited';
+  static const featlink_without_limits_screen_unlimited_conversations =
+      'featlink_without_limits_screen.unlimited_conversations';
+  static const featlink_without_limits_screen_dial_without_match =
+      'featlink_without_limits_screen.dial_without_match';
+  static const featlink_without_limits_screen_d_day_unlimited =
+      'featlink_without_limits_screen.d_day_unlimited';
+  static const featlink_without_limits_screen_discoveries_unlimited =
+      'featlink_without_limits_screen.discoveries_unlimited';
+  static const featlink_without_limits_screen_offer_text =
+      'featlink_without_limits_screen.offer_text';
+  static const featlink_without_limits_screen_acknowledgement_text =
+      'featlink_without_limits_screen.acknowledgement_text';
+  static const featlink_without_limits_screen_terms_text =
+      'featlink_without_limits_screen.terms_text';
+  static const featlink_without_limits_screen_free_text =
+      'featlink_without_limits_screen.free_text';
+  static const featlink_without_limits_screen_flat_text =
+      'featlink_without_limits_screen.flat_text';
+  static const featlink_without_limits_screen_percentage_text =
+      'featlink_without_limits_screen.percentage_text';
+  static const featlink_without_limits_screen_discount_text =
+      'featlink_without_limits_screen.discount_text';
 }
