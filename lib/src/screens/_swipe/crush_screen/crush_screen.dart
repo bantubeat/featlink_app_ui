@@ -66,13 +66,8 @@ class _CrushScreenState extends State<CrushScreen>
         child: Column(
           children: [
             const Header(),
-            const Divider(
-              height: 1,
-              color: AppColors.myGray,
-            ),
-            const SizedBox(
-              height: 7,
-            ),
+            const Divider(height: 1, color: AppColors.myGray),
+            const SizedBox(height: 7),
             TabBar(
               dividerHeight: 0,
               controller: _tabController,
@@ -102,22 +97,22 @@ class _CrushScreenState extends State<CrushScreen>
                   .toList(),
             ),
             Expanded(
-              flex: 3,
-              child: TabBarView(
-                controller: _tabController,
-                children: const <Widget>[
-                  CrushTab1Like(),
-                  CrushTab2Dialpay(),
-                  CrushTab3Swipespay(),
-                  CrushTab4Match(),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.only(bottom: 90),
+                child: TabBarView(
+                  controller: _tabController,
+                  children: const <Widget>[
+                    CrushTab1Like(),
+                    CrushTab2Dialpay(),
+                    CrushTab3Swipespay(),
+                    CrushTab4Match(),
+                  ],
+                ),
               ),
             ),
-            // const AppNavigationBottomSheet(),
           ],
         ),
       ),
-      // bottomNavigationBar: const AppNavigationBottomSheet(),
       floatingActionButton: const AppNavigationBottomSheet(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
