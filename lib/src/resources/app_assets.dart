@@ -29,6 +29,8 @@ final class AppAssets {
   static const smokerIcon = 'assets/images/smoker.png';
   static const svgStep1o2Icon = 'assets/svg/step1o2_icon.svg';
   static const lockIcon = 'assets/svgs/lock.svg';
+  static const circledPlayIcon = 'assets/images/circled_play.png';
+  static const fakeArtist = 'assets/images/fake_artist.jpeg';
   static const likeIcon = 'assets/svgs/like.svg';
   static const svgsStar = 'assets/svgs/star.svg';
   static const dislikeIcon = 'assets/svgs/dislike.svg';

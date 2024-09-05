@@ -3,6 +3,8 @@ import 'package:featlink_app/src/screens/user_side_profile_screen/user_side_prof
 import 'package:featlink_app/src/screens/_edit_profile/edit_profile_interet_screen.dart';
 import 'package:featlink_app/src/screens/d_day_zone_screen/d_day_zone_screen.dart';
 import 'package:flutter/material.dart' show Widget;
+
+import 'screens/_chat_messages/chat_message_list_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o5_screen.dart';
 import 'screens/_create_profile/create_profile_step_2o2_screen/create_profile_step_2o2_screen.dart';
@@ -82,13 +84,13 @@ final Map<String, Widget Function()> allScreens = {
   'discovery_search_1_screen.dart': () => const DiscoverySearch1Screen(),
   'discovery_search_2_screen.dart': () => const DiscoverySearch2Screen(),
   'edit_profile_interet_screen.dart': () => EditProfileInteretScreen(),
-
   'd_day_zone_screen.dart': () => const DDayZoneScreen(),
   'private_mode_settings_screen.dart': () => const PrivateModeSettingsScreen(),
   'main_settings_screen.dart': () => const MainSettingsScreen(),
   'discovery_in_my_city_screen.dart': () => const DiscoveryInMyCityScreen(),
   'discovery_first_day_screen.dart': () => const DiscoveryFirstDayScreen(),
   'discovery_blur_screen.dart': () => const DiscoveryBlurScreen(),
+  'chat_message_list_screen.dart': () => const ChatMessageListScreen(),
   'profile_visitor_view_screen.dart': () => const ProfileVisitorViewScreen(),
   'featlink_without_limits_offre_91_screen.dart': () =>
       const FeatlinkWithoutLimitsOffre91Screen(),

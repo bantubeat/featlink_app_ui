@@ -423,6 +423,13 @@
         "description": "Nous avons recensé et regroupé les profils Homme de votre région ayant plus de 50 ans.\n\nPourquoi c’est flou? vous devez avoir un accès valide pour consulter les profils de nos sugar daddy.",
         "buy_access": "Payer un accès"
     },
+    "chat_message_list_screen": {
+        "bantubeat_artist_title": "Artiste à la une sur Bantubeat",
+        "listen_on_bantubeat": "Ecouter sur Bantubeat",
+        "contact_support": "Contacter le support",
+        "buy_an_access": "Acheter un accès",
+        "messages": "Messages"
+    },
     "profile_visitor_view_screen": {
         "read_more": "Lire plus",
         "read_less": "Lire moins",

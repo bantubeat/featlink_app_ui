@@ -213,9 +213,8 @@ class ContentWidget extends StatelessWidget {
                     ), // Default font size
                     children: <TextSpan>[
                       TextSpan(
-                        text: ' ${LocaleKeys
-                            .featlink_without_limits_screen_terms_text
-                            .tr()}',
+                        text:
+                            ' ${LocaleKeys.featlink_without_limits_screen_terms_text.tr()}',
                         style: const TextStyle(
                           color: AppColors.primary,
                         ),
