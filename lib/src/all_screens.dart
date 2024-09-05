@@ -1,4 +1,5 @@
 import 'package:featlink_app/src/screens/_create_profile/create_profile_step_110_screen.dart';
+import 'package:featlink_app/src/screens/conversation_screen/conversation_screen.dart';
 import 'package:featlink_app/src/screens/user_side_profile_screen/user_side_profile_screen.dart';
 import 'package:featlink_app/src/screens/_edit_profile/edit_profile_interet_screen.dart';
 import 'package:featlink_app/src/screens/d_day_zone_screen/d_day_zone_screen.dart';
@@ -8,6 +9,8 @@ import 'screens/_chat_messages/chat_message_list_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o5_screen.dart';
 import 'screens/_create_profile/create_profile_step_2o2_screen/create_profile_step_2o2_screen.dart';
+import 'screens/_edit_profile/edit_user_profile_accroche_screen/edit_user_profile_accroche_screen.dart';
+import 'screens/_swipe/crush_screen/crush_screen.dart';
 import 'screens/_discovery/discovery_search_1_screen/discovery_search_1_screen.dart';
 import 'screens/_discovery/discovery_search_2_screen/discovery_search_2_screen.dart';
 import 'screens/_settings/unsubscribe_screen.dart';
@@ -77,6 +80,10 @@ final Map<String, Widget Function()> allScreens = {
 
   'notifications_screen.dart': () => const NotificationsScreen(),
   'filter_screen.dart': () => const FilterScreen(),
+  'crush_screen.dart': () => const CrushScreen(),
+  'edit_user_profile_accroche_screen.dart': () =>
+      const EditUserProfileAccrocheScreen(),
+  'conversation_screen.dart': () => const ConversationScreen(),
 
   'user_side_profile_screen.dart': () => const UserSideProfileScreen(),
 
