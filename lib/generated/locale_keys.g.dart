@@ -340,6 +340,26 @@ abstract class LocaleKeys {
   static const filter_screen_friendship = 'filter_screen.friendship';
   static const filter_screen_professional_relationship =
       'filter_screen.professional_relationship';
+  static const crush_screen_bzc_solde = 'crush_screen.bzc_solde';
+  static const crush_screen_bzc_echange = 'crush_screen.bzc_echange';
+  static const crush_screen_bay_bzc = 'crush_screen.bay_bzc';
+  static const crush_screen_likes = 'crush_screen.likes';
+  static const crush_screen_likes_header_text =
+      'crush_screen.likes_header_text';
+  static const crush_screen_dialpay_header_text =
+      'crush_screen.dialpay_header_text';
+  static const crush_screen_swipespay_header_text =
+      'crush_screen.swipespay_header_text';
+  static const crush_screen_match_header_text =
+      'crush_screen.match_header_text';
+  static const crush_screen_you_have = 'crush_screen.you_have';
+  static const crush_screen_likes_n = 'crush_screen.likes_n';
+  static const crush_screen_dialpay_n = 'crush_screen.dialpay_n';
+  static const crush_screen_match_n = 'crush_screen.match_n';
+  static const crush_screen_swipespay_n = 'crush_screen.swipespay_n';
+  static const crush_screen_dialpay = 'crush_screen.dialpay';
+  static const crush_screen_swipespay = 'crush_screen.swipespay';
+  static const crush_screen_match = 'crush_screen.match';
   static const conversation_copy_message = 'conversation.copy_message';
   static const conversation_reply_message = 'conversation.reply_message';
   static const conversation_delete_message = 'conversation.delete_message';
@@ -524,6 +544,22 @@ abstract class LocaleKeys {
       'd_day_screen.d_dialog.cancelbutton';
   static const d_day_screen_d_dialog_sendbutton =
       'd_day_screen.d_dialog.sendbutton';
+  static const edit_user_profile_accroche_screen_addText =
+      'edit_user_profile_accroche_screen.addText';
+  static const edit_user_profile_accroche_screen_write_accroche_essage =
+      'edit_user_profile_accroche_screen.write_accroche_essage';
+  static const edit_user_profile_accroche_screen_max_number_characters =
+      'edit_user_profile_accroche_screen.max_number_characters';
+  static const edit_user_profile_accroche_screen_save =
+      'edit_user_profile_accroche_screen.save';
+  static const edit_user_profile_accroche_screen_add_media_message =
+      'edit_user_profile_accroche_screen.add_media_message';
+  static const edit_user_profile_accroche_screen_data =
+      'edit_user_profile_accroche_screen.data';
+  static const edit_user_profile_accroche_screen_hooks =
+      'edit_user_profile_accroche_screen.hooks';
+  static const edit_user_profile_accroche_screen_interests =
+      'edit_user_profile_accroche_screen.interests';
   static const private_mode_settings_screen_title =
       'private_mode_settings_screen.title';
   static const private_mode_settings_screen_description =

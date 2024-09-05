@@ -246,6 +246,24 @@
         "friendship": "Amitié",
         "professional_relationship": "Relation professionnelle"
     },
+    "crush_screen": {
+        "bzc_solde": "Solde BZC",
+        "bzc_echange": "Echanger vos BZC",
+        "bay_bzc": "Acheter des BZC",
+        "likes": "Likes recus",
+        "likes_header_text": "voici les profils qui t’ont envoyé un like, like en retour pour déclencher une conversation",
+        "dialpay_header_text": "Ces personnes t’ont envoyé un message prioritaire, en répondant au message tu gagnes une partie des jetons. cliques sur l’enveloloppe pour répondre directement",
+        "swipespay_header_text": "Ces personnes t’ont envoyé un like prioritaire, complète le coeur, likes en retour, déclenches une conversation et gagnes les jetons derrière le Coeur.",
+        "match_header_text": "Ces personnes sont intéressées par ton profil, en offrant un cadeau, tu attireras plus l’attention de ces personnes. clique sur l’enveloppe pour envoyer un cadeau.",
+        "you_have": "Tu as",
+        "likes_n": "Likes en attente",
+        "dialpay_n": "Dialpay en attente",
+        "match_n": "Match en attente",
+        "swipespay_n": "Swipespays en attente",
+        "dialpay": "Dialpay recus",
+        "swipespay": "Swipespays recus",
+        "match": "Match recus"
+    },
     "conversation": {
         "copy_message": "Copier le message",
         "reply_message": "Répondre au message",
@@ -387,6 +405,16 @@
             "cancelbutton": "Annuler",
             "sendbutton": "Envoyer"
         }
+    },
+    "edit_user_profile_accroche_screen": {
+        "addText": "Ajouter",
+        "write_accroche_essage": "Ecrire votre message accroche",
+        "max_number_characters": "Maximum 250 caractères",
+        "save": "Enregistrer",
+        "add_media_message": "Ajouter vos plus belles photos/vidéo car les profils avec des photos/vidéo ont plus de chance d'attirer l'attention.",
+        "data": "Données",
+        "hooks": "Accroches",
+        "interests": "Intérêts"
     },
     "private_mode_settings_screen": {
         "title": "Mode Prive",
