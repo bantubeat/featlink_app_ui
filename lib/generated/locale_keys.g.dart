@@ -340,7 +340,46 @@ abstract class LocaleKeys {
   static const filter_screen_friendship = 'filter_screen.friendship';
   static const filter_screen_professional_relationship =
       'filter_screen.professional_relationship';
-
+  static const conversation_copy_message = 'conversation.copy_message';
+  static const conversation_reply_message = 'conversation.reply_message';
+  static const conversation_delete_message = 'conversation.delete_message';
+  static const conversation_yesterday = 'conversation.yesterday';
+  static const conversation_your_message = 'conversation.your_message';
+  static const conversation_send = 'conversation.send';
+  static const conversation_profile = 'conversation.profile';
+  static const conversation_delete_conversation =
+      'conversation.delete_conversation';
+  static const conversation_block_user = 'conversation.block_user';
+  static const conversation_online = 'conversation.online';
+  static const conversation_username = 'conversation.username';
+  static const conversation_message_1 = 'conversation.message_1';
+  static const conversation_message_2 = 'conversation.message_2';
+  static const conversation_message_3 = 'conversation.message_3';
+  static const conversation_message_4 = 'conversation.message_4';
+  static const conversation_message_5 = 'conversation.message_5';
+  static const conversation_message_6 = 'conversation.message_6';
+  static const conversation_message_7 = 'conversation.message_7';
+  static const conversation_message_8 = 'conversation.message_8';
+  static const conversation_message_9 = 'conversation.message_9';
+  static const conversation_message_10 = 'conversation.message_10';
+  static const conversation_message_11 = 'conversation.message_11';
+  static const conversation_message_12 = 'conversation.message_12';
+  static const conversation_message_13 = 'conversation.message_13';
+  static const conversation_message_14 = 'conversation.message_14';
+  static const conversation_time_1 = 'conversation.time_1';
+  static const conversation_time_2 = 'conversation.time_2';
+  static const conversation_time_3 = 'conversation.time_3';
+  static const conversation_time_4 = 'conversation.time_4';
+  static const conversation_time_5 = 'conversation.time_5';
+  static const conversation_time_6 = 'conversation.time_6';
+  static const conversation_time_7 = 'conversation.time_7';
+  static const conversation_time_8 = 'conversation.time_8';
+  static const conversation_time_9 = 'conversation.time_9';
+  static const conversation_time_10 = 'conversation.time_10';
+  static const conversation_time_11 = 'conversation.time_11';
+  static const conversation_time_12 = 'conversation.time_12';
+  static const conversation_time_13 = 'conversation.time_13';
+  static const conversation_time_14 = 'conversation.time_14';
   static const d_day_screen_button_intrested = 'd_day_screen_button_intrested';
   static const user_side_profile_screen_interests =
       'user_side_profile_screen.interests';
@@ -397,7 +436,6 @@ abstract class LocaleKeys {
       'user_side_profile_screen.live_music';
   static const user_side_profile_screen_cooking =
       'user_side_profile_screen.cooking';
-
   static const unsubscribe_screen_title = 'unsubscribe_screen.title';
   static const unsubscribe_screen_confirmation_question =
       'unsubscribe_screen.confirmation_question';
@@ -623,7 +661,6 @@ abstract class LocaleKeys {
       'chat_message_list_screen.buy_an_access';
   static const chat_message_list_screen_messages =
       'chat_message_list_screen.messages';
-
   static const profile_visitor_view_screen_read_more =
       'profile_visitor_view_screen.read_more';
   static const profile_visitor_view_screen_read_less =
