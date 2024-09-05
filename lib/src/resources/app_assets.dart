@@ -88,4 +88,5 @@ final class AppAssets {
   static const smilingFaceWithHeartEyes =
       'assets/images/smiling-face-with-heart-eyes.gif';
   static const flatImage = 'assets/images/flat_image.png';
+  static const groupPublishD = 'assets/images/Group_publish_d.png';
 }
