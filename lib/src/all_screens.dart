@@ -62,8 +62,7 @@ final Map<String, Widget Function()> allScreens = {
 
   'notifications_screen.dart': () => const NotificationsScreen(),
   'filter_screen.dart': () => const FilterScreen(),
-	'conversation_screen.dart': () => const ConversationScreen(),
-	
+  'conversation_screen.dart': () => const ConversationScreen(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };
