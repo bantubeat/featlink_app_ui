@@ -504,5 +504,25 @@
         "read_less": "Lire moins",
         "about": "A propos",
         "interests": "Intérêts"
+    },
+    "featlink_without_limits_screen": {
+        "unlimited_featlink": "Featlink sans limite.",
+        "no_auto_change": "Pas de renouvellement automatique après ta période d’essaie",
+        "try_free_24h": "Essaie gratuitement pendant {}",
+        "benefits_access": "Avantages de l’accès featlink",
+        "discover_power": "Découvrez la puissance de l’accès Featlink, choisissez un type d’accès pour continuer à bénéficier des fonctionnalités illimitées",
+        "obtaint": "Obtenir",
+        "swipes_unlimited": "Swipes illimités",
+        "unlimited_conversations": "Conversation illimitées",
+        "dial_without_match": "Dial sans Match",
+        "d_day_unlimited": "D-Day illimités",
+        "discoveries_unlimited": "Découvertes illimitées",
+        "offer_text": "Cette offre n’est pas cumulable avec d’autres promotions en cours,",
+        "acknowledgement_text": "En cliquant sur obtenir, tu reconnais avoir lu et accepté les",
+        "terms_text": "conditions d’utilisation",
+        "free_text": "{} FREE",
+        "flat_text": "Flat",
+        "percentage_text": "100%",
+        "discount_text": "Discount"
     }
 }
