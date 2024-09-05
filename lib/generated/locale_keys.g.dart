@@ -705,6 +705,32 @@ abstract class LocaleKeys {
       'profile_visitor_view_screen.about';
   static const profile_visitor_view_screen_interests =
       'profile_visitor_view_screen.interests';
+  static const access_featlink_outsite_africa_screen_access_expiration =
+      'access_featlink_outsite_africa_screen.access_expiration';
+  static const access_featlink_outsite_africa_screen_buy_access =
+      'access_featlink_outsite_africa_screen.buy_access';
+  static const access_featlink_outsite_africa_screen_featlink_access =
+      'access_featlink_outsite_africa_screen.featlink_access';
+  static const access_featlink_outsite_africa_screen_total =
+      'access_featlink_outsite_africa_screen.total';
+  static const access_featlink_outsite_africa_screen_discount =
+      'access_featlink_outsite_africa_screen.discount';
+  static const access_featlink_outsite_africa_screen_pay =
+      'access_featlink_outsite_africa_screen.pay';
+  static const access_featlink_outsite_africa_screen_purchase_coins =
+      'access_featlink_outsite_africa_screen.purchase_coins';
+  static const access_featlink_outsite_africa_screen_amount_to_pay =
+      'access_featlink_outsite_africa_screen.amount_to_pay';
+  static const access_featlink_outsite_africa_screen_pay_with_balance =
+      'access_featlink_outsite_africa_screen.pay_with_balance';
+  static const access_featlink_outsite_africa_screen_beatzcoins_balance =
+      'access_featlink_outsite_africa_screen.beatzcoins_balance';
+  static const access_featlink_outsite_africa_screen_balance_is_sufficient =
+      'access_featlink_outsite_africa_screen.balance_is_sufficient';
+  static const access_featlink_outsite_africa_screen_balance_is_insufficient =
+      'access_featlink_outsite_africa_screen.balance_is_insufficient';
+  static const access_featlink_outsite_africa_screen_payment =
+      'access_featlink_outsite_africa_screen.payment';
   static const featlink_without_limits_screen_unlimited_featlink =
       'featlink_without_limits_screen.unlimited_featlink';
   static const featlink_without_limits_screen_no_auto_change =
