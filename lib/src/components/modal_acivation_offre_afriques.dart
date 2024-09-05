@@ -5,17 +5,20 @@ import 'package:flutter/material.dart';
 
 class ModalAcivationOffreAfriques extends StatelessWidget {
   final void Function() handlePressActivate;
-  ModalAcivationOffreAfriques({
-    required this.handlePressActivate,
-    super.key,
-  });
-  final List<String> item = [
+
+  final List<String> items = [
     LocaleKeys.modal_acivation_offre_afriques_swipes_unlimited.tr(),
     LocaleKeys.modal_acivation_offre_afriques_unlimited_conversations.tr(),
     LocaleKeys.modal_acivation_offre_afriques_dial_without_match.tr(),
     LocaleKeys.modal_acivation_offre_afriques_d_day_unlimited.tr(),
     LocaleKeys.modal_acivation_offre_afriques_discoveries_unlimited.tr(),
   ];
+
+  ModalAcivationOffreAfriques({
+    required this.handlePressActivate,
+    super.key,
+  });
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -72,7 +75,7 @@ class ModalAcivationOffreAfriques extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        LocaleKeys.modal_acivation_offre_afriques_try_free_24h
+                        LocaleKeys.modal_acivation_offre_afriques_no_auto_change
                             .tr(),
                         style: const TextStyle(
                           fontSize: 8,
@@ -86,8 +89,10 @@ class ModalAcivationOffreAfriques extends StatelessWidget {
               ),
             ),
             Container(
-              margin:
-                  const EdgeInsets.symmetric(horizontal: 30.0, vertical: 10),
+              margin: const EdgeInsets.symmetric(
+                horizontal: 30.0,
+                vertical: 10,
+              ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
               ),
@@ -104,32 +109,27 @@ class ModalAcivationOffreAfriques extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    for (int i = 0; i < item.length; i++)
+                    const SizedBox(height: 10),
+                    for (int i = 0; i < items.length; i++)
                       Container(
                         alignment: Alignment.center,
                         padding: const EdgeInsets.only(left: 60, bottom: 5),
                         child: Row(
                           children: [
                             const Icon(Icons.check),
-                            const SizedBox(
-                              width: 10,
-                            ),
+                            const SizedBox(width: 10),
                             Text(
-                              item[i],
+                              items[i],
                               style: const TextStyle(
                                 fontSize: 10.22,
+                                color: Color(0xFF505965),
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                           ],
                         ),
                       ),
-                    const SizedBox(
-                      height: 10,
-                    ),
+                    const SizedBox(height: 10),
                     Text(
                       LocaleKeys.modal_acivation_offre_afriques_discover_power
                           .tr(),
@@ -151,9 +151,7 @@ class ModalAcivationOffreAfriques extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                     ),
                     backgroundColor: AppColors.myDark,
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 30,
-                    ),
+                    padding: const EdgeInsets.symmetric(horizontal: 30),
                   ),
                   onPressed: () => {},
                   child: Text(
@@ -189,9 +187,7 @@ class ModalAcivationOffreAfriques extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const SizedBox(height: 20),
           ],
         ),
       ),
