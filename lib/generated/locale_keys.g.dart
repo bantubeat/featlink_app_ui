@@ -705,6 +705,36 @@ abstract class LocaleKeys {
       'profile_visitor_view_screen.about';
   static const profile_visitor_view_screen_interests =
       'profile_visitor_view_screen.interests';
+  static const fullscreen_modal_acces_afrique_limitless_experience =
+      'fullscreen_modal_acces_afrique.limitless_experience';
+  static const fullscreen_modal_acces_afrique_choose_access =
+      'fullscreen_modal_acces_afrique.choose_access';
+  static const fullscreen_modal_acces_afrique_special_offer_24 =
+      'fullscreen_modal_acces_afrique.special_offer_24';
+  static const fullscreen_modal_acces_afrique_try_free_24h =
+      'fullscreen_modal_acces_afrique.try_free_24h';
+  static const fullscreen_modal_acces_afrique_benefits_access =
+      'fullscreen_modal_acces_afrique.benefits_access';
+  static const fullscreen_modal_acces_afrique_discover_power =
+      'fullscreen_modal_acces_afrique.discover_power';
+  static const fullscreen_modal_acces_afrique_your_token_balance =
+      'fullscreen_modal_acces_afrique.your_token_balance';
+  static const fullscreen_modal_acces_afrique_token_balance_value =
+      'fullscreen_modal_acces_afrique.token_balance_value';
+  static const fullscreen_modal_acces_afrique_buy_tokens =
+      'fullscreen_modal_acces_afrique.buy_tokens';
+  static const fullscreen_modal_acces_afrique_continue =
+      'fullscreen_modal_acces_afrique.continue';
+  static const fullscreen_modal_acces_afrique_swipes_unlimited =
+      'fullscreen_modal_acces_afrique.swipes_unlimited';
+  static const fullscreen_modal_acces_afrique_unlimited_conversations =
+      'fullscreen_modal_acces_afrique.unlimited_conversations';
+  static const fullscreen_modal_acces_afrique_dial_without_match =
+      'fullscreen_modal_acces_afrique.dial_without_match';
+  static const fullscreen_modal_acces_afrique_d_day_unlimited =
+      'fullscreen_modal_acces_afrique.d_day_unlimited';
+  static const fullscreen_modal_acces_afrique_discoveries_unlimited =
+      'fullscreen_modal_acces_afrique.discoveries_unlimited';
   static const modal_acivation_offre_afriques_unlimited_featlink =
       'modal_acivation_offre_afriques.unlimited_featlink';
   static const modal_acivation_offre_afriques_no_auto_change =
@@ -729,6 +759,26 @@ abstract class LocaleKeys {
       'modal_acivation_offre_afriques.d_day_unlimited';
   static const modal_acivation_offre_afriques_discoveries_unlimited =
       'modal_acivation_offre_afriques.discoveries_unlimited';
+  static const swipezone_full_screen_modal_screen_oups =
+      'swipezone_full_screen_modal_screen.oups';
+  static const swipezone_full_screen_modal_screen_tag_name =
+      'swipezone_full_screen_modal_screen.tag_name';
+  static const swipezone_full_screen_modal_screen_unlock_conversation =
+      'swipezone_full_screen_modal_screen.unlock_conversation';
+  static const swipezone_full_screen_modal_screen_where_to_chosse_featlink =
+      'swipezone_full_screen_modal_screen.where_to_chosse_featlink';
+  static const swipezone_full_screen_modal_screen_amount =
+      'swipezone_full_screen_modal_screen.amount';
+  static const swipezone_full_screen_modal_screen_buy_chips =
+      'swipezone_full_screen_modal_screen.buy_chips';
+  static const swipezone_full_screen_modal_screen_active_button =
+      'swipezone_full_screen_modal_screen.active_button';
+  static const swipezone_full_screen_modal_screen_hour_number =
+      'swipezone_full_screen_modal_screen.hour_number';
+  static const swipezone_full_screen_modal_screen_access =
+      'swipezone_full_screen_modal_screen.access';
+  static const swipezone_full_screen_modal_screen_active =
+      'swipezone_full_screen_modal_screen.active';
   static const access_featlink_outsite_africa_screen_access_expiration =
       'access_featlink_outsite_africa_screen.access_expiration';
   static const access_featlink_outsite_africa_screen_buy_access =
