@@ -4,6 +4,7 @@ import 'package:featlink_app/src/screens/user_side_profile_screen/user_side_prof
 import 'package:featlink_app/src/screens/_edit_profile/edit_profile_interet_screen.dart';
 import 'package:featlink_app/src/screens/d_day_zone_screen/d_day_zone_screen.dart';
 import 'package:flutter/material.dart' show Widget;
+import 'screens/_access/access_featlink_outsite_africa_screen/access_featlink_outsite_africa_screen.dart';
 
 import 'screens/_chat_messages/chat_message_list_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
@@ -99,6 +100,8 @@ final Map<String, Widget Function()> allScreens = {
   'discovery_blur_screen.dart': () => const DiscoveryBlurScreen(),
   'chat_message_list_screen.dart': () => const ChatMessageListScreen(),
   'profile_visitor_view_screen.dart': () => const ProfileVisitorViewScreen(),
+  'access_featlink_outsite_africa_screen.dart': () =>
+      const AccessFeatlinkOutsiteAfricaScreen(),
   'featlink_without_limits_offre_91_screen.dart': () =>
       const FeatlinkWithoutLimitsOffre91Screen(),
   'featlink_without_limits_offre_92_screen.dart': () =>

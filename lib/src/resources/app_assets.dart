@@ -82,5 +82,10 @@ final class AppAssets {
   static const theddayimagefour = 'assets/images/promenade.jpg';
   static const letterb = 'assets/images/letterb.png';
   static const theletterb = 'assets/images/letter.jpg';
+  static const featlinkAccesIcon = 'assets/images/featlink_acces_icon.png';
+  static const animateIcon = 'assets/images/animate_Icon.png';
+  static const imageMedal = 'assets/images/medal.png';
+  static const smilingFaceWithHeartEyes =
+      'assets/images/smiling-face-with-heart-eyes.gif';
   static const flatImage = 'assets/images/flat_image.png';
 }
