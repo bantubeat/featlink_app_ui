@@ -7,7 +7,7 @@
         "gender_other": "Autres"
     },
     "welcome_screen": {
-        "greeting": "Bienvenue \"{}\"",
+        "greeting": "Bienvenue {}",
         "on_the_world_coolest_chat": "Sur le chat le plus cool au monde",
         "note": "Votre Inscription à Featlink chat est privée et vos abonnés Bantubeat ne seront pas avertis. Votre activité dans Featlink n'est pas partagée sur le fil d'actualité Bantubeat."
     },
@@ -587,6 +587,12 @@
         "header_message": "Tu as 99% de chance d’avoir un rendez-vous aujourd’hui en publiant un D-DAY",
         "subheader_message": "Consulte les envies de la communauté",
         "button_text": "Voir les D-DAY",
+        "bottom_text": "UN  DATE A 99% SUR"
+    },
+    "pub_d_day_violet_screen": {
+        "header_message": "Tu as 99% de chance d’avoir un rendez-vous aujourd’hui en publiant un D-DAY",
+        "subheader_message": "Exprime-toi, plusieurs personnes ont la même envie",
+        "button_text": "Publier un D-DAY",
         "bottom_text": "UN  DATE A 99% SUR"
     },
     "discovery_in_you_city_screen": {
