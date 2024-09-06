@@ -849,4 +849,12 @@ abstract class LocaleKeys {
       'pub_d_day_violet_screen.button_text';
   static const pub_d_day_violet_screen_bottom_text =
       'pub_d_day_violet_screen.bottom_text';
+  static const discovery_in_you_city_screen_header_message =
+      'discovery_in_you_city_screen.header_message';
+  static const discovery_in_you_city_screen_subheader_message =
+      'discovery_in_you_city_screen.subheader_message';
+  static const discovery_in_you_city_screen_button_text =
+      'discovery_in_you_city_screen.button_text';
+  static const discovery_in_you_city_screen_bottom_text =
+      'discovery_in_you_city_screen.bottom_text';
 }
