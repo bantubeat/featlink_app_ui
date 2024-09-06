@@ -88,5 +88,6 @@ final class AppAssets {
   static const smilingFaceWithHeartEyes =
       'assets/images/smiling-face-with-heart-eyes.gif';
   static const flatImage = 'assets/images/flat_image.png';
-  static const imageDiscovaryMaps = 'assets/images/discovary_maps.png';
+  static const imagesDiscovaryMaps = 'assets/images/discovary_maps.png';
+  static const imagesGroups = 'assets/images/groups.png';
 }
