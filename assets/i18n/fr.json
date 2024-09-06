@@ -582,5 +582,11 @@
         "flat_text": "Flat",
         "percentage_text": "100%",
         "discount_text": "Discount"
+    },
+    "discovery_in_you_city_screen": {
+        "header_message": "Découvre qui dans ta ville est sur featlink",
+        "subheader_message": "Trouve l’amour près de toi, grâce à notre filtre Dans ta ville",
+        "button_text": "Découvrir",
+        "bottom_text": "Dans ta Ville"
     }
 }
