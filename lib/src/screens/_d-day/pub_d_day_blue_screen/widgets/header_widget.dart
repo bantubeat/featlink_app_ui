@@ -51,7 +51,7 @@ class HeaderWidget extends StatelessWidget {
             child: Center(
               child: Image.asset(
                 AppAssets
-                    .imageGroupsPublishD, // Remplacez par le chemin de votre image
+                    .imagesGroupsPublishD, // Remplacez par le chemin de votre image
                 height: 390,
               ),
             ),
