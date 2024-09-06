@@ -654,6 +654,25 @@ abstract class  LocaleKeys {
       'featlink_without_limits_screen.percentage_text';
   static const featlink_without_limits_screen_discount_text =
       'featlink_without_limits_screen.discount_text';
+
+  static const pub_d_day_blue_screen_header_message =
+      'pub_d_day_blue_screen.header_message';
+  static const pub_d_day_blue_screen_subheader_message =
+      'pub_d_day_blue_screen.subheader_message';
+  static const pub_d_day_blue_screen_button_text =
+      'pub_d_day_blue_screen.button_text';
+  static const pub_d_day_blue_screen_bottom_text =
+      'pub_d_day_blue_screen.bottom_text';
+
+  static const pub_d_day_violet_screen_header_message =
+      'pub_d_day_violet_screen.header_message';
+  static const pub_d_day_violet_screen_subheader_message =
+      'pub_d_day_violet_screen.subheader_message';
+  static const pub_d_day_violet_screen_button_text =
+      'pub_d_day_violet_screen.button_text';
+  static const pub_d_day_violet_screen_bottom_text =
+      'pub_d_day_violet_screen.bottom_text';
+
   static const discovery_in_you_city_screen_header_message =
       'discovery_in_you_city_screen.header_message';
   static const discovery_in_you_city_screen_subheader_message =
