@@ -57,7 +57,7 @@ class _PubDDayVioletScreenState extends State<PubDDayVioletScreen> {
             Center(
               child: Image.asset(
                 AppAssets
-                    .imageDayflowBestFriends, // Remplacez par le chemin de votre image
+                    .imagesDayflowBestFriends, // Remplacez par le chemin de votre image
                 height: 390,
               ),
             ),
