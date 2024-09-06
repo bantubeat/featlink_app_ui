@@ -69,7 +69,7 @@ class _DiscoveryInYouCityScreenState extends State<DiscoveryInYouCityScreen> {
               ),
               Center(
                 child: Image.asset(
-                  AppAssets.imagesGroup,
+                  AppAssets.imagesGroups,
                   height: 390,
                 ),
               ),
