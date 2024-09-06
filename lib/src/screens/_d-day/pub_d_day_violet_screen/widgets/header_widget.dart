@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HeaderWidget extends StatelessWidget {
   const HeaderWidget({
@@ -45,8 +46,7 @@ class HeaderWidget extends StatelessWidget {
             alignment: Alignment.bottomCenter,
             child: Text(
               LocaleKeys.pub_d_day_violet_screen_bottom_text.tr(),
-              style: const TextStyle(
-                fontFamily: 'Inter',
+              style: GoogleFonts.inter(
                 color: AppColors.myDark,
                 fontWeight: FontWeight.w800,
                 fontSize: 32,
