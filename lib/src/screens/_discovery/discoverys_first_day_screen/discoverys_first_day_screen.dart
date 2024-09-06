@@ -68,7 +68,7 @@ class _DiscoverysFirstDayScreenState extends State<DiscoverysFirstDayScreen> {
               ),
               Center(
                 child: Image.asset(
-                  AppAssets.imageDiscovaryMaps,
+                  AppAssets.imagesDiscovaryMaps,
                   height: 390,
                 ),
               ),
