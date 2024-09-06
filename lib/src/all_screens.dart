@@ -108,6 +108,8 @@ final Map<String, Widget Function()> allScreens = {
       const FeatlinkWithoutLimitsOffre92Screen(),
   'featlink_without_limits_offre_93_screen.dart': () =>
       const FeatlinkWithoutLimitsOffre93Screen(),
+  'discoverys_first_day_screen.dart': () =>
+      const FeatlinkWithoutLimitsOffre93Screen(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };
