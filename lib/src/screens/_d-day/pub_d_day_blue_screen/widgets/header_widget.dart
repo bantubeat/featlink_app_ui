@@ -3,6 +3,7 @@ import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HeaderWidget extends StatelessWidget {
   const HeaderWidget({
@@ -37,8 +38,7 @@ class HeaderWidget extends StatelessWidget {
             child: Center(
               child: Text(
                 LocaleKeys.pub_d_day_blue_screen_bottom_text.tr(),
-                style: const TextStyle(
-                  fontFamily: 'Inter',
+                style: GoogleFonts.lato(
                   color: AppColors.myDark,
                   fontWeight: FontWeight.w800,
                   fontSize: 32,
@@ -51,7 +51,7 @@ class HeaderWidget extends StatelessWidget {
             child: Center(
               child: Image.asset(
                 AppAssets
-                    .groupPublishD, // Remplacez par le chemin de votre image
+                    .imageGroupsPublishD, // Remplacez par le chemin de votre image
                 height: 390,
               ),
             ),
