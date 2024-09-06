@@ -53,3 +53,4 @@ app.*.map.json
 /android/app/release
 
 zzz_price.txt
+zzz_devs.txt
