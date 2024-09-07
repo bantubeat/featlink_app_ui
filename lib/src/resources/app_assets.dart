@@ -29,8 +29,10 @@ final class AppAssets {
   static const smokerIcon = 'assets/images/smoker.png';
   static const svgStep1o2Icon = 'assets/svg/step1o2_icon.svg';
   static const lockIcon = 'assets/svgs/lock.svg';
+  static const circledPlayIcon = 'assets/images/circled_play.png';
+  static const fakeArtist = 'assets/images/fake_artist.jpeg';
   static const likeIcon = 'assets/svgs/like.svg';
-  static const starIcon = 'assets/svgs/star.svg';
+  static const svgsStar = 'assets/svgs/star.svg';
   static const dislikeIcon = 'assets/svgs/dislike.svg';
   static const calendarNumberIcon = 'assets/svgs/calendar_number.svg';
   static const cityIcon = 'assets/svgs/city.svg';
@@ -52,13 +54,45 @@ final class AppAssets {
   static const pubImage = 'assets/images/pub_image.jpeg';
   static const specialSearchImage = 'assets/images/special_search.jpeg';
 
+  static const imageLogo3 = 'assets/images/logo31.png';
+  static const dialpay = 'assets/images/dialpay.png';
+  static const likes = 'assets/images/likes.png';
+  static const match = 'assets/images/match.png';
+  static const swipespayIcon = 'assets/images/dialpay_icon.png';
+  static const likesIcon = 'assets/images/likes_icon.png';
+  static const matchIcon = 'assets/images/match_icon.png';
+  static const swipespay = 'assets/images/swipespay.png';
+
   static const bantubeatIcon = 'assets/images/bantubeat_icon.png';
   static const salonpriveIcon = 'assets/images/salon_prive_icon.png';
   static const bzcIcon = 'assets/images/bzc_icon.png';
+
+  // Tmp
+  static const imgTmp1 = 'assets/images/tmp1.png';
+  static const imgTmp2 = 'assets/images/tmp2.png';
+  static const imgTmp3 = 'assets/images/tmp3.png';
+  static const imgTmp4 = 'assets/images/tmp4.png';
+  static const imgTmp5 = 'assets/images/tmp5.png';
+  static const imgTmp6 = 'assets/images/tmp6.png';
+  static const imagesStar = 'assets/images/star.png';
 
   static const theddayimagefirst = 'assets/images/danse.jpg';
   static const theddayimagesecond = 'assets/images/boire.jpg';
   static const theddayimagethree = 'assets/images/fastfood.jpg';
   static const theddayimagefour = 'assets/images/promenade.jpg';
+  static const letterb = 'assets/images/letterb.png';
   static const theletterb = 'assets/images/letter.jpg';
+  static const featlinkAccesIcon = 'assets/images/featlink_acces_icon.png';
+  static const animateIcon = 'assets/images/animate_Icon.png';
+  static const imageMedal = 'assets/images/medal.png';
+  static const smilingFaceWithHeartEyes =
+      'assets/images/smiling-face-with-heart-eyes.gif';
+  static const flatImage = 'assets/images/flat_image.png';
+
+  static const imagesGroupsPublishD = 'assets/images/groups_publish_d.png';
+
+  static const imagesDayflowBestFriends =
+      'assets/images/dayflow_best_friends.png';
+
+  static const imagesGroups = 'assets/images/groups.png';
 }

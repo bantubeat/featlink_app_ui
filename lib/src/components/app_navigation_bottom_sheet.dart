@@ -77,11 +77,7 @@ class _AppNavigationBottomSheetState extends State<AppNavigationBottomSheet> {
         case 'image':
           return Image.asset(item.icon, width: 32, height: 32);
         default:
-          return Icon(
-            item.icon,
-            color: Colors.grey,
-            size: 32,
-          );
+          return Icon(item.icon, color: Colors.grey, size: 32);
       }
     }
 
@@ -103,9 +99,7 @@ class _AppNavigationBottomSheetState extends State<AppNavigationBottomSheet> {
                       buildIcon(context, icons[index]),
                       Text(
                         icons[index].label,
-                        style: const TextStyle(
-                          fontSize: 12,
-                        ),
+                        style: const TextStyle(fontSize: 12),
                         textAlign: TextAlign.center,
                       ),
                     ],
