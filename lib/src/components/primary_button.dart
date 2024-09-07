@@ -27,6 +27,7 @@ class PrimaryButton extends Button {
   Widget buildContent(BuildContext context) {
     return Text(
       text,
+      textAlign: TextAlign.start,
       style: TextStyle(
         fontSize: fontSize,
         color: color,
