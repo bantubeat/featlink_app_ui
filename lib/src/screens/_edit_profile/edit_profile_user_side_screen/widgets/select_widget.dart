@@ -1,14 +1,19 @@
 import 'package:choice/choice.dart';
+import 'package:easy_localization/easy_localization.dart';
+import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Choise {
-  final int id;
-  final String? selectedValue;
-  final String label;
-  final bool isCenter;
-  final List<dynamic> choices;
+  int id;
+  String? selectedValue;
+  String label;
+  bool isCenter;
+  List<dynamic> choices;
+  IconData icon;
+  final bool? rotate;
+  final String? bottomSwichtText;
 
   Choise({
     required this.id,
@@ -16,6 +21,9 @@ class Choise {
     required this.label,
     required this.selectedValue,
     required this.isCenter,
+    required this.icon,
+    this.rotate,
+    this.bottomSwichtText,
   });
 }
 
@@ -23,14 +31,11 @@ class SelectWidget extends StatelessWidget {
   const SelectWidget({
     required this.item,
     required this.setSelectedValue,
-    this.bottomSwichtText,
     super.key,
   });
 
-  final String? bottomSwichtText;
-
   final Choise item;
-  final void Function(String?) setSelectedValue;
+  final void Function(String?, int) setSelectedValue;
 
   @override
   Widget build(BuildContext context) {
@@ -41,10 +46,15 @@ class SelectWidget extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(
             horizontal: 20,
-            vertical: 2,
+            vertical: 5,
           ),
           decoration: BoxDecoration(
-            color: AppColors.myGray,
+            border: const Border.symmetric(
+              horizontal: BorderSide(
+                color: Color.fromRGBO(180, 181, 184, 1),
+              ),
+            ),
+            color: const Color.fromRGBO(212, 216, 222, 1),
             borderRadius: BorderRadius.circular(3),
           ),
           child: Row(
@@ -71,119 +81,138 @@ class SelectWidget extends StatelessWidget {
             ],
           ),
         ),
-        SizedBox(
-          child: PromptedChoice<String>.single(
-            clearable: true,
-            searchable: true,
-            value: item.selectedValue,
-            onChanged: setSelectedValue,
-            itemCount: item.choices.length,
-            itemBuilder: (state, i) {
-              return RadioListTile(
-                value: item.choices[i],
-                groupValue: state.single,
-                onChanged: (value) {
-                  state.select(item.choices[i]);
-                },
-                title: ChoiceText(
-                  item.choices[i],
-                  highlight: state.search?.value,
+        PromptedChoice<String>.single(
+          clearable: true,
+          searchable: true,
+          value: item.selectedValue,
+          onChanged: (val) => setSelectedValue(val, item.id),
+          itemCount: item.choices.length,
+          leadingBuilder: (context) {
+            return Center(
+              child: Container(
+                padding: const EdgeInsets.all(8),
+                child: Text(
+                  item.label,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                  ),
                 ),
-              );
-            },
-            promptDelegate: ChoicePrompt.delegatePopupDialog(
-              maxHeightFactor: .7,
-              constraints: const BoxConstraints(maxWidth: 300),
-            ),
-            anchorBuilder: (context, selected) {
-              return InkWell(
+              ),
+            );
+          },
+          itemBuilder: (state, i) {
+            return RadioListTile(
+              value: item.choices[i],
+              groupValue: state.single,
+              onChanged: (value) {
+                state.select(item.choices[i]);
+              },
+              title: ChoiceText(
+                item.choices[i],
+                highlight: state.search?.value,
+              ),
+            );
+          },
+          promptDelegate: ChoicePrompt.delegatePopupDialog(
+            maxHeightFactor: .5,
+            constraints: const BoxConstraints(maxWidth: 300),
+          ),
+          anchorBuilder: (context, selected) {
+            return Material(
+              elevation: 2,
+              child: InkWell(
                 onTap: selected,
                 child: Container(
                   padding:
-                      const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                      const EdgeInsets.symmetric(vertical: 5, horizontal: 20),
                   decoration: const BoxDecoration(
                     color: Colors.white,
                   ),
-                  child: Row(
-                    mainAxisAlignment: item.isCenter
-                        ? MainAxisAlignment.center
-                        : MainAxisAlignment.start,
+                  child: Column(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Icon(
-                          Icons.delete, // Icône indiquant l'ouverture
-                          color: Colors.grey.shade600,
-                          size: 18,
+                      Row(
+                        mainAxisAlignment: item.isCenter
+                            ? MainAxisAlignment.center
+                            : MainAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: item.rotate != null
+                                ? Transform.rotate(
+                                    angle: 90 * (3.141592653589793 / 180),
+                                    child: Icon(
+                                      item.icon, // Icône indiquant l'ouverture
+                                      color: Colors.black,
+                                      size: 22,
+                                    ),
+                                  )
+                                : Icon(
+                                    item.icon, // Icône indiquant l'ouverture
+                                    color: Colors.black,
+                                    size: 22,
+                                  ),
+                          ),
+                          const SizedBox(
+                            width: 10,
+                          ),
+                          Text(
+                            item.selectedValue ??
+                                LocaleKeys
+                                    .edit_profile_user_side_screen_chose_option
+                                    .tr(),
+                            style: GoogleFonts.inter(
+                              color: Colors.black,
+                              fontSize: 16,
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 35,
+                          ),
+                          const Icon(
+                            Icons.keyboard_arrow_down_outlined,
+                            color: AppColors.primary,
+                            size: 18,
+                          ),
+                        ],
+                      ),
+                      if (item.bottomSwichtText != null)
+                        Align(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                item.bottomSwichtText!,
+                                style: const TextStyle(
+                                  color: Color.fromRGBO(163, 160, 160, 1),
+                                ),
+                              ),
+                              Transform.scale(
+                                scale: 0.4,
+                                child: Switch(
+                                  activeTrackColor: AppColors.bantubeatPrimary,
+                                  activeColor: AppColors.myWhite,
+                                  value: false,
+                                  onChanged: (value) {},
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 10,
-                      ),
-                      Text(
-                        item.selectedValue ?? 'Sélectionnez une option',
-                        style: const TextStyle(
-                          color: Colors.black,
-                          fontSize: 16,
+                      if (item.bottomSwichtText != null)
+                        const Divider(
+                          height: 2,
+                          color: Color.fromRGBO(212, 216, 222, 1),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 35,
-                      ),
-                      const Icon(
-                        Icons.keyboard_arrow_down_outlined,
-                        color: AppColors.primary,
-                        size: 18,
-                      ),
                     ],
                   ),
                 ),
-              );
-            },
-            // anchorBuilder:("g"){
-            // 	return ChoiceAnchor.defaultLeadingIcon; // Change this to the desired icon for leading anchor
-            // }
-            // anchorBuilder: ChoiceAnchor.create(
-            //   inline: true,
-            //   leading: Padding(
-            //     padding: const EdgeInsets.all(8.0),
-            //     child: Icon(
-            //       Icons.delete, // Icône indiquant l'ouverture
-            //       color: Colors.grey.shade600,
-            //       size: 18,
-            //     ),
-            //   ),
-            //   trailing: const Padding(
-            //     padding: EdgeInsets.all(8.0),
-            //     child: Icon(
-            //       Icons
-            //           .keyboard_arrow_down_outlined, // Icône indiquant l'ouverture
-            //       color: AppColors.primary,
-            //       size: 18,
-            //     ),
-            //   ),
-            // ),
-            listBuilder:
-                ChoiceList.createVirtualized(padding: const EdgeInsets.all(20)),
-          ),
+              ),
+            );
+          },
+          listBuilder:
+              ChoiceList.createVirtualized(padding: const EdgeInsets.all(20)),
         ),
-        if (bottomSwichtText != null)
-          Align(
-            child: Row(
-              children: [
-                Text(bottomSwichtText!),
-                Transform.scale(
-                  scale: 0.4,
-                  child: Switch(
-                    activeTrackColor: AppColors.bantubeatPrimary,
-                    activeColor: AppColors.myWhite,
-                    value: false,
-                    onChanged: (value) {},
-                  ),
-                ),
-              ],
-            ),
-          ),
       ],
     );
   }

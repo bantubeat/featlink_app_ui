@@ -14,115 +14,136 @@ class EditProfileUserSideScreen extends StatefulWidget {
 }
 
 class _EditProfileUserSideScreen extends State<EditProfileUserSideScreen> {
-  List<String> choices = [
-    'News',
-    'Entertainment',
-    'Politics',
-    'Automotive',
-    'Sports',
-    'Education',
-    'Fashion',
-    'Travel',
-    'Food',
-    'Tech',
-    'Science',
-    'Arts',
-  ];
-
-  void setSelectedValue(String? value) {
-    setState(() => selectedValue = value);
+  void setSelectedValue(String? value, int id) {
+    setState(() {
+      choicesList[id].selectedValue = value;
+    });
   }
 
-  String? selectedValue = 'News';
+  List<Choise> choicesList = [
+    Choise(
+      label: LocaleKeys.edit_profile_user_side_screen_city.tr(),
+      id: 0,
+      selectedValue: 'Douala',
+      isCenter: true,
+      icon: Icons.location_city_outlined,
+      choices: ['Douala', 'Yaoundé', 'Bafoussam'],
+    ),
+    Choise(
+      label: LocaleKeys.edit_profile_user_side_screen_height.tr(),
+      id: 1,
+      selectedValue: '(151cm-199cm)',
+      isCenter: false,
+      icon: Icons.straighten_sharp,
+      rotate: true,
+      choices: ['151cm', '170cm', '199cm'],
+    ),
+    Choise(
+      label: LocaleKeys.edit_profile_user_side_screen_weight.tr(),
+      id: 2,
+      selectedValue: '(60kg à 90kg)',
+      isCenter: false,
+      icon: Icons.balance_rounded,
+      choices: ['60kg', '75kg', '90kg'],
+    ),
+    Choise(
+      label: LocaleKeys.edit_profile_user_side_screen_children.tr(),
+      id: 3,
+      selectedValue: 'Oui',
+      isCenter: false,
+      icon: Icons.groups,
+      choices: ['Oui', 'Non'],
+    ),
+    Choise(
+      label: LocaleKeys.edit_profile_user_side_screen_smoking.tr(),
+      id: 4,
+      selectedValue: 'Oui',
+      isCenter: false,
+      icon: Icons.smoking_rooms,
+      choices: ['Oui', 'Non'],
+    ),
+    Choise(
+      label: LocaleKeys.edit_profile_user_side_screen_alcohol.tr(),
+      id: 5,
+      selectedValue: 'En soirée',
+      isCenter: false,
+      icon: Icons.local_bar,
+      choices: [
+        'En soirée',
+        'Jamais',
+        'Régulièrement',
+      ],
+    ),
+    Choise(
+      label: LocaleKeys.edit_profile_user_side_screen_search.tr(),
+      id: 6,
+      selectedValue: 'Amitié, relation libre',
+      isCenter: false,
+      icon: Icons.favorite_outline_rounded,
+      choices: [
+        'Amitié',
+        'Relation libre',
+        'Mariage',
+      ],
+    ),
+    Choise(
+      label: LocaleKeys.edit_profile_user_side_screen_diploma.tr(),
+      id: 7,
+      selectedValue: 'Aucun',
+      isCenter: false,
+      icon: Icons.school,
+      choices: ['Aucun', 'Baccalauréat', 'Master'],
+    ),
+    Choise(
+      label: LocaleKeys.edit_profile_user_side_screen_living.tr(),
+      id: 8,
+      selectedValue: 'Seul',
+      isCenter: false,
+      icon: Icons.groups,
+      choices: ['Seul', 'En colocation', 'En famille'],
+    ),
+    Choise(
+      label: LocaleKeys.edit_profile_user_side_screen_sexual_preference.tr(),
+      id: 9,
+      selectedValue: 'Hétéro',
+      isCenter: false,
+      bottomSwichtText:
+          LocaleKeys.edit_profile_user_side_screen_mask_option.tr(),
+      icon: Icons.transgender_outlined,
+      choices: [
+        'Hétéro',
+        'Bisexuel',
+        'Homosexuel',
+      ],
+    ),
+    Choise(
+      label: LocaleKeys.edit_profile_user_side_screen_ethnic_type.tr(),
+      id: 10,
+      selectedValue: 'Africaine',
+      isCenter: false,
+      icon: Icons.groups,
+      choices: [
+        'Africaine',
+        'Européenne',
+        'Asiatique',
+      ],
+    ),
+    Choise(
+      label: LocaleKeys.edit_profile_user_side_screen_religion.tr(),
+      id: 11,
+      selectedValue: 'Islam',
+      isCenter: false,
+      icon: Icons.groups,
+      choices: [
+        'Islam',
+        'Christianisme',
+        'Bouddhisme',
+      ],
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
-    List<Choise> choicesList = [
-      Choise(
-        label: 'Ville',
-        choices: choices,
-        id: 0,
-        selectedValue: 'Douala',
-        isCenter: true,
-      ),
-      Choise(
-        label: 'Taille',
-        choices: choices,
-        id: 0,
-        selectedValue: '(151cm-199cm)',
-        isCenter: false,
-      ),
-      Choise(
-        label: 'Poids',
-        choices: choices,
-        id: 0,
-        selectedValue: '(60kg à 90kg)',
-        isCenter: false,
-      ),
-      Choise(
-        label: 'Enfants',
-        choices: choices,
-        id: 0,
-        selectedValue: 'Oui',
-        isCenter: false,
-      ),
-      Choise(
-        label: 'Cigarette',
-        choices: choices,
-        id: 0,
-        selectedValue: 'Oui',
-        isCenter: false,
-      ),
-      Choise(
-        label: 'Alcool',
-        choices: choices,
-        id: 0,
-        selectedValue: 'En soirée',
-        isCenter: false,
-      ),
-      Choise(
-        label: 'Recherche',
-        choices: choices,
-        id: 0,
-        selectedValue: 'Amitié, relation libre',
-        isCenter: false,
-      ),
-      Choise(
-        label: 'Diplôme',
-        choices: choices,
-        id: 0,
-        selectedValue: 'Aucun',
-        isCenter: false,
-      ),
-      Choise(
-        label: 'Vie',
-        choices: choices,
-        id: 0,
-        selectedValue: 'Seul',
-        isCenter: false,
-      ),
-      Choise(
-        label: 'Préf.Sexuel',
-        choices: choices,
-        id: 0,
-        selectedValue: 'Hétéro',
-        isCenter: false,
-      ),
-      Choise(
-        label: 'Type Ethnique',
-        choices: choices,
-        id: 0,
-        selectedValue: 'Africaine',
-        isCenter: false,
-      ),
-      Choise(
-        label: 'Réligion',
-        choices: choices,
-        id: 0,
-        selectedValue: 'Islam',
-        isCenter: false,
-      ),
-    ];
-
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
@@ -171,11 +192,12 @@ class _EditProfileUserSideScreen extends State<EditProfileUserSideScreen> {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(
-                vertical: 10,
+              padding: const EdgeInsets.only(
+                top: 15,
+                bottom: 4,
               ),
               child: Text(
-                'Homme',
+                LocaleKeys.edit_profile_user_side_screen_gender_male.tr(),
                 style: GoogleFonts.inter(
                   color: const Color.fromRGBO(101, 110, 123, 1),
                   fontWeight: FontWeight.w800,
