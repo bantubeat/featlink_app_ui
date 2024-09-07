@@ -25,7 +25,7 @@ class _DiscoverysFirstDayScreenState extends State<DiscoverysFirstDayScreen> {
       body: SingleChildScrollView(
         child: Container(
           decoration: const BoxDecoration(
-            color: Colors.white,
+            color: Color.fromRGBO(253, 247, 253, 1),
           ),
           child: Column(
             children: [
