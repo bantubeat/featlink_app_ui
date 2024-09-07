@@ -44,6 +44,7 @@ class SelectWidget extends StatelessWidget {
           item.isCenter ? CrossAxisAlignment.center : CrossAxisAlignment.start,
       children: [
         Container(
+          width: MediaQuery.of(context).size.width,
           padding: const EdgeInsets.symmetric(
             horizontal: 20,
             vertical: 5,
@@ -57,7 +58,7 @@ class SelectWidget extends StatelessWidget {
             color: const Color.fromRGBO(212, 216, 222, 1),
             borderRadius: BorderRadius.circular(3),
           ),
-          child: Row(
+          child: Wrap(
             children: [
               Container(
                 width: 10,
@@ -118,12 +119,13 @@ class SelectWidget extends StatelessWidget {
             maxHeightFactor: .5,
             constraints: const BoxConstraints(maxWidth: 300),
           ),
-          anchorBuilder: (context, selected) {
+          anchorBuilder: (contexts, selected) {
             return Material(
               elevation: 2,
               child: InkWell(
                 onTap: selected,
                 child: Container(
+                  width: MediaQuery.of(context).size.width,
                   padding:
                       const EdgeInsets.symmetric(vertical: 5, horizontal: 20),
                   decoration: const BoxDecoration(
@@ -131,10 +133,10 @@ class SelectWidget extends StatelessWidget {
                   ),
                   child: Column(
                     children: [
-                      Row(
-                        mainAxisAlignment: item.isCenter
-                            ? MainAxisAlignment.center
-                            : MainAxisAlignment.start,
+                      Wrap(
+                        alignment: item.isCenter
+                            ? WrapAlignment.center
+                            : WrapAlignment.start,
                         children: [
                           Padding(
                             padding: const EdgeInsets.all(8.0),
