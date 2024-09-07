@@ -100,19 +100,35 @@ class SelectWidget extends StatelessWidget {
                 onTap: selected,
                 child: Container(
                   padding:
-                      const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+                      const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                   decoration: const BoxDecoration(
                     color: Colors.white,
                   ),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: item.isCenter
+                        ? MainAxisAlignment.center
+                        : MainAxisAlignment.start,
                     children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Icon(
+                          Icons.delete, // Icône indiquant l'ouverture
+                          color: Colors.grey.shade600,
+                          size: 18,
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
                       Text(
                         item.selectedValue ?? 'Sélectionnez une option',
                         style: const TextStyle(
                           color: Colors.black,
                           fontSize: 16,
                         ),
+                      ),
+                      const SizedBox(
+                        width: 35,
                       ),
                       const Icon(
                         Icons.keyboard_arrow_down_outlined,
