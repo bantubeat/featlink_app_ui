@@ -1,6 +1,9 @@
+import 'dart:convert';
+
 import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
+import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/message_input.dart';
@@ -14,71 +17,109 @@ class ConversationScreen extends StatelessWidget {
       'message': LocaleKeys.conversation_message_1.tr(),
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_1.tr(),
+      'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_2.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_2.tr(),
+      'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_3.tr(),
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_3.tr(),
+      'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_4.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_4.tr(),
+      'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_5.tr(),
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_5.tr(),
+      'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_6.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_6.tr(),
+      'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_7.tr(),
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_7.tr(),
+      'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_8.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_8.tr(),
+      'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_9.tr(),
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_9.tr(),
+      'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_10.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_10.tr(),
+      'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_11.tr(),
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_11.tr(),
+      'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_12.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_12.tr(),
+      'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_13.tr(),
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_13.tr(),
+      'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_14.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_14.tr(),
+      'gift': null,
+    },
+    {
+      'message': '100 BZC',
+      'isSentByMe': true,
+      'time': LocaleKeys.conversation_time_14.tr(),
+      'gift': Image.asset(
+        AppAssets.imagesCrown,
+        width: 50,
+        height: 50,
+        fit: BoxFit.contain,
+      ),
+    },
+    {
+      'message': '200 BZC',
+      'isSentByMe': false,
+      'time': LocaleKeys.conversation_time_14.tr(),
+      'gift': Image.memory(
+        base64Decode(
+          'iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGoSURBVHgBrZSxSwJRHMe/7/nO0xA7hyYbbK8hWqKWCCNoiFpqCqK/oIZmmxqiIeeG1raGmjJIqFEICxqi0AaTyPCMSCLvXj/tlDu1Owe/8OXeHb/34fv7vccBPap8CU1PY9erjqMHSQnOJI6ZD2t9AVYucMg45rkPw+UbaG61ork43wtOh1RjNhgw7gZDxgsbwMPIMvRKCgnJsUHpAHLAxBitrjyB3F99FD7lTBXQFMYQoD5Lp9BNCY2SgVkm+IQbsNVyfBOvqiKTZPjJdQgnOLPBGvZjtZpDzBNYly9S2ydYnlvt2UG290l65GoFHMliJ9gBHF3Bp+qX27w9VRc4eV2qyEkdKfmBqa7AuhSODE1WOgDCWgvLze8cOhjN08A92g+lKVNBgq4I60gmbK0TyASSQuKAaQS1yQEsnyAmgSU7BKINzJH9MhEPD6EEr0MxBbYogcbE/7Mj4G042h3mSFikdHQYi7QpT5uuyRnJkCXQDDnRuocCz3BRCygY3vGN8ciCcyakdPWpAfuDgur6oZ8Cdow3+k/omEMvCb2kRAlYoh44qm51v42fdVssWMJ5AAAAAElFTkSuQmCC',
+        ), // You can replace Image.memory with Image.asset() or Image.network depending on the image source. Use Image.asset() for local images stored in the assets directory. Use Image.network() for images retrieved from a URL.
+        width: 50,
+        height: 50,
+        fit: BoxFit.contain,
+      ),
     },
   ];
 
@@ -204,6 +245,7 @@ class ConversationScreen extends StatelessWidget {
                         message: messages[0]['message'],
                         isSentByMe: messages[0]['isSentByMe'],
                         time: messages[0]['time'],
+                        gift: messages[0]['gift'],
                       ),
                       Row(
                         children: [
@@ -236,9 +278,13 @@ class ConversationScreen extends StatelessWidget {
                           message: message['message'],
                           isSentByMe: message['isSentByMe'],
                           time: message['time'],
+                          gift: message['gift'],
                         ),
                     ],
                   ),
+                ),
+                const SizedBox(
+                  height: 70,
                 ),
               ],
             ),
@@ -264,7 +310,8 @@ class ConversationScreen extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: const MessageInput(),
+      floatingActionButton: MessageInput(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }

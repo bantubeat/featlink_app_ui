@@ -600,5 +600,25 @@
         "subheader_message": "Trouve l’amour près de toi, grâce à notre filtre Dans ta ville",
         "button_text": "Découvrir",
         "bottom_text": "Dans ta Ville"
+    },
+    "gift_picker": {
+        "crown": "Couronne",
+        "banana": "Banane",
+        "heart": "Coeur",
+        "rose": "Rose",
+        "star": "Etoile",
+        "bird": "Oiseau",
+        "dragon": "Dragon",
+        "fish": "Poisson",
+        "cat": "Chat",
+        "dog": "Chien",
+        "trophy": "Trophée",
+        "colombe": "Colombe",
+        "cake": "Gateau",
+        "lion": "Lion",
+        "gold_bullion": "Lingot d’or",
+        "diamond": "Diamant",
+        "unicorn": "Licorne",
+        "djembe": "Djembé"
     }
 }
