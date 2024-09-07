@@ -11,18 +11,8 @@ class HeaderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: 100,
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Color.fromRGBO(255, 204, 204, 1), // Couleur en bas
-            Color.fromRGBO(255, 255, 255, 1), // Couleur en bas
-          ],
-        ),
-      ),
       child: Stack(
         children: [
           Align(
