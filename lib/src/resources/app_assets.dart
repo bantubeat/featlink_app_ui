@@ -95,4 +95,5 @@ final class AppAssets {
       'assets/images/dayflow_best_friends.png';
 
   static const imagesGroups = 'assets/images/groups.png';
+  static const imagesTmpChatImg = 'assets/images/tmp_chat_img.png';
 }

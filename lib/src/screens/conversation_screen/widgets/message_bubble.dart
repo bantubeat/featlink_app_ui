@@ -1,18 +1,24 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
+import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_bubble/chat_bubble.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MessageBubble extends StatelessWidget {
   final String message;
   final bool isSentByMe;
   final String time;
+  final bool? file;
+  final bool? isVideo;
 
   const MessageBubble({
     required this.message,
     required this.isSentByMe,
     required this.time,
+    this.file,
+    this.isVideo,
     super.key,
   });
 
@@ -97,12 +103,32 @@ class MessageBubble extends StatelessWidget {
                       constraints: BoxConstraints(
                         maxWidth: MediaQuery.of(context).size.width * 0.7,
                       ),
-                      child: Text(
-                        message,
-                        style: TextStyle(
-                          color:
-                              isSentByMe ? AppColors.myWhite : AppColors.myDark,
-                        ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          if (file != null && isVideo != null && isVideo!)
+                            const Padding(
+                              padding: EdgeInsets.only(bottom: 5.0),
+                              child: SizedBox(
+                                height: 250,
+                                child: VideoWidget(),
+                              ),
+                            )
+                          else if (file != null && isVideo != null && !isVideo!)
+                            Image.asset(
+                              width: MediaQuery.of(context).size.width * .7,
+                              AppAssets.imagesTmpChatImg,
+                              fit: BoxFit.cover,
+                            ),
+                          Text(
+                            message,
+                            style: TextStyle(
+                              color: isSentByMe
+                                  ? AppColors.myWhite
+                                  : AppColors.myDark,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -146,6 +172,86 @@ class MessageBubble extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class VideoWidget extends StatelessWidget {
+  const VideoWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      children: [
+        Positioned(
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          child: Image.asset(
+            AppAssets.imagesTmpChatImg,
+            fit: BoxFit.cover,
+          ),
+        ),
+        Positioned(
+          left: 0,
+          right: 0,
+          bottom: 0,
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    const Expanded(
+                      child: LinearProgressIndicator(
+                        value: 0.7,
+                        backgroundColor: Color.fromRGBO(186, 185, 185, 0.5),
+                        color: Color.fromRGBO(186, 185, 185, 0.6),
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      '0:18',
+                      style: GoogleFonts.inter(
+                        fontSize: 6,
+                        fontWeight: FontWeight.w500,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Icon(
+                      Icons.play_arrow,
+                      color: Colors.white,
+                      size: 15,
+                    ),
+                    Icon(
+                      Icons.volume_down_sharp,
+                      color: Colors.white,
+                      size: 15,
+                    ),
+                    Icon(
+                      Icons.fullscreen,
+                      color: Colors.white,
+                      size: 15,
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }

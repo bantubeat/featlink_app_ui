@@ -4,8 +4,13 @@ import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class MessageInput extends StatelessWidget {
-  const MessageInput({super.key});
-
+  const MessageInput({
+    required this.onPressPickImage,
+    required this.onPressPickVideo,
+    super.key,
+  });
+  final Future<void> Function() onPressPickImage;
+  final Future<void> Function() onPressPickVideo;
   @override
   Widget build(BuildContext context) {
     final minHeight = MediaQuery.of(context).size.height * 0.070;
@@ -14,9 +19,49 @@ class MessageInput extends StatelessWidget {
       color: AppColors.myWhite,
       child: Row(
         children: [
-          IconButton(
-            icon: const Icon(Icons.add_circle, color: AppColors.myDark),
-            onPressed: () {},
+          PopupMenuButton<String>(
+            icon: const Icon(
+              Icons.add_circle,
+              color: AppColors.myDark,
+            ),
+            color: AppColors.myWhite,
+            position: PopupMenuPosition.under,
+            itemBuilder: (BuildContext context) => <PopupMenuEntry<String>>[
+              PopupMenuItem<String>(
+                onTap: () async {
+                  await onPressPickImage();
+                },
+                child: ListTile(
+                  leading:
+                      const Icon(Icons.camera_alt, color: AppColors.myBlue),
+                  title: Text(
+                    LocaleKeys.conversation_picture.tr(),
+                    style: const TextStyle(color: AppColors.myDark),
+                  ),
+                ),
+              ),
+              const PopupMenuItem<String>(
+                height: 1,
+                padding: EdgeInsets.all(0),
+                enabled: false,
+                child: Divider(
+                  color: Color.fromRGBO(235, 235, 235, 1),
+                  thickness: 1,
+                ),
+              ),
+              PopupMenuItem<String>(
+                onTap: () async {
+                  await onPressPickVideo();
+                },
+                child: ListTile(
+                  leading: const Icon(Icons.videocam, color: AppColors.myDark),
+                  title: Text(
+                    LocaleKeys.conversation_video.tr(),
+                    style: const TextStyle(color: AppColors.myDark),
+                  ),
+                ),
+              ),
+            ],
           ),
           Expanded(
             child: Container(
