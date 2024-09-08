@@ -600,5 +600,18 @@
         "subheader_message": "Trouve l’amour près de toi, grâce à notre filtre Dans ta ville",
         "button_text": "Découvrir",
         "bottom_text": "Dans ta Ville"
+    },
+    "publish_a_d_day_screen": {
+        "express_your_dday": "Exprimes ton D-DAY",
+        "describe_your_desire": "Décris en une phrase ton envie.",
+        "write_your_dday": "écris ton D-Day",
+        "max_50_characters": "50 caractères maximum",
+        "choose_dday_date": "Choisir le jour du D-Day",
+        "today": "Aujourd’hui",
+        "calendar": "Calendrier",
+        "dday_deletion_warning": "ton D-day sera supprimé à la fin du temps.",
+        "add_image": "Vous pouvez ajouter une image qui représente votre idée de D-DAY, à défaut votre photo de profil sera utilisée.",
+        "add": "Ajouter",
+        "publish": "Publier"
     }
 }
