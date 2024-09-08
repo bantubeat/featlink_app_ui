@@ -548,6 +548,14 @@
         "access": "ACCÈS",
         "active": "ACTIVER"
     },
+    "modal_swipezone_promotionals": {
+        "oups": "OUPSSSS",
+        "congratulation": "FELICITATION",
+        "successfull_have_token": "Vous avez obtenu des jetons, maintenant profiter de featlink",
+        "fails_have_token": "Vous avez déjà bénéficié d’une offre gratuite ce trimestre.\nAcheter des jetons pour continuer à profiter des fonctionnalités premium",
+        "buy_chips": "Acheter des Jetons",
+        "active_button": "Acheter un accès"
+    },
     "access_featlink_outsite_africa_screen": {
         "access_expiration": "Votre accès featlink expire dans",
         "buy_access": "Payer un accès",

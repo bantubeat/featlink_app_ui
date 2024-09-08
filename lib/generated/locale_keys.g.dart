@@ -779,6 +779,18 @@ abstract class LocaleKeys {
       'swipezone_full_screen_modal_screen.access';
   static const swipezone_full_screen_modal_screen_active =
       'swipezone_full_screen_modal_screen.active';
+  static const modal_swipezone_promotionals_oups =
+      'modal_swipezone_promotionals.oups';
+  static const modal_swipezone_promotionals_congratulation =
+      'modal_swipezone_promotionals.congratulation';
+  static const modal_swipezone_promotionals_successfull_have_token =
+      'modal_swipezone_promotionals.successfull_have_token';
+  static const modal_swipezone_promotionals_fails_have_token =
+      'modal_swipezone_promotionals.fails_have_token';
+  static const modal_swipezone_promotionals_buy_chips =
+      'modal_swipezone_promotionals.buy_chips';
+  static const modal_swipezone_promotionals_active_button =
+      'modal_swipezone_promotionals.active_button';
   static const access_featlink_outsite_africa_screen_access_expiration =
       'access_featlink_outsite_africa_screen.access_expiration';
   static const access_featlink_outsite_africa_screen_buy_access =
@@ -841,7 +853,6 @@ abstract class LocaleKeys {
       'featlink_without_limits_screen.percentage_text';
   static const featlink_without_limits_screen_discount_text =
       'featlink_without_limits_screen.discount_text';
-
   static const pub_d_day_blue_screen_header_message =
       'pub_d_day_blue_screen.header_message';
   static const pub_d_day_blue_screen_subheader_message =
@@ -850,7 +861,6 @@ abstract class LocaleKeys {
       'pub_d_day_blue_screen.button_text';
   static const pub_d_day_blue_screen_bottom_text =
       'pub_d_day_blue_screen.bottom_text';
-
   static const pub_d_day_violet_screen_header_message =
       'pub_d_day_violet_screen.header_message';
   static const pub_d_day_violet_screen_subheader_message =
@@ -859,7 +869,6 @@ abstract class LocaleKeys {
       'pub_d_day_violet_screen.button_text';
   static const pub_d_day_violet_screen_bottom_text =
       'pub_d_day_violet_screen.bottom_text';
-
   static const discovery_in_you_city_screen_header_message =
       'discovery_in_you_city_screen.header_message';
   static const discovery_in_you_city_screen_subheader_message =
