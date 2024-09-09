@@ -269,5 +269,12 @@
         "marriage": "Mariage",
         "friendship": "Amitié",
         "professional_relationship": "Relation professionnelle"
+    }, 
+    "swipes_zone_screen": {
+        "error_image": "Une erreur est survenue lors du chargement de l'image", 
+        "user_name": "Mariane, 29",
+        "user_description": "Le respect et la compréhension",
+        "app_bar_title": "Featlink-Chat",
+        "swipe_finished": "Swipe Finished"
     }
 }
