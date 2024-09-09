@@ -766,6 +766,18 @@ abstract class  LocaleKeys {
       'swipezone_full_screen_modal_screen.access';
   static const swipezone_full_screen_modal_screen_active =
       'swipezone_full_screen_modal_screen.active';
+  static const modal_swipezone_promotionals_oups =
+      'modal_swipezone_promotionals.oups';
+  static const modal_swipezone_promotionals_congratulation =
+      'modal_swipezone_promotionals.congratulation';
+  static const modal_swipezone_promotionals_successfull_have_token =
+      'modal_swipezone_promotionals.successfull_have_token';
+  static const modal_swipezone_promotionals_fails_have_token =
+      'modal_swipezone_promotionals.fails_have_token';
+  static const modal_swipezone_promotionals_buy_chips =
+      'modal_swipezone_promotionals.buy_chips';
+  static const modal_swipezone_promotionals_active_button =
+      'modal_swipezone_promotionals.active_button';
   static const access_featlink_outsite_africa_screen_access_expiration =
       'access_featlink_outsite_africa_screen.access_expiration';
   static const access_featlink_outsite_africa_screen_buy_access =
@@ -829,6 +841,7 @@ abstract class  LocaleKeys {
   static const featlink_without_limits_screen_discount_text =
       'featlink_without_limits_screen.discount_text';
 
+
   static const discoverys_first_day_screen_header_message =
       'discoverys_first_day_screen.header_message';
   static const discoverys_first_day_screen_new_users_message =
@@ -839,6 +852,7 @@ abstract class  LocaleKeys {
       'discoverys_first_day_screen.bottom_text';
   static const discoverys_first_day_screen_connect_with =
       'discoverys_first_day_screen.connect_with';
+
   static const pub_d_day_blue_screen_header_message =
       'pub_d_day_blue_screen.header_message';
   static const pub_d_day_blue_screen_subheader_message =
