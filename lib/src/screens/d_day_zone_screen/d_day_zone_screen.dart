@@ -4,7 +4,6 @@ import 'package:featlink_app/src/components/app_navigation_bottom_sheet.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:featlink_app/src/screens/d_day_zone_screen/widgets/the_d_day_tab.dart';
-import 'package:featlink_app/src/screens/d_day_zone_screen/widgets/your_d_day_tab.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/your_d_day_valid_access_tab.dart';
