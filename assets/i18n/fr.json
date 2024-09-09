@@ -591,6 +591,13 @@
         "percentage_text": "100%",
         "discount_text": "Discount"
     },
+    "discoverys_first_day_screen": {
+        "header_message": "Découvre qui s’est inscrit aujourd’hui et soit le premier à dire bonjour",
+        "new_users_message": "Les nouveaux utilisateurs",
+        "button_text": "Découvrir",
+        "bottom_text": "1er jour",
+        "connect_with": "Se Connecter avec {}"
+    },
     "pub_d_day_blue_screen": {
         "header_message": "Tu as 99% de chance d’avoir un rendez-vous aujourd’hui en publiant un D-DAY",
         "subheader_message": "Consulte les envies de la communauté",

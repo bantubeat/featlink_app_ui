@@ -115,6 +115,8 @@ final Map<String, Widget Function()> allScreens = {
       const FeatlinkWithoutLimitsOffre92Screen(),
   'featlink_without_limits_offre_93_screen.dart': () =>
       const FeatlinkWithoutLimitsOffre93Screen(),
+  'discoverys_first_day_screen.dart': () =>
+      const FeatlinkWithoutLimitsOffre93Screen(),
   'pub_d_day_blue_screen.dart': () => const PubDDayBlueScreen(),
   'pub_d_day_violet_screen.dart': () => const PubDDayVioletScreen(),
   'discovery_in_you_city_screen.dart': () => const DiscoveryInYouCityScreen(),

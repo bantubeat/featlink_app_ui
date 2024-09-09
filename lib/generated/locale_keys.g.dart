@@ -852,6 +852,17 @@ abstract class LocaleKeys {
       'featlink_without_limits_screen.percentage_text';
   static const featlink_without_limits_screen_discount_text =
       'featlink_without_limits_screen.discount_text';
+
+  static const discoverys_first_day_screen_header_message =
+      'discoverys_first_day_screen.header_message';
+  static const discoverys_first_day_screen_new_users_message =
+      'discoverys_first_day_screen.new_users_message';
+  static const discoverys_first_day_screen_button_text =
+      'discoverys_first_day_screen.button_text';
+  static const discoverys_first_day_screen_bottom_text =
+      'discoverys_first_day_screen.bottom_text';
+  static const discoverys_first_day_screen_connect_with =
+      'discoverys_first_day_screen.connect_with';
   static const pub_d_day_blue_screen_header_message =
       'pub_d_day_blue_screen.header_message';
   static const pub_d_day_blue_screen_subheader_message =
