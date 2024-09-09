@@ -852,7 +852,6 @@ abstract class LocaleKeys {
       'featlink_without_limits_screen.percentage_text';
   static const featlink_without_limits_screen_discount_text =
       'featlink_without_limits_screen.discount_text';
-
   static const discoverys_first_day_screen_header_message =
       'discoverys_first_day_screen.header_message';
   static const discoverys_first_day_screen_new_users_message =
@@ -887,6 +886,24 @@ abstract class LocaleKeys {
       'discovery_in_you_city_screen.button_text';
   static const discovery_in_you_city_screen_bottom_text =
       'discovery_in_you_city_screen.bottom_text';
+  static const gift_picker_crown = 'gift_picker.crown';
+  static const gift_picker_banana = 'gift_picker.banana';
+  static const gift_picker_heart = 'gift_picker.heart';
+  static const gift_picker_rose = 'gift_picker.rose';
+  static const gift_picker_star = 'gift_picker.star';
+  static const gift_picker_bird = 'gift_picker.bird';
+  static const gift_picker_dragon = 'gift_picker.dragon';
+  static const gift_picker_fish = 'gift_picker.fish';
+  static const gift_picker_cat = 'gift_picker.cat';
+  static const gift_picker_dog = 'gift_picker.dog';
+  static const gift_picker_trophy = 'gift_picker.trophy';
+  static const gift_picker_colombe = 'gift_picker.colombe';
+  static const gift_picker_cake = 'gift_picker.cake';
+  static const gift_picker_lion = 'gift_picker.lion';
+  static const gift_picker_gold_bullion = 'gift_picker.gold_bullion';
+  static const gift_picker_diamond = 'gift_picker.diamond';
+  static const gift_picker_unicorn = 'gift_picker.unicorn';
+  static const gift_picker_djembe = 'gift_picker.djembe';
   static const modal_swipepay_screen_all_free_swipes_used =
       'modal_swipepay_screen.all_free_swipes_used';
   static const modal_swipepay_screen_nothing_serious =

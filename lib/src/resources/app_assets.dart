@@ -96,6 +96,27 @@ final class AppAssets {
       'assets/images/dayflow_best_friends.png';
 
   static const imagesGroups = 'assets/images/groups.png';
+
+  static const imagesAfricanDrum = 'assets/images/african_drum.png';
+  static const imagesBananas = 'assets/images/bananas.png';
+  static const imagesBirthdayCake = 'assets/images/birthday_cake.png';
+  static const imagesCatUnderUmberlla = 'assets/images/cat under_umbrella.png';
+  static const imagesChampionCupWithAStar =
+      'assets/images/champion_cup_with_a_star.png';
+  static const imagesCrown = 'assets/images/crown.png';
+  static const imagesDiamond = 'assets/images/diamond.png';
+  static const imagesDogBirthday = 'assets/images/dog_birthday.png';
+  static const imagesFish = 'assets/images/fish.png';
+  static const imagesLionSitting = 'assets/images/lion_sitting.png';
+  static const imagesPeacePigeon = 'assets/images/peace_pigeon.png';
+  static const imagesPileOfGoldBars = 'assets/images/pile_of_gold_bars.png';
+  static const imagesRedHeartForLove = 'assets/images/red_heart_for_love.png';
+  static const imagesRose = 'assets/images/rose.png';
+  static const imagesSeahorse = 'assets/images/seahorse.png';
+  static const imagesSparkleStar = 'assets/images/sparkle_star.png';
+  static const imagesUnicorn = 'assets/images/unicorn.png';
+  static const imagesVector = 'assets/images/vector.png';
+  static const imagesYellowBird = 'assets/images/yellow_bird.png';
   static const svgsEmoji = 'assets/svgs/emoji.svg';
   static const imagesEmojiImage = 'assets/images/emoji.png';
 

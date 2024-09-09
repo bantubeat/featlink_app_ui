@@ -8,11 +8,13 @@ class MessageBubble extends StatelessWidget {
   final String message;
   final bool isSentByMe;
   final String time;
+  final Image? gift;
 
   const MessageBubble({
     required this.message,
     required this.isSentByMe,
     required this.time,
+    this.gift,
     super.key,
   });
 
@@ -97,13 +99,45 @@ class MessageBubble extends StatelessWidget {
                       constraints: BoxConstraints(
                         maxWidth: MediaQuery.of(context).size.width * 0.7,
                       ),
-                      child: Text(
-                        message,
-                        style: TextStyle(
-                          color:
-                              isSentByMe ? AppColors.myWhite : AppColors.myDark,
-                        ),
-                      ),
+                      child: isSentByMe
+                          ? Row(
+                              children: [
+                                Flexible(
+                                  child: Text(
+                                    message,
+                                    style: TextStyle(
+                                      color: isSentByMe
+                                          ? AppColors.myWhite
+                                          : AppColors.myDark,
+                                    ),
+                                  ),
+                                ),
+                                if (gift != null)
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(),
+                                    child: gift!,
+                                  ),
+                              ],
+                            )
+                          : Row(
+                              children: [
+                                if (gift != null)
+                                  Padding(
+                                    padding: const EdgeInsets.symmetric(),
+                                    child: gift!,
+                                  ),
+                                Flexible(
+                                  child: Text(
+                                    message,
+                                    style: TextStyle(
+                                      color: isSentByMe
+                                          ? AppColors.myWhite
+                                          : AppColors.myDark,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
                     ),
                   ),
                   Padding(
