@@ -7,6 +7,8 @@ import 'package:featlink_app/src/screens/d_day_zone_screen/widgets/the_d_day_tab
 import 'package:featlink_app/src/screens/d_day_zone_screen/widgets/your_d_day_tab.dart';
 import 'package:flutter/material.dart';
 
+import 'widgets/your_d_day_valid_access_tab.dart';
+
 class DDayZoneScreen extends StatelessWidget {
   const DDayZoneScreen({super.key});
 
@@ -60,7 +62,48 @@ class DDayZoneScreen extends StatelessWidget {
       'userImageUrl': AppAssets.theddayimagesecond,
     },
   ];
-
+  static List<Map<String, dynamic>> profiles = [
+    {
+      'name': 'John',
+      'image':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVbgElWE7pbgzhzdS2b_6OjjFzEM_JqPLF5Q&s',
+      'date': '18:09',
+      'city': 'Douala',
+      'age': 25,
+    },
+    {
+      'name': 'Bob',
+      'image':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx0CIy3mIbpe2nuLRfK5xxPcwxmTvXjJsBNw&s',
+      'date': '15:09',
+      'city': 'Eséka',
+      'age': 25,
+    },
+    {
+      'name': 'Alice',
+      'image':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRC1t3O0WiTbF7vac0E00EPIuvZ-XrxSBFHA&s',
+      'date': '13:00',
+      'city': 'Bafoussam',
+      'age': 20,
+    },
+    {
+      'name': 'Emma',
+      'image':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRC1t3O0WiTbF7vac0E00EPIuvZ-XrxSBFHA&s',
+      'date': '08:24',
+      'city': 'Yaounde',
+      'age': 30,
+    },
+    {
+      'name': 'David',
+      'image':
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQi2Mm5P8j09P4hPKa1B-t9eIOHzHmR7IBkw&s',
+      'date': '08:02',
+      'city': 'Douala',
+      'age': 55,
+    },
+  ];
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -93,7 +136,7 @@ class DDayZoneScreen extends StatelessWidget {
               child: TabBarView(
                 children: [
                   TheDDayTab(datas: myData),
-                  const YourDDayTab(),
+                  YourDDayValidAccessTab(datas: profiles),
                 ],
               ),
             ),
