@@ -629,6 +629,26 @@
         "add": "Ajouter",
         "publish": "Publier"
     },
+    "gift_picker": {
+        "crown": "Couronne",
+        "banana": "Banane",
+        "heart": "Coeur",
+        "rose": "Rose",
+        "star": "Etoile",
+        "bird": "Oiseau",
+        "dragon": "Dragon",
+        "fish": "Poisson",
+        "cat": "Chat",
+        "dog": "Chien",
+        "trophy": "Trophée",
+        "colombe": "Colombe",
+        "cake": "Gateau",
+        "lion": "Lion",
+        "gold_bullion": "Lingot d’or",
+        "diamond": "Diamant",
+        "unicorn": "Licorne",
+        "djembe": "Djembé"
+    },
     "modal_swipepay_screen": {
         "all_free_swipes_used": "Tu as utilisé tous tes free swipes de la journée.",
         "nothing_serious": "BUT NOTHING SERIOUS",

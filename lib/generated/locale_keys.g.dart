@@ -563,6 +563,7 @@ abstract class  LocaleKeys {
   static const discovery_first_day_screen_woman = 'discovery_first_day_screen.woman';
   static const discovery_first_day_screen_others = 'discovery_first_day_screen.others';
   static const discovery_blur_screen_title = 'discovery_blur_screen.title';
+
   static const discovery_blur_screen_sub_title = 'discovery_blur_screen.sub_title';
   static const discovery_blur_screen_description = 'discovery_blur_screen.description';
   static const discovery_blur_screen_buy_access = 'discovery_blur_screen.buy_access';
@@ -667,6 +668,166 @@ abstract class  LocaleKeys {
   static const publish_a_d_day_screen_add = 'publish_a_d_day_screen.add';
   static const publish_a_d_day_screen_publish = 'publish_a_d_day_screen.publish';
 
+  static const discovery_blur_screen_sub_title =
+      'discovery_blur_screen.sub_title';
+  static const discovery_blur_screen_description =
+      'discovery_blur_screen.description';
+  static const discovery_blur_screen_buy_access =
+      'discovery_blur_screen.buy_access';
+  static const chat_message_list_screen_bantubeat_artist_title =
+      'chat_message_list_screen.bantubeat_artist_title';
+  static const chat_message_list_screen_listen_on_bantubeat =
+      'chat_message_list_screen.listen_on_bantubeat';
+  static const chat_message_list_screen_contact_support =
+      'chat_message_list_screen.contact_support';
+  static const chat_message_list_screen_buy_an_access =
+      'chat_message_list_screen.buy_an_access';
+  static const chat_message_list_screen_messages =
+      'chat_message_list_screen.messages';
+  static const profile_visitor_view_screen_read_more =
+      'profile_visitor_view_screen.read_more';
+  static const profile_visitor_view_screen_read_less =
+      'profile_visitor_view_screen.read_less';
+  static const profile_visitor_view_screen_about =
+      'profile_visitor_view_screen.about';
+  static const profile_visitor_view_screen_interests =
+      'profile_visitor_view_screen.interests';
+  static const fullscreen_modal_acces_afrique_limitless_experience =
+      'fullscreen_modal_acces_afrique.limitless_experience';
+  static const fullscreen_modal_acces_afrique_choose_access =
+      'fullscreen_modal_acces_afrique.choose_access';
+  static const fullscreen_modal_acces_afrique_special_offer_24 =
+      'fullscreen_modal_acces_afrique.special_offer_24';
+  static const fullscreen_modal_acces_afrique_try_free_24h =
+      'fullscreen_modal_acces_afrique.try_free_24h';
+  static const fullscreen_modal_acces_afrique_benefits_access =
+      'fullscreen_modal_acces_afrique.benefits_access';
+  static const fullscreen_modal_acces_afrique_discover_power =
+      'fullscreen_modal_acces_afrique.discover_power';
+  static const fullscreen_modal_acces_afrique_your_token_balance =
+      'fullscreen_modal_acces_afrique.your_token_balance';
+  static const fullscreen_modal_acces_afrique_token_balance_value =
+      'fullscreen_modal_acces_afrique.token_balance_value';
+  static const fullscreen_modal_acces_afrique_buy_tokens =
+      'fullscreen_modal_acces_afrique.buy_tokens';
+  static const fullscreen_modal_acces_afrique_continue =
+      'fullscreen_modal_acces_afrique.continue';
+  static const fullscreen_modal_acces_afrique_swipes_unlimited =
+      'fullscreen_modal_acces_afrique.swipes_unlimited';
+  static const fullscreen_modal_acces_afrique_unlimited_conversations =
+      'fullscreen_modal_acces_afrique.unlimited_conversations';
+  static const fullscreen_modal_acces_afrique_dial_without_match =
+      'fullscreen_modal_acces_afrique.dial_without_match';
+  static const fullscreen_modal_acces_afrique_d_day_unlimited =
+      'fullscreen_modal_acces_afrique.d_day_unlimited';
+  static const fullscreen_modal_acces_afrique_discoveries_unlimited =
+      'fullscreen_modal_acces_afrique.discoveries_unlimited';
+  static const modal_acivation_offre_afriques_unlimited_featlink =
+      'modal_acivation_offre_afriques.unlimited_featlink';
+  static const modal_acivation_offre_afriques_no_auto_change =
+      'modal_acivation_offre_afriques.no_auto_change';
+  static const modal_acivation_offre_afriques_try_free_24h =
+      'modal_acivation_offre_afriques.try_free_24h';
+  static const modal_acivation_offre_afriques_benefits_access =
+      'modal_acivation_offre_afriques.benefits_access';
+  static const modal_acivation_offre_afriques_discover_power =
+      'modal_acivation_offre_afriques.discover_power';
+  static const modal_acivation_offre_afriques_cancel =
+      'modal_acivation_offre_afriques.cancel';
+  static const modal_acivation_offre_afriques_activate =
+      'modal_acivation_offre_afriques.activate';
+  static const modal_acivation_offre_afriques_swipes_unlimited =
+      'modal_acivation_offre_afriques.swipes_unlimited';
+  static const modal_acivation_offre_afriques_unlimited_conversations =
+      'modal_acivation_offre_afriques.unlimited_conversations';
+  static const modal_acivation_offre_afriques_dial_without_match =
+      'modal_acivation_offre_afriques.dial_without_match';
+  static const modal_acivation_offre_afriques_d_day_unlimited =
+      'modal_acivation_offre_afriques.d_day_unlimited';
+  static const modal_acivation_offre_afriques_discoveries_unlimited =
+      'modal_acivation_offre_afriques.discoveries_unlimited';
+  static const swipezone_full_screen_modal_screen_oups =
+      'swipezone_full_screen_modal_screen.oups';
+  static const swipezone_full_screen_modal_screen_tag_name =
+      'swipezone_full_screen_modal_screen.tag_name';
+  static const swipezone_full_screen_modal_screen_unlock_conversation =
+      'swipezone_full_screen_modal_screen.unlock_conversation';
+  static const swipezone_full_screen_modal_screen_where_to_chosse_featlink =
+      'swipezone_full_screen_modal_screen.where_to_chosse_featlink';
+  static const swipezone_full_screen_modal_screen_amount =
+      'swipezone_full_screen_modal_screen.amount';
+  static const swipezone_full_screen_modal_screen_buy_chips =
+      'swipezone_full_screen_modal_screen.buy_chips';
+  static const swipezone_full_screen_modal_screen_active_button =
+      'swipezone_full_screen_modal_screen.active_button';
+  static const swipezone_full_screen_modal_screen_hour_number =
+      'swipezone_full_screen_modal_screen.hour_number';
+  static const swipezone_full_screen_modal_screen_access =
+      'swipezone_full_screen_modal_screen.access';
+  static const swipezone_full_screen_modal_screen_active =
+      'swipezone_full_screen_modal_screen.active';
+  static const access_featlink_outsite_africa_screen_access_expiration =
+      'access_featlink_outsite_africa_screen.access_expiration';
+  static const access_featlink_outsite_africa_screen_buy_access =
+      'access_featlink_outsite_africa_screen.buy_access';
+  static const access_featlink_outsite_africa_screen_featlink_access =
+      'access_featlink_outsite_africa_screen.featlink_access';
+  static const access_featlink_outsite_africa_screen_total =
+      'access_featlink_outsite_africa_screen.total';
+  static const access_featlink_outsite_africa_screen_discount =
+      'access_featlink_outsite_africa_screen.discount';
+  static const access_featlink_outsite_africa_screen_pay =
+      'access_featlink_outsite_africa_screen.pay';
+  static const access_featlink_outsite_africa_screen_purchase_coins =
+      'access_featlink_outsite_africa_screen.purchase_coins';
+  static const access_featlink_outsite_africa_screen_amount_to_pay =
+      'access_featlink_outsite_africa_screen.amount_to_pay';
+  static const access_featlink_outsite_africa_screen_pay_with_balance =
+      'access_featlink_outsite_africa_screen.pay_with_balance';
+  static const access_featlink_outsite_africa_screen_beatzcoins_balance =
+      'access_featlink_outsite_africa_screen.beatzcoins_balance';
+  static const access_featlink_outsite_africa_screen_balance_is_sufficient =
+      'access_featlink_outsite_africa_screen.balance_is_sufficient';
+  static const access_featlink_outsite_africa_screen_balance_is_insufficient =
+      'access_featlink_outsite_africa_screen.balance_is_insufficient';
+  static const access_featlink_outsite_africa_screen_payment =
+      'access_featlink_outsite_africa_screen.payment';
+  static const featlink_without_limits_screen_unlimited_featlink =
+      'featlink_without_limits_screen.unlimited_featlink';
+  static const featlink_without_limits_screen_no_auto_change =
+      'featlink_without_limits_screen.no_auto_change';
+  static const featlink_without_limits_screen_try_free_24h =
+      'featlink_without_limits_screen.try_free_24h';
+  static const featlink_without_limits_screen_benefits_access =
+      'featlink_without_limits_screen.benefits_access';
+  static const featlink_without_limits_screen_discover_power =
+      'featlink_without_limits_screen.discover_power';
+  static const featlink_without_limits_screen_obtaint =
+      'featlink_without_limits_screen.obtaint';
+  static const featlink_without_limits_screen_swipes_unlimited =
+      'featlink_without_limits_screen.swipes_unlimited';
+  static const featlink_without_limits_screen_unlimited_conversations =
+      'featlink_without_limits_screen.unlimited_conversations';
+  static const featlink_without_limits_screen_dial_without_match =
+      'featlink_without_limits_screen.dial_without_match';
+  static const featlink_without_limits_screen_d_day_unlimited =
+      'featlink_without_limits_screen.d_day_unlimited';
+  static const featlink_without_limits_screen_discoveries_unlimited =
+      'featlink_without_limits_screen.discoveries_unlimited';
+  static const featlink_without_limits_screen_offer_text =
+      'featlink_without_limits_screen.offer_text';
+  static const featlink_without_limits_screen_acknowledgement_text =
+      'featlink_without_limits_screen.acknowledgement_text';
+  static const featlink_without_limits_screen_terms_text =
+      'featlink_without_limits_screen.terms_text';
+  static const featlink_without_limits_screen_free_text =
+      'featlink_without_limits_screen.free_text';
+  static const featlink_without_limits_screen_flat_text =
+      'featlink_without_limits_screen.flat_text';
+  static const featlink_without_limits_screen_percentage_text =
+      'featlink_without_limits_screen.percentage_text';
+  static const featlink_without_limits_screen_discount_text =
+      'featlink_without_limits_screen.discount_text';
 
   static const discoverys_first_day_screen_header_message =
       'discoverys_first_day_screen.header_message';
@@ -702,6 +863,24 @@ abstract class  LocaleKeys {
       'discovery_in_you_city_screen.button_text';
   static const discovery_in_you_city_screen_bottom_text =
       'discovery_in_you_city_screen.bottom_text';
+  static const gift_picker_crown = 'gift_picker.crown';
+  static const gift_picker_banana = 'gift_picker.banana';
+  static const gift_picker_heart = 'gift_picker.heart';
+  static const gift_picker_rose = 'gift_picker.rose';
+  static const gift_picker_star = 'gift_picker.star';
+  static const gift_picker_bird = 'gift_picker.bird';
+  static const gift_picker_dragon = 'gift_picker.dragon';
+  static const gift_picker_fish = 'gift_picker.fish';
+  static const gift_picker_cat = 'gift_picker.cat';
+  static const gift_picker_dog = 'gift_picker.dog';
+  static const gift_picker_trophy = 'gift_picker.trophy';
+  static const gift_picker_colombe = 'gift_picker.colombe';
+  static const gift_picker_cake = 'gift_picker.cake';
+  static const gift_picker_lion = 'gift_picker.lion';
+  static const gift_picker_gold_bullion = 'gift_picker.gold_bullion';
+  static const gift_picker_diamond = 'gift_picker.diamond';
+  static const gift_picker_unicorn = 'gift_picker.unicorn';
+  static const gift_picker_djembe = 'gift_picker.djembe';
   static const modal_swipepay_screen_all_free_swipes_used =
       'modal_swipepay_screen.all_free_swipes_used';
   static const modal_swipepay_screen_nothing_serious =
