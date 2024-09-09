@@ -7,7 +7,7 @@ class LandingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    	return Center(
+    return Center(
       child: Text(LocaleKeys.swipes_zone_screen_swipe_finished.tr()),
     );
   }
