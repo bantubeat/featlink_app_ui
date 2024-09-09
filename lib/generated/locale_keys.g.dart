@@ -342,6 +342,15 @@ abstract class LocaleKeys {
   static const filter_screen_friendship = 'filter_screen.friendship';
   static const filter_screen_professional_relationship =
       'filter_screen.professional_relationship';
+  static const swipes_zone_screen_error_image =
+      'swipes_zone_screen.error_image';
+  static const swipes_zone_screen_user_name = 'swipes_zone_screen.user_name';
+  static const swipes_zone_screen_user_description =
+      'swipes_zone_screen.user_description';
+  static const swipes_zone_screen_app_bar_title =
+      'swipes_zone_screen.app_bar_title';
+  static const swipes_zone_screen_swipe_finished =
+      'swipes_zone_screen.swipe_finished';
   static const crush_screen_bzc_solde = 'crush_screen.bzc_solde';
   static const crush_screen_bzc_echange = 'crush_screen.bzc_echange';
   static const crush_screen_bay_bzc = 'crush_screen.bay_bzc';
