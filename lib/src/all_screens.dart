@@ -14,6 +14,7 @@ import 'screens/_create_profile/create_profile_step_1o5_screen.dart';
 import 'screens/_create_profile/create_profile_step_2o2_screen/create_profile_step_2o2_screen.dart';
 import 'screens/_d-day/pub_d_day_blue_screen/pub_d_day_blue_screen.dart';
 import 'screens/_d-day/pub_d_day_violet_screen/pub_d_day_violet_screen.dart';
+import 'screens/_d-day/publish_a_d_day_screen/publish_a_d_day_screen.dart';
 import 'screens/_discovery/discovery_in_you_city_screen/discovery_in_you_city_screen.dart';
 import 'screens/_edit_profile/edit_user_profile_accroche_screen/edit_user_profile_accroche_screen.dart';
 import 'screens/_swipe/crush_screen/crush_screen.dart';
@@ -120,9 +121,13 @@ final Map<String, Widget Function()> allScreens = {
   'pub_d_day_blue_screen.dart': () => const PubDDayBlueScreen(),
   'pub_d_day_violet_screen.dart': () => const PubDDayVioletScreen(),
   'discovery_in_you_city_screen.dart': () => const DiscoveryInYouCityScreen(),
+
+  'publish_a_d_day_screen.dart': () => const PublishADDayScreen(),
+
   'swipezone_full_screen_modal_screen.dart': () =>
       const SwipezoneFullScreenModalScreen(),
   'modal_swipepay_screen.dart': () => ModalSwipepayScreen(),
+
 
   // Ajoutez d'autres chemins de fichiers ici
 };
