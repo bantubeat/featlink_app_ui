@@ -130,6 +130,5 @@ final Map<String, Widget Function()> allScreens = {
       const SwipezoneFullScreenModalScreen(),
   'modal_swipepay_screen.dart': () => ModalSwipepayScreen(),
 
-
   // Ajoutez d'autres chemins de fichiers ici
 };
