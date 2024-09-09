@@ -147,6 +147,8 @@ abstract class LocaleKeys {
       'create_profile_step_2o2_screen.title_nice_user_section';
   static const create_profile_step_2o2_screen_content_nice_user_section =
       'create_profile_step_2o2_screen.content_nice_user_section';
+  static const create_profile_step_2o2_screen_caution =
+      'create_profile_step_2o2_screen.caution';
   static const create_profile_step_1o5_screen_title =
       'create_profile_step_1o5_screen.title';
   static const create_profile_step_1o5_screen_description =
@@ -850,7 +852,6 @@ abstract class LocaleKeys {
       'featlink_without_limits_screen.percentage_text';
   static const featlink_without_limits_screen_discount_text =
       'featlink_without_limits_screen.discount_text';
-
   static const pub_d_day_blue_screen_header_message =
       'pub_d_day_blue_screen.header_message';
   static const pub_d_day_blue_screen_subheader_message =
@@ -859,7 +860,6 @@ abstract class LocaleKeys {
       'pub_d_day_blue_screen.button_text';
   static const pub_d_day_blue_screen_bottom_text =
       'pub_d_day_blue_screen.bottom_text';
-
   static const pub_d_day_violet_screen_header_message =
       'pub_d_day_violet_screen.header_message';
   static const pub_d_day_violet_screen_subheader_message =
@@ -868,7 +868,6 @@ abstract class LocaleKeys {
       'pub_d_day_violet_screen.button_text';
   static const pub_d_day_violet_screen_bottom_text =
       'pub_d_day_violet_screen.bottom_text';
-
   static const discovery_in_you_city_screen_header_message =
       'discovery_in_you_city_screen.header_message';
   static const discovery_in_you_city_screen_subheader_message =
@@ -877,4 +876,17 @@ abstract class LocaleKeys {
       'discovery_in_you_city_screen.button_text';
   static const discovery_in_you_city_screen_bottom_text =
       'discovery_in_you_city_screen.bottom_text';
+  static const modal_swipepay_screen_all_free_swipes_used =
+      'modal_swipepay_screen.all_free_swipes_used';
+  static const modal_swipepay_screen_nothing_serious =
+      'modal_swipepay_screen.nothing_serious';
+  static const modal_swipepay_screen_with_chips =
+      'modal_swipepay_screen.with_chips';
+  static const modal_swipepay_screen_continue_to_Liker =
+      'modal_swipepay_screen.continue_to_Liker';
+  static const modal_swipepay_screen_amount = 'modal_swipepay_screen.amount';
+  static const modal_swipepay_screen_buy_chips =
+      'modal_swipepay_screen.buy_chips';
+  static const modal_swipepay_screen_continue =
+      'modal_swipepay_screen.continue';
 }
