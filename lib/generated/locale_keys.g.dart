@@ -147,6 +147,8 @@ abstract class LocaleKeys {
       'create_profile_step_2o2_screen.title_nice_user_section';
   static const create_profile_step_2o2_screen_content_nice_user_section =
       'create_profile_step_2o2_screen.content_nice_user_section';
+  static const create_profile_step_2o2_screen_caution =
+      'create_profile_step_2o2_screen.caution';
   static const create_profile_step_1o5_screen_title =
       'create_profile_step_1o5_screen.title';
   static const create_profile_step_1o5_screen_description =
@@ -340,6 +342,15 @@ abstract class LocaleKeys {
   static const filter_screen_friendship = 'filter_screen.friendship';
   static const filter_screen_professional_relationship =
       'filter_screen.professional_relationship';
+  static const swipes_zone_screen_error_image =
+      'swipes_zone_screen.error_image';
+  static const swipes_zone_screen_user_name = 'swipes_zone_screen.user_name';
+  static const swipes_zone_screen_user_description =
+      'swipes_zone_screen.user_description';
+  static const swipes_zone_screen_app_bar_title =
+      'swipes_zone_screen.app_bar_title';
+  static const swipes_zone_screen_swipe_finished =
+      'swipes_zone_screen.swipe_finished';
   static const crush_screen_bzc_solde = 'crush_screen.bzc_solde';
   static const crush_screen_bzc_echange = 'crush_screen.bzc_echange';
   static const crush_screen_bay_bzc = 'crush_screen.bay_bzc';
@@ -841,6 +852,16 @@ abstract class LocaleKeys {
       'featlink_without_limits_screen.percentage_text';
   static const featlink_without_limits_screen_discount_text =
       'featlink_without_limits_screen.discount_text';
+  static const discoverys_first_day_screen_header_message =
+      'discoverys_first_day_screen.header_message';
+  static const discoverys_first_day_screen_new_users_message =
+      'discoverys_first_day_screen.new_users_message';
+  static const discoverys_first_day_screen_button_text =
+      'discoverys_first_day_screen.button_text';
+  static const discoverys_first_day_screen_bottom_text =
+      'discoverys_first_day_screen.bottom_text';
+  static const discoverys_first_day_screen_connect_with =
+      'discoverys_first_day_screen.connect_with';
   static const pub_d_day_blue_screen_header_message =
       'pub_d_day_blue_screen.header_message';
   static const pub_d_day_blue_screen_subheader_message =
@@ -883,4 +904,17 @@ abstract class LocaleKeys {
   static const gift_picker_diamond = 'gift_picker.diamond';
   static const gift_picker_unicorn = 'gift_picker.unicorn';
   static const gift_picker_djembe = 'gift_picker.djembe';
+  static const modal_swipepay_screen_all_free_swipes_used =
+      'modal_swipepay_screen.all_free_swipes_used';
+  static const modal_swipepay_screen_nothing_serious =
+      'modal_swipepay_screen.nothing_serious';
+  static const modal_swipepay_screen_with_chips =
+      'modal_swipepay_screen.with_chips';
+  static const modal_swipepay_screen_continue_to_Liker =
+      'modal_swipepay_screen.continue_to_Liker';
+  static const modal_swipepay_screen_amount = 'modal_swipepay_screen.amount';
+  static const modal_swipepay_screen_buy_chips =
+      'modal_swipepay_screen.buy_chips';
+  static const modal_swipepay_screen_continue =
+      'modal_swipepay_screen.continue';
 }

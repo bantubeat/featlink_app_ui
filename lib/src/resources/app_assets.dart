@@ -27,7 +27,7 @@ final class AppAssets {
   static const handsUpIcon = 'assets/images/hands_up.png';
   static const moonSliceIcon = 'assets/images/moon_slice.png';
   static const smokerIcon = 'assets/images/smoker.png';
-  static const svgStep1o2Icon = 'assets/svg/step1o2_icon.svg';
+  static const svgStep1o2Icon = 'assets/svgs/step1o2_icon.svg';
   static const lockIcon = 'assets/svgs/lock.svg';
   static const circledPlayIcon = 'assets/images/circled_play.png';
   static const fakeArtist = 'assets/images/fake_artist.jpeg';
@@ -88,6 +88,7 @@ final class AppAssets {
   static const smilingFaceWithHeartEyes =
       'assets/images/smiling-face-with-heart-eyes.gif';
   static const flatImage = 'assets/images/flat_image.png';
+  static const imagesDiscovaryMaps = 'assets/images/discovary_maps.png';
 
   static const imagesGroupsPublishD = 'assets/images/groups_publish_d.png';
 
@@ -116,4 +117,12 @@ final class AppAssets {
   static const imagesUnicorn = 'assets/images/unicorn.png';
   static const imagesVector = 'assets/images/vector.png';
   static const imagesYellowBird = 'assets/images/yellow_bird.png';
+  static const svgsEmoji = 'assets/svgs/emoji.svg';
+  static const imagesEmojiImage = 'assets/images/emoji.png';
+
+  static const imagesBzcEmojiImage = 'assets/images/bzc_emoji.png';
+  static const imagesNothingSeriousEmojiImage =
+      'assets/images/nothing_serious_emoji.png';
+  static const imagesModalDisplayTagImage =
+      'assets/images/modal_display_tag_image.png';
 }
