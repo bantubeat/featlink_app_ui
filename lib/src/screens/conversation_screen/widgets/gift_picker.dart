@@ -4,10 +4,10 @@ import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 
 class Gift {
-  dynamic headIcon;
+  String headIcon;
   String label;
   int bzcNumber;
-  dynamic bzcIcon;
+  String bzcIcon;
 
   Gift({
     required this.headIcon,
@@ -18,6 +18,10 @@ class Gift {
 }
 
 class GiftPicker extends StatefulWidget {
+  final void Function(Gift?)? onGiftPicked;
+
+  const GiftPicker({this.onGiftPicked});
+
   @override
   State<StatefulWidget> createState() => _GiftPicker();
 }
@@ -25,6 +29,7 @@ class GiftPicker extends StatefulWidget {
 class _GiftPicker extends State<GiftPicker> {
   Gift? selectedGift;
   Gift _onGiftTap(Gift gift) {
+    if (widget.onGiftPicked != null) widget.onGiftPicked!(gift);
     return gift;
   }
 
@@ -143,72 +148,66 @@ class _GiftPicker extends State<GiftPicker> {
       ),
     ];
 
-    return Stack(
-      children: [
-        Positioned(
-          child: Container(
-            padding: const EdgeInsets.symmetric(),
-            decoration: const BoxDecoration(
-              color: Color(0xFF35332C),
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(15),
-                bottomRight: Radius.circular(15),
-              ),
-            ),
-            child: Wrap(
-              runSpacing: 8.0,
-              children: List.generate(gifts.length, (index) {
-                return GestureDetector(
-                  onTap: () => _onGiftTap(gifts[index]),
-                  child: SizedBox(
-                    width: screenWidth / 6,
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Image.asset(
-                          width: 21,
-                          height: 16,
-                          gifts[index].headIcon,
-                          fit: BoxFit.contain,
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          gifts[index].label, // Nom du gift
-                          style: const TextStyle(
-                            fontSize: 10,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              '${gifts[index].bzcNumber}', // Nombre de bzc
-                              style: const TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
-                              ),
-                            ),
-                            Image.asset(
-                              width: 15,
-                              height: 13,
-                              gifts[index].bzcIcon,
-                              fit: BoxFit.contain,
-                            ),
-                          ],
-                        ),
-                      ],
+    return Container(
+      width: double.infinity,
+      decoration: const BoxDecoration(
+        color: Color(0xFF35332C),
+        borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(15),
+          bottomRight: Radius.circular(15),
+        ),
+      ),
+      child: Wrap(
+        runSpacing: 8.0,
+        children: List.generate(gifts.length, (index) {
+          return GestureDetector(
+            onTap: () => _onGiftTap(gifts[index]),
+            child: SizedBox(
+              width: screenWidth / 6,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Image.asset(
+                    width: 21,
+                    height: 16,
+                    gifts[index].headIcon,
+                    fit: BoxFit.contain,
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    gifts[index].label, // Nom du gift
+                    style: const TextStyle(
+                      fontSize: 10,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
                     ),
                   ),
-                );
-              }),
+                  const SizedBox(height: 2),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        '${gifts[index].bzcNumber}', // Nombre de bzc
+                        style: const TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Image.asset(
+                        width: 15,
+                        height: 13,
+                        gifts[index].bzcIcon,
+                        fit: BoxFit.contain,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
-          ),
-        ),
-      ],
+          );
+        }),
+      ),
     );
   }
 }
