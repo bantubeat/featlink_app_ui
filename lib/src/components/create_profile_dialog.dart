@@ -65,9 +65,7 @@ class CreateProfileDialog extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(
-            height: 10,
-          ),
+          const SizedBox(height: 10),
           FittedBox(
             child: Text(
               '$description2',
@@ -78,9 +76,7 @@ class CreateProfileDialog extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(
-            height: 10,
-          ),
+          const SizedBox(height: 10),
         ],
       ),
       actions: [
