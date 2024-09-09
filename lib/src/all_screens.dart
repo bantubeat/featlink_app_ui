@@ -20,6 +20,7 @@ import 'screens/_edit_profile/edit_user_profile_accroche_screen/edit_user_profil
 import 'screens/_swipe/crush_screen/crush_screen.dart';
 import 'screens/_discovery/discovery_search_1_screen/discovery_search_1_screen.dart';
 import 'screens/_discovery/discovery_search_2_screen/discovery_search_2_screen.dart';
+import 'screens/_edit_profile/edit_profile_user_side_screen/edit_profile_user_side_screen.dart';
 import 'screens/_settings/unsubscribe_screen.dart';
 import 'screens/_settings/private_mode_settings_screen.dart';
 import 'screens/_settings/main_settings_screen.dart';
@@ -108,6 +109,7 @@ final Map<String, Widget Function()> allScreens = {
   'discovery_blur_screen.dart': () => const DiscoveryBlurScreen(),
   'chat_message_list_screen.dart': () => const ChatMessageListScreen(),
   'profile_visitor_view_screen.dart': () => const ProfileVisitorViewScreen(),
+  'edit_profile_user_side_screen.dart': () => EditProfileUserSideScreen(),
   'access_featlink_outsite_africa_screen.dart': () =>
       const AccessFeatlinkOutsiteAfricaScreen(),
   'featlink_without_limits_offre_91_screen.dart': () =>

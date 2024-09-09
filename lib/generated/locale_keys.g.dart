@@ -692,6 +692,46 @@ abstract class  LocaleKeys {
       'profile_visitor_view_screen.about';
   static const profile_visitor_view_screen_interests =
       'profile_visitor_view_screen.interests';
+  static const edit_profile_user_side_screen_data =
+      'edit_profile_user_side_screen.data';
+  static const edit_profile_user_side_screen_hooks =
+      'edit_profile_user_side_screen.hooks';
+  static const edit_profile_user_side_screen_interests =
+      'edit_profile_user_side_screen.interests';
+  static const edit_profile_user_side_screen_save =
+      'edit_profile_user_side_screen.save';
+  static const edit_profile_user_side_screen_city =
+      'edit_profile_user_side_screen.city';
+  static const edit_profile_user_side_screen_height =
+      'edit_profile_user_side_screen.height';
+  static const edit_profile_user_side_screen_weight =
+      'edit_profile_user_side_screen.weight';
+  static const edit_profile_user_side_screen_children =
+      'edit_profile_user_side_screen.children';
+  static const edit_profile_user_side_screen_smoking =
+      'edit_profile_user_side_screen.smoking';
+  static const edit_profile_user_side_screen_alcohol =
+      'edit_profile_user_side_screen.alcohol';
+  static const edit_profile_user_side_screen_search =
+      'edit_profile_user_side_screen.search';
+  static const edit_profile_user_side_screen_diploma =
+      'edit_profile_user_side_screen.diploma';
+  static const edit_profile_user_side_screen_living =
+      'edit_profile_user_side_screen.living';
+  static const edit_profile_user_side_screen_sexual_preference =
+      'edit_profile_user_side_screen.sexual_preference';
+  static const edit_profile_user_side_screen_ethnic_type =
+      'edit_profile_user_side_screen.ethnic_type';
+  static const edit_profile_user_side_screen_religion =
+      'edit_profile_user_side_screen.religion';
+  static const edit_profile_user_side_screen_gender_male =
+      'edit_profile_user_side_screen.gender_male';
+  static const edit_profile_user_side_screen_gender_female =
+      'edit_profile_user_side_screen.gender_female';
+  static const edit_profile_user_side_screen_chose_option =
+      'edit_profile_user_side_screen.chose_option';
+  static const edit_profile_user_side_screen_mask_option =
+      'edit_profile_user_side_screen.mask_option';
   static const fullscreen_modal_acces_afrique_limitless_experience =
       'fullscreen_modal_acces_afrique.limitless_experience';
   static const fullscreen_modal_acces_afrique_choose_access =
@@ -840,7 +880,6 @@ abstract class  LocaleKeys {
       'featlink_without_limits_screen.percentage_text';
   static const featlink_without_limits_screen_discount_text =
       'featlink_without_limits_screen.discount_text';
-
 
   static const discoverys_first_day_screen_header_message =
       'discoverys_first_day_screen.header_message';
