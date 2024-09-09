@@ -1,4 +1,6 @@
 import 'package:featlink_app/src/screens/_create_profile/create_profile_step_110_screen.dart';
+import 'package:featlink_app/src/screens/_swipe/swipezone_full_screen_modal_screen/swipezone_full_screen_modal_screen.dart';
+import 'package:featlink_app/src/screens/swipe_zone_screen/swipe_zone_screen.dart';
 import 'package:featlink_app/src/screens/conversation_screen/conversation_screen.dart';
 import 'package:featlink_app/src/screens/user_side_profile_screen/user_side_profile_screen.dart';
 import 'package:featlink_app/src/screens/_edit_profile/edit_profile_interet_screen.dart';
@@ -28,6 +30,7 @@ import 'screens/_swipe/featlink_without_limits_screen/featlink_without_limits_of
 import 'screens/_swipe/featlink_without_limits_screen/featlink_without_limits_offre_92_screen.dart';
 import 'screens/_swipe/featlink_without_limits_screen/featlink_without_limits_offre_93_screen.dart';
 import 'screens/_swipe/filter_screen/filter_screen.dart';
+import 'screens/_swipe/modal_swipepay_screen.dart';
 import 'screens/welcome2_screen/welcome2_screen.dart';
 import 'screens/welcome_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o1_screen.dart';
@@ -85,6 +88,7 @@ final Map<String, Widget Function()> allScreens = {
 
   'notifications_screen.dart': () => const NotificationsScreen(),
   'filter_screen.dart': () => const FilterScreen(),
+  'swipe_zone_screen.dart': () => const SwipeZoneScreen(),
   'crush_screen.dart': () => const CrushScreen(),
   'edit_user_profile_accroche_screen.dart': () =>
       const EditUserProfileAccrocheScreen(),
@@ -112,10 +116,18 @@ final Map<String, Widget Function()> allScreens = {
       const FeatlinkWithoutLimitsOffre92Screen(),
   'featlink_without_limits_offre_93_screen.dart': () =>
       const FeatlinkWithoutLimitsOffre93Screen(),
+  'discoverys_first_day_screen.dart': () =>
+      const FeatlinkWithoutLimitsOffre93Screen(),
   'pub_d_day_blue_screen.dart': () => const PubDDayBlueScreen(),
   'pub_d_day_violet_screen.dart': () => const PubDDayVioletScreen(),
   'discovery_in_you_city_screen.dart': () => const DiscoveryInYouCityScreen(),
+
   'publish_a_d_day_screen.dart': () => const PublishADDayScreen(),
+
+  'swipezone_full_screen_modal_screen.dart': () =>
+      const SwipezoneFullScreenModalScreen(),
+  'modal_swipepay_screen.dart': () => ModalSwipepayScreen(),
+
 
   // Ajoutez d'autres chemins de fichiers ici
 };
