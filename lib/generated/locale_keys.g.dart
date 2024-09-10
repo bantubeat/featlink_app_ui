@@ -6,6 +6,13 @@ abstract class LocaleKeys {
   static const common_gender_male = 'common.gender_male';
   static const common_gender_female = 'common.gender_female';
   static const common_gender_other = 'common.gender_other';
+  static const common_access_duration_hour = 'common.access_duration_hour';
+  static const common_access_hour = 'common.access_hour';
+  static const common_access_duration_days = 'common.access_duration_days';
+  static const common_access_duration_month = 'common.access_duration_month';
+  static const common_access = 'common.access';
+  static const common_active = 'common.active';
+  static const common_expiresAt = 'common.expiresAt';
   static const welcome_screen_greeting = 'welcome_screen.greeting';
   static const welcome_screen_on_the_world_coolest_chat =
       'welcome_screen.on_the_world_coolest_chat';
@@ -991,4 +998,14 @@ abstract class LocaleKeys {
       'modal_swipepay_screen.buy_chips';
   static const modal_swipepay_screen_continue =
       'modal_swipepay_screen.continue';
+  static const subscription_page_screen_current_scription =
+      'subscription_page_screen.current_scription';
+  static const subscription_page_screen_migrate_to =
+      'subscription_page_screen.migrate_to';
+  static const subscription_page_screen_beatzcoin_amount =
+      'subscription_page_screen.beatzcoin_amount';
+  static const subscription_page_screen_buy_chips =
+      'subscription_page_screen.buy_chips';
+  static const subscription_page_screen_cash_your_chips =
+      'subscription_page_screen.cash_your_chips';
 }
