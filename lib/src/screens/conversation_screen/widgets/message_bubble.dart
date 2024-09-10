@@ -12,6 +12,7 @@ class MessageBubble extends StatelessWidget {
   final String time;
   final bool? file;
   final bool? isVideo;
+  final Image? gift;
 
   const MessageBubble({
     required this.message,
@@ -19,6 +20,7 @@ class MessageBubble extends StatelessWidget {
     required this.time,
     this.file,
     this.isVideo,
+    this.gift,
     super.key,
   });
 
@@ -103,33 +105,89 @@ class MessageBubble extends StatelessWidget {
                       constraints: BoxConstraints(
                         maxWidth: MediaQuery.of(context).size.width * 0.7,
                       ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          if (file != null && isVideo != null && isVideo!)
-                            const Padding(
-                              padding: EdgeInsets.only(bottom: 5.0),
-                              child: SizedBox(
-                                height: 250,
-                                child: VideoWidget(),
-                              ),
+                      child: isSentByMe
+                          ? Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                if (file != null && isVideo != null && isVideo!)
+                                  const Padding(
+                                    padding: EdgeInsets.only(bottom: 5.0),
+                                    child: SizedBox(
+                                      height: 250,
+                                      child: VideoWidget(),
+                                    ),
+                                  )
+                                else if (file != null &&
+                                    isVideo != null &&
+                                    !isVideo!)
+                                  Image.asset(
+                                    width:
+                                        MediaQuery.of(context).size.width * .7,
+                                    AppAssets.imagesTmpChatImg,
+                                    fit: BoxFit.cover,
+                                  ),
+                                Row(
+                                  children: [
+                                    Flexible(
+                                      child: Text(
+                                        message,
+                                        style: TextStyle(
+                                          color: isSentByMe
+                                              ? AppColors.myWhite
+                                              : AppColors.myDark,
+                                        ),
+                                      ),
+                                    ),
+                                    if (gift != null)
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(),
+                                        child: gift!,
+                                      ),
+                                  ],
+                                ),
+                              ],
                             )
-                          else if (file != null && isVideo != null && !isVideo!)
-                            Image.asset(
-                              width: MediaQuery.of(context).size.width * .7,
-                              AppAssets.imagesTmpChatImg,
-                              fit: BoxFit.cover,
+                          : Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                if (file != null && isVideo != null && isVideo!)
+                                  const Padding(
+                                    padding: EdgeInsets.only(bottom: 5.0),
+                                    child: SizedBox(
+                                      height: 250,
+                                      child: VideoWidget(),
+                                    ),
+                                  )
+                                else if (file != null &&
+                                    isVideo != null &&
+                                    !isVideo!)
+                                  Image.asset(
+                                    width:
+                                        MediaQuery.of(context).size.width * .7,
+                                    AppAssets.imagesTmpChatImg,
+                                    fit: BoxFit.cover,
+                                  ),
+                                Row(
+                                  children: [
+                                    if (gift != null)
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(),
+                                        child: gift!,
+                                      ),
+                                    Flexible(
+                                      child: Text(
+                                        message,
+                                        style: TextStyle(
+                                          color: isSentByMe
+                                              ? AppColors.myWhite
+                                              : AppColors.myDark,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ],
                             ),
-                          Text(
-                            message,
-                            style: TextStyle(
-                              color: isSentByMe
-                                  ? AppColors.myWhite
-                                  : AppColors.myDark,
-                            ),
-                          ),
-                        ],
-                      ),
                     ),
                   ),
                   Padding(

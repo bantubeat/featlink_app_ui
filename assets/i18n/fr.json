@@ -112,7 +112,8 @@
         "title_promotion_section": "Faites votre promotion.",
         "content_promotion_section": "Featlink fait partie du réseau Bantubeat. vous cherchez l'amour mais vous pouvez également trouver de belles relations professionnelles et amicales. mettez de belles photos de vous car grâce a notre principe du swipespay vous pourriez gagnez des Beatzcoins pour vos belles photos.",
         "title_nice_user_section": "Soyez sympa avec les autres utilisateurs.",
-        "content_nice_user_section": "derrière certains messages se cachent des beatzcoins, plus vous répondrez aux autres utilisateurs, plus vous avez des chances de gagner plus de beatzcoins."
+        "content_nice_user_section": "derrière certains messages se cachent des beatzcoins, plus vous répondrez aux autres utilisateurs, plus vous avez des chances de gagner plus de beatzcoins.",
+        "caution": "Attention si vous violez une des règles qui régissent l’ensemble du réseau bantubeat, votre profil sera bloqué, voir supprimé sur toutes les applications du réseau bantubeat."
     },
     "create_profile_step_1o5_screen": {
         "title": "Votre Accroche",
@@ -245,6 +246,13 @@
         "marriage": "Mariage",
         "friendship": "Amitié",
         "professional_relationship": "Relation professionnelle"
+    },
+    "swipes_zone_screen": {
+        "error_image": "Une erreur est survenue lors du chargement de l'image",
+        "user_name": "Mariane, 29",
+        "user_description": "Le respect et la compréhension",
+        "app_bar_title": "Featlink-Chat",
+        "swipe_finished": "Swipe Finished"
     },
     "crush_screen": {
         "bzc_solde": "Solde BZC",
@@ -507,6 +515,28 @@
         "about": "A propos",
         "interests": "Intérêts"
     },
+    "edit_profile_user_side_screen": {
+        "data": "Données",
+        "hooks": "Accroches",
+        "interests": "Intérêts",
+        "save": "Enregistrer",
+        "city": "Ville",
+        "height": "Taille",
+        "weight": "Poids",
+        "children": "Enfants",
+        "smoking": "Cigarette",
+        "alcohol": "Alcool",
+        "search": "Recherche",
+        "diploma": "Diplôme",
+        "living": "Vie",
+        "sexual_preference": "Préf.Sexuel",
+        "ethnic_type": "Type Ethnique",
+        "religion": "Réligion",
+        "gender_male": "Homme",
+        "gender_female": "Femme",
+        "chose_option": "Sélectionnez une option",
+        "mask_option": "Ne pas afficher sur mon profil"
+    },
     "fullscreen_modal_acces_afrique": {
         "limitless_experience": "Sans limite, sans restriction, va encore plus en profondeur de l’expérience featlink avec un accès",
         "choose_access": "Choisir un accès Featlink",
@@ -550,6 +580,14 @@
         "access": "ACCÈS",
         "active": "ACTIVER"
     },
+    "modal_swipezone_promotionals": {
+        "oups": "OUPSSSS",
+        "congratulation": "FELICITATION",
+        "successfull_have_token": "Vous avez obtenu des jetons, maintenant profiter de featlink",
+        "fails_have_token": "Vous avez déjà bénéficié d’une offre gratuite ce trimestre.\nAcheter des jetons pour continuer à profiter des fonctionnalités premium",
+        "buy_chips": "Acheter des Jetons",
+        "active_button": "Acheter un accès"
+    },
     "access_featlink_outsite_africa_screen": {
         "access_expiration": "Votre accès featlink expire dans",
         "buy_access": "Payer un accès",
@@ -585,6 +623,13 @@
         "percentage_text": "100%",
         "discount_text": "Discount"
     },
+    "discoverys_first_day_screen": {
+        "header_message": "Découvre qui s’est inscrit aujourd’hui et soit le premier à dire bonjour",
+        "new_users_message": "Les nouveaux utilisateurs",
+        "button_text": "Découvrir",
+        "bottom_text": "1er jour",
+        "connect_with": "Se Connecter avec {}"
+    },
     "pub_d_day_blue_screen": {
         "header_message": "Tu as 99% de chance d’avoir un rendez-vous aujourd’hui en publiant un D-DAY",
         "subheader_message": "Consulte les envies de la communauté",
@@ -602,5 +647,47 @@
         "subheader_message": "Trouve l’amour près de toi, grâce à notre filtre Dans ta ville",
         "button_text": "Découvrir",
         "bottom_text": "Dans ta Ville"
+    },
+    "publish_a_d_day_screen": {
+        "express_your_dday": "Exprimes ton D-DAY",
+        "describe_your_desire": "Décris en une phrase ton envie.",
+        "write_your_dday": "écris ton D-Day",
+        "max_50_characters": "50 caractères maximum",
+        "choose_dday_date": "Choisir le jour du D-Day",
+        "today": "Aujourd’hui",
+        "calendar": "Calendrier",
+        "dday_deletion_warning": "ton D-day sera supprimé à la fin du temps.",
+        "add_image": "Vous pouvez ajouter une image qui représente votre idée de D-DAY, à défaut votre photo de profil sera utilisée.",
+        "add": "Ajouter",
+        "publish": "Publier"
+    },
+    "gift_picker": {
+        "crown": "Couronne",
+        "banana": "Banane",
+        "heart": "Coeur",
+        "rose": "Rose",
+        "star": "Etoile",
+        "bird": "Oiseau",
+        "dragon": "Dragon",
+        "fish": "Poisson",
+        "cat": "Chat",
+        "dog": "Chien",
+        "trophy": "Trophée",
+        "colombe": "Colombe",
+        "cake": "Gateau",
+        "lion": "Lion",
+        "gold_bullion": "Lingot d’or",
+        "diamond": "Diamant",
+        "unicorn": "Licorne",
+        "djembe": "Djembé"
+    },
+    "modal_swipepay_screen": {
+        "all_free_swipes_used": "Tu as utilisé tous tes free swipes de la journée.",
+        "nothing_serious": "BUT NOTHING SERIOUS",
+        "with_chips": "Avec des Jetons",
+        "continue_to_Liker": "Tu peux continuer à Liker",
+        "amount": "Votre solde Jetons",
+        "buy_chips": "Acheter des Jetons",
+        "continue": "Continuer"
     }
 }

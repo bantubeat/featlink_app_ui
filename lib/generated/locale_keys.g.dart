@@ -147,6 +147,8 @@ abstract class LocaleKeys {
       'create_profile_step_2o2_screen.title_nice_user_section';
   static const create_profile_step_2o2_screen_content_nice_user_section =
       'create_profile_step_2o2_screen.content_nice_user_section';
+  static const create_profile_step_2o2_screen_caution =
+      'create_profile_step_2o2_screen.caution';
   static const create_profile_step_1o5_screen_title =
       'create_profile_step_1o5_screen.title';
   static const create_profile_step_1o5_screen_description =
@@ -340,6 +342,15 @@ abstract class LocaleKeys {
   static const filter_screen_friendship = 'filter_screen.friendship';
   static const filter_screen_professional_relationship =
       'filter_screen.professional_relationship';
+  static const swipes_zone_screen_error_image =
+      'swipes_zone_screen.error_image';
+  static const swipes_zone_screen_user_name = 'swipes_zone_screen.user_name';
+  static const swipes_zone_screen_user_description =
+      'swipes_zone_screen.user_description';
+  static const swipes_zone_screen_app_bar_title =
+      'swipes_zone_screen.app_bar_title';
+  static const swipes_zone_screen_swipe_finished =
+      'swipes_zone_screen.swipe_finished';
   static const crush_screen_bzc_solde = 'crush_screen.bzc_solde';
   static const crush_screen_bzc_echange = 'crush_screen.bzc_echange';
   static const crush_screen_bay_bzc = 'crush_screen.bay_bzc';
@@ -707,6 +718,46 @@ abstract class LocaleKeys {
       'profile_visitor_view_screen.about';
   static const profile_visitor_view_screen_interests =
       'profile_visitor_view_screen.interests';
+  static const edit_profile_user_side_screen_data =
+      'edit_profile_user_side_screen.data';
+  static const edit_profile_user_side_screen_hooks =
+      'edit_profile_user_side_screen.hooks';
+  static const edit_profile_user_side_screen_interests =
+      'edit_profile_user_side_screen.interests';
+  static const edit_profile_user_side_screen_save =
+      'edit_profile_user_side_screen.save';
+  static const edit_profile_user_side_screen_city =
+      'edit_profile_user_side_screen.city';
+  static const edit_profile_user_side_screen_height =
+      'edit_profile_user_side_screen.height';
+  static const edit_profile_user_side_screen_weight =
+      'edit_profile_user_side_screen.weight';
+  static const edit_profile_user_side_screen_children =
+      'edit_profile_user_side_screen.children';
+  static const edit_profile_user_side_screen_smoking =
+      'edit_profile_user_side_screen.smoking';
+  static const edit_profile_user_side_screen_alcohol =
+      'edit_profile_user_side_screen.alcohol';
+  static const edit_profile_user_side_screen_search =
+      'edit_profile_user_side_screen.search';
+  static const edit_profile_user_side_screen_diploma =
+      'edit_profile_user_side_screen.diploma';
+  static const edit_profile_user_side_screen_living =
+      'edit_profile_user_side_screen.living';
+  static const edit_profile_user_side_screen_sexual_preference =
+      'edit_profile_user_side_screen.sexual_preference';
+  static const edit_profile_user_side_screen_ethnic_type =
+      'edit_profile_user_side_screen.ethnic_type';
+  static const edit_profile_user_side_screen_religion =
+      'edit_profile_user_side_screen.religion';
+  static const edit_profile_user_side_screen_gender_male =
+      'edit_profile_user_side_screen.gender_male';
+  static const edit_profile_user_side_screen_gender_female =
+      'edit_profile_user_side_screen.gender_female';
+  static const edit_profile_user_side_screen_chose_option =
+      'edit_profile_user_side_screen.chose_option';
+  static const edit_profile_user_side_screen_mask_option =
+      'edit_profile_user_side_screen.mask_option';
   static const fullscreen_modal_acces_afrique_limitless_experience =
       'fullscreen_modal_acces_afrique.limitless_experience';
   static const fullscreen_modal_acces_afrique_choose_access =
@@ -781,6 +832,18 @@ abstract class LocaleKeys {
       'swipezone_full_screen_modal_screen.access';
   static const swipezone_full_screen_modal_screen_active =
       'swipezone_full_screen_modal_screen.active';
+  static const modal_swipezone_promotionals_oups =
+      'modal_swipezone_promotionals.oups';
+  static const modal_swipezone_promotionals_congratulation =
+      'modal_swipezone_promotionals.congratulation';
+  static const modal_swipezone_promotionals_successfull_have_token =
+      'modal_swipezone_promotionals.successfull_have_token';
+  static const modal_swipezone_promotionals_fails_have_token =
+      'modal_swipezone_promotionals.fails_have_token';
+  static const modal_swipezone_promotionals_buy_chips =
+      'modal_swipezone_promotionals.buy_chips';
+  static const modal_swipezone_promotionals_active_button =
+      'modal_swipezone_promotionals.active_button';
   static const access_featlink_outsite_africa_screen_access_expiration =
       'access_featlink_outsite_africa_screen.access_expiration';
   static const access_featlink_outsite_africa_screen_buy_access =
@@ -843,6 +906,16 @@ abstract class LocaleKeys {
       'featlink_without_limits_screen.percentage_text';
   static const featlink_without_limits_screen_discount_text =
       'featlink_without_limits_screen.discount_text';
+  static const discoverys_first_day_screen_header_message =
+      'discoverys_first_day_screen.header_message';
+  static const discoverys_first_day_screen_new_users_message =
+      'discoverys_first_day_screen.new_users_message';
+  static const discoverys_first_day_screen_button_text =
+      'discoverys_first_day_screen.button_text';
+  static const discoverys_first_day_screen_bottom_text =
+      'discoverys_first_day_screen.bottom_text';
+  static const discoverys_first_day_screen_connect_with =
+      'discoverys_first_day_screen.connect_with';
   static const pub_d_day_blue_screen_header_message =
       'pub_d_day_blue_screen.header_message';
   static const pub_d_day_blue_screen_subheader_message =
@@ -867,4 +940,55 @@ abstract class LocaleKeys {
       'discovery_in_you_city_screen.button_text';
   static const discovery_in_you_city_screen_bottom_text =
       'discovery_in_you_city_screen.bottom_text';
+  static const publish_a_d_day_screen_express_your_dday =
+      'publish_a_d_day_screen.express_your_dday';
+  static const publish_a_d_day_screen_describe_your_desire =
+      'publish_a_d_day_screen.describe_your_desire';
+  static const publish_a_d_day_screen_write_your_dday =
+      'publish_a_d_day_screen.write_your_dday';
+  static const publish_a_d_day_screen_max_50_characters =
+      'publish_a_d_day_screen.max_50_characters';
+  static const publish_a_d_day_screen_choose_dday_date =
+      'publish_a_d_day_screen.choose_dday_date';
+  static const publish_a_d_day_screen_today = 'publish_a_d_day_screen.today';
+  static const publish_a_d_day_screen_calendar =
+      'publish_a_d_day_screen.calendar';
+  static const publish_a_d_day_screen_dday_deletion_warning =
+      'publish_a_d_day_screen.dday_deletion_warning';
+  static const publish_a_d_day_screen_add_image =
+      'publish_a_d_day_screen.add_image';
+  static const publish_a_d_day_screen_add = 'publish_a_d_day_screen.add';
+  static const publish_a_d_day_screen_publish =
+      'publish_a_d_day_screen.publish';
+  static const gift_picker_crown = 'gift_picker.crown';
+  static const gift_picker_banana = 'gift_picker.banana';
+  static const gift_picker_heart = 'gift_picker.heart';
+  static const gift_picker_rose = 'gift_picker.rose';
+  static const gift_picker_star = 'gift_picker.star';
+  static const gift_picker_bird = 'gift_picker.bird';
+  static const gift_picker_dragon = 'gift_picker.dragon';
+  static const gift_picker_fish = 'gift_picker.fish';
+  static const gift_picker_cat = 'gift_picker.cat';
+  static const gift_picker_dog = 'gift_picker.dog';
+  static const gift_picker_trophy = 'gift_picker.trophy';
+  static const gift_picker_colombe = 'gift_picker.colombe';
+  static const gift_picker_cake = 'gift_picker.cake';
+  static const gift_picker_lion = 'gift_picker.lion';
+  static const gift_picker_gold_bullion = 'gift_picker.gold_bullion';
+  static const gift_picker_diamond = 'gift_picker.diamond';
+  static const gift_picker_unicorn = 'gift_picker.unicorn';
+  static const gift_picker_djembe = 'gift_picker.djembe';
+  static const modal_swipepay_screen_all_free_swipes_used =
+      'modal_swipepay_screen.all_free_swipes_used';
+  static const modal_swipepay_screen_nothing_serious =
+      'modal_swipepay_screen.nothing_serious';
+  static const modal_swipepay_screen_with_chips =
+      'modal_swipepay_screen.with_chips';
+  static const modal_swipepay_screen_continue_to_Liker =
+      'modal_swipepay_screen.continue_to_Liker';
+  static const modal_swipepay_screen_amount = 'modal_swipepay_screen.amount';
+  static const modal_swipepay_screen_buy_chips =
+      'modal_swipepay_screen.buy_chips';
+  static const modal_swipepay_screen_continue =
+      'modal_swipepay_screen.continue';
 }
