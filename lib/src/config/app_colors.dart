@@ -22,4 +22,5 @@ final class AppColors {
   static const myOtherDark = Color(0xFF2B2B2B);
   static const myTextDark = Color(0xFFc5c5c5); // lately #A5A5A5
   static const myTextDarkSoft = Color(0xFF2F2F2F);
+  static const myTextGraySoft = Color(0xFF505965);
 }

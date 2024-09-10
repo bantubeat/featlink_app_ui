@@ -1,23 +1,41 @@
 import 'package:featlink_app/src/screens/_create_profile/create_profile_step_110_screen.dart';
+import 'package:featlink_app/src/screens/_swipe/swipezone_full_screen_modal_screen/swipezone_full_screen_modal_screen.dart';
+import 'package:featlink_app/src/screens/swipe_zone_screen/swipe_zone_screen.dart';
+import 'package:featlink_app/src/screens/conversation_screen/conversation_screen.dart';
 import 'package:featlink_app/src/screens/user_side_profile_screen/user_side_profile_screen.dart';
 import 'package:featlink_app/src/screens/_edit_profile/edit_profile_interet_screen.dart';
 import 'package:featlink_app/src/screens/d_day_zone_screen/d_day_zone_screen.dart';
 import 'package:flutter/material.dart' show Widget;
+import 'screens/_access/access_featlink_outsite_africa_screen/access_featlink_outsite_africa_screen.dart';
+
+import 'screens/_chat_messages/chat_message_list_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o2_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o5_screen.dart';
 import 'screens/_create_profile/create_profile_step_2o2_screen/create_profile_step_2o2_screen.dart';
+import 'screens/_d-day/pub_d_day_blue_screen/pub_d_day_blue_screen.dart';
+import 'screens/_d-day/pub_d_day_violet_screen/pub_d_day_violet_screen.dart';
+import 'screens/_d-day/publish_a_d_day_screen/publish_a_d_day_screen.dart';
+import 'screens/_discovery/discovery_in_you_city_screen/discovery_in_you_city_screen.dart';
+import 'screens/_edit_profile/edit_user_profile_accroche_screen/edit_user_profile_accroche_screen.dart';
+import 'screens/_swipe/crush_screen/crush_screen.dart';
 import 'screens/_discovery/discovery_search_1_screen/discovery_search_1_screen.dart';
 import 'screens/_discovery/discovery_search_2_screen/discovery_search_2_screen.dart';
 import 'screens/_free_coins/free_coins_green_screen.dart';
 import 'screens/_free_coins/free_coins_red_screen.dart';
 import 'screens/_free_coins/free_coins_yellow_screen.dart';
+import 'screens/_edit_profile/edit_profile_user_side_screen/edit_profile_user_side_screen.dart';
 import 'screens/_settings/unsubscribe_screen.dart';
 import 'screens/_settings/private_mode_settings_screen.dart';
 import 'screens/_settings/main_settings_screen.dart';
 import 'screens/_discovery/discovery_blur_screen.dart';
 import 'screens/_discovery/discovery_first_day_screen.dart';
 import 'screens/_discovery/discovery_in_my_city_screen.dart';
+import 'screens/_swipe/featlink_without_limits_screen/featlink_without_limits_offre_91_screen.dart';
+import 'screens/_swipe/featlink_without_limits_screen/featlink_without_limits_offre_92_screen.dart';
+import 'screens/_swipe/featlink_without_limits_screen/featlink_without_limits_offre_93_screen.dart';
+import 'screens/_subscription/subscription_page_screen.dart';
 import 'screens/_swipe/filter_screen/filter_screen.dart';
+import 'screens/_swipe/modal_swipepay_screen.dart';
 import 'screens/welcome2_screen/welcome2_screen.dart';
 import 'screens/welcome_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o1_screen.dart';
@@ -75,6 +93,11 @@ final Map<String, Widget Function()> allScreens = {
 
   'notifications_screen.dart': () => const NotificationsScreen(),
   'filter_screen.dart': () => const FilterScreen(),
+  'swipe_zone_screen.dart': () => const SwipeZoneScreen(),
+  'crush_screen.dart': () => const CrushScreen(),
+  'edit_user_profile_accroche_screen.dart': () =>
+      const EditUserProfileAccrocheScreen(),
+  'conversation_screen.dart': () => const ConversationScreen(),
 
   'user_side_profile_screen.dart': () => const UserSideProfileScreen(),
 
@@ -82,17 +105,39 @@ final Map<String, Widget Function()> allScreens = {
   'discovery_search_1_screen.dart': () => const DiscoverySearch1Screen(),
   'discovery_search_2_screen.dart': () => const DiscoverySearch2Screen(),
   'edit_profile_interet_screen.dart': () => EditProfileInteretScreen(),
-
   'd_day_zone_screen.dart': () => const DDayZoneScreen(),
   'private_mode_settings_screen.dart': () => const PrivateModeSettingsScreen(),
   'main_settings_screen.dart': () => const MainSettingsScreen(),
   'discovery_in_my_city_screen.dart': () => const DiscoveryInMyCityScreen(),
   'discovery_first_day_screen.dart': () => const DiscoveryFirstDayScreen(),
   'discovery_blur_screen.dart': () => const DiscoveryBlurScreen(),
+  'chat_message_list_screen.dart': () => const ChatMessageListScreen(),
   'profile_visitor_view_screen.dart': () => const ProfileVisitorViewScreen(),
   'free_coins_green_screen.dart': () => const FreeCoinsGreenScreen(),
   'free_coins_red_screen.dart': () => const FreeCoinsRedScreen(),
   'free_coins_yellow_screen.dart': () => const FreeCoinsYellowScreen(),
+  'edit_profile_user_side_screen.dart': () => EditProfileUserSideScreen(),
+  'access_featlink_outsite_africa_screen.dart': () =>
+      const AccessFeatlinkOutsiteAfricaScreen(),
+  'featlink_without_limits_offre_91_screen.dart': () =>
+      const FeatlinkWithoutLimitsOffre91Screen(),
+  'featlink_without_limits_offre_92_screen.dart': () =>
+      const FeatlinkWithoutLimitsOffre92Screen(),
+  'featlink_without_limits_offre_93_screen.dart': () =>
+      const FeatlinkWithoutLimitsOffre93Screen(),
+  'discoverys_first_day_screen.dart': () =>
+      const FeatlinkWithoutLimitsOffre93Screen(),
+  'pub_d_day_blue_screen.dart': () => const PubDDayBlueScreen(),
+  'pub_d_day_violet_screen.dart': () => const PubDDayVioletScreen(),
+  'discovery_in_you_city_screen.dart': () => const DiscoveryInYouCityScreen(),
+
+  'publish_a_d_day_screen.dart': () => const PublishADDayScreen(),
+
+  'swipezone_full_screen_modal_screen.dart': () =>
+      const SwipezoneFullScreenModalScreen(),
+  'modal_swipepay_screen.dart': () => ModalSwipepayScreen(),
+
+  'subscription_page_screen.dart': () => SubscriptionPageScreen(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };
