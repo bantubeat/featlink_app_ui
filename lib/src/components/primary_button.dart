@@ -5,15 +5,18 @@ import 'button.dart';
 class PrimaryButton extends Button {
   final String text;
   final Color color;
+  final FontWeight? fontWeight;
 
   const PrimaryButton({
     required this.text,
     required super.onPressed,
     this.color = Colors.white,
+    this.fontWeight = FontWeight.normal,
     super.fontSize,
     super.isLoading,
     super.disabled,
     super.fixedSize,
+    super.elevation,
     super.backgroundColor = AppColors.primary,
     super.borderWidth = 0,
     super.borderColor = AppColors.primary,
@@ -27,6 +30,7 @@ class PrimaryButton extends Button {
       style: TextStyle(
         fontSize: fontSize,
         color: color,
+        fontWeight: fontWeight,
       ),
     );
   }
