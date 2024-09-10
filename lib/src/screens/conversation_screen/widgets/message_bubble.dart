@@ -5,6 +5,7 @@ import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_bubble/chat_bubble.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:video_player/video_player.dart';
 
 class MessageBubble extends StatelessWidget {
   final String message;
@@ -234,8 +235,27 @@ class MessageBubble extends StatelessWidget {
   }
 }
 
-class VideoWidget extends StatelessWidget {
+class VideoWidget extends StatefulWidget {
   const VideoWidget({super.key});
+
+  @override
+  State<VideoWidget> createState() => _VideoWidgetState();
+}
+
+class _VideoWidgetState extends State<VideoWidget> {
+  late VideoPlayerController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = VideoPlayerController.networkUrl(
+      Uri.parse(
+        'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
+      ),
+    )..initialize().then((_) {
+        setState(() {});
+      });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -246,9 +266,13 @@ class VideoWidget extends StatelessWidget {
           left: 0,
           right: 0,
           bottom: 0,
-          child: Image.asset(
-            AppAssets.imagesTmpChatImg,
-            fit: BoxFit.cover,
+          child: Center(
+            child: _controller.value.isInitialized
+                ? AspectRatio(
+                    aspectRatio: _controller.value.aspectRatio,
+                    child: VideoPlayer(_controller),
+                  )
+                : Container(),
           ),
         ),
         Positioned(
@@ -283,25 +307,50 @@ class VideoWidget extends StatelessWidget {
                   ],
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 10.0),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Icon(
-                      Icons.play_arrow,
-                      color: Colors.white,
-                      size: 15,
+                    InkWell(
+                      onTap: () {
+                        setState(() {
+                          _controller.value.isPlaying
+                              ? _controller.pause()
+                              : _controller.play();
+                        });
+                      },
+                      child: const Icon(
+                        Icons.play_arrow,
+                        color: Colors.white,
+                        size: 15,
+                      ),
                     ),
-                    Icon(
-                      Icons.volume_down_sharp,
-                      color: Colors.white,
-                      size: 15,
+                    InkWell(
+                      onTap: () {
+                        setState(() {
+                          // _controller.value.
+                        });
+                      },
+                      child: const Icon(
+                        Icons.volume_down_sharp,
+                        color: Colors.white,
+                        size: 15,
+                      ),
                     ),
-                    Icon(
-                      Icons.fullscreen,
-                      color: Colors.white,
-                      size: 15,
+                    InkWell(
+                      onTap: () {
+                        setState(() {
+                          _controller.value.isPlaying
+                              ? _controller.pause()
+                              : _controller.play();
+                        });
+                      },
+                      child: const Icon(
+                        Icons.fullscreen,
+                        color: Colors.white,
+                        size: 15,
+                      ),
                     ),
                   ],
                 ),

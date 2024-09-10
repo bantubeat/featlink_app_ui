@@ -1,11 +1,10 @@
 import 'dart:io';
-
+import 'package:video_player/video_player.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
-import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class VideoWidget extends StatelessWidget {
+class VideoWidget extends StatefulWidget {
   const VideoWidget({
     required this.file,
     required this.onClose,
@@ -13,6 +12,26 @@ class VideoWidget extends StatelessWidget {
   });
   final File file;
   final Function() onClose;
+
+  @override
+  State<VideoWidget> createState() => _VideoWidgetState();
+}
+
+class _VideoWidgetState extends State<VideoWidget> {
+  late VideoPlayerController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = VideoPlayerController.networkUrl(
+      Uri.parse(
+        'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
+      ),
+    )..initialize().then((_) {
+        setState(() {});
+      });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -23,7 +42,7 @@ class VideoWidget extends StatelessWidget {
           child: Container(
             margin: const EdgeInsets.all(10),
             child: GestureDetector(
-              onTap: onClose,
+              onTap: widget.onClose,
               child: const Icon(
                 Icons.close,
                 color: AppColors.myWhite,
@@ -42,20 +61,33 @@ class VideoWidget extends StatelessWidget {
                 left: 20,
                 right: 20,
                 bottom: 0,
-                child: Image.asset(
-                  AppAssets.imagesTmpChatImg,
-                  fit: BoxFit.cover,
+                child: Center(
+                  child: _controller.value.isInitialized
+                      ? AspectRatio(
+                          aspectRatio: _controller.value.aspectRatio,
+                          child: VideoPlayer(_controller),
+                        )
+                      : Container(),
                 ),
               ),
-              const Positioned(
+              Positioned(
                 top: 0,
                 left: 20,
                 right: 20,
                 bottom: 0,
-                child: Icon(
-                  Icons.play_circle_filled_rounded,
-                  color: Colors.white,
-                  size: 80,
+                child: InkWell(
+                  onTap: () {
+                    setState(() {
+                      _controller.value.isPlaying
+                          ? _controller.pause()
+                          : _controller.play();
+                    });
+                  },
+                  child: const Icon(
+                    Icons.play_circle_filled_rounded,
+                    color: Colors.white,
+                    size: 80,
+                  ),
                 ),
               ),
               Positioned(
@@ -90,14 +122,23 @@ class VideoWidget extends StatelessWidget {
                       ],
                     ),
 
-                    const Row(
+                    Row(
                       children: [
-                        Icon(
-                          Icons.play_arrow,
-                          color: Colors.white,
-                          size: 30,
+                        InkWell(
+                          onTap: () {
+                            setState(() {
+                              _controller.value.isPlaying
+                                  ? _controller.pause()
+                                  : _controller.play();
+                            });
+                          },
+                          child: const Icon(
+                            Icons.play_arrow,
+                            color: Colors.white,
+                            size: 30,
+                          ),
                         ),
-                        Icon(
+                        const Icon(
                           Icons.volume_down_sharp,
                           color: Colors.white,
                           size: 30,
