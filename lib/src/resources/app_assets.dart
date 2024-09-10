@@ -56,6 +56,7 @@ final class AppAssets {
   static const salonpriveIcon = 'assets/images/salon_prive_icon.png';
   static const bzcIcon = 'assets/images/bzc_icon.png';
   static const imagesStar = 'assets/images/star.png';
+  static const receiptBgImage = 'assets/images/receipt_bg.png';
 
   static const theddayimagefirst = 'assets/images/danse.jpg';
   static const theddayimagesecond = 'assets/images/boire.jpg';
