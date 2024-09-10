@@ -33,6 +33,7 @@ dependencies:
   url_strategy: ^0.3.0
   flutter_chat_bubble:
   table_calendar: ^3.1.2
+  proste_bezier_curve: ^2.0.2
 
 dev_dependencies:
   flutter_test:
