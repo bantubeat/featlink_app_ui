@@ -130,4 +130,15 @@ final class AppAssets {
       'assets/images/nothing_serious_emoji.png';
   static const imagesModalDisplayTagImage =
       'assets/images/modal_display_tag_image.png';
+
+  static const subscriberProfile = 'assets/images/subscriber_profile_image.png';
+
+  static const imageMedal2 = 'assets/images/medal2.png';
+  static const imagesMedal3 = 'assets/images/medal3.png';
+  static const imagesMedal4 = 'assets/images/medal4.png';
+  static const imagesMedal5 = 'assets/images/medal5.png';
+  static const imagesMedal6 = 'assets/images/medal6.png';
+  static const imagesMedal7 = 'assets/images/medal7.png';
+  static const imagesVip1 = 'assets/images/vip1_image.png';
+  static const imagesVip2 = 'assets/images/vip2_image.png';
 }
