@@ -45,7 +45,18 @@ class YourDDayValidAccessTab extends StatelessWidget {
           Expanded(
             child: Padding(
               padding: const EdgeInsets.all(10.0),
-              child: ListView.builder(
+              child: ListView.separated(
+                separatorBuilder: (context, index) {
+                  return Align(
+                    alignment: Alignment.centerRight,
+                    child: SizedBox(
+                      width: MediaQuery.of(context).size.width * .8,
+                      child: const Divider(
+                        color: Color.fromRGBO(240, 240, 240, 1),
+                      ),
+                    ),
+                  );
+                },
                 itemCount: datas.length,
                 itemBuilder: (context, index) {
                   var prof = datas[index];
