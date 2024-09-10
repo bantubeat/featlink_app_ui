@@ -717,5 +717,13 @@
         "beatzcoin_amount": "Solde Beatzcoin",
         "buy_chips": "Acheter des Jetons",
         "cash_your_chips": "Encaisser vos Jetons"
+
+    },
+    "swipezone_page_match": {
+        "app_bar_title": "Featlink-Chat",
+        "title": "C'est un match,",
+        "description": "Démarrer une conversation maintenant entre vous",
+        "button1": "dit bonjour",
+        "button2": "Fermer"
     }
 }

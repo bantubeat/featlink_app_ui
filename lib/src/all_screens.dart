@@ -1,5 +1,6 @@
 import 'package:featlink_app/src/screens/_create_profile/create_profile_step_110_screen.dart';
 import 'package:featlink_app/src/screens/_swipe/swipezone_full_screen_modal_screen/swipezone_full_screen_modal_screen.dart';
+import 'package:featlink_app/src/screens/_swipe/swipezone_page_match.dart';
 import 'package:featlink_app/src/screens/swipe_zone_screen/swipe_zone_screen.dart';
 import 'package:featlink_app/src/screens/conversation_screen/conversation_screen.dart';
 import 'package:featlink_app/src/screens/user_side_profile_screen/user_side_profile_screen.dart';
@@ -86,9 +87,6 @@ final Map<String, Widget Function()> allScreens = {
   'create_profile_step_2o3_screen.dart': () =>
       const CreateProfileStep2o3Screen(),
 
-  'create_profile_step_110_screen.dart': () =>
-      const CreateProfileStep110Screen(),
-
   'notifications_screen.dart': () => const NotificationsScreen(),
   'filter_screen.dart': () => const FilterScreen(),
   'swipe_zone_screen.dart': () => const SwipeZoneScreen(),
@@ -133,6 +131,8 @@ final Map<String, Widget Function()> allScreens = {
   'modal_swipepay_screen.dart': () => ModalSwipepayScreen(),
 
   'subscription_page_screen.dart': () => SubscriptionPageScreen(),
+
+  'swipezone_page_match_screen.dart': () => const SwipeZonePageMatch(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };

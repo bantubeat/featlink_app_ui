@@ -141,4 +141,5 @@ final class AppAssets {
   static const imagesMedal7 = 'assets/images/medal7.png';
   static const imagesVip1 = 'assets/images/vip1_image.png';
   static const imagesVip2 = 'assets/images/vip2_image.png';
+  static const emojiWipeZoneMatch = 'assets/images/Smiling-Face-With-Hearts.png';
 }
