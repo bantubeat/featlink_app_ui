@@ -21,14 +21,18 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   flutter_svg: ^2.0.10+1
+  flutter_tindercard_plus: ^0.0.2
   flutter_vector_icons: ^2.0.0
   gif_view: ^0.4.4
   google_fonts: ^6.2.1
+  heart_overlay: ^1.4.1
   image_picker: ^1.1.2
+  mockito: ^5.4.4
   path: ^1.9.0
-  smart_select: ^4.3.3
+  smart_select: ^4.2.1
   url_strategy: ^0.3.0
   flutter_chat_bubble:
+  table_calendar: ^3.1.2
 
 dev_dependencies:
   flutter_test:
@@ -47,5 +51,4 @@ flutter:
     - assets/i18n/
     - assets/images/
     - assets/svgs/
-    - assets/svg/
 
