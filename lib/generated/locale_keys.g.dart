@@ -1006,4 +1006,14 @@ abstract class LocaleKeys {
       'subscription_page_screen.buy_chips';
   static const subscription_page_screen_cash_your_chips =
       'subscription_page_screen.cash_your_chips';
+  static const swipe_zone_match_screen_app_bar_title =
+      'swipe_zone_match_screen.app_bar_title';
+  static const swipe_zone_match_screen_match_title =
+      'swipe_zone_match_screen.match_title';
+  static const swipe_zone_match_screen_match_subtitle =
+      'swipe_zone_match_screen.match_subtitle';
+  static const swipe_zone_match_screen_button_say_hello =
+      'swipe_zone_match_screen.button_say_hello';
+  static const swipe_zone_match_screen_button_keep_swiping =
+      'swipe_zone_match_screen.button_keep_swiping';
 }
