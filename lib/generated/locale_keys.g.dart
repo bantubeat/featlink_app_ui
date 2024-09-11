@@ -723,6 +723,76 @@ abstract class LocaleKeys {
       'profile_visitor_view_screen.about';
   static const profile_visitor_view_screen_interests =
       'profile_visitor_view_screen.interests';
+  static const free_coins_green_screen_title = 'free_coins_green_screen.title';
+  static const free_coins_green_screen_coins_capacities =
+      'free_coins_green_screen.coins_capacities';
+  static const free_coins_green_screen_coins_capacity_1 =
+      'free_coins_green_screen.coins_capacity_1';
+  static const free_coins_green_screen_coins_capacity_2 =
+      'free_coins_green_screen.coins_capacity_2';
+  static const free_coins_green_screen_coins_capacity_3 =
+      'free_coins_green_screen.coins_capacity_3';
+  static const free_coins_green_screen_coins_capacity_4 =
+      'free_coins_green_screen.coins_capacity_4';
+  static const free_coins_green_screen_this_offer_not_cumulable =
+      'free_coins_green_screen.this_offer_not_cumulable';
+  static const free_coins_green_screen_virtuals_article_policy_1 =
+      'free_coins_green_screen.virtuals_article_policy_1';
+  static const free_coins_green_screen_virtuals_article_policy_2 =
+      'free_coins_green_screen.virtuals_article_policy_2';
+  static const free_coins_green_screen_virtuals_article_policy_3 =
+      'free_coins_green_screen.virtuals_article_policy_3';
+  static const free_coins_green_screen_get_coins =
+      'free_coins_green_screen.get_coins';
+  static const free_coins_green_screen_coins_capacity_5 =
+      'free_coins_green_screen.coins_capacity_5';
+  static const free_coins_yellow_screen_title =
+      'free_coins_yellow_screen.title';
+  static const free_coins_yellow_screen_coins_capacities =
+      'free_coins_yellow_screen.coins_capacities';
+  static const free_coins_yellow_screen_coins_capacity_1 =
+      'free_coins_yellow_screen.coins_capacity_1';
+  static const free_coins_yellow_screen_coins_capacity_2 =
+      'free_coins_yellow_screen.coins_capacity_2';
+  static const free_coins_yellow_screen_coins_capacity_3 =
+      'free_coins_yellow_screen.coins_capacity_3';
+  static const free_coins_yellow_screen_coins_capacity_4 =
+      'free_coins_yellow_screen.coins_capacity_4';
+  static const free_coins_yellow_screen_this_offer_not_cumulable =
+      'free_coins_yellow_screen.this_offer_not_cumulable';
+  static const free_coins_yellow_screen_virtuals_article_policy_1 =
+      'free_coins_yellow_screen.virtuals_article_policy_1';
+  static const free_coins_yellow_screen_virtuals_article_policy_2 =
+      'free_coins_yellow_screen.virtuals_article_policy_2';
+  static const free_coins_yellow_screen_virtuals_article_policy_3 =
+      'free_coins_yellow_screen.virtuals_article_policy_3';
+  static const free_coins_yellow_screen_get_coins =
+      'free_coins_yellow_screen.get_coins';
+  static const free_coins_yellow_screen_coins_capacity_5 =
+      'free_coins_yellow_screen.coins_capacity_5';
+  static const free_coins_red_screen_title = 'free_coins_red_screen.title';
+  static const free_coins_red_screen_coins_capacities =
+      'free_coins_red_screen.coins_capacities';
+  static const free_coins_red_screen_coins_capacity_1 =
+      'free_coins_red_screen.coins_capacity_1';
+  static const free_coins_red_screen_coins_capacity_2 =
+      'free_coins_red_screen.coins_capacity_2';
+  static const free_coins_red_screen_coins_capacity_3 =
+      'free_coins_red_screen.coins_capacity_3';
+  static const free_coins_red_screen_coins_capacity_4 =
+      'free_coins_red_screen.coins_capacity_4';
+  static const free_coins_red_screen_this_offer_not_cumulable =
+      'free_coins_red_screen.this_offer_not_cumulable';
+  static const free_coins_red_screen_virtuals_article_policy_1 =
+      'free_coins_red_screen.virtuals_article_policy_1';
+  static const free_coins_red_screen_virtuals_article_policy_2 =
+      'free_coins_red_screen.virtuals_article_policy_2';
+  static const free_coins_red_screen_virtuals_article_policy_3 =
+      'free_coins_red_screen.virtuals_article_policy_3';
+  static const free_coins_red_screen_get_coins =
+      'free_coins_red_screen.get_coins';
+  static const free_coins_red_screen_coins_capacity_5 =
+      'free_coins_red_screen.coins_capacity_5';
   static const edit_profile_user_side_screen_data =
       'edit_profile_user_side_screen.data';
   static const edit_profile_user_side_screen_hooks =

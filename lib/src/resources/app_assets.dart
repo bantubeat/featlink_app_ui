@@ -75,6 +75,7 @@ final class AppAssets {
   static const imgTmp5 = 'assets/images/tmp5.png';
   static const imgTmp6 = 'assets/images/tmp6.png';
   static const imagesStar = 'assets/images/star.png';
+  static const receiptBgImage = 'assets/images/receipt_bg.png';
 
   static const theddayimagefirst = 'assets/images/danse.jpg';
   static const theddayimagesecond = 'assets/images/boire.jpg';

@@ -536,6 +536,48 @@
         "about": "A propos",
         "interests": "Intérêts"
     },
+    "free_coins_green_screen": {
+        "title": "JETONS GRATUIT",
+        "coins_capacities": "Grâce aux jetons tu peux...",
+        "coins_capacity_1": "Payer des accès Featlink",
+        "coins_capacity_2": "Avoir des Conversations illimitées",
+        "coins_capacity_3": "Déclencher des Dial sans Match",
+        "coins_capacity_4": "Publier et répondre aux D-Day illimités",
+        "this_offer_not_cumulable": "Cette offre n’est pas cumulable avec d’autres promotions en cours",
+        "virtuals_article_policy_1": "En clicquant sur obtenir des jetons, tu reconnais avoir lu et accepter la",
+        "virtuals_article_policy_2": "politique des articles virtuels",
+        "virtuals_article_policy_3": "bantubeat et toutes les autres politiques et conditions Bantubeat.",
+        "get_coins": "Obtenir des jetons",
+        "coins_capacity_5": "Voir toutes les catégories Découvertes "
+    },
+    "free_coins_yellow_screen": {
+        "title": "JETONS GRATUIT",
+        "coins_capacities": "Grâce aux jetons tu peux...",
+        "coins_capacity_1": "Payer des accès Featlink",
+        "coins_capacity_2": "Avoir des Conversations illimitées",
+        "coins_capacity_3": "Déclencher des Dial sans Match",
+        "coins_capacity_4": "Publier et répondre aux D-Day illimités",
+        "this_offer_not_cumulable": "Cette offre n’est pas cumulable avec d’autres promotions en cours",
+        "virtuals_article_policy_1": "En clicquant sur obtenir des jetons, tu reconnais avoir lu et accepter la",
+        "virtuals_article_policy_2": "politique des articles virtuels",
+        "virtuals_article_policy_3": "bantubeat et toutes les autres politiques et conditions Bantubeat.",
+        "get_coins": "Obtenir des jetons",
+        "coins_capacity_5": "Voir toutes les catégories Découvertes "
+    },
+    "free_coins_red_screen": {
+        "title": "JETONS GRATUIT",
+        "coins_capacities": "Grâce aux jetons tu peux...",
+        "coins_capacity_1": "Payer des accès Featlink",
+        "coins_capacity_2": "Avoir des Conversations illimitées",
+        "coins_capacity_3": "Déclencher des Dial sans Match",
+        "coins_capacity_4": "Publier et répondre aux D-Day illimités",
+        "this_offer_not_cumulable": "Cette offre n’est pas cumulable avec d’autres promotions en cours",
+        "virtuals_article_policy_1": "En clicquant sur obtenir des jetons, tu reconnais avoir lu et accepter la",
+        "virtuals_article_policy_2": "politique des articles virtuels",
+        "virtuals_article_policy_3": "bantubeat et toutes les autres politiques et conditions Bantubeat.",
+        "get_coins": "Obtenir des jetons",
+        "coins_capacity_5": "Voir toutes les catégories Découvertes "
+    },
     "edit_profile_user_side_screen": {
         "data": "Données",
         "hooks": "Accroches",
