@@ -74,6 +74,7 @@ final class AppAssets {
   static const imgTmp4 = 'assets/images/tmp4.png';
   static const imgTmp5 = 'assets/images/tmp5.png';
   static const imgTmp6 = 'assets/images/tmp6.png';
+  static const imagesTmp7 = 'assets/images/tmp7.png';
   static const imagesStar = 'assets/images/star.png';
   static const receiptBgImage = 'assets/images/receipt_bg.png';
 
@@ -142,4 +143,12 @@ final class AppAssets {
   static const imagesMedal7 = 'assets/images/medal7.png';
   static const imagesVip1 = 'assets/images/vip1_image.png';
   static const imagesVip2 = 'assets/images/vip2_image.png';
+
+  static const imagesBottomLeft = 'assets/images/bottom_left.png';
+  static const imagesTopLeftBack = 'assets/images/top_left_back.png';
+  static const imagesEmoji1 = 'assets/images/emoji2.png';
+  static const imagesEmoji2 = 'assets/images/emoji2.png';
+  static const imagesSmilingFaceWithHearts =
+      'assets/images/smiling-face-with-hearts.png';
+  static const imagesSlider = 'assets/images/slider.png';
 }

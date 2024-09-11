@@ -36,6 +36,7 @@ import 'screens/_swipe/featlink_without_limits_screen/featlink_without_limits_of
 import 'screens/_subscription/subscription_page_screen.dart';
 import 'screens/_swipe/filter_screen/filter_screen.dart';
 import 'screens/_swipe/modal_swipepay_screen.dart';
+import 'screens/_swipe/swipe_zone_match_screen/swipe_zone_match_screen.dart';
 import 'screens/welcome2_screen/welcome2_screen.dart';
 import 'screens/welcome_screen.dart';
 import 'screens/_create_profile/create_profile_step_1o1_screen.dart';
@@ -138,6 +139,7 @@ final Map<String, Widget Function()> allScreens = {
   'modal_swipepay_screen.dart': () => ModalSwipepayScreen(),
 
   'subscription_page_screen.dart': () => SubscriptionPageScreen(),
+  'swipe_zone_match_screen.dart': () => const SwipeZoneMatchScreen(),
 
   // Ajoutez d'autres chemins de fichiers ici
 };
