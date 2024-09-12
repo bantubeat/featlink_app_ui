@@ -101,13 +101,17 @@ class _VideoWidgetState extends State<VideoWidget> {
                       mainAxisAlignment: MainAxisAlignment
                           .spaceAround, // Espacement entre les éléments
                       children: [
-                        const Expanded(
-                          child: LinearProgressIndicator(
-                            value: 0.7,
-                            backgroundColor: Color.fromRGBO(186, 185, 185, 0.5),
-                            color: Color.fromRGBO(186, 185, 185, 0.6),
-                          ),
+                        VideoProgressIndicator(
+                          _controller,
+                          allowScrubbing: true,
                         ),
+                        // const Expanded(
+                        //   child: LinearProgressIndicator(
+                        //     value: 0.7,
+                        //     backgroundColor: Color.fromRGBO(186, 185, 185, 0.5),
+                        //     color: Color.fromRGBO(186, 185, 185, 0.6),
+                        //   ),
+                        // ),
                         const SizedBox(
                           width: 10,
                         ),
