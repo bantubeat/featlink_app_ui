@@ -1,5 +1,4 @@
 import 'dart:io';
-import 'package:video_player/video_player.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -17,19 +16,19 @@ class VideoWidget extends StatefulWidget {
 }
 
 class _VideoWidgetState extends State<VideoWidget> {
-  late VideoPlayerController _controller;
+  // late VideoPlayerController _controller;
 
-  @override
-  void initState() {
-    super.initState();
-    _controller = VideoPlayerController.networkUrl(
-      Uri.parse(
-        'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
-      ),
-    )..initialize().then((_) {
-        setState(() {});
-      });
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   _controller = VideoPlayerController.networkUrl(
+  //     Uri.parse(
+  //       'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
+  //     ),
+  //   )..initialize().then((_) {
+  //       setState(() {});
+  //     });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -61,12 +60,7 @@ class _VideoWidgetState extends State<VideoWidget> {
                 right: 20,
                 bottom: 0,
                 child: Center(
-                  child: _controller.value.isInitialized
-                      ? AspectRatio(
-                          aspectRatio: _controller.value.aspectRatio,
-                          child: VideoPlayer(_controller),
-                        )
-                      : Container(),
+                  child: Container(),
                 ),
               ),
               Positioned(
@@ -76,11 +70,11 @@ class _VideoWidgetState extends State<VideoWidget> {
                 bottom: 0,
                 child: InkWell(
                   onTap: () {
-                    setState(() {
-                      _controller.value.isPlaying
-                          ? _controller.pause()
-                          : _controller.play();
-                    });
+                    // setState(() {
+                    //   _controller.value.isPlaying
+                    //       ? _controller.pause()
+                    //       : _controller.play();
+                    // });
                   },
                   child: const Icon(
                     Icons.play_circle_filled_rounded,
@@ -96,10 +90,10 @@ class _VideoWidgetState extends State<VideoWidget> {
                 child: Column(
                   children: [
                     // Premier Row avec une barre de progression et les icônes
-                    VideoProgressIndicator(
-                      _controller,
-                      allowScrubbing: true,
-                    ),
+                    // VideoProgressIndicator(
+                    //   _controller,
+                    //   allowScrubbing: true,
+                    // ),
                     // Row(
                     //   mainAxisAlignment: MainAxisAlignment
                     //       .spaceAround, // Espacement entre les éléments
@@ -133,11 +127,11 @@ class _VideoWidgetState extends State<VideoWidget> {
                       children: [
                         InkWell(
                           onTap: () {
-                            setState(() {
-                              _controller.value.isPlaying
-                                  ? _controller.pause()
-                                  : _controller.play();
-                            });
+                            // setState(() {
+                            //   _controller.value.isPlaying
+                            //       ? _controller.pause()
+                            //       : _controller.play();
+                            // });
                           },
                           child: const Icon(
                             Icons.play_arrow,

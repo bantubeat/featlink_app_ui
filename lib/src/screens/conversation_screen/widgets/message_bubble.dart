@@ -4,7 +4,7 @@ import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_bubble/chat_bubble.dart';
-import 'package:video_player/video_player.dart';
+// import 'package:video_player/video_player.dart';
 
 class MessageBubble extends StatelessWidget {
   final String message;
@@ -242,19 +242,19 @@ class VideoWidget extends StatefulWidget {
 }
 
 class _VideoWidgetState extends State<VideoWidget> {
-  late VideoPlayerController _controller;
+  // late VideoPlayerController _controller;
 
-  @override
-  void initState() {
-    super.initState();
-    _controller = VideoPlayerController.networkUrl(
-      Uri.parse(
-        'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
-      ),
-    )..initialize().then((_) {
-        setState(() {});
-      });
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   _controller = VideoPlayerController.networkUrl(
+  //     Uri.parse(
+  //       'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
+  //     ),
+  //   )..initialize().then((_) {
+  //       setState(() {});
+  //     });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -266,12 +266,7 @@ class _VideoWidgetState extends State<VideoWidget> {
           right: 0,
           bottom: 0,
           child: Center(
-            child: _controller.value.isInitialized
-                ? AspectRatio(
-                    aspectRatio: _controller.value.aspectRatio,
-                    child: VideoPlayer(_controller),
-                  )
-                : Container(),
+            child: Container(),
           ),
         ),
         Positioned(
@@ -280,10 +275,10 @@ class _VideoWidgetState extends State<VideoWidget> {
           bottom: 0,
           child: Column(
             children: [
-              VideoProgressIndicator(
-                _controller,
-                allowScrubbing: true,
-              ),
+              // VideoProgressIndicator(
+              //   _controller,
+              //   allowScrubbing: true,
+              // ),
               // Padding(
               //   padding: const EdgeInsets.symmetric(horizontal: 10.0),
               //   child: Row(
@@ -321,11 +316,11 @@ class _VideoWidgetState extends State<VideoWidget> {
                   children: [
                     InkWell(
                       onTap: () {
-                        setState(() {
-                          _controller.value.isPlaying
-                              ? _controller.pause()
-                              : _controller.play();
-                        });
+                        // setState(() {
+                        //   _controller.value.isPlaying
+                        //       ? _controller.pause()
+                        //       : _controller.play();
+                        // });
                       },
                       child: const Icon(
                         Icons.play_arrow,
@@ -347,11 +342,11 @@ class _VideoWidgetState extends State<VideoWidget> {
                     ),
                     InkWell(
                       onTap: () {
-                        setState(() {
-                          _controller.value.isPlaying
-                              ? _controller.pause()
-                              : _controller.play();
-                        });
+                        // setState(() {
+                        //   _controller.value.isPlaying
+                        //       ? _controller.pause()
+                        //       : _controller.play();
+                        // });
                       },
                       child: const Icon(
                         Icons.fullscreen,
