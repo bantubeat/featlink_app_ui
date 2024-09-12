@@ -4,7 +4,6 @@ import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_bubble/chat_bubble.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:video_player/video_player.dart';
 
 class MessageBubble extends StatelessWidget {
@@ -281,36 +280,40 @@ class _VideoWidgetState extends State<VideoWidget> {
           bottom: 0,
           child: Column(
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    VideoProgressIndicator(
-                      _controller,
-                      allowScrubbing: true,
-                    ),
-                    // const Expanded(
-                    //   child: LinearProgressIndicator(
-                    //     value: 0.7,
-                    //     backgroundColor: Color.fromRGBO(186, 185, 185, 0.5),
-                    //     color: Color.fromRGBO(186, 185, 185, 0.6),
-                    //   ),
-                    // ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      '0:18',
-                      style: GoogleFonts.inter(
-                        fontSize: 6,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ],
-                ),
+              VideoProgressIndicator(
+                _controller,
+                allowScrubbing: true,
               ),
+              // Padding(
+              //   padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.spaceAround,
+              //     children: [
+              //       VideoProgressIndicator(
+              //         _controller,
+              //         allowScrubbing: true,
+              //       ),
+              //       // const Expanded(
+              //       //   child: LinearProgressIndicator(
+              //       //     value: 0.7,
+              //       //     backgroundColor: Color.fromRGBO(186, 185, 185, 0.5),
+              //       //     color: Color.fromRGBO(186, 185, 185, 0.6),
+              //       //   ),
+              //       // ),
+              //       const SizedBox(
+              //         width: 10,
+              //       ),
+              //       Text(
+              //         '0:18',
+              //         style: GoogleFonts.inter(
+              //           fontSize: 6,
+              //           fontWeight: FontWeight.w500,
+              //           color: Colors.white,
+              //         ),
+              //       ),
+              //     ],
+              //   ),
+              // ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10.0),
                 child: Row(

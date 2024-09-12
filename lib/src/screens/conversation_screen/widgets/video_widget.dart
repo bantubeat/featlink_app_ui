@@ -2,7 +2,6 @@ import 'dart:io';
 import 'package:video_player/video_player.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class VideoWidget extends StatefulWidget {
   const VideoWidget({
@@ -97,34 +96,38 @@ class _VideoWidgetState extends State<VideoWidget> {
                 child: Column(
                   children: [
                     // Premier Row avec une barre de progression et les icônes
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment
-                          .spaceAround, // Espacement entre les éléments
-                      children: [
-                        VideoProgressIndicator(
-                          _controller,
-                          allowScrubbing: true,
-                        ),
-                        // const Expanded(
-                        //   child: LinearProgressIndicator(
-                        //     value: 0.7,
-                        //     backgroundColor: Color.fromRGBO(186, 185, 185, 0.5),
-                        //     color: Color.fromRGBO(186, 185, 185, 0.6),
-                        //   ),
-                        // ),
-                        const SizedBox(
-                          width: 10,
-                        ),
-                        Text(
-                          '0:18',
-                          style: GoogleFonts.inter(
-                            fontSize: 6,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ],
+                    VideoProgressIndicator(
+                      _controller,
+                      allowScrubbing: true,
                     ),
+                    // Row(
+                    //   mainAxisAlignment: MainAxisAlignment
+                    //       .spaceAround, // Espacement entre les éléments
+                    //   children: [
+                    //     VideoProgressIndicator(
+                    //       _controller,
+                    //       allowScrubbing: true,
+                    //     ),
+                    //     // const Expanded(
+                    //     //   child: LinearProgressIndicator(
+                    //     //     value: 0.7,
+                    //     //     backgroundColor: Color.fromRGBO(186, 185, 185, 0.5),
+                    //     //     color: Color.fromRGBO(186, 185, 185, 0.6),
+                    //     //   ),
+                    //     // ),
+                    //     const SizedBox(
+                    //       width: 10,
+                    //     ),
+                    //     Text(
+                    //       '0:18',
+                    //       style: GoogleFonts.inter(
+                    //         fontSize: 6,
+                    //         fontWeight: FontWeight.w500,
+                    //         color: Colors.white,
+                    //       ),
+                    //     ),
+                    //   ],
+                    // ),
 
                     Row(
                       children: [
