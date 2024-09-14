@@ -766,5 +766,17 @@
         "match_subtitle": "Démarrer une conversation maintenant entre vous",
         "button_say_hello": "dit bonjour",
         "button_keep_swiping": "Continue de swiper"
+    },
+    "see_d_day_list_screen": {
+        "publish_d_day": "publier un D-DAY",
+        "you_have": "Tu as ",
+        "interested_people": " personnes ",
+        "interested": "interessées par ton D-Day",
+        "see_list": "Voir la liste"
+    },
+    "no_d_day_currently": {
+        "publish_d_day": "publier un D-DAY",
+        "no_d_day_message": "Tu n'as aucun D-Day publié pour le moment.",
+        "express_desire": "exprime ton envie en publiant un D-Day, tu as 99% de chance d'avoir un D-Dating."
     }
 }
