@@ -310,7 +310,9 @@ class ConversationScreen extends StatelessWidget {
           ),
         ],
       ),
-      floatingActionButton: MessageInput(),
+      floatingActionButton: const MessageInput(
+        respondToTextMessage: true,
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
