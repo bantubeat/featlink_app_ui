@@ -4,7 +4,8 @@ import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_bubble/chat_bubble.dart';
-// import 'package:video_player/video_player.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:video_player/video_player.dart';
 
 class MessageBubble extends StatelessWidget {
   final String message;
@@ -13,14 +14,19 @@ class MessageBubble extends StatelessWidget {
   final bool? file;
   final bool? isVideo;
   final Image? gift;
-
+  final bool respondToTextMessage;
+  final bool respondToImageMessage;
+  final VideoPlayerController? controller;
   const MessageBubble({
     required this.message,
     required this.isSentByMe,
     required this.time,
+    this.controller,
     this.file,
     this.isVideo,
     this.gift,
+    this.respondToTextMessage = false,
+    this.respondToImageMessage = false,
     super.key,
   });
 
@@ -105,89 +111,210 @@ class MessageBubble extends StatelessWidget {
                       constraints: BoxConstraints(
                         maxWidth: MediaQuery.of(context).size.width * 0.7,
                       ),
-                      child: isSentByMe
-                          ? Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                if (file != null && isVideo != null && isVideo!)
-                                  const Padding(
-                                    padding: EdgeInsets.only(bottom: 5.0),
-                                    child: SizedBox(
-                                      height: 250,
-                                      child: VideoWidget(),
-                                    ),
-                                  )
-                                else if (file != null &&
-                                    isVideo != null &&
-                                    !isVideo!)
-                                  Image.asset(
-                                    width:
-                                        MediaQuery.of(context).size.width * .7,
-                                    AppAssets.imagesTmpChatImg,
-                                    fit: BoxFit.cover,
-                                  ),
-                                Row(
-                                  children: [
-                                    Flexible(
-                                      child: Text(
-                                        message,
-                                        style: TextStyle(
-                                          color: isSentByMe
-                                              ? AppColors.myWhite
-                                              : AppColors.myDark,
+                      child: Column(
+                        children: [
+                          if (respondToImageMessage)
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                vertical: 5,
+                              ),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      clipBehavior: Clip.hardEdge,
+                                      padding: const EdgeInsets.all(10.0),
+                                      decoration: BoxDecoration(
+                                        border: const Border(
+                                          left: BorderSide(
+                                            color: AppColors.myBlue,
+                                            width: 5.0,
+                                          ),
                                         ),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
+                                        color: AppColors.myGray,
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          const Expanded(
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  'Sender',
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    color: AppColors.myBlue,
+                                                  ),
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.camera_alt,
+                                                      color:
+                                                          AppColors.myGray600,
+                                                    ),
+                                                    Expanded(
+                                                      child: Text('Photo'),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                          Image.network(
+                                            'https://picsum.photos/200/300',
+                                            width: 60,
+                                            height: 60,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                    if (gift != null)
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(),
-                                        child: gift!,
-                                      ),
-                                  ],
-                                ),
-                              ],
-                            )
-                          : Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                if (file != null && isVideo != null && isVideo!)
-                                  const Padding(
-                                    padding: EdgeInsets.only(bottom: 5.0),
-                                    child: SizedBox(
-                                      height: 250,
-                                      child: VideoWidget(),
-                                    ),
-                                  )
-                                else if (file != null &&
-                                    isVideo != null &&
-                                    !isVideo!)
-                                  Image.asset(
-                                    width:
-                                        MediaQuery.of(context).size.width * .7,
-                                    AppAssets.imagesTmpChatImg,
-                                    fit: BoxFit.cover,
                                   ),
-                                Row(
-                                  children: [
-                                    if (gift != null)
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(),
-                                        child: gift!,
-                                      ),
-                                    Flexible(
-                                      child: Text(
-                                        message,
-                                        style: TextStyle(
-                                          color: isSentByMe
-                                              ? AppColors.myWhite
-                                              : AppColors.myDark,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
+                          if (respondToTextMessage)
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                vertical: 5,
+                              ),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      clipBehavior: Clip.hardEdge,
+                                      padding: const EdgeInsets.all(10.0),
+                                      decoration: BoxDecoration(
+                                        border: const Border(
+                                          left: BorderSide(
+                                            color: AppColors.myBlue,
+                                            width: 5.0,
+                                          ),
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
+                                        color: AppColors.myGray,
+                                      ),
+                                      child: const Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'Sender',
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: AppColors.myBlue,
+                                            ),
+                                          ),
+                                          Text('Message'),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          isSentByMe
+                              ? Column(
+                                  children: [
+                                    if (file != null &&
+                                        isVideo != null &&
+                                        isVideo!)
+                                      Padding(
+                                        padding:
+                                            const EdgeInsets.only(bottom: 5.0),
+                                        child: SizedBox(
+                                          height: 250,
+                                          child: VideoWidget(
+                                            controller: controller!,
+                                          ),
+                                        ),
+                                      )
+                                    else if (file != null &&
+                                        isVideo != null &&
+                                        !isVideo!)
+                                      Image.asset(
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                .7,
+                                        AppAssets.imagesTmpChatImg,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    Row(
+                                      children: [
+                                        Flexible(
+                                          child: Text(
+                                            message,
+                                            style: TextStyle(
+                                              color: isSentByMe
+                                                  ? AppColors.myWhite
+                                                  : AppColors.myDark,
+                                            ),
+                                          ),
+                                        ),
+                                        if (gift != null)
+                                          Padding(
+                                            padding:
+                                                const EdgeInsets.symmetric(),
+                                            child: gift!,
+                                          ),
+                                      ],
+                                    ),
+                                  ],
+                                )
+                              : Column(
+                                  children: [
+                                    if (file != null &&
+                                        isVideo != null &&
+                                        isVideo!)
+                                      Padding(
+                                        padding:
+                                            const EdgeInsets.only(bottom: 5.0),
+                                        child: SizedBox(
+                                          height: 250,
+                                          child: VideoWidget(
+                                            controller: controller!,
+                                          ),
+                                        ),
+                                      )
+                                    else if (file != null &&
+                                        isVideo != null &&
+                                        !isVideo!)
+                                      Image.asset(
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                .7,
+                                        AppAssets.imagesTmpChatImg,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    Row(
+                                      children: [
+                                        if (gift != null)
+                                          Padding(
+                                            padding:
+                                                const EdgeInsets.symmetric(),
+                                            child: gift!,
+                                          ),
+                                        Flexible(
+                                          child: Text(
+                                            message,
+                                            style: TextStyle(
+                                              color: isSentByMe
+                                                  ? AppColors.myWhite
+                                                  : AppColors.myDark,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                        ],
+                      ),
                     ),
                   ),
                   Padding(
@@ -234,133 +361,136 @@ class MessageBubble extends StatelessWidget {
   }
 }
 
-class VideoWidget extends StatefulWidget {
-  const VideoWidget({super.key});
+class VideoWidget extends StatelessWidget {
+  const VideoWidget({required this.controller, super.key});
 
-  @override
-  State<VideoWidget> createState() => _VideoWidgetState();
-}
+  final VideoPlayerController controller;
 
-class _VideoWidgetState extends State<VideoWidget> {
-  // late VideoPlayerController _controller;
-
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   _controller = VideoPlayerController.networkUrl(
-  //     Uri.parse(
-  //       'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
-  //     ),
-  //   )..initialize().then((_) {
-  //       setState(() {});
-  //     });
-  // }
+  String _formatDuration(Duration duration) {
+    String twoDigits(int n) => n.toString().padLeft(2, '0');
+    final minutes = twoDigits(duration.inMinutes.remainder(60));
+    final seconds = twoDigits(duration.inSeconds.remainder(60));
+    return '$minutes:$seconds';
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Positioned(
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          child: Center(
-            child: Container(),
+    return Container(
+      color: Colors.black,
+      child: Stack(
+        children: [
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: controller.value.isInitialized
+                ? AspectRatio(
+                    aspectRatio: controller.value.aspectRatio,
+                    child: VideoPlayer(controller),
+                  )
+                : Container(),
           ),
-        ),
-        Positioned(
-          left: 0,
-          right: 0,
-          bottom: 0,
-          child: Column(
-            children: [
-              // VideoProgressIndicator(
-              //   _controller,
-              //   allowScrubbing: true,
-              // ),
-              // Padding(
-              //   padding: const EdgeInsets.symmetric(horizontal: 10.0),
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.spaceAround,
-              //     children: [
-              //       VideoProgressIndicator(
-              //         _controller,
-              //         allowScrubbing: true,
-              //       ),
-              //       // const Expanded(
-              //       //   child: LinearProgressIndicator(
-              //       //     value: 0.7,
-              //       //     backgroundColor: Color.fromRGBO(186, 185, 185, 0.5),
-              //       //     color: Color.fromRGBO(186, 185, 185, 0.6),
-              //       //   ),
-              //       // ),
-              //       const SizedBox(
-              //         width: 10,
-              //       ),
-              //       Text(
-              //         '0:18',
-              //         style: GoogleFonts.inter(
-              //           fontSize: 6,
-              //           fontWeight: FontWeight.w500,
-              //           color: Colors.white,
-              //         ),
-              //       ),
-              //     ],
-              //   ),
-              // ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    InkWell(
-                      onTap: () {
-                        // setState(() {
-                        //   _controller.value.isPlaying
-                        //       ? _controller.pause()
-                        //       : _controller.play();
-                        // });
-                      },
-                      child: const Icon(
-                        Icons.play_arrow,
-                        color: Colors.white,
-                        size: 15,
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 2.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    verticalDirection: VerticalDirection.up,
+                    children: [
+                      Expanded(
+                        child: VideoProgressIndicator(
+                          controller,
+                          allowScrubbing: true,
+                          colors: const VideoProgressColors(
+                            playedColor: Color.fromRGBO(33, 150, 243, 1),
+                            bufferedColor: Colors.grey,
+                            backgroundColor: Colors.grey,
+                          ),
+                        ),
                       ),
-                    ),
-                    InkWell(
-                      onTap: () {
-                        setState(() {
-                          // _controller.value.
-                        });
-                      },
-                      child: const Icon(
-                        Icons.volume_down_sharp,
-                        color: Colors.white,
-                        size: 15,
+                      const SizedBox(
+                        width: 3,
+                      ), // Spacing between progress bar and time.
+                      ValueListenableBuilder(
+                        valueListenable: controller,
+                        builder: (context, VideoPlayerValue value, child) {
+                          return Text(
+                            _formatDuration(
+                              value.position,
+                            ), // Display current time.
+                            style: GoogleFonts.inter(
+                              fontSize: 6,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.white,
+                            ),
+                          );
+                        },
                       ),
-                    ),
-                    InkWell(
-                      onTap: () {
-                        // setState(() {
-                        //   _controller.value.isPlaying
-                        //       ? _controller.pause()
-                        //       : _controller.play();
-                        // });
-                      },
-                      child: const Icon(
-                        Icons.fullscreen,
-                        color: Colors.white,
-                        size: 15,
-                      ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10.0,
+                    vertical: 2,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          // setState(() {
+                          //   _controller.value.isPlaying
+                          //       ? _controller.pause()
+                          //       : _controller.play();
+                          // });
+                        },
+                        child: const Icon(
+                          Icons.play_arrow,
+                          color: Colors.white,
+                          size: 15,
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          // setState(() {
+                          //   // _controller.value.
+                          // });
+                        },
+                        child: const Icon(
+                          Icons.volume_down_sharp,
+                          color: Colors.white,
+                          size: 15,
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          // setState(() {
+                          //   _controller.value.isPlaying
+                          //       ? _controller.pause()
+                          //       : _controller.play();
+                          // });
+                        },
+                        child: const Icon(
+                          Icons.fullscreen,
+                          color: Colors.white,
+                          size: 15,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

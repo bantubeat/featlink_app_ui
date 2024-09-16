@@ -1088,4 +1088,20 @@ abstract class LocaleKeys {
       'swipe_zone_match_screen.button_say_hello';
   static const swipe_zone_match_screen_button_keep_swiping =
       'swipe_zone_match_screen.button_keep_swiping';
+  static const see_d_day_list_screen_publish_d_day =
+      'see_d_day_list_screen.publish_d_day';
+  static const see_d_day_list_screen_you_have =
+      'see_d_day_list_screen.you_have';
+  static const see_d_day_list_screen_interested_people =
+      'see_d_day_list_screen.interested_people';
+  static const see_d_day_list_screen_interested =
+      'see_d_day_list_screen.interested';
+  static const see_d_day_list_screen_see_list =
+      'see_d_day_list_screen.see_list';
+  static const no_d_day_currently_publish_d_day =
+      'no_d_day_currently.publish_d_day';
+  static const no_d_day_currently_no_d_day_message =
+      'no_d_day_currently.no_d_day_message';
+  static const no_d_day_currently_express_desire =
+      'no_d_day_currently.express_desire';
 }

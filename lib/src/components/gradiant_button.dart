@@ -12,6 +12,8 @@ class GradiantButton extends StatelessWidget {
   final double borderWidth;
   final String label;
   final BorderRadius borderRadius;
+  final bool isThreeColor;
+  final bool elevation;
 
   const GradiantButton({
     required this.label,
@@ -24,6 +26,8 @@ class GradiantButton extends StatelessWidget {
     this.borderColor = AppColors.primary,
     this.borderWidth = 0,
     this.borderRadius = const BorderRadius.all(Radius.circular(20)),
+    this.isThreeColor = false,
+    this.elevation = false,
   });
 
   void _onPressed(BuildContext context) {
@@ -61,12 +65,29 @@ class GradiantButton extends StatelessWidget {
         height: fixedSize.height,
         decoration: BoxDecoration(
           color: backgroundColor,
-          gradient: const LinearGradient(
-            colors: [AppColors.myPrimarySoft, AppColors.myWhite],
-          ),
+          gradient: isThreeColor
+              ? const LinearGradient(
+                  colors: [
+                    AppColors.myWhite,
+                    AppColors.myPrimarySoft,
+                    AppColors.myWhite,
+                  ],
+                )
+              : const LinearGradient(
+                  colors: [AppColors.myPrimarySoft, AppColors.myWhite],
+                ),
           borderRadius: borderRadius,
           border: borderWidth != 0
               ? Border.all(width: borderWidth, color: borderColor)
+              : null,
+          boxShadow: elevation
+              ? [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.3),
+                    offset: const Offset(0, 2),
+                    blurRadius: 4,
+                  ),
+                ]
               : null,
         ),
         child: Center(
