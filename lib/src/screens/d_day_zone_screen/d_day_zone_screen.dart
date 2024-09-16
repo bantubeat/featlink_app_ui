@@ -13,7 +13,7 @@ import 'widgets/your_d_day_valid_access_tab.dart';
 class DDayZoneScreen extends StatelessWidget {
   const DDayZoneScreen({super.key});
 
-   static String? ddayAvailable;
+  static String? ddayAvailable;
 
   static List<Map<String, dynamic>> myData = [
     {

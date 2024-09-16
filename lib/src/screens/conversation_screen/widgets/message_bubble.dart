@@ -9,12 +9,16 @@ class MessageBubble extends StatelessWidget {
   final bool isSentByMe;
   final String time;
   final Image? gift;
+  final bool respondToTextMessage;
+  final bool respondToImageMessage;
 
   const MessageBubble({
     required this.message,
     required this.isSentByMe,
     required this.time,
     this.gift,
+    this.respondToTextMessage = false,
+    this.respondToImageMessage = false,
     super.key,
   });
 
@@ -99,45 +103,154 @@ class MessageBubble extends StatelessWidget {
                       constraints: BoxConstraints(
                         maxWidth: MediaQuery.of(context).size.width * 0.7,
                       ),
-                      child: isSentByMe
-                          ? Row(
-                              children: [
-                                Flexible(
-                                  child: Text(
-                                    message,
-                                    style: TextStyle(
-                                      color: isSentByMe
-                                          ? AppColors.myWhite
-                                          : AppColors.myDark,
+                      child: Column(
+                        children: [
+                          if (respondToImageMessage)
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                vertical: 5,
+                              ),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      clipBehavior: Clip.hardEdge,
+                                      padding: const EdgeInsets.all(10.0),
+                                      decoration: BoxDecoration(
+                                        border: const Border(
+                                          left: BorderSide(
+                                            color: AppColors.myBlue,
+                                            width: 5.0,
+                                          ),
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
+                                        color: AppColors.myGray,
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          const Expanded(
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: [
+                                                Text(
+                                                  'Sender',
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    color: AppColors.myBlue,
+                                                  ),
+                                                ),
+                                                Row(
+                                                  children: [
+                                                    Icon(
+                                                      Icons.camera_alt,
+                                                      color:
+                                                          AppColors.myGray600,
+                                                    ),
+                                                    Expanded(
+                                                      child: Text('Photo'),
+                                                    ),
+                                                  ],
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                          Image.network(
+                                            'https://picsum.photos/200/300',
+                                            width: 60,
+                                            height: 60,
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ),
-                                ),
-                                if (gift != null)
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(),
-                                    child: gift!,
-                                  ),
-                              ],
-                            )
-                          : Row(
-                              children: [
-                                if (gift != null)
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(),
-                                    child: gift!,
-                                  ),
-                                Flexible(
-                                  child: Text(
-                                    message,
-                                    style: TextStyle(
-                                      color: isSentByMe
-                                          ? AppColors.myWhite
-                                          : AppColors.myDark,
-                                    ),
-                                  ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
+                          if (respondToTextMessage)
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                vertical: 5,
+                              ),
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      clipBehavior: Clip.hardEdge,
+                                      padding: const EdgeInsets.all(10.0),
+                                      decoration: BoxDecoration(
+                                        border: const Border(
+                                          left: BorderSide(
+                                            color: AppColors.myBlue,
+                                            width: 5.0,
+                                          ),
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
+                                        color: AppColors.myGray,
+                                      ),
+                                      child: const Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(
+                                            'Sender',
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: AppColors.myBlue,
+                                            ),
+                                          ),
+                                          Text('Message'),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          isSentByMe
+                              ? Row(
+                                  children: [
+                                    Flexible(
+                                      child: Text(
+                                        message,
+                                        style: TextStyle(
+                                          color: isSentByMe
+                                              ? AppColors.myWhite
+                                              : AppColors.myDark,
+                                        ),
+                                      ),
+                                    ),
+                                    if (gift != null)
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(),
+                                        child: gift!,
+                                      ),
+                                  ],
+                                )
+                              : Row(
+                                  children: [
+                                    if (gift != null)
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(),
+                                        child: gift!,
+                                      ),
+                                    Flexible(
+                                      child: Text(
+                                        message,
+                                        style: TextStyle(
+                                          color: isSentByMe
+                                              ? AppColors.myWhite
+                                              : AppColors.myDark,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                        ],
+                      ),
                     ),
                   ),
                   Padding(
