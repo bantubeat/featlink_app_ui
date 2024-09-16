@@ -16,12 +16,11 @@ class MessageBubble extends StatelessWidget {
   final Image? gift;
   final bool respondToTextMessage;
   final bool respondToImageMessage;
-  final VideoPlayerController? controller;
+
   const MessageBubble({
     required this.message,
     required this.isSentByMe,
     required this.time,
-    this.controller,
     this.file,
     this.isVideo,
     this.gift,
@@ -224,14 +223,11 @@ class MessageBubble extends StatelessWidget {
                                     if (file != null &&
                                         isVideo != null &&
                                         isVideo!)
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(bottom: 5.0),
+                                      const Padding(
+                                        padding: EdgeInsets.only(bottom: 5.0),
                                         child: SizedBox(
                                           height: 250,
-                                          child: VideoWidget(
-                                            controller: controller!,
-                                          ),
+                                          child: VideoWidget(),
                                         ),
                                       )
                                     else if (file != null &&
@@ -271,14 +267,11 @@ class MessageBubble extends StatelessWidget {
                                     if (file != null &&
                                         isVideo != null &&
                                         isVideo!)
-                                      Padding(
-                                        padding:
-                                            const EdgeInsets.only(bottom: 5.0),
+                                      const Padding(
+                                        padding: EdgeInsets.only(bottom: 5.0),
                                         child: SizedBox(
                                           height: 250,
-                                          child: VideoWidget(
-                                            controller: controller!,
-                                          ),
+                                          child: VideoWidget(),
                                         ),
                                       )
                                     else if (file != null &&
@@ -361,10 +354,33 @@ class MessageBubble extends StatelessWidget {
   }
 }
 
-class VideoWidget extends StatelessWidget {
-  const VideoWidget({required this.controller, super.key});
+class VideoWidget extends StatefulWidget {
+  const VideoWidget({super.key});
 
-  final VideoPlayerController controller;
+  @override
+  State<VideoWidget> createState() => _VideoWidgetState();
+}
+
+class _VideoWidgetState extends State<VideoWidget> {
+  late VideoPlayerController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = VideoPlayerController.networkUrl(
+      Uri.parse(
+        'https://samplelib.com/lib/preview/mp4/sample-5s.mp4',
+      ),
+    )..initialize().then((_) {
+        setState(() {});
+      });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
 
   String _formatDuration(Duration duration) {
     String twoDigits(int n) => n.toString().padLeft(2, '0');
@@ -384,12 +400,14 @@ class VideoWidget extends StatelessWidget {
             left: 0,
             right: 0,
             bottom: 0,
-            child: controller.value.isInitialized
-                ? AspectRatio(
-                    aspectRatio: controller.value.aspectRatio,
-                    child: VideoPlayer(controller),
-                  )
-                : Container(),
+            child: Center(
+              child: _controller.value.isInitialized
+                  ? AspectRatio(
+                      aspectRatio: _controller.value.aspectRatio,
+                      child: VideoPlayer(_controller),
+                    )
+                  : Container(),
+            ),
           ),
           Positioned(
             left: 0,
@@ -405,7 +423,7 @@ class VideoWidget extends StatelessWidget {
                     children: [
                       Expanded(
                         child: VideoProgressIndicator(
-                          controller,
+                          _controller,
                           allowScrubbing: true,
                           colors: const VideoProgressColors(
                             playedColor: Color.fromRGBO(33, 150, 243, 1),
@@ -418,7 +436,7 @@ class VideoWidget extends StatelessWidget {
                         width: 3,
                       ), // Spacing between progress bar and time.
                       ValueListenableBuilder(
-                        valueListenable: controller,
+                        valueListenable: _controller,
                         builder: (context, VideoPlayerValue value, child) {
                           return Text(
                             _formatDuration(
@@ -445,11 +463,11 @@ class VideoWidget extends StatelessWidget {
                     children: [
                       InkWell(
                         onTap: () {
-                          // setState(() {
-                          //   _controller.value.isPlaying
-                          //       ? _controller.pause()
-                          //       : _controller.play();
-                          // });
+                          setState(() {
+                            _controller.value.isPlaying
+                                ? _controller.pause()
+                                : _controller.play();
+                          });
                         },
                         child: const Icon(
                           Icons.play_arrow,
@@ -459,9 +477,9 @@ class VideoWidget extends StatelessWidget {
                       ),
                       InkWell(
                         onTap: () {
-                          // setState(() {
-                          //   // _controller.value.
-                          // });
+                          setState(() {
+                            // _controller.value.
+                          });
                         },
                         child: const Icon(
                           Icons.volume_down_sharp,
@@ -471,11 +489,11 @@ class VideoWidget extends StatelessWidget {
                       ),
                       InkWell(
                         onTap: () {
-                          // setState(() {
-                          //   _controller.value.isPlaying
-                          //       ? _controller.pause()
-                          //       : _controller.play();
-                          // });
+                          setState(() {
+                            _controller.value.isPlaying
+                                ? _controller.pause()
+                                : _controller.play();
+                          });
                         },
                         child: const Icon(
                           Icons.fullscreen,

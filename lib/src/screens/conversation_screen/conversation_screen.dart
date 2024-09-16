@@ -7,7 +7,7 @@ import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:video_player/video_player.dart';
+
 import 'widgets/media_input.dart';
 import 'widgets/media_widget.dart';
 import 'widgets/message_input.dart';
@@ -16,12 +16,7 @@ import 'widgets/message_bubble.dart';
 class ConversationScreen extends StatefulWidget {
   const ConversationScreen({super.key});
 
-  @override
-  State<ConversationScreen> createState() => _ConversationScreenState();
-}
-
-class _ConversationScreenState extends State<ConversationScreen> {
-  final List<Map<String, dynamic>> messages = [
+  static List<Map<String, dynamic>> messages = [
     {
       'message': LocaleKeys.conversation_message_1.tr(),
       'isSentByMe': true,
@@ -98,7 +93,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
       'message': LocaleKeys.conversation_message_13.tr(),
       'isSentByMe': true,
       'file': true,
-      'isVideo': true,
+      'isVideo': false,
       'time': LocaleKeys.conversation_time_13.tr(),
       'gift': null,
     },
@@ -135,27 +130,15 @@ class _ConversationScreenState extends State<ConversationScreen> {
       ),
     },
   ];
+
+  @override
+  State<ConversationScreen> createState() => _ConversationScreenState();
+}
+
+class _ConversationScreenState extends State<ConversationScreen> {
   File? _selectedMedia;
   final picker = ImagePicker();
-
-  late VideoPlayerController _controller;
-  @override
-  void initState() {
-    super.initState();
-    _controller = VideoPlayerController.networkUrl(
-      Uri.parse(
-        'https://samplelib.com/lib/preview/mp4/sample-5s.mp4',
-      ),
-    )..initialize().then((_) {
-        setState(() {});
-      });
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
+  // final TextEditingController _commentController = TextEditingController();
 
   Future<void> _pickImage() async {
     final pickedFile = await picker.pickImage(source: ImageSource.gallery);
@@ -302,13 +285,16 @@ class _ConversationScreenState extends State<ConversationScreen> {
                       Expanded(
                         child: ListView(
                           controller: ScrollController(
-                            initialScrollOffset: messages.length * 500,
+                            initialScrollOffset:
+                                ConversationScreen.messages.length * 500,
                           ),
                           children: [
                             MessageBubble(
-                              message: messages[0]['message'],
-                              isSentByMe: messages[0]['isSentByMe'],
-                              time: messages[0]['time'],
+                              message: ConversationScreen.messages[0]
+                                  ['message'],
+                              isSentByMe: ConversationScreen.messages[0]
+                                  ['isSentByMe'],
+                              time: ConversationScreen.messages[0]['time'],
                             ),
                             Row(
                               children: [
@@ -336,17 +322,14 @@ class _ConversationScreenState extends State<ConversationScreen> {
                                 ),
                               ],
                             ),
-                            for (var message in messages.sublist(1))
+                            for (var message
+                                in ConversationScreen.messages.sublist(1))
                               MessageBubble(
                                 message: message['message'],
                                 isSentByMe: message['isSentByMe'],
                                 time: message['time'],
                                 file: message['file'],
                                 isVideo: message['isVideo'],
-                                controller: message['isVideo'] != null &&
-                                        message['isVideo'] == true
-                                    ? _controller
-                                    : null,
                                 // gift: message[0]['gift'],
                               ),
                           ],
