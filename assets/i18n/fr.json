@@ -297,6 +297,8 @@
     },
     "conversation": {
         "copy_message": "Copier le message",
+        "picture": "Photo",
+        "video": "Video",
         "reply_message": "Répondre au message",
         "delete_message": "Supprimer le message",
         "yesterday": "HIER, 29 AOÛT",

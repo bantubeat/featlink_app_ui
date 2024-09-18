@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:convert';
 
 import 'package:easy_localization/easy_localization.dart';
@@ -5,11 +6,14 @@ import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
 import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
+import 'widgets/media_input.dart';
+import 'widgets/media_widget.dart';
 import 'widgets/message_input.dart';
 import 'widgets/message_bubble.dart';
 
-class ConversationScreen extends StatelessWidget {
+class ConversationScreen extends StatefulWidget {
   const ConversationScreen({super.key});
 
   static List<Map<String, dynamic>> messages = [
@@ -88,12 +92,16 @@ class ConversationScreen extends StatelessWidget {
     {
       'message': LocaleKeys.conversation_message_13.tr(),
       'isSentByMe': true,
+      'file': true,
+      'isVideo': false,
       'time': LocaleKeys.conversation_time_13.tr(),
       'gift': null,
     },
     {
       'message': LocaleKeys.conversation_message_14.tr(),
       'isSentByMe': false,
+      'file': true,
+      'isVideo': false,
       'time': LocaleKeys.conversation_time_14.tr(),
       'gift': null,
     },
@@ -124,8 +132,38 @@ class ConversationScreen extends StatelessWidget {
   ];
 
   @override
+  State<ConversationScreen> createState() => _ConversationScreenState();
+}
+
+class _ConversationScreenState extends State<ConversationScreen> {
+  File? _selectedMedia;
+  final picker = ImagePicker();
+  // final TextEditingController _commentController = TextEditingController();
+
+  Future<void> _pickImage() async {
+    final pickedFile = await picker.pickImage(source: ImageSource.gallery);
+
+    if (pickedFile != null) {
+      setState(() {
+        _selectedMedia = File(pickedFile.path);
+      });
+    }
+  }
+
+  Future<void> _pickVideo() async {
+    final pickedFile = await picker.pickVideo(source: ImageSource.gallery);
+
+    if (pickedFile != null) {
+      setState(() {
+        _selectedMedia = File(pickedFile.path);
+      });
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: _selectedMedia != null ? Colors.black : null,
       appBar: AppBar(
         backgroundColor: AppColors.myWhite,
         title: Row(
@@ -226,61 +264,97 @@ class ConversationScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Stack(
-        alignment: Alignment.topCenter, // Change alignment to topCenter
-        children: [
-          Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: MediaQuery.of(context).size.width * 0.02,
-            ),
-            child: Column(
+      body: _selectedMedia != null
+          ? MediaWidget(
+              file: _selectedMedia!,
+              onClose: () {
+                setState(() {
+                  _selectedMedia = null;
+                });
+              },
+            )
+          : Stack(
+              alignment: Alignment.topCenter, // Change alignment to topCenter
               children: [
-                Expanded(
-                  child: ListView(
-                    controller: ScrollController(
-                      initialScrollOffset: messages.length * 500,
-                    ),
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: MediaQuery.of(context).size.width * 0.02,
+                  ),
+                  child: Column(
                     children: [
-                      MessageBubble(
-                        message: messages[0]['message'],
-                        isSentByMe: messages[0]['isSentByMe'],
-                        time: messages[0]['time'],
-                        gift: messages[0]['gift'],
+                      Expanded(
+                        child: ListView(
+                          controller: ScrollController(
+                            initialScrollOffset:
+                                ConversationScreen.messages.length * 500,
+                          ),
+                          children: [
+                            MessageBubble(
+                              message: ConversationScreen.messages[0]
+                                  ['message'],
+                              isSentByMe: ConversationScreen.messages[0]
+                                  ['isSentByMe'],
+                              time: ConversationScreen.messages[0]['time'],
+                            ),
+                            Row(
+                              children: [
+                                const Expanded(
+                                  child: Divider(
+                                    height: 1.0,
+                                    color: AppColors.myGray,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 8.0,
+                                    vertical: 10,
+                                  ),
+                                  child: Text(
+                                    LocaleKeys.conversation_yesterday.tr(),
+                                    style: const TextStyle(fontSize: 12.0),
+                                  ),
+                                ),
+                                const Expanded(
+                                  child: Divider(
+                                    height: 1.0,
+                                    color: AppColors.myGray,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            for (var message
+                                in ConversationScreen.messages.sublist(1))
+                              MessageBubble(
+                                message: message['message'],
+                                isSentByMe: message['isSentByMe'],
+                                time: message['time'],
+                                file: message['file'],
+                                isVideo: message['isVideo'],
+                                // gift: message[0]['gift'],
+                              ),
+                          ],
+                        ),
                       ),
-                      Row(
-                        children: [
-                          const Expanded(
-                            child: Divider(
-                              height: 1.0,
-                              color: AppColors.myGray,
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 8.0,
-                              vertical: 10,
-                            ),
-                            child: Text(
-                              LocaleKeys.conversation_yesterday.tr(),
-                              style: const TextStyle(fontSize: 12.0),
-                            ),
-                          ),
-                          const Expanded(
-                            child: Divider(
-                              height: 1.0,
-                              color: AppColors.myGray,
-                            ),
-                          ),
+                    ],
+                  ),
+                ),
+                Positioned(
+                  top: 0, // Position the container at the top
+                  left: 0,
+                  right: 0,
+                  child: Container(
+                    height: MediaQuery.of(context).size.height * 0.13,
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.white,
+                          Color.fromARGB(144, 255, 255, 255),
+                          Color.fromARGB(25, 255, 255, 255),
                         ],
                       ),
-                      for (var message in messages.sublist(1))
-                        MessageBubble(
-                          message: message['message'],
-                          isSentByMe: message['isSentByMe'],
-                          time: message['time'],
-                          gift: message['gift'],
-                        ),
-                    ],
+                    ),
                   ),
                 ),
                 const SizedBox(
@@ -288,31 +362,15 @@ class ConversationScreen extends StatelessWidget {
                 ),
               ],
             ),
-          ),
-          Positioned(
-            top: 0, // Position the container at the top
-            left: 0,
-            right: 0,
-            child: Container(
-              height: MediaQuery.of(context).size.height * 0.13,
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Colors.white,
-                    Color.fromARGB(144, 255, 255, 255),
-                    Color.fromARGB(25, 255, 255, 255),
-                  ],
-                ),
-              ),
+      floatingActionButton: _selectedMedia != null
+          ? MediaInput(
+              onSend: () {},
+            )
+          : MessageInput(
+              onPressPickImage: _pickImage,
+              onPressPickVideo: _pickVideo,
+              respondToTextMessage: true,
             ),
-          ),
-        ],
-      ),
-      floatingActionButton: const MessageInput(
-        respondToTextMessage: true,
-      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }

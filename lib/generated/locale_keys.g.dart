@@ -379,6 +379,8 @@ abstract class LocaleKeys {
   static const crush_screen_swipespay = 'crush_screen.swipespay';
   static const crush_screen_match = 'crush_screen.match';
   static const conversation_copy_message = 'conversation.copy_message';
+  static const conversation_picture = 'conversation.picture';
+  static const conversation_video = 'conversation.video';
   static const conversation_reply_message = 'conversation.reply_message';
   static const conversation_delete_message = 'conversation.delete_message';
   static const conversation_yesterday = 'conversation.yesterday';

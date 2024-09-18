@@ -1,13 +1,18 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
+import 'package:featlink_app/src/resources/app_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_bubble/chat_bubble.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:video_player/video_player.dart';
 
 class MessageBubble extends StatelessWidget {
   final String message;
   final bool isSentByMe;
   final String time;
+  final bool? file;
+  final bool? isVideo;
   final Image? gift;
   final bool respondToTextMessage;
   final bool respondToImageMessage;
@@ -16,6 +21,8 @@ class MessageBubble extends StatelessWidget {
     required this.message,
     required this.isSentByMe,
     required this.time,
+    this.file,
+    this.isVideo,
     this.gift,
     this.respondToTextMessage = false,
     this.respondToImageMessage = false,
@@ -211,41 +218,91 @@ class MessageBubble extends StatelessWidget {
                               ),
                             ),
                           isSentByMe
-                              ? Row(
+                              ? Column(
                                   children: [
-                                    Flexible(
-                                      child: Text(
-                                        message,
-                                        style: TextStyle(
-                                          color: isSentByMe
-                                              ? AppColors.myWhite
-                                              : AppColors.myDark,
+                                    if (file != null &&
+                                        isVideo != null &&
+                                        isVideo!)
+                                      const Padding(
+                                        padding: EdgeInsets.only(bottom: 5.0),
+                                        child: SizedBox(
+                                          height: 250,
+                                          child: VideoWidget(),
                                         ),
+                                      )
+                                    else if (file != null &&
+                                        isVideo != null &&
+                                        !isVideo!)
+                                      Image.asset(
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                .7,
+                                        AppAssets.imagesTmpChatImg,
+                                        fit: BoxFit.cover,
                                       ),
+                                    Row(
+                                      children: [
+                                        Flexible(
+                                          child: Text(
+                                            message,
+                                            style: TextStyle(
+                                              color: isSentByMe
+                                                  ? AppColors.myWhite
+                                                  : AppColors.myDark,
+                                            ),
+                                          ),
+                                        ),
+                                        if (gift != null)
+                                          Padding(
+                                            padding:
+                                                const EdgeInsets.symmetric(),
+                                            child: gift!,
+                                          ),
+                                      ],
                                     ),
-                                    if (gift != null)
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(),
-                                        child: gift!,
-                                      ),
                                   ],
                                 )
-                              : Row(
+                              : Column(
                                   children: [
-                                    if (gift != null)
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(),
-                                        child: gift!,
-                                      ),
-                                    Flexible(
-                                      child: Text(
-                                        message,
-                                        style: TextStyle(
-                                          color: isSentByMe
-                                              ? AppColors.myWhite
-                                              : AppColors.myDark,
+                                    if (file != null &&
+                                        isVideo != null &&
+                                        isVideo!)
+                                      const Padding(
+                                        padding: EdgeInsets.only(bottom: 5.0),
+                                        child: SizedBox(
+                                          height: 250,
+                                          child: VideoWidget(),
                                         ),
+                                      )
+                                    else if (file != null &&
+                                        isVideo != null &&
+                                        !isVideo!)
+                                      Image.asset(
+                                        width:
+                                            MediaQuery.of(context).size.width *
+                                                .7,
+                                        AppAssets.imagesTmpChatImg,
+                                        fit: BoxFit.cover,
                                       ),
+                                    Row(
+                                      children: [
+                                        if (gift != null)
+                                          Padding(
+                                            padding:
+                                                const EdgeInsets.symmetric(),
+                                            child: gift!,
+                                          ),
+                                        Flexible(
+                                          child: Text(
+                                            message,
+                                            style: TextStyle(
+                                              color: isSentByMe
+                                                  ? AppColors.myWhite
+                                                  : AppColors.myDark,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ],
                                 ),
@@ -292,6 +349,165 @@ class MessageBubble extends StatelessWidget {
               ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class VideoWidget extends StatefulWidget {
+  const VideoWidget({super.key});
+
+  @override
+  State<VideoWidget> createState() => _VideoWidgetState();
+}
+
+class _VideoWidgetState extends State<VideoWidget> {
+  late VideoPlayerController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = VideoPlayerController.networkUrl(
+      Uri.parse(
+        'https://samplelib.com/lib/preview/mp4/sample-5s.mp4',
+      ),
+    )..initialize().then((_) {
+        setState(() {});
+      });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
+  String _formatDuration(Duration duration) {
+    String twoDigits(int n) => n.toString().padLeft(2, '0');
+    final minutes = twoDigits(duration.inMinutes.remainder(60));
+    final seconds = twoDigits(duration.inSeconds.remainder(60));
+    return '$minutes:$seconds';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.black,
+      child: Stack(
+        children: [
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Center(
+              child: _controller.value.isInitialized
+                  ? AspectRatio(
+                      aspectRatio: _controller.value.aspectRatio,
+                      child: VideoPlayer(_controller),
+                    )
+                  : Container(),
+            ),
+          ),
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 2.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    verticalDirection: VerticalDirection.up,
+                    children: [
+                      Expanded(
+                        child: VideoProgressIndicator(
+                          _controller,
+                          allowScrubbing: true,
+                          colors: const VideoProgressColors(
+                            playedColor: Color.fromRGBO(33, 150, 243, 1),
+                            bufferedColor: Colors.grey,
+                            backgroundColor: Colors.grey,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 3,
+                      ), // Spacing between progress bar and time.
+                      ValueListenableBuilder(
+                        valueListenable: _controller,
+                        builder: (context, VideoPlayerValue value, child) {
+                          return Text(
+                            _formatDuration(
+                              value.position,
+                            ), // Display current time.
+                            style: GoogleFonts.inter(
+                              fontSize: 6,
+                              fontWeight: FontWeight.w500,
+                              color: Colors.white,
+                            ),
+                          );
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10.0,
+                    vertical: 2,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          setState(() {
+                            _controller.value.isPlaying
+                                ? _controller.pause()
+                                : _controller.play();
+                          });
+                        },
+                        child: const Icon(
+                          Icons.play_arrow,
+                          color: Colors.white,
+                          size: 15,
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          setState(() {
+                            // _controller.value.
+                          });
+                        },
+                        child: const Icon(
+                          Icons.volume_down_sharp,
+                          color: Colors.white,
+                          size: 15,
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          setState(() {
+                            _controller.value.isPlaying
+                                ? _controller.pause()
+                                : _controller.play();
+                          });
+                        },
+                        child: const Icon(
+                          Icons.fullscreen,
+                          color: Colors.white,
+                          size: 15,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

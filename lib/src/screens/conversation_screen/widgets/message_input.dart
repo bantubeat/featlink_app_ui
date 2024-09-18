@@ -7,16 +7,19 @@ import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 class MessageInput extends StatefulWidget {
   const MessageInput({
+    required this.onPressPickImage,
+    required this.onPressPickVideo,
     this.respondToTextMessage = false,
     this.respondToImageMessage = false,
     super.key,
   });
+  final Future<void> Function() onPressPickImage;
+  final Future<void> Function() onPressPickVideo;
+  final bool respondToTextMessage;
+  final bool respondToImageMessage;
 
   @override
   State<StatefulWidget> createState() => _MessageInputState();
-
-  final bool respondToTextMessage;
-  final bool respondToImageMessage;
 }
 
 class _MessageInputState extends State<MessageInput> {
@@ -127,9 +130,55 @@ class _MessageInputState extends State<MessageInput> {
                       ),
                     ),
                   ),
-                  IconButton(
-                    icon: const Icon(Icons.add, color: AppColors.myDark),
-                    onPressed: () {},
+                  PopupMenuButton<String>(
+                    icon: const Icon(
+                      Icons.add_circle,
+                      color: AppColors.myDark,
+                    ),
+                    color: AppColors.myWhite,
+                    position: PopupMenuPosition.under,
+                    itemBuilder: (BuildContext context) =>
+                        <PopupMenuEntry<String>>[
+                      PopupMenuItem<String>(
+                        onTap: () async {
+                          await widget.onPressPickImage();
+                        },
+                        child: ListTile(
+                          leading: const Icon(
+                            Icons.camera_alt,
+                            color: AppColors.myBlue,
+                          ),
+                          title: Text(
+                            LocaleKeys.conversation_picture.tr(),
+                            style: const TextStyle(color: AppColors.myDark),
+                          ),
+                        ),
+                      ),
+                      const PopupMenuItem<String>(
+                        height: 1,
+                        padding: EdgeInsets.all(0),
+                        enabled: false,
+                        child: Divider(
+                          color: Color.fromRGBO(235, 235, 235, 1),
+                          thickness: 1,
+                        ),
+                      ),
+                      PopupMenuItem<String>(
+                        onTap: () async {
+                          await widget.onPressPickVideo();
+                        },
+                        child: ListTile(
+                          leading: const Icon(
+                            Icons.videocam,
+                            color: AppColors.myDark,
+                          ),
+                          title: Text(
+                            LocaleKeys.conversation_video.tr(),
+                            style: const TextStyle(color: AppColors.myDark),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
