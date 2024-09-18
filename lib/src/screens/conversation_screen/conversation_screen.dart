@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:easy_localization/easy_localization.dart';
 import 'package:featlink_app/generated/locale_keys.g.dart';
 import 'package:featlink_app/src/config/app_colors.dart';
@@ -9,7 +8,7 @@ import 'package:flutter/material.dart';
 import 'widgets/message_input.dart';
 import 'widgets/message_bubble.dart';
 
-class ConversationScreen extends StatelessWidget {
+class ConversationScreen extends StatefulWidget {
   const ConversationScreen({super.key});
 
   static List<Map<String, dynamic>> messages = [
@@ -18,84 +17,98 @@ class ConversationScreen extends StatelessWidget {
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_1.tr(),
       'gift': null,
+      'voice': null,
     },
     {
       'message': LocaleKeys.conversation_message_2.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_2.tr(),
       'gift': null,
+      'voice': null,
     },
     {
       'message': LocaleKeys.conversation_message_3.tr(),
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_3.tr(),
       'gift': null,
+      'voice': null,
     },
     {
       'message': LocaleKeys.conversation_message_4.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_4.tr(),
       'gift': null,
+      'voice': null,
     },
     {
       'message': LocaleKeys.conversation_message_5.tr(),
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_5.tr(),
       'gift': null,
+      'voice': null,
     },
     {
       'message': LocaleKeys.conversation_message_6.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_6.tr(),
       'gift': null,
+      'voice': null,
     },
     {
       'message': LocaleKeys.conversation_message_7.tr(),
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_7.tr(),
       'gift': null,
+      'voice': null,
     },
     {
       'message': LocaleKeys.conversation_message_8.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_8.tr(),
       'gift': null,
+      'voice': null,
     },
     {
       'message': LocaleKeys.conversation_message_9.tr(),
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_9.tr(),
       'gift': null,
+      'voice': null,
     },
     {
       'message': LocaleKeys.conversation_message_10.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_10.tr(),
       'gift': null,
+      'voice': null,
     },
     {
       'message': LocaleKeys.conversation_message_11.tr(),
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_11.tr(),
       'gift': null,
+      'voice': null,
     },
     {
       'message': LocaleKeys.conversation_message_12.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_12.tr(),
       'gift': null,
+      'voice': null,
     },
     {
       'message': LocaleKeys.conversation_message_13.tr(),
       'isSentByMe': true,
       'time': LocaleKeys.conversation_time_13.tr(),
       'gift': null,
+      'voice': null,
     },
     {
       'message': LocaleKeys.conversation_message_14.tr(),
       'isSentByMe': false,
       'time': LocaleKeys.conversation_time_14.tr(),
       'gift': null,
+      'voice': AppAssets.fakeaudio,
     },
     {
       'message': '100 BZC',
@@ -107,6 +120,7 @@ class ConversationScreen extends StatelessWidget {
         height: 50,
         fit: BoxFit.contain,
       ),
+      'voice': null,
     },
     {
       'message': '200 BZC',
@@ -120,8 +134,40 @@ class ConversationScreen extends StatelessWidget {
         height: 50,
         fit: BoxFit.contain,
       ),
+      'voice': null,
     },
   ];
+
+  @override
+  ConversationScreenState createState() => ConversationScreenState();
+}
+
+class ConversationScreenState extends State<ConversationScreen> {
+  List<Map<String, dynamic>> messages = ConversationScreen.messages;
+
+  void _sendMessage(String message) {
+    setState(() {
+      messages.add({
+        'message': message,
+        'isSentByMe': true,
+        'time': DateFormat('hh:mm a').format(DateTime.now()),
+        'gift': null,
+        'voice': null,
+      });
+    });
+  }
+
+  void _sendVoice(String path) {
+    setState(() {
+      messages.add({
+        'message': 'Voice message',
+        'isSentByMe': true,
+        'time': DateFormat('hh:mm a').format(DateTime.now()),
+        'gift': null,
+        'voice': path,
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -246,6 +292,7 @@ class ConversationScreen extends StatelessWidget {
                         isSentByMe: messages[0]['isSentByMe'],
                         time: messages[0]['time'],
                         gift: messages[0]['gift'],
+                        voice: messages[0]['voice'],
                       ),
                       Row(
                         children: [
@@ -279,6 +326,7 @@ class ConversationScreen extends StatelessWidget {
                           isSentByMe: message['isSentByMe'],
                           time: message['time'],
                           gift: message['gift'],
+                          voice: message['voice'],
                         ),
                     ],
                   ),
@@ -310,7 +358,10 @@ class ConversationScreen extends StatelessWidget {
           ),
         ],
       ),
-      floatingActionButton: MessageInput(),
+      floatingActionButton: MessageInput(
+        onSendMessage: _sendMessage,
+        onSendVoice: _sendVoice,
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }

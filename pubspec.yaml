@@ -34,6 +34,10 @@ dependencies:
   flutter_chat_bubble:
   table_calendar: ^3.1.2
   proste_bezier_curve: ^2.0.2
+  permission_handler: ^11.3.1
+  audioplayers: ^6.1.0
+  flutter_audio_waveforms: ^1.2.1+8
+  flutter_sound: ^9.16.0
 
 dev_dependencies:
   flutter_test:
@@ -52,4 +56,6 @@ flutter:
     - assets/i18n/
     - assets/images/
     - assets/svgs/
+    - assets/audio/audio.mp3
+    - assets/audio/audio_samples.json
 
