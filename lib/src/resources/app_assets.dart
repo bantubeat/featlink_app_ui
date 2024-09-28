@@ -152,4 +152,6 @@ final class AppAssets {
   static const imagesSmilingFaceWithHearts =
       'assets/images/smiling-face-with-hearts.png';
   static const imagesSlider = 'assets/images/slider.png';
+  static const fakeaudio = 'audio/audio.mp3';
+  static const audioSamples = 'assets/audio/audio_samples.json';
 }
