@@ -98,6 +98,7 @@ final class AppAssets {
       'assets/images/dayflow_best_friends.png';
 
   static const imagesGroups = 'assets/images/groups.png';
+  static const imagesTmpChatImg = 'assets/images/tmp_chat_img.png';
   static const imagesanxiousFaceWithSweat = 'anxious_face_with_sweat.png';
   static const imagesSwipezoneGroupFails =
       'assets/images/swipezone_group_fails.png';
